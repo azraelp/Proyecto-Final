@@ -6,4 +6,4 @@ un atacante coaccione a la aplicación para que envíe una solicitud falsificada
   
 
 Se profundizará en la explicación de cada una de estas vulnerabilidades, comprendiendo su funcionamiento, cómo pueden ser explotadas y en qué campos específicos se aplican. Además, se detallará
- cómo implementar estas vulnerabilidades en una máquina Docker.
+cómo implementar estas vulnerabilidades en una máquina Docker.
