@@ -22,7 +22,7 @@ Para esto disponéis de 8 semanas en total:
 | **Creación CTF** |     |     |     |     |     |     |     | x   |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
-El proyecto se realizará en grupos de 3, con uno siendo de 4. La nota del proyecto será **INDIVIDUAL**, por lo que se trabajara con GitHub, donde cada grupo e integrante debera crear una rama para ser evaluado.
+El proyecto se realizará en grupos de 3, con uno siendo de 4. La nota del proyecto será **INDIVIDUAL**, por lo que se trabajara con GitHub, donde cada grupo debera crear una rama con sus respectivos integrantes para ser evaluado.
 
 Los grupos están compuestos de la siguiente forma:
 
