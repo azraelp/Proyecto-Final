@@ -32,9 +32,9 @@ Los grupos están compuestos de la siguiente forma:
 | --- | --- | --- | --- | --- |
 | Grupo 2 | Marc Pozo | Joan Escandell | Marc Hannouti |     |
 | --- | --- | --- | --- | --- |
-| Grupo 3 | Michael | Andrades | Jose R. |     |
+| Grupo 3 | Michael | Paola | Jose R. |     |
 | --- | --- | --- | --- | --- |
-| Grupo 4 | Marcos | Aaron | Paola |     |
+| Grupo 4 | Marcos | Aaron | Andrades |     |
 | --- | --- | --- | --- | --- |
 | Grupo 5 | Eloi | Alan | Fernando | Jose Zomeño |
 | --- | --- | --- | --- | --- |
