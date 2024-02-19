@@ -9,7 +9,7 @@ Se debe documentar como explotar y analizar la máquina, por lo que esta deberá
 
 Se deben entregar 2 versiones de cada máquina, una en estado inicial para ser explotada, y otra ya explotada para realizar la investigación, todo esto en docker.
 
-Las vulnerabilidades que tenemos son las siguientes: 
+### Las vulnerabilidades que tenemos son las siguientes: 
 * A04:2021 - Diseño Inseguro
 * A08:2021 - Fallas en el Software y en la Integridad de los Datos
 
