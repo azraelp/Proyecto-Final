@@ -30,8 +30,6 @@ Los grupos están compuestos de la siguiente forma:
 | --- | --- | --- | --- | --- |
 | Grupo 1 | Jordi | Joan María | Genís |     |
 | --- | --- | --- | --- | --- |
-| Grupo 1 | Jordi | Joan María | Genís |     |
-| --- | --- | --- | --- | --- |
 | Grupo 2 | Marc Pozo | Joan Escandell | Marc Hannouti |     |
 | --- | --- | --- | --- | --- |
 | Grupo 3 | Michael | Andrades | Jose R. |     |
