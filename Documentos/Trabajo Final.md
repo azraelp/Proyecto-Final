@@ -12,3 +12,9 @@ cómo implementar estas vulnerabilidades en una máquina Docker.
 ## A10:2021 – Falsificación de Solicitudes del Lado del Servidor (SSRF)
 
 Este 
+
+
+
+
+
+## A06:2021 - Componentes Vulnerables y Desactualizados
