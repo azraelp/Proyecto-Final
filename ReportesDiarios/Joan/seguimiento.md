@@ -1,4 +1,4 @@
-# Seguimiento de Proyecto Final 19
+# Seguimiento Proyecto Final
 
 ## Lunes 19/02/2024
 
