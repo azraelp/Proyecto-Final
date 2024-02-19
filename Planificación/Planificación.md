@@ -1,4 +1,4 @@
-﻿Planificación Proyecto Final
+# ﻿Planificación Proyecto Final
 
 
 En el proyecto se deberán crear 2 máquinas en docker con vuestras respectivas vulnerabilidades de OWASP Top 10 web en cada, cada máquina deberá disponer de diferentes vulnerabilidades en general, los CVE’s de estas siendo de 2023 para adelante, no se permiten CVE’s anteriores.
@@ -15,11 +15,11 @@ Las vulnerabilidades que tenemos son las siguientes:
 
 Crearemos la estructura de carpetas y definir sus nombres.
 
-Nomenclatura para los reportes diarios: 
+### Nomenclatura para los reportes diarios: 
 dia_mes_año_ReporteDiario
 19_02_2024_ReporteDiario
 
-Tareas a realizar durante la primera semana:
+### Tareas a realizar durante la primera semana:
 
 
 * Mirar como funciona github desktop
