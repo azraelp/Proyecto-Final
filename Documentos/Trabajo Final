@@ -1,1 +1,4 @@
-Aqui se explicara la creacion de la maquina y demas cosas.
+#Introducción
+En este documento sé explica la creación de una máquina Docker que contendrá las vulnerabilidades A06 la cual se aprovecha de los componentes vulnerables y desactualizados y A10 que permite que un atacante coaccione a la aplicación para que envíe una solicitud falsificada a un destino inesperado, listadas en el OWASP Top Ten.
+
+Se profundizará en la explicación de cada una de estas vulnerabilidades, comprendiendo su funcionamiento, cómo pueden ser explotadas y en qué campos específicos se aplican. Además, se detallará cómo implementar estas vulnerabilidades en una máquina Docker.
