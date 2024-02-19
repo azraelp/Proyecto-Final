@@ -5,5 +5,5 @@
 - [x] Lectura del enunciado.
 - [x] Creación de un canal de comunicación con los compañeros de equipo.
 - [ ] Entendimiento del enunciado.
-- [x] Entendimiento de las ramas en **GitHub**
+- [x] Entendimiento de las ramas en **GitHub**.
 - [x] Descarga de GitHub Desktop y aprender como se usa.
