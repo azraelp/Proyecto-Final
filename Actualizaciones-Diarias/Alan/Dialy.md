@@ -6,4 +6,6 @@
 - [ ] Identificación de recursos necesarios.
 - [ ] Organización de reuniones de seguimiento.
 
+> blockquote
+
 # Martes 20 de febrero 2024:
