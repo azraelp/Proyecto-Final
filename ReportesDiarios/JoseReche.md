@@ -9,4 +9,5 @@
 ## Martes 20/02/2024
 
 - Testear DockerFiles.
-- Passar mi repositorio local al repositorio del proyecto.
+- Pasar mi repositorio local al repositorio del proyecto.
+- I+D en Docker
