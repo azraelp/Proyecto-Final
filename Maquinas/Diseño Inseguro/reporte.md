@@ -12,3 +12,5 @@
         - Escalada a root
         - Contenido de la flag
     6. Añadir una o dos CVE
+        - CWE-522: Credenciales insuficientemente protegidas
+            * hola
