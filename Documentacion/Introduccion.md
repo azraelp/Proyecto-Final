@@ -126,6 +126,6 @@ Aquí tienes algunas ventajas y desventajas de usar Docker:
 
 - **Seguridad:** Aunque Docker proporciona un alto nivel de aislamiento entre contenedores, aún existen posibles vulnerabilidades de seguridad, especialmente si no se siguen las mejores prácticas de seguridad al crear y configurar imágenes de contenedores o al exponer servicios a través de redes públicas.
 
--**Rendimiento:** Aunque los contenedores Docker son ligeros y eficientes en recursos, puede haber un pequeño costo de rendimiento asociado con la virtualización a nivel de contenedor en comparación con la ejecución de aplicaciones directamente en el sistema operativo host.
+- **Rendimiento:** Aunque los contenedores Docker son ligeros y eficientes en recursos, puede haber un pequeño costo de rendimiento asociado con la virtualización a nivel de contenedor en comparación con la ejecución de aplicaciones directamente en el sistema operativo host.
 
 
