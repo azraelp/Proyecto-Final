@@ -8,7 +8,7 @@
 
 # Martes 20 de febrero 2024:
 
-- [ ] Investigación sobre las dos vulnerabilidades OWASP Top Ten Web y análisis.
-- [ ] Documentar el documento principal con la información de las vulnerabilidades.
+- [X] Investigación sobre las dos vulnerabilidades OWASP Top Ten Web y análisis.
+- [X] Documentar el documento principal con la información de las vulnerabilidades.
 - [ ] Organización, planificación y distribución de tareas del día.
 - [ ] Seguimiento del proyecto y evaluación.
