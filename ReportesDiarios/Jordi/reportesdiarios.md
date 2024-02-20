@@ -22,7 +22,7 @@
 
 - Ampliación de la información en el documento [TrabajoFinal.md](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo1(Jordi-JoanMaria-Genis)/Documentacion/TrabajoFinal.md).
     - Buscar información de las vulnerabilidades asignadas del OWASP Top 10.
-- Crecion de subdirecrios para la organizacion de las maquinas
+- Crecion de subdirecrios para la organizacion de las maquinas.
 	- Tambien hemos creado los documnteos que van a contener la informacion basica de cada maquina. 
 - Investigacion profunda de las vulnerabilidades asignadas y de los CVEs de 2023 para una correcta implementacion.
 - Planificacion y diseño de la primera maquina, así como los servicios que van a correr en ella.
