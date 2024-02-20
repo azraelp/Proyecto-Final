@@ -21,9 +21,9 @@ Es probable que tengas esta vulnerabilidad si:
 
  - El software es vulnerable, no es compatible o está desactualizado. Esto incluye el sistema operativo, el servidor web/aplicación, el sistema de gestión de bases de datos (DBMS), las aplicaciones, las API y todos los componentes, entornos de tiempo de ejecución y bibliotecas.
 
- - No escaneas regularmente en busca de vulnerabilidades y no te suscribes a boletines de seguridad relacionados con los componentes que utilizas.
+ - Regularmente no buscas vulnerabilidades y no te suscribes a boletines de seguridad relacionados con los componentes que utilizas.
 
- - No solucionas ni actualizas la plataforma subyacente, los marcos de trabajo y las dependencias de manera oportuna y basada en riesgos. Esto suele ocurrir en entornos donde el parcheo es una tarea mensual o trimestral bajo control de cambios, lo que deja a las organizaciones expuestas durante días o meses a vulnerabilidades ya corregidas.
+ - No solucionas ni actualizas la plataforma subyacente, los frameworks y las dependencias en un sistema basado en riesgos. Esto suele ocurrir en entornos donde el parcheo es una tarea mensual o trimestral bajo control de cambios, lo que deja a las organizaciones expuestas durante días o meses a vulnerabilidades ya corregidas.
 
  - Los desarrolladores de software no prueban la compatibilidad de las bibliotecas actualizadas, mejoradas o parcheadas.
 
