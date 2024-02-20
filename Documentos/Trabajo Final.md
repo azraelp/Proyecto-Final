@@ -50,6 +50,43 @@ Debería existir un proceso de gestión de parches para:
 
 ## Mitigación
 
+1. **Implementar un sólido proceso de gestión de parches:**<br>
+
+ - Establecer un proceso de gestión de parches que incluya la eliminación regular de dependencias, características, componentes, archivos y documentación no utilizados para reducir la superficie de ataque.
+
+ - Realizar un inventario continuo de los componentes tanto del lado del cliente como del servidor y de sus dependencias. Utilizar herramientas como OWASP Dependency Check, retire.js u otras soluciones similares para automatizar este proceso. Monitorizar regularmente las Vulnerabilidades Comunes y Expuestas (CVE) y la Base de Datos Nacional de Vulnerabilidades (NVD) en busca de vulnerabilidades en estos componentes. Emplear herramientas de análisis de composición de software para agilizar este esfuerzo. Además, suscribirse a alertas por correo electrónico sobre vulnerabilidades de seguridad relacionadas con los componentes que se utilizan.
+
+ - Adquirir únicamente componentes de fuentes oficiales a través de enlaces seguros, favoreciendo los paquetes firmados para mitigar el riesgo de incluir componentes modificados o maliciosos.
+
+ - Mantener una vigilancia constante sobre las bibliotecas y componentes que no están mantenidos o no proporcionan parches de seguridad para versiones antiguas. Si la aplicación de parches no es factible, considerar la implementación de parches virtuales para monitorear, detectar o protegerse contra las vulnerabilidades identificadas.
+
+ - Establecer un plan continuo para monitorear, clasificar y aplicar actualizaciones o cambios de configuración a lo largo de la vida útil de la aplicación o el portafolio.
+
+2. **Auditorías y pruebas de seguridad regulares:**<br>
+
+ - Realizar auditorías de seguridad regulares y pruebas de penetración para identificar vulnerabilidades en los componentes y abordarlas de manera oportuna.
+
+ - Asegurar que los desarrolladores de software prueben rigurosamente la compatibilidad de las bibliotecas actualizadas, mejoradas o parcheadas para evitar problemas de integración o consecuencias no deseadas.
+
+3. **Medidas de seguridad mejoradas:**<br>
+
+ - Reforzar las medidas de seguridad para detectar y mitigar posibles ataques dirigidos a componentes vulnerables.
+
+ - Emplear sistemas de detección de intrusos (IDS) o sistemas de prevención de intrusiones (IPS) para monitorear y bloquear actividades sospechosas relacionadas con vulnerabilidades en los componentes.
+
+ - Utilizar herramientas automatizadas de escaneo de vulnerabilidades para identificar y remediar vulnerabilidades de manera oportuna.
+
+4. **Educación y concienciación:**<br>
+
+ - Educar a los equipos de desarrollo sobre la importancia de la gestión de vulnerabilidades de componentes y proporcionar capacitación sobre las mejores prácticas para la codificación segura, la aplicación de parches y la gestión de dependencias.
+
+ - Fomentar una cultura de conciencia de seguridad dentro de la organización, enfatizando la responsabilidad compartida de todos los interesados en mantener la seguridad del ecosistema de software.
+
+5. **Evaluación integral de riesgos:** <br>
+
+ - Realizar evaluaciones regulares de riesgos para evaluar el impacto de las vulnerabilidades de los componentes en la postura de seguridad general del sistema. Priorizar los esfuerzos de remediación en función de la gravedad de las vulnerabilidades y el impacto potencial en las operaciones comerciales.
+
+ - Al implementar estas estrategias de mitigación, las organizaciones pueden reducir significativamente el riesgo causado por componentes vulnerables y obsoletos, mejorando la resiliencia de la seguridad de sus aplicaciones web contra la explotación y el acceso no autorizado.
 
 
 
