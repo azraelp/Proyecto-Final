@@ -139,9 +139,8 @@ Validar adecuadamente todas las entradas de usuario que la aplicación utiliza p
 
 ## Mitigación
 
-- **Limitar las solicitudes salientes:** <br>
-
-- **Hacer copias de seguridad** <br>
+- **Controles de aplicaciones:** <br>
+Una de las opciones seria mediante controles de capa de la aplicación, de esta forma la aplicación puede verificar que una dirección destino este permitida antes de crear una conexión.
 
 - **Deshabilitar esquemas de URL no utilizados:** <br>
 Desactivar esquemas de urls antiguos (como file:///, ftp://), ya que las aplicaciones realizan sus solicitudes utilizando http o https por lo que solo deben permitirse estos patrones de url.
