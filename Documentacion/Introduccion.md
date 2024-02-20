@@ -83,6 +83,11 @@ Las fallas de identificación y autenticación se refieren a problemas relaciona
 - **Actualizaciones y Parches:** Mantén actualizados los sistemas y aplicaciones para asegurarte de que se hayan corregido las vulnerabilidades conocidas relacionadas con la autenticación y la gestión de identidades.
 
 
+  # Docker
+
+  ## Que es Docker ?
+
+
 
 
  
