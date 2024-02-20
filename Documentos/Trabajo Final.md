@@ -15,7 +15,7 @@ Esta vulnerabilidad ocupa el sexto puesto en el Top Ten de OWASP, se aprovecha d
 
 ### ¿Cómo funciona?
 
-Es probable que :
+Es probable que tengas esta vulnerabilidad si:
 
  - No conoces las versiones de todos los componentes que utilizas (tanto del lado del cliente como del servidor). Esto incluye los componentes que utilizas directamente, así como las dependencias anidadas.
 
