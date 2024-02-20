@@ -57,7 +57,7 @@ Para prevenir los ataques de inyección aqui que tener algunas medidas de las si
 
 - **Educación y Concienciación:** Capacita a los desarrolladores, administradores de sistemas y usuarios finales sobre las mejores prácticas de seguridad.
 
-# A07:2021-Fallas de Identificación y Autenticación
+# Fallas de Identificación y Autenticación
 
 Las fallas de identificación y autenticación se refieren a problemas relacionados con la gestión de credenciales de usuario y los procesos de verificación de identidad en sistemas informáticos. Estas fallas pueden permitir a los atacantes acceder de forma no autorizada a sistemas, datos o recursos protegidos.
 
