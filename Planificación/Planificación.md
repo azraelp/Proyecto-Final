@@ -1,4 +1,4 @@
-# ﻿Planificación Proyecto Final
+# ﻿*Planificación Proyecto Final*
 
 
 En el proyecto se deberán crear 2 máquinas en docker con vuestras respectivas vulnerabilidades de OWASP Top 10 web en cada, cada máquina deberá disponer de diferentes vulnerabilidades en general, los CVE’s de estas siendo de 2023 para adelante, no se permiten CVE’s anteriores.
@@ -12,7 +12,7 @@ Se deben entregar 2 versiones de cada máquina, una en estado inicial para ser e
 ### Las vulnerabilidades que tenemos son las siguientes: 
 * ## A04:2021 - Diseño Inseguro:
   
-  ### ·Ejemplos de esta vulnerabilidad:
+  ### Ejemplos de esta vulnerabilidad:
   
 1. Falta de Principio de Menor Privilegio:
 
