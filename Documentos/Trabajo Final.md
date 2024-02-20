@@ -30,6 +30,7 @@ Es probable que tengas esta vulnerabilidad si:
 ## Prevención
 
 
+
 ## Mitigación
 
 
