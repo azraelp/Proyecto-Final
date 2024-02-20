@@ -29,7 +29,17 @@ Es probable que tengas esta vulnerabilidad si:
 
 ## Prevención
 
+Debería existir un proceso de gestión de parches para:
 
+ - Eliminar dependencias no utilizadas, características innecesarias, componentes, archivos y documentación.
+
+ - Realizar un inventario continuo de las versiones de los componentes tanto del lado del cliente como del servidor (por ejemplo, marcos de trabajo, bibliotecas) y sus dependencias utilizando herramientas como versions, OWASP Dependency Check, retire.js, etc. Monitorear continuamente fuentes como Common Vulnerability and Exposures (CVE) y National Vulnerability Database (NVD) en busca de vulnerabilidades en los componentes. Utilizar herramientas de análisis de composición de software para automatizar el proceso. Suscribirse a alertas por correo electrónico sobre vulnerabilidades de seguridad relacionadas con los componentes que se utilizan.
+
+ - Obtener los componentes únicamente de fuentes oficiales a través de enlaces seguros. Preferir paquetes firmados para reducir la posibilidad de incluir un componente modificado y malicioso (ver A08:2021-Fallos en la Integridad de Software y Datos).
+
+ - Monitorear las bibliotecas y componentes que no están mantenidos o que no crean parches de seguridad para versiones antiguas. Si no es posible aplicar parches, considerar implementar un parche virtual para monitorear, detectar o proteger contra el problema descubierto.
+
+ - Cada organización debe asegurar un plan continuo para monitorear, clasificar y aplicar actualizaciones o cambios de configuración durante toda la vida útil de la aplicación o el portafolio.
 
 ## Mitigación
 
