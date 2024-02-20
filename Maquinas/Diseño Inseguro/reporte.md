@@ -8,6 +8,7 @@
         - Con usuarios
         - Puedan subir y leer archivos
     5. Escalada de privilegios
-        - pivoting de usuarios(Permisos restringidos en algunos usuarios)
-        - escalada a root
+        - Pivoting de usuarios(Permisos restringidos en algunos usuarios)
+        - Escalada a root
+        - Contenido de la flag
     6. Añadir una o dos CVE
