@@ -65,7 +65,7 @@ Mantener actualizados las aplicaciones y todas sus dependencias para mitigar pos
 - **Limitación de privilegios:** <br>
 Restringir los privilegios de las solicitudes realizadas por la aplicación
 
-- **Validación de entradas: ** <br>
+- **Validación de entradas:** <br>
 Validar adecuadamente todas las entradas de usuario que la aplicación utiliza para formar solicitudes. 
 
 
