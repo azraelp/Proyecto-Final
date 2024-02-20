@@ -38,3 +38,9 @@ Si la aplicación tiene la capacidad de interactuar con servicios que hay en nub
 
 6. **Ataques a servicios internos:** <br>
 Por ultimo el atacante obtendrá el control para lanzar ataques contra otros servicios internos.
+
+## Prevencion
+
+## Mitigacion
+
+
