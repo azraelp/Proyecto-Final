@@ -6,6 +6,6 @@
 ## 20/02/24 Reporte Diario
 
 - [X] Planificación y organización del proyecto
-- [X] Investigación sobre CVE que vamos a eligir
+- [X] Investigación sobre CVE y cual vamos a eligir
 - [X] Planificacióm sobre que vamos hacer el proyecto(En que se va abasar)
 - [X] Planificación del contenido de las maquinas(que es lo que tendrá)
