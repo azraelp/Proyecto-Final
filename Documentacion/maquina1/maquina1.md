@@ -1,8 +1,13 @@
 # Info Maquina 1
 
+<<<<<<< HEAD
 ## Objetivo y plantemiento
 Esta maquina va ser diseñanada para explotar la vulneravilidad ***A05:2021 - Configuración de Seguridad Incorrecta***.
 Para ello va a alojar varios servidores, ftp,ssh y un apache que va a alojar un wordpres. El servidor ftp va a ser eccecible de manera anonima, y en el se encontraran las credneciales para acceder al wordpres desde el cual se podra conseguir una reverse shell al servidor como el usuaio www-data. Desde el usuario www-data no sera posible acceder como root, primero tendras que hacer movimiento lateral hacia otro usuairo local desde el cual si se podra acceder como root.
+=======
+## Objetivo
+Esta maquina va ser diseñanada para explotar la vulneravilidad **A05:2021 - Configuración de Seguridad Incorrecta**.
+>>>>>>> 3772620667b2b434955a711346f1752b5c65f2c5
 
 ## Configuración del entorno
 Para ello, vamos a crear un contenedor Docker con el sistema operativo Ubuntu Server. Los servicios que vamos a utilizar son:

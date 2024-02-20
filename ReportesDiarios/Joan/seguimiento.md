@@ -9,3 +9,6 @@
 ## Martes 20/02/2024
 
 - [x] Investigación de CVE relacionados con nuestras vulnerabilidades
+- [x] Reparto de tareas
+- [x] Lluvia de ideas para la primera máquina
+- [x] Planificación de la primera máquina
