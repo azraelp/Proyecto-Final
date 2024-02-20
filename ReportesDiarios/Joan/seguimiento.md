@@ -8,7 +8,8 @@
 
 ## Martes 20/02/2024
 
-- [x] Investigación de CVE relacionados con nuestras vulnerabilidades
-- [x] Reparto de tareas
-- [x] Lluvia de ideas para la primera máquina
+- [x] Primera reunion formal con los compañeros
+- [x] Investigación de los CVE relacionados con nuestras vulnerabilidades asignadas del OWASP Top Ten
+- [x] Reparto de tareas a realizar con los compañeros de equipo
+- [x] Lluvia de ideas para la realización de la primera máquina
 - [x] Planificación de la primera máquina
