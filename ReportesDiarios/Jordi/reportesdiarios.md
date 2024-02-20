@@ -22,3 +22,5 @@
 
 - Ampliación de la información en el documento [TrabajoFinal.md](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo1(Jordi-JoanMaria-Genis)/Documentacion/TrabajoFinal.md).
     - Buscar información de las vulnerabilidades asignadas del OWASP Top 10.
+- Crecion de subdirecrios para la organizacion de las maquinas
+	- Tambien he creado los documnteos que van a contener la informacion basica de cada maquina. 
