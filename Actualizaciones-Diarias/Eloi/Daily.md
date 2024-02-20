@@ -8,7 +8,9 @@
 
 # Martes 20 de febrero 2024:
 
-- [ ] Descargar Kali.
-- [ ] Especificaion de utilidades que tendra el docker.
-- [ ] Preparacion basica de docker.
+- [X] Descargar Kali.
+- [X] Especificaion de utilidades que tendra el docker SSRF.
+- [X] Creacion docker file.
+- [X] Añadido apartado Docker SSRF al documento principal.
+- [ ] Puesta en marcha del docker SSRF.
 
