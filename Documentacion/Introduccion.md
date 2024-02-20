@@ -1,4 +1,18 @@
+# Índice
 
+1. [Introducción](#introducción)
+2. [A03:2021 - Inyección](#a03-2021---inyección)
+    - [Definición de la vulnerabilidad](#definición-de-la-vulnerabilidad)
+    - [Descripción de diferentes tipos de ataques de inyección](#descripción-de-diferentes-tipos-de-ataques-de-inyección)
+    - [Medidas para prevenir ataques de inyección](#medidas-para-prevenir-ataques-de-inyección)
+3. [A07:2021 - Fallas de Identificación y Autenticación](#a07-2021---fallas-de-identificación-y-autenticación)
+    - [Definición de la vulnerabilidad](#definición-de-la-vulnerabilidad-1)
+    - [Descripción de causas comunes de fallas de identificación y autenticación](#descripción-de-causas-comunes-de-fallas-de-identificación-y-autenticación)
+    - [Medidas para mitigar fallas de identificación y autenticación](#medidas-para-mitigar-fallas-de-identificación-y-autenticación)
+4. [Docker](#docker)
+    - [Definición de Docker](#definición-de-docker)
+    - [Características de Docker](#características-de-docker)
+    - [Ventajas y desventajas de usar Docker](#ventajas-y-desventajas-de-usar-docker)
 
 # Introducción
 En esta documentacion  sé explicara  la creación de una máquina Docker con las siguientes vulnerabilidades:
@@ -105,9 +119,8 @@ Las fallas de identificación y autenticación se refieren a problemas relaciona
 - **Reutilización de Imágenes:** Docker utiliza un modelo de imágenes y contenedores que fomenta la reutilización y compartición de imágenes de aplicaciones entre desarrolladores y equipos.
 
   
-Aquí tienes algunas ventajas y desventajas de usar Docker:
-
-## Ventajas:
+## Ventajas y desventajas de usar Docker
+ **Ventajas:**
 
 - **Portabilidad:** Los contenedores Docker proporcionan una forma fácil y rápida de empaquetar una aplicación y todas sus dependencias en un entorno aislado.
 
@@ -119,7 +132,7 @@ Aquí tienes algunas ventajas y desventajas de usar Docker:
 
 - **Facilidad de Uso:** Docker proporciona una interfaz de línea de comandos intuitiva y herramientas de gestión como Docker Compose, que simplifican la creación, ejecución y gestión de contenedores y aplicaciones. Esto hace que sea fácil para los desarrolladores y los equipos de operaciones trabajar con contenedores y mantener aplicaciones en producción.
 
-## Desventajas:
+**Desventajas:**
 
 - **Comunidad Fragmentada:** Aunque Docker es una plataforma de código abierto con una gran comunidad de usuarios y contribuidores, la rápida evolución de la tecnología de contenedores ha dado lugar a la aparición de múltiples estándares y herramientas de orquestación, lo que puede llevar a una fragmentación y falta de estandarización en el ecosistema de contenedores.
 
