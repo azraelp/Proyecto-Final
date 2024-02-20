@@ -13,3 +13,5 @@
 - Recuento de ideas para posibles vulnerabilidades con las diferentes maquinas.
 - Instalacion de maquina virtual para probar a subir imagen docker a github, y poder llevar un seguimiento de ello.
 
+ ## Miercoles 21/02/2024
+
