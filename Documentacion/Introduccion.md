@@ -29,21 +29,21 @@ En la documentacion se explicara mas en profundidad las vuldenabilidades , como 
 Para prevenir los ataques de inyección aqui que tener algunas medidas de las siguientes medidas:
 
 
--**Validación de Entradas de Usuario:** Valida y filtra todas las entradas de usuario.
+- **Validación de Entradas de Usuario:** Valida y filtra todas las entradas de usuario.
 
--**Parámetros Preparados:** Utiliza parámetros preparados o consultas parametrizadas en lugar de concatenar cadenas para construir consultas SQL.
+- **Parámetros Preparados:** Utiliza parámetros preparados o consultas parametrizadas en lugar de concatenar cadenas para construir consultas SQL.
 
--**Escapado de Caracteres:** Escapa los caracteres especiales antes de incluirlos en consultas SQL u otras estructuras de lenguajes de programación para evitar que sean interpretados como parte de un comando malicioso.
+- **Escapado de Caracteres:** Escapa los caracteres especiales antes de incluirlos en consultas SQL u otras estructuras de lenguajes de programación para evitar que sean interpretados como parte de un comando malicioso.
 
--**Validación de Datos de Formulario:** Valida y filtra los datos de los formularios antes de procesarlos en el servidor. 
+- **Validación de Datos de Formulario:** Valida y filtra los datos de los formularios antes de procesarlos en el servidor. 
 
--**Limitar Privilegios:** Asegúrate de que las cuentas de usuario y los servicios tengan los privilegios mínimos necesarios para realizar sus funciones.
+- **Limitar Privilegios:** Asegúrate de que las cuentas de usuario y los servicios tengan los privilegios mínimos necesarios para realizar sus funciones.
 
--**Actualizaciones y Parches:** Mantén actualizados todos los software y frameworks utilizados en tu aplicación para asegurarte de que se hayan corregido las vulnerabilidades conocidas.
+- **Actualizaciones y Parches:** Mantén actualizados todos los software y frameworks utilizados en tu aplicación para asegurarte de que se hayan corregido las vulnerabilidades conocidas.
 
--**Seguridad en la Capa de Red:** Utiliza firewalls y sistemas de detección de intrusiones para monitorear y filtrar el tráfico malicioso que podría contener intentos de ataques de inyección.
+- **Seguridad en la Capa de Red:** Utiliza firewalls y sistemas de detección de intrusiones para monitorear y filtrar el tráfico malicioso que podría contener intentos de ataques de inyección.
 
--**Educación y Concienciación:** Capacita a los desarrolladores, administradores de sistemas y usuarios finales sobre las mejores prácticas de seguridad.
+- **Educación y Concienciación:** Capacita a los desarrolladores, administradores de sistemas y usuarios finales sobre las mejores prácticas de seguridad.
 
 # A07:2021 - Fallas de Identificación y Autenticación
 
@@ -67,19 +67,19 @@ Las fallas de identificación y autenticación se refieren a problemas relaciona
 
  ## Mitigar de fallas de identificación y autenticación:
 
--Contraseñas Seguras: Fomenta el uso de contraseñas seguras entre los usuarios. Esto implica establecer requisitos mínimos de complejidad de contraseña (longitud, caracteres especiales, combinación de letras mayúsculas y minúsculas, etc.) y educar a los usuarios sobre la importancia de evitar contraseñas fáciles de adivinar.
+- **Contraseñas Seguras:** Establecer requisitos mínimos de complejidad de contraseña (longitud, caracteres especiales, combinación de letras mayúsculas y minúsculas, etc.) y educar a los usuarios sobre la importancia de evitar contraseñas fáciles de adivinar.
 
--Autenticación Multifactor (MFA): Implementa la autenticación multifactor para agregar una capa adicional de seguridad. Esto puede incluir el uso de códigos de verificación enviados a dispositivos móviles, tokens de seguridad físicos o biométricos, además de las credenciales de usuario estándar.
+- **Autenticación Multifactor:** Implementa la autenticación multifactor para agregar una capa adicional de seguridad.
+  
+- **Gestión de Sesiones:** Implementa mecanismos para gestionar adecuadamente las sesiones de usuario, como tiempos de expiración de sesión, cierre de sesión automático después de períodos de inactividad.
+  
+- **Protección contra Ataques de Fuerza Bruta:** Bloqueo de cuentas después de varios intentos de inicio de sesión fallidos, implementación de reCAPTCHA o CAPTCHA.
 
--Gestión de Sesiones: Implementa mecanismos para gestionar adecuadamente las sesiones de usuario, como tiempos de expiración de sesión, cierre de sesión automático después de períodos de inactividad y la capacidad de cerrar sesión activamente desde múltiples dispositivos.
+- **Monitoreo de Actividad de Usuario:** Implementa sistemas de monitoreo para detectar y responder a actividades de usuario anómalas o maliciosas..
 
--Protección contra Ataques de Fuerza Bruta: Implementa medidas para proteger contra ataques de fuerza bruta, como bloqueo de cuentas después de varios intentos de inicio de sesión fallidos, implementación de reCAPTCHA o CAPTCHA, y uso de mecanismos de detección de anomalías para identificar patrones de actividad sospechosa.
+- **Educación del Usuario:** Educa a los usuarios sobre prácticas seguras de autenticación, como no compartir contraseñas, evitar el uso de la misma contraseña.
 
--Monitoreo de Actividad de Usuario: Implementa sistemas de monitoreo para detectar y responder a actividades de usuario anómalas o maliciosas. Esto puede incluir la detección de intentos de inicio de sesión desde ubicaciones geográficas inusuales, patrones de acceso inusuales o intentos repetidos de autenticación fallidos.
-
--Educación del Usuario: Educa a los usuarios sobre prácticas seguras de autenticación, como no compartir contraseñas, evitar el uso de la misma contraseña en múltiples servicios y estar atentos a los intentos de phishing y otros ataques de ingeniería social.
-
--Actualizaciones y Parches: Mantén actualizados los sistemas y aplicaciones para asegurarte de que se hayan corregido las vulnerabilidades conocidas relacionadas con la autenticación y la gestión de identidades.
+- **Actualizaciones y Parches:** Mantén actualizados los sistemas y aplicaciones para asegurarte de que se hayan corregido las vulnerabilidades conocidas relacionadas con la autenticación y la gestión de identidades.
 
 
 
