@@ -1,10 +1,10 @@
 # Índice
 
 1. [Introducción](#introducción)
-2. [A03:2021 Inyección](#a03-2021-inyección)
+2. [Inyección](#inyección)
     - [Descripción de diferentes tipos de ataques de inyección](#descripción-de-diferentes-tipos-de-ataques-de-inyección)
     - [Medidas para prevenir ataques de inyección](#medidas-para-prevenir-ataques-de-inyección)
-3. [A07:2021 Fallas de Identificación y Autenticación](#a07-2021-fallas-de-identificación-y-autenticación)
+3. [Fallas de Identificación y Autenticación](#fallas-de-identificación-y-autenticación)
     - [Causas comunes de fallas de identificación y autenticación](#causas-comunes-de-fallas-de-identificación-y-autenticación)
     - [Medidas para mitigar fallas de identificación y autenticación](#medidas-para-mitigar-fallas-de-identificación-y-autenticación)
 4. [Docker](#docker)
@@ -20,7 +20,7 @@ En esta documentacion  sé explicara  la creación de una máquina Docker con la
 En la documentacion se explicara mas en profundidad las vuldenabilidades , como usar la vulnerabilidad y explotarla al maximo.
 
 
-# A03:2021-Inyección	
+# Inyección	
 
 
  Es un ataque que implica la inserción de código malicioso en una entrada de datos para manipular el comportamiento de un sistema y obtener acceso no autorizado o realizar acciones no deseadas.
