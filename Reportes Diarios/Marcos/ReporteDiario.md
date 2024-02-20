@@ -21,3 +21,5 @@ Durante el dia de hoy he realizado las siguientes tareas:
 - Investigar que son los DockerFiles y como crearlos
 
 - Crear una maquina virtual en Kali Linux para poder almacenar y ejecutar los Docker
+
+- Crear un documento interno acerca de DockerHub
