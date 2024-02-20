@@ -66,9 +66,9 @@
 
 ## Diferencias entre estas vulnerabilidades:
 
-El **diseño inseguro** se refiere a problemas fundamentales en la concepción y planificación de un sistema, aplicación o red desde el principio.
+· El **diseño inseguro** se refiere a problemas fundamentales en la concepción y planificación de un sistema, aplicación o red desde el principio.
 
-Las **fallas en el sofware y en la inegridad de los datos** se centran en problemas específicos relacionados con la implementación de software y el manejo de datos, ya sea durante el desarrollo o en el funcionamiento del sistema.
+· Las **fallas en el sofware y en la inegridad de los datos** se centran en problemas específicos relacionados con la implementación de software y el manejo de datos, ya sea durante el desarrollo o en el funcionamiento del sistema.
 
 
 
