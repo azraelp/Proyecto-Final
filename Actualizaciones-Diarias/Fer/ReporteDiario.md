@@ -1,8 +1,8 @@
 ## Lunes 19 de febrero 2024 <br>
+✅ Creacion de la carpeta y del archivo del reporte diario.
+✔️ Organizacion del equipo
 
-- [x] Creacion de la rama 
-
-Hoy he creado el archivo para el reporte diario, tambien he añadido contenido al proyecto final poniendo información del ataque "Falsificación de Solicitudes del Lado del Servidor" 
+tambien he añadido contenido al proyecto final poniendo información del ataque "Falsificación de Solicitudes del Lado del Servidor" 
 (Que esta incompleto, ya que faltan mas puntos por explicar).
 
 ## Martes 20 de febrero 2024 <br>
