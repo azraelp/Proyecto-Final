@@ -10,7 +10,12 @@ Se debe documentar como explotar y analizar la máquina, por lo que esta deberá
 Se deben entregar 2 versiones de cada máquina, una en estado inicial para ser explotada, y otra ya explotada para realizar la investigación, todo esto en docker.
 
 ### Las vulnerabilidades que tenemos son las siguientes: 
-* A04:2021 - Diseño Inseguro
+* ## A04:2021 - Diseño Inseguro:
+  ### Ejemplos de esta vulnerabilidad:
+  
+  **Configuración de red insegura:** Permitir acceso no restringido a servicios o puertos sin la debida protección puede exponer la máquina a posibles ataques.
+  **Configuración débil de usuarios y contraseñas:** Si los usuarios y contraseñas no se gestionan adecuadamente, podría ser más fácil para los atacantes obtener acceso no autorizado.
+  
 * A08:2021 - Fallas en el Software y en la Integridad de los Datos
 
 Crearemos la estructura de carpetas y definir sus nombres.
