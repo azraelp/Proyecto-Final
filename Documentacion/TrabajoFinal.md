@@ -21,3 +21,6 @@ Esta vulnerabilidad se refiere a errores o fallos en la configruacion del servid
 - No enviar la información necesaria para proteger el sistema a través del servidor.
 - Usar software que no está actualizado o que tiene vulnerabilidades conocidas, lo que hace que sea más fácil para los atacantes ingresar al sistema.
 
+# A09:2021 - Fallas en el Registro y Monitoreo
+
+Esta vulnerabilidad se refiere a la falta de un registro y monitoreo adecuados en un sistema informático o red. Esto significa que no se están registrando adecuadamente eventos importantes, como intentos de acceso no autorizado o cambios en la configuración del sistema. Además, puede indicar que no se están monitoreando de manera efectiva los registros existentes para detectar posibles anomalías o actividades sospechosas. Esta falta de registro y monitoreo puede dificultar la detección temprana de ataques cibernéticos o actividades maliciosas, lo que aumenta el riesgo de compromiso de la seguridad del sistema.
