@@ -52,7 +52,7 @@ Debería existir un proceso de gestión de parches para:
 
 1. **Implementar un sólido proceso de gestión de parches:**<br>
 
- - Establecer un proceso de gestión de parches que incluya la eliminación regular de dependencias, características, componentes, archivos y documentación no utilizados para reducir la superficie de ataque.
+    - Establecer un proceso de gestión de parches que incluya la eliminación regular de dependencias, características, componentes, archivos y documentación no utilizados para reducir la superficie de ataque.
 
  - Realizar un inventario continuo de los componentes tanto del lado del cliente como del servidor y de sus dependencias. Utilizar herramientas como OWASP Dependency Check, retire.js u otras soluciones similares para automatizar este proceso. Monitorizar regularmente las Vulnerabilidades Comunes y Expuestas (CVE) y la Base de Datos Nacional de Vulnerabilidades (NVD) en busca de vulnerabilidades en estos componentes. Emplear herramientas de análisis de composición de software para agilizar este esfuerzo. Además, suscribirse a alertas por correo electrónico sobre vulnerabilidades de seguridad relacionadas con los componentes que se utilizan.
 
