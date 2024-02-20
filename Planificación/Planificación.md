@@ -12,7 +12,7 @@ Se deben entregar 2 versiones de cada máquina, una en estado inicial para ser e
 ### Las vulnerabilidades que tenemos son las siguientes: 
 * ## A04:2021 - Diseño Inseguro:
   
-  ### - Ejemplos de esta vulnerabilidad:
+  ### ·Ejemplos de esta vulnerabilidad:
   
 1. Falta de Principio de Menor Privilegio:
 
