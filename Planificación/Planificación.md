@@ -16,9 +16,9 @@ Se deben entregar 2 versiones de cada máquina, una en estado inicial para ser e
   
 1. Falta de Principio de Menor Privilegio:
 
-        **Descripción:** Concede a los usuarios más privilegios de los necesarios para realizar sus tareas.
+      **Descripción:** Concede a los usuarios más privilegios de los necesarios para realizar sus tareas.
    
-        **Problema de Seguridad:** Si un usuario tiene más permisos de los necesarios, podría abusar de ellos o ser blanco de ataques que aprovechen esos privilegios.
+      **Problema de Seguridad:** Si un usuario tiene más permisos de los necesarios, podría abusar de ellos o ser blanco de ataques que aprovechen esos privilegios.
 
 3. Autenticación y Autorización Inadecuadas:
 
