@@ -21,3 +21,4 @@
         5. Escalada de privilegios
             - pivoting de usuarios(Permisos restringidos en algunos usuarios)
             - escalada a root
+        6. Añadir una o dos CVE
