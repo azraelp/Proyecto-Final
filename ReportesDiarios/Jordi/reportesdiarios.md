@@ -24,3 +24,4 @@
     - Buscar información de las vulnerabilidades asignadas del OWASP Top 10.
 - Crecion de subdirecrios para la organizacion de las maquinas
 	- Tambien he creado los documnteos que van a contener la informacion basica de cada maquina. 
+- Investigacion profunda de las vulnerabilidades asignadas y de los CVEs de 2023 para una correcta implementacion.
