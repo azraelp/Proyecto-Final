@@ -6,3 +6,6 @@
 - Revisar Documentación de Github
 
 ## Martes 20/02/2024
+
+ - Busqueda de informacion del las vurnabilidades
+ 
