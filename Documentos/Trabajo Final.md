@@ -13,11 +13,11 @@ Esta vulnerabilidad ocupa el sexto puesto en el Top Ten de OWASP, se aprovecha d
 
 ## A10:2021 - Falsificación de Solicitudes del Lado del Servidor
 
-### ¿Que es SSRF?
+### ¿Qué es SSRF?
 
 Server-Side Request Forgery (SSRF) es una vulnerabilidad de la seguridad web que permite al atacante manipular una aplicación para que realice solicitudes no autorizadas a recursos internos o externos a través del servidor en que se ejecuta la aplicación.
 
-### Como funciona
+### ¿Cómo funciona?
 
 El ataque funciona explotando la capacidad de una aplicación para realizar solicitudes a recursos externos, como URLs, servicios web, etc. El ataque se desglosaría en estas fases:
 
