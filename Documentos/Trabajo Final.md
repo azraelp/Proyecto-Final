@@ -47,6 +47,7 @@ Debería existir un proceso de gestión de parches para:
 
  - Cada organización debe asegurar un plan continuo para monitorear, clasificar y aplicar actualizaciones o cambios de configuración durante toda la vida útil de la aplicación o el portafolio.
 
+
 ## Mitigación
 
 
