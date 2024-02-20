@@ -1,4 +1,4 @@
-# Reporte 19 de Febrero de 2024
+# Reporte 19 de febrero de 2024
 
 
 - Aprender como funciona *GitHub*.
@@ -11,13 +11,14 @@
 
 - Recolectar información sobre las vulnerabilidades asignadas.
 
-	- A05:2021 - Configuración de Seguridad Incorrecta
+    - A05:2021 - Configuración de Seguridad Incorrecta.
 
-	- A09:2021 - Fallas en el Registro y Monitoreo
+    - A09:2021 - Fallas en el Registro y Monitoreo.
 
-   Creacion del docuemnto principal para el pryecto.
+   Creación del documento principal para el proyecto.
 
-# Reporte 20 de Febrero de 2024
+# Reporte 20 de febrero de 2024
 
 
-- Ampliacion de la infromacion en el documento [TrabajoFinal.md](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo1(Jordi-JoanMaria-Genis)/Documentacion/TrabajoFinal.md)
+- Ampliación de la información en el documento [TrabajoFinal.md](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo1(Jordi-JoanMaria-Genis)/Documentacion/TrabajoFinal.md).
+    - Buscar información de las vulnerabilidades asignadas del OWASP Top 10.
