@@ -26,18 +26,18 @@ El proyecto se realizará en grupos de 3, con uno siendo de 4. La nota del proye
 
 Los grupos están compuestos de la siguiente forma:
 
-| Grupo X | Integrante | Integrante | Integrante | Integrante |
-| --- | --- | --- | --- | --- |
-| Grupo 1 | Jordi | Joan María | Genís |     |
-| --- | --- | --- | --- | --- |
-| Grupo 2 | Marc Pozo | Joan Escandell | Marc Hannouti |     |
-| --- | --- | --- | --- | --- |
-| Grupo 3 | Michael | Paola | Jose R. |     |
-| --- | --- | --- | --- | --- |
-| Grupo 4 | Marcos | Aaron | Andrades |     |
-| --- | --- | --- | --- | --- |
-| Grupo 5 | Eloi | Alan | Fernando | Jose Zomeño |
-| --- | --- | --- | --- | --- |
+| Grupo X | Integrante | Integrante | Integrante |
+| --- | --- | --- | --- |
+| Grupo 1 | Jordi | Joan María | Genís |
+| --- | --- | --- | --- |
+| Grupo 2 | Marc Pozo | Joan Escandell | Marc Hannouti |
+| --- | --- | --- | --- |
+| Grupo 3 | Michael | Paola | Jose R. |
+| --- | --- | --- | --- |
+| Grupo 4 | Marcos | Aaron | Andrades |
+| --- | --- | --- | --- | 
+| Grupo 5 | Eloi | Alan | Fernando | 
+| --- | --- | --- | --- |
 
 Las vulnerabilidades de OWASP Top 10 web se reparten de la siguiente forma:
 
