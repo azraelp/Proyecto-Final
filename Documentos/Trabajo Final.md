@@ -41,6 +41,15 @@ Por ultimo el atacante obtendrá el control para lanzar ataques contra otros ser
 
 ## Prevención
 
+- **Uso de whitelist:**
+Utilizar una whitelist con los dominios y direcciones IP permitidas para que la aplicación puede realizar solicitudes sin ningún tipo de problema.
+
+- Monitorio continuo:
+Establecer un sistema de monitoreo continuo para detectar patrones inusuales de solicitudes que podrían indicar un posible ataque de SSRF.
+
+- Actualizaciones:
+Mantener actualizados las aplicaciones y todas sus dependencias para mitigar posibles ataques
+
 ## Mitigación
 
 
