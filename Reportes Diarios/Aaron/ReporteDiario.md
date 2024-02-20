@@ -7,3 +7,6 @@
 - Primera planificacion de grupo 
 
  ## Martes 20/02/2024
+ 
+- Creacion y empiece del documento final, explicando cada vulnerabilidad y dus diferencias.
+- Prueba de subir una imagen de docker a github desde maquina virtual.
