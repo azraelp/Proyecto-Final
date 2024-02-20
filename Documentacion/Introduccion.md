@@ -1,15 +1,13 @@
 # Índice
 
 1. [Introducción](#introducción)
-2. [A03:2021 - Inyección](#a03-2021---inyección)
+2. [A03:2021-Inyección](#a03-2021---inyección)
     - [Descripción de diferentes tipos de ataques de inyección](#descripción-de-diferentes-tipos-de-ataques-de-inyección)
     - [Medidas para prevenir ataques de inyección](#medidas-para-prevenir-ataques-de-inyección)
-3. [A07:2021 - Fallas de Identificación y Autenticación](#a07-2021---fallas-de-identificación-y-autenticación)
-    - [Definición de la vulnerabilidad](#definición-de-la-vulnerabilidad-1)
-    - [Descripción de causas comunes de fallas de identificación y autenticación](#descripción-de-causas-comunes-de-fallas-de-identificación-y-autenticación)
+3. [A07:2021-Fallas de Identificación y Autenticación](#a07-2021---fallas-de-identificación-y-autenticación)
+    - [Causas comunes de fallas de identificación y autenticación](#descripción-de-causas-comunes-de-fallas-de-identificación-y-autenticación)
     - [Medidas para mitigar fallas de identificación y autenticación](#medidas-para-mitigar-fallas-de-identificación-y-autenticación)
 4. [Docker](#docker)
-    - [Definición de Docker](#definición-de-docker)
     - [Características de Docker](#características-de-docker)
     - [Ventajas y desventajas de usar Docker](#ventajas-y-desventajas-de-usar-docker)
 
@@ -22,7 +20,7 @@ En esta documentacion  sé explicara  la creación de una máquina Docker con la
 En la documentacion se explicara mas en profundidad las vuldenabilidades , como usar la vulnerabilidad y explotarla al maximo.
 
 
-# A03:2021 - Inyección	
+# A03:2021-Inyección	
 
 
  Es un ataque que implica la inserción de código malicioso en una entrada de datos para manipular el comportamiento de un sistema y obtener acceso no autorizado o realizar acciones no deseadas.
@@ -59,11 +57,11 @@ Para prevenir los ataques de inyección aqui que tener algunas medidas de las si
 
 - **Educación y Concienciación:** Capacita a los desarrolladores, administradores de sistemas y usuarios finales sobre las mejores prácticas de seguridad.
 
-# A07:2021 - Fallas de Identificación y Autenticación
+# A07:2021-Fallas de Identificación y Autenticación
 
 Las fallas de identificación y autenticación se refieren a problemas relacionados con la gestión de credenciales de usuario y los procesos de verificación de identidad en sistemas informáticos. Estas fallas pueden permitir a los atacantes acceder de forma no autorizada a sistemas, datos o recursos protegidos.
 
-## Causas comunes de fallas de identificación y autenticación:
+## Causas comunes de fallas de identificación y autenticación
 
 - **Contraseñas Débiles:** Las contraseñas débiles, como "123456" o "password", son vulnerables.
 
@@ -79,7 +77,7 @@ Las fallas de identificación y autenticación se refieren a problemas relaciona
 
 - **Falta de Educación del Usuario:** Los usuarios pueden no estar al tanto de las mejores prácticas de seguridad, como la importancia de utilizar contraseñas seguras y no compartir sus credenciales con otros.
 
- ## Mitigar de fallas de identificación y autenticación:
+ ## Medidas para mitigar fallas de identificación y autenticación:
 
 - **Contraseñas Seguras:** Establecer requisitos mínimos de complejidad de contraseña (longitud, caracteres especiales, combinación de letras mayúsculas y minúsculas, etc.) y educar a los usuarios sobre la importancia de evitar contraseñas fáciles de adivinar.
 
@@ -104,7 +102,7 @@ Las fallas de identificación y autenticación se refieren a problemas relaciona
  en capsulan todo lo necesario para que una aplicación se ejecute, incluidas las bibliotecas, dependencias y otros componentes, lo que les permite funcionar de manera consistente en cualquier entorno.
 
 
-  ## Caracteristicas Docker
+  ## Características de Docker
 
  - **Portabilidad:** El contenedor Docker podremos desplegarlo en cualquier otro sistema que soporte esta tecnología.
  - **Ligereza:** Los contenedores Docker son ligeros y rápidos de crear, iniciar y detener, ya que comparten el núcleo del sistema operativo del host y utilizan recursos de manera eficiente.
