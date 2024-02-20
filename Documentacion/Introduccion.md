@@ -5,7 +5,7 @@
     - [Descripción de diferentes tipos de ataques de inyección](#descripción-de-diferentes-tipos-de-ataques-de-inyección)
     - [Medidas para prevenir ataques de inyección](#medidas-para-prevenir-ataques-de-inyección)
 3. [A07:2021-Fallas de Identificación y Autenticación](#a07-2021-fallas-de-identificación-y-autenticación)
-    - [Causas comunes de fallas de identificación y autenticación](#descripción-de-causas-comunes-de-fallas-de-identificación-y-autenticación)
+    - [Causas comunes de fallas de identificación y autenticación](#causas-comunes-de-fallas-de-identificación-y-autenticación)
     - [Medidas para mitigar fallas de identificación y autenticación](#medidas-para-mitigar-fallas-de-identificación-y-autenticación)
 4. [Docker](#docker)
     - [Características de Docker](#características-de-docker)
