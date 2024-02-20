@@ -13,8 +13,7 @@ Se deben entregar 2 versiones de cada máquina, una en estado inicial para ser e
 ## Crearemos la estructura de carpetas y definir sus nombres.
 
 ### Nomenclatura para los reportes diarios: 
-dia_mes_año_ReporteDiario
-19_02_2024_ReporteDiario
+ReporteDiario.md (por cada persona)
 
 ### Tareas a realizar durante la primera semana:
 
