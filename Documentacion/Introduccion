@@ -3,3 +3,25 @@ En esta documentacion  sé explicara  la creación de una máquina Docker que ti
 que se aprovecha las poloticas debiles de contraseña.
 
 En la documentacion se explicara mas en profundidad las vuldenabilidades , como usar la vulnerabilidad y explotarla al maximo.
+
+
+A03:2021 - Inyección	
+
+Que es Injection?
+
+ Es un ataque que implica la inserción de código malicioso en una entrada de datos para manipular el comportamiento de un sistema y obtener acceso no autorizado o realizar acciones no deseadas.
+
+ Diferentes tipos de ataques Injection:
+
+ SQL Injection: Se insertan comandos SQL maliciosos en las entradas de datos de una aplicación web,. Esto permte a los  atacantes poder utilizar esto para manipular la base de datos, obtener información confidencial o incluso eliminar datos.
+
+XSS: Este tipo de ataque implica la inserción de scripts maliciosos en páginas web accesibles por otros usuarios.
+
+Command Injection: Los atacantes insertan comandos del sistema operativo en entradas de datos de aplicaciones para ejecutar comandos arbitrarios en el servidor. 
+
+LDAP: Los atacantes pueden manipular consultas LDAP para obtener acceso no autorizado a la información para realizar acciones no deseadas en el sistema.
+
+XPath Injection: Se dirige a sistemas que utilizan expresiones XPath para realizar consultas en documentos XML.
+
+ 
+
