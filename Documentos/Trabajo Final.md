@@ -84,7 +84,7 @@ Debería existir un proceso de gestión de parches para:
 
 5. **Evaluación integral de riesgos:** <br>
 
-    - Realizar evaluaciones regulares de riesgos para evaluar el impacto de las vulnerabilidades de los componentes en la postura de seguridad general del sistema. Priorizar los esfuerzos de remediación en función de la gravedad de las vulnerabilidades y el impacto potencial en las operaciones comerciales.
+    - Realizar evaluaciones regulares de riesgos para evaluar el impacto de las vulnerabilidades de los componentes en la postura de seguridad general del sistema. 
 
     - Al implementar estas estrategias de mitigación, las organizaciones pueden reducir significativamente el riesgo causado por componentes vulnerables y obsoletos, mejorando la resiliencia de la seguridad de sus aplicaciones web contra la explotación y el acceso no autorizado.
 
@@ -147,6 +147,7 @@ Desactivar esquemas de urls antiguos (como file:///, ftp://), ya que las aplicac
 
 - **Habilitar la autenticación en servicios internos:** <br>
 De normal las configuraciones de las bases de datos no requieren autenticación de forma predeterminada. Por lo tanto para proteger la información confidencial, podemos habilitar la autentificación para todos los servicios que estén en nuestra red.
+
 
 ## Docker SSRF
 
