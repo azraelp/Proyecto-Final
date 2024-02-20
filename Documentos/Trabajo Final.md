@@ -66,7 +66,7 @@ Debería existir un proceso de gestión de parches para:
 
     - Realizar auditorías de seguridad regulares y pruebas de penetración para identificar vulnerabilidades en los componentes y abordarlas de manera oportuna.
 
-    - Asegurar que los desarrolladores de software prueben rigurosamente la compatibilidad de las bibliotecas actualizadas, mejoradas o parcheadas para evitar problemas de integración o consecuencias no deseadas.
+    - Asegurar que los desarrolladores de software prueben rigurosamente la compatibilidad de las bibliotecas actualizadas, mejoradas o parcheadas para evitar problemas de integración o consecuencias innesperadas o negativas.
 
 3. **Medidas de seguridad mejoradas:**<br>
 
@@ -74,7 +74,7 @@ Debería existir un proceso de gestión de parches para:
 
     - Emplear sistemas de detección de intrusos (IDS) o sistemas de prevención de intrusiones (IPS) para monitorear y bloquear actividades sospechosas relacionadas con vulnerabilidades en los componentes.
 
-    - Utilizar herramientas automatizadas de escaneo de vulnerabilidades para identificar y remediar vulnerabilidades de manera oportuna.
+    - Utilizar herramientas automatizadas de escaneo de vulnerabilidades para identificar y remediar vulnerabilidades de manera óptima.
 
 4. **Educación y concienciación:**<br>
 
