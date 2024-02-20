@@ -85,10 +85,23 @@ Las fallas de identificación y autenticación se refieren a problemas relaciona
 
   # Docker
 
-  ## Que es Docker ?
+  **Que es Docker ?**
+
+   Docker es una plataforma de código abierto diseñada para facilitar la creación, implementación y ejecución de aplicaciones dentro de contenedores. Los contenedores son entornos de software ligeros y portátiles qu 
+ en capsulan todo lo necesario para que una aplicación se ejecute, incluidas las bibliotecas, dependencias y otros componentes, lo que les permite funcionar de manera consistente en cualquier entorno.
 
 
+  ## Caracteristicas Docker
 
-
+ - **Portabilidad:** El contenedor Docker podremos desplegarlo en cualquier otro sistema que soporte esta tecnología.
+ - **Ligereza:** Los contenedores Docker son ligeros y rápidos de crear, iniciar y detener, ya que comparten el núcleo del sistema operativo del host y utilizan recursos de manera eficiente.
+ -**Consistencia:** Docker garantiza que las aplicaciones se ejecuten de manera consistente en cualquier entorno, eliminando problemas de compatibilidad y dependencias.
+ - **Aislamiento:** Cada contenedor tiene su propio sistema de archivos, espacio de nombres de red y espacio de nombres de   proceso, lo que evita conflictos entre aplicaciones y garantiza la seguridad de la aplicación.
  
+ - **Escalabilidad:** Docker facilita la escalabilidad horizontal de las aplicaciones mediante la implementación de múltiples contenedores que se ejecutan en clústeres de hosts Docker, lo que permite distribuir la carga de trabajo y mejorar el rendimiento de la aplicación.
+ 
+ - **Facilidad de uso:** Docker proporciona una interfaz de línea de comandos intuitiva y herramientas de gestión como Docker Compose, que simplifican la creación, ejecución y gestión de contenedores y aplicaciones.
+ 
+- **Reutilización de Imágenes:** Docker utiliza un modelo de imágenes y contenedores que fomenta la reutilización y compartición de imágenes de aplicaciones entre desarrolladores y equipos.
+
 
