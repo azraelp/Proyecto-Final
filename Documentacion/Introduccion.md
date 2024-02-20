@@ -24,6 +24,9 @@ En la documentacion se explicara mas en profundidad las vuldenabilidades , como 
 
 
  Es un ataque que implica la inserción de código malicioso en una entrada de datos para manipular el comportamiento de un sistema y obtener acceso no autorizado o realizar acciones no deseadas.
+<p align="center">
+<img  alt="drawing" width="250" height="200" src="https://assets-global.website-files.com/62e153e41d6ee298cc9a98f7/63cee35a98933798f8f99f2c_Inyeccion-SQL.png" />
+</p>
 
 ## Descripción de diferentes tipos de ataques de inyección:
 
@@ -60,6 +63,9 @@ Para prevenir los ataques de inyección aqui que tener algunas medidas de las si
 # Fallas de Identificación y Autenticación
 
 Las fallas de identificación y autenticación se refieren a problemas relacionados con la gestión de credenciales de usuario y los procesos de verificación de identidad en sistemas informáticos. Estas fallas pueden permitir a los atacantes acceder de forma no autorizada a sistemas, datos o recursos protegidos.
+<p align="center">
+<img  alt="drawing" width="250" height="200" src="https://www.grupocibernos.com/hubfs/blog-error%20de%20autenticaci%C3%B3n.jpg" />
+</p>
 
 ## Causas comunes de fallas de identificación y autenticación
 
