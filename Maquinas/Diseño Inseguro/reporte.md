@@ -13,4 +13,4 @@
         - Contenido de la flag
     6. Añadir una o dos CVE
         - CWE-522: Credenciales insuficientemente protegidas
-            - hola
+            1. hola
