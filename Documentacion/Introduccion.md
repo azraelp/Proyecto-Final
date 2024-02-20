@@ -2,7 +2,6 @@
 
 1. [Introducción](#introducción)
 2. [A03:2021 - Inyección](#a03-2021---inyección)
-    - [Definición de la vulnerabilidad](#definición-de-la-vulnerabilidad)
     - [Descripción de diferentes tipos de ataques de inyección](#descripción-de-diferentes-tipos-de-ataques-de-inyección)
     - [Medidas para prevenir ataques de inyección](#medidas-para-prevenir-ataques-de-inyección)
 3. [A07:2021 - Fallas de Identificación y Autenticación](#a07-2021---fallas-de-identificación-y-autenticación)
@@ -28,7 +27,7 @@ En la documentacion se explicara mas en profundidad las vuldenabilidades , como 
 
  Es un ataque que implica la inserción de código malicioso en una entrada de datos para manipular el comportamiento de un sistema y obtener acceso no autorizado o realizar acciones no deseadas.
 
-## Diferentes tipos de ataques Injection:
+## Descripción de diferentes tipos de ataques de inyección:
 
 - **SQL Injection:** Se insertan comandos SQL maliciosos en las entradas de datos de una aplicación web,. Esto permte a los  atacantes poder utilizar esto para manipular la base de datos, obtener información confidencial o incluso eliminar datos.
 
@@ -40,7 +39,7 @@ En la documentacion se explicara mas en profundidad las vuldenabilidades , como 
 
 - **XPath Injection:** Se dirige a sistemas que utilizan expresiones XPath para realizar consultas en documentos XML.
 
-## Prevenir ataques de injection
+## Medidas para prevenir ataques de inyección
 Para prevenir los ataques de inyección aqui que tener algunas medidas de las siguientes medidas:
 
 
