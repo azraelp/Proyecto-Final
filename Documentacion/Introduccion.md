@@ -3,8 +3,8 @@
 # Introducción
 En esta documentacion  sé explicara  la creación de una máquina Docker con las siguientes vulnerabilidades:
 
-- ** A03:2021 - Inyección	  **
-- ** A07:2021 - Fallas de Identificación y Autenticación **
+- **A03:2021 - Inyección**
+- **A07:2021 - Fallas de Identificación y Autenticación**
 
 En la documentacion se explicara mas en profundidad las vuldenabilidades , como usar la vulnerabilidad y explotarla al maximo.
 
