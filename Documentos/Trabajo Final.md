@@ -22,13 +22,19 @@ Server-Side Request Forgery (SSRF) es una vulnerabilidad de la seguridad web que
 El ataque funciona explotando la capacidad de una aplicación para realizar solicitudes a recursos externos, como URLs, servicios web, etc. El ataque se desglosaría en estas fases:
 
 1. **Identificación de la vulnerabilidad:** <br>
-   El atacante encuentra la aplicación web que tiene la vulnerabilidad SSRF.
+El atacante encuentra la aplicación web que tiene la vulnerabilidad SSRF.
    
 2. **Manipulación de las solicitudes:** <br>
-   El atacante introduce los datos manipulados (como urls maliciosos), en campos que la aplicación utiliza para hacer solicitudes a recursos externos.
+El atacante introduce los datos manipulados (como urls maliciosos), en campos que la aplicación utiliza para hacer solicitudes a recursos externos.
 
 3. **Uso de Funcionalidades Internas:** <br>
-   En esta fase el atacante puede redirigir las solicitudes hacia recursos internos como bases de datos o servicios internos a los cuales normalmente no debería tener acceso. 
+En esta fase el atacante puede redirigir las solicitudes hacia recursos internos como bases de datos o servicios internos a los cuales normalmente no debería tener acceso. 
 
 4. **Escaneo de puertos y redirección:** <br>
-   En este punto el atacante puede escanear los puertos internos que hay en la red o puede redigir las solicitudes a servicios especificos para realizar acciones maliciosas.
+En este punto el atacante puede escanear los puertos internos que hay en la red o puede redigir las solicitudes a servicios especificos para realizar acciones maliciosas.
+
+5. **Acceso a recursos de la nube:** <br>
+Si la aplicación tiene la capacidad de interactuar con servicios que hay en nube, el atacante podrá aprovechar y realizar otras acciones maliciosas.
+
+6. **Ataques a servicios internos:** <br>
+Por ultimo el atacante obtendrá el control para lanzar ataques contra otros servicios internos.
