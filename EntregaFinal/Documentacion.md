@@ -61,3 +61,15 @@
       **Falta de Validación de Entradas:** Si una aplicación web no valida adecuadamente las entradas del usuario, un atacante podría enviar datos maliciosos que afecten la integridad de la aplicación. Por ejemplo,                 podrían enviar formularios con datos manipulados para realizar acciones no autorizadas.
 
       **Falta de Encriptación:** La falta de encriptación en la transmisión de datos puede permitir a un atacante interceptar y modificar la información transmitida entre el usuario y el servidor, comprometiendo así la           integridad de los datos.
+
+
+
+## Diferencias entre estas vulnerabilidades:
+
+· El **diseño inseguro** se refiere a problemas fundamentales en la concepción y planificación de un sistema, aplicación o red desde el principio.
+
+· Las **fallas en el sofware y en la inegridad de los datos** se centran en problemas específicos relacionados con la implementación de software y el manejo de datos, ya sea durante el desarrollo o en el funcionamiento del sistema.
+
+
+
+   
