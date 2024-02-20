@@ -147,3 +147,7 @@ Desactivar esquemas de urls antiguos (como file:///, ftp://), ya que las aplicac
 
 - **Habilitar la autenticación en servicios internos:** <br>
 De normal las configuraciones de las bases de datos no requieren autenticación de forma predeterminada. Por lo tanto para proteger la información confidencial, podemos habilitar la autentificación para todos los servicios que estén en nuestra red.
+
+## Docker
+
+Para llevar a cabo este proyecto, se utilizará una imagen Docker basada en Ubuntu Server 23.04. Dentro de esta imagen, se configurará un servidor Apache para alojar una página web donde se podrá recrear el ataque de SSRF (Server-Side Request Forgery). Este ataque permite que se pueda engañar al servidor web para que realice solicitudes desde su propia perspectiva. Esto significa que el atacante puede manipular el servidor para realizar solicitudes a otros sistemas y recursos en la red a los que normalmente no tendría acceso directo. Además, estará equipada con Wireshark para capturar el tráfico de red en el momento del ataque. Wireshark es una herramienta de análisis de paquetes de red que permite visualizar y analizar el tráfico de red que pasa a través de la interfaz de red del sistema.
