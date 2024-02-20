@@ -100,7 +100,7 @@ Las fallas de identificación y autenticación se refieren a problemas relaciona
 - **Actualizaciones y Parches:** Mantén actualizados los sistemas y aplicaciones para asegurarte de que se hayan corregido las vulnerabilidades conocidas relacionadas con la autenticación y la gestión de identidades.
 
 # Docker
- **Que es Docker ?**
+ **Que es Docker?**
 
    Docker es una plataforma de código abierto diseñada para facilitar la creación, implementación y ejecución de aplicaciones dentro de contenedores. Los contenedores son entornos de software ligeros y portátiles qu 
  en capsulan todo lo necesario para que una aplicación se ejecute, incluidas las bibliotecas, dependencias y otros componentes, lo que les permite funcionar de manera consistente en cualquier entorno.
@@ -135,7 +135,7 @@ Las fallas de identificación y autenticación se refieren a problemas relaciona
 
 - **Facilidad de Uso:** Docker proporciona una interfaz de línea de comandos intuitiva y herramientas de gestión como Docker Compose, que simplifican la creación, ejecución y gestión de contenedores y aplicaciones. Esto hace que sea fácil para los desarrolladores y los equipos de operaciones trabajar con contenedores y mantener aplicaciones en producción.
 
-**Desventajas:**
+**Desventajas:** 
 
 - **Comunidad Fragmentada:** Aunque Docker es una plataforma de código abierto con una gran comunidad de usuarios y contribuidores, la rápida evolución de la tecnología de contenedores ha dado lugar a la aparición de múltiples estándares y herramientas de orquestación, lo que puede llevar a una fragmentación y falta de estandarización en el ecosistema de contenedores.
 
