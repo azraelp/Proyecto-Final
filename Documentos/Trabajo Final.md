@@ -64,7 +64,7 @@ Si la aplicación tiene la capacidad de interactuar con servicios que hay en nub
 Por último el atacante obtendrá el control para lanzar ataques contra otros servicios internos.
 
 ## Prevención
-El SSRF es un ataque que se centra en atacar los sistemas internos que son inaccesibles desde la red externa. Asi que principalmente nos centraremos en vigilar las peticiones que se solicitan, para ello tenemos estas medidas de prevencio: 
+El SSRF es un ataque que se centra en atacar los sistemas internos que son inaccesibles desde la red externa. Asi que principalmente nos centraremos en vigilar las peticiones que se solicitan al servidor, para ello tenemos estas medidas de prevención: 
 
 - **Uso de whitelist:** <br>
 Utilizar una whitelist con los dominios y direcciones IP permitidas para que la aplicación puede realizar solicitudes sin ningún tipo de problema.
