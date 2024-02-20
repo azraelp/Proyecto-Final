@@ -1,8 +1,10 @@
 
 
 # Introducción
-En esta documentacion  sé explicara  la creación de una máquina Docker que tiene la vulnerabilidad  injection  la cual se aprovecha de las entradas del usuario y auntetificacion
-que se aprovecha las poloticas debiles de contraseña.
+En esta documentacion  sé explicara  la creación de una máquina Docker con las siguientes vulnerabilidades:
+
+- ** A03:2021 - Inyección	  **
+- ** A07:2021 - Fallas de Identificación y Autenticación **
 
 En la documentacion se explicara mas en profundidad las vuldenabilidades , como usar la vulnerabilidad y explotarla al maximo.
 
