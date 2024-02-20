@@ -1,10 +1,8 @@
 # Introducción
 
-En este documento sé explica la creación de una máquina Docker que contendrá las vulnerabilidades A06 la cual se aprovecha de los componentes vulnerablesy desactualizados y A10 que permite que 
-un atacante coaccione a la aplicación para que envíe una solicitud falsificada a un destino inesperado, listadas en el OWASP Top Ten.
+En este documento sé explica la creación de una máquina Docker que contendrá las vulnerabilidades A06 la cual se aprovecha de los componentes vulnerablesy desactualizados y A10 que permite que un atacante coaccione a la aplicación para que envíe una solicitud falsificada a un destino inesperado, listadas en el OWASP Top Ten.
 
-Se profundizará en la explicación de cada una de estas vulnerabilidades, comprendiendo su funcionamiento, cómo pueden ser explotadas y en qué campos específicos se aplican. Además, se detallará
-cómo implementar estas vulnerabilidades en una máquina Docker.
+Se profundizará en la explicación de cada una de estas vulnerabilidades, comprendiendo su funcionamiento, cómo pueden ser explotadas y en qué campos específicos se aplican. Además, se detallará cómo implementar estas vulnerabilidades en una máquina Docker.
 
 
 ## A06:2021 - Componentes Vulnerables y Desactualizados
@@ -66,6 +64,7 @@ Si la aplicación tiene la capacidad de interactuar con servicios que hay en nub
 Por último el atacante obtendrá el control para lanzar ataques contra otros servicios internos.
 
 ## Prevención
+El SSRF es un ataque que se centra en atacar los sistemas internos que son inaccesibles desde la red externa. Asi que principalmente nos centraremos en vigilar las peticiones que se solicitan, para ello tenemos estas medidas de prevencio: 
 
 - **Uso de whitelist:** <br>
 Utilizar una whitelist con los dominios y direcciones IP permitidas para que la aplicación puede realizar solicitudes sin ningún tipo de problema.
