@@ -109,5 +109,5 @@ Validar adecuadamente todas las entradas de usuario que la aplicación utiliza p
 - **Deshabilitar esquemas de URL no utilizados:** <br>
 Desactivar esquemas de urls antiguos (como file:///, ftp://), ya que las aplicaciones realizan sus solicitudes utilizando http o https por lo que solo deben permitirse estos patrones de url.
 
-- **Habilitar la autenticación en servicios internos**: <br>
-De normal las configraciones de las bases de datos no requieren aunteticacion de forma predeterminada. Por lo tanto para proteger la informacion confidencial, podemos habilitar la autentificacion para todos los servicios qu esten en nuestra red.
+- **Habilitar la autenticación en servicios internos:** <br>
+De normal las configuraciones de las bases de datos no requieren autenticación de forma predeterminada. Por lo tanto para proteger la información confidencial, podemos habilitar la autentificación para todos los servicios que estén en nuestra red.
