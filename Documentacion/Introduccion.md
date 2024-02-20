@@ -14,15 +14,15 @@ En la documentacion se explicara mas en profundidad las vuldenabilidades , como 
 
 ## Diferentes tipos de ataques Injection:
 
--**SQL Injection:** Se insertan comandos SQL maliciosos en las entradas de datos de una aplicación web,. Esto permte a los  atacantes poder utilizar esto para manipular la base de datos, obtener información confidencial o incluso eliminar datos.
+- **SQL Injection:** Se insertan comandos SQL maliciosos en las entradas de datos de una aplicación web,. Esto permte a los  atacantes poder utilizar esto para manipular la base de datos, obtener información confidencial o incluso eliminar datos.
 
--**XSS:** Este tipo de ataque implica la inserción de scripts maliciosos en páginas web accesibles por otros usuarios.
+- **XSS:** Este tipo de ataque implica la inserción de scripts maliciosos en páginas web accesibles por otros usuarios.
 
--**Command Injection:** Los atacantes insertan comandos del sistema operativo en entradas de datos de aplicaciones para ejecutar comandos arbitrarios en el servidor. 
+- **Command Injection:** Los atacantes insertan comandos del sistema operativo en entradas de datos de aplicaciones para ejecutar comandos arbitrarios en el servidor. 
 
--**LDAP:** Los atacantes pueden manipular consultas LDAP para obtener acceso no autorizado a la información para realizar acciones no deseadas en el sistema.
+- **LDAP:** Los atacantes pueden manipular consultas LDAP para obtener acceso no autorizado a la información para realizar acciones no deseadas en el sistema.
 
--**XPath Injection:** Se dirige a sistemas que utilizan expresiones XPath para realizar consultas en documentos XML.
+- **XPath Injection:** Se dirige a sistemas que utilizan expresiones XPath para realizar consultas en documentos XML.
 
 ## Prevenir ataques de injection
 Para prevenir los ataques de inyección aqui que tener algunas medidas de las siguientes medidas:
