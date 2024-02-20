@@ -78,7 +78,7 @@ Debería existir un proceso de gestión de parches para:
 
 4. **Educación y concienciación:**<br>
 
-    - Educar a los equipos de desarrollo sobre la importancia de la gestión de vulnerabilidades de componentes y proporcionar capacitación sobre las mejores prácticas para la progamación segura, la aplicación de parches y la gestión de dependencias.
+    - Educar a los desarrolladores sobre la importancia de la gestión de vulnerabilidades de componentes y proporcionar capacitación sobre las mejores prácticas para la progamación segura, la aplicación de parches y la gestión de dependencias.
 
     - Fomentar una cultura de conciencia de seguridad dentro de la organización, enfatizando la responsabilidad compartida de todos los interesados en mantener la seguridad del ecosistema de software.
 
