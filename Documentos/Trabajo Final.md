@@ -8,7 +8,19 @@ cómo implementar estas vulnerabilidades en una máquina Docker.
 
 
 ## A06:2021 - Componentes Vulnerables y Desactualizados
+
+### ¿Qué es esta vulnerabilidad (Vulnerable and Outdated Components)?
+
 Esta vulnerabilidad ocupa el sexto puesto en el Top Ten de OWASP, se aprovecha del riesgo asociado con el uso de componentes de software desactualizados o con vulnerabilidades conocidas en aplicaciones web. Para mitigar esta vulnerabilidad, es necesario que los desarrolladores implementen un proceso de gestión de dependencias y actualizaciones de software. Para realizar este seguimiento se deberán aplicar parches de seguridad de manera periódica y estar al día con las vulnerabilidades que puedan afectar el software. El uso de herramientas automáticas de escaneo de vulnerabilidades puede ayudar a detectar y detener el acceso de forma malintencionada al servidor.
+
+### ¿Cómo funciona?
+
+## Prevención
+
+
+## Mitigación
+
+
 
 
 ## A10:2021 - Falsificación de Solicitudes del Lado del Servidor
@@ -37,7 +49,7 @@ En este punto el atacante puede escanear los puertos internos que hay en la red 
 Si la aplicación tiene la capacidad de interactuar con servicios que hay en nube, el atacante podrá aprovechar y realizar otras acciones maliciosas.
 
 6. **Ataques a servicios internos:** <br>
-Por ultimo el atacante obtendrá el control para lanzar ataques contra otros servicios internos.
+Por último el atacante obtendrá el control para lanzar ataques contra otros servicios internos.
 
 ## Prevención
 
