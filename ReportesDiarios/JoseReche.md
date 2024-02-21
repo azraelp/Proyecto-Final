@@ -11,3 +11,9 @@
 - Testear DockerFiles.
 - Pasar mi repositorio local al repositorio del proyecto.
 - I+D en Docker
+
+## Miércoles 21/02/2024
+- I+D Docker
+- Investigar sobre XML
+- Probar a hacer XML Básicos
+- Replantear CTF
