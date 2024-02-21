@@ -12,5 +12,6 @@
         - Escalada a root
         - Contenido de la flag
     6. Añadir una o dos CVE
-        - CWE-522: Credenciales insuficientemente protegidas
-            1. hola
+        - CWE-73: External Control of File Name or Path
+            1. CVE-2022-45918
+            2. 
