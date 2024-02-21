@@ -9,3 +9,8 @@
 - [X] Investigación sobre CVE y cual vamos a eligir
 - [X] Planificacióm sobre que vamos hacer el proyecto(En que se va abasar)
 - [X] Planificación del contenido de las maquinas(que es lo que tendrá)
+
+## 21/02/24 Reporte Diario
+- [X] Investigación sobre la primera maquina y su contenido
+- [X] Pruebas de la maquinas
+
