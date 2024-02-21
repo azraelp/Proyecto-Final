@@ -60,7 +60,7 @@ Debería existir un proceso de gestión de parches para:
 
     - Mantener una vigilancia constante sobre las bibliotecas y componentes que no están mantenidos o no proporcionan parches de seguridad para versiones antiguas. Si la aplicación de parches no es factible, considerar la implementación de parches virtuales para monitorear, detectar o protegerse contra las vulnerabilidades identificadas.
 
-    - Establecer un plan continuo para monitorear, clasificar y aplicar actualizaciones o cambios de configuración a lo largo de la vida útil de la aplicación o el portafolio.
+    - Establecer un plan continuo para monitorear, clasificar y aplicar actualizaciones o cambios de configuración a lo largo de la vida útil de la aplicación.
 
 2. **Auditorías y pruebas de seguridad regulares:**<br>
 
@@ -88,8 +88,8 @@ Debería existir un proceso de gestión de parches para:
 
     - Al implementar estas estrategias de mitigación, las organizaciones pueden reducir significativamente el riesgo causado por componentes vulnerables y obsoletos, mejorando la resiliencia de la seguridad de sus aplicaciones web contra la explotación y el acceso no autorizado.
 
-## Escenario de ataque real
 
+## Escenario de ataque real
 
 Escenario nº 1: Los componentes normalmente se ejecutan con los mismos privilegios que la propia aplicación, por lo que los fallos en cualquier componente pueden tener un impacto grave. Estos fallos pueden ser accidentales (como un error de programación) o intencionados (como una backdoor en un componente). Algunos ejemplos de vulnerabilidades de componentes explotables descubiertas son:
 
