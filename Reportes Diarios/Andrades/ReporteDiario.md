@@ -13,4 +13,5 @@
 ## 21/02/24 Reporte Diario
 - [X] Investigación sobre la primera maquina y su contenido
 - [X] Pruebas de la maquinas
+- [X] Primeras pruebas de la posible pagina web
 
