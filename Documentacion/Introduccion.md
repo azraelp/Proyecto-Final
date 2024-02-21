@@ -152,5 +152,7 @@ Las fallas de identificación y autenticación se refieren a problemas relaciona
 
 ## Maquina virtual 2 : Fallas de Identificación y Autenticación
 
+## vulnerabilidades cve 
+
 
 
