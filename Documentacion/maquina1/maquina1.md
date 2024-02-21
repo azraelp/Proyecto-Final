@@ -8,7 +8,7 @@ Para ello va a alojar varios servidores, ftp,ssh y un apache que va a alojar un 
 ## Configuración del entorno
 Para ello, vamos a crear un contenedor Docker con el sistema operativo Ubuntu Server. Los servicios que vamos a utilizar son:
 
-![](M1.png)
+![](M1.0.png)
 
 - **FTP**: *vsftpd* version 3.0.3 --> Para transferencia de archivos.
 - **SSH**: *OpenSSH 9.6p1* --> Para acceso remoto seguro.
