@@ -11,4 +11,4 @@
 ## Miércoles 21 de febrero 2024 
 ✅ Organización y distribución de tareas diarias <br>
 ✅ Búsqueda de información de CVEs para las vulnerabilidades asignadas <br>
-✅ Realización del login (html y css) <br>
+✅ Creación del login (html y css) <br>
