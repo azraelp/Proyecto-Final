@@ -35,3 +35,5 @@ Durante el dia de hoy he realizado las siguientes tareas:
 - Subir las imagenes de las maquinas iniciales a DockerHub: https://hub.docker.com/u/marcositb
 
 - Empezar a iniciar los contenedores de Docker para iniciar las maquinas
+
+- Investigar acerca de A08:2021 – Fallas en el Software y en la Integridad de los Datos
