@@ -18,3 +18,4 @@
 - Se pudo subir el archivo dockerfile a github pero no la imagen como tal, a si que utilizaremos docker hub para subir imagenes docker, y tener registro de cambios.
 - Creacion de cuenta DockerHub, y repositorios para la subida de imagen de cada maquina.
 - Busqueda de CWE's para maquina diseño inseguro.
+- Tests de imagenes de docker.
