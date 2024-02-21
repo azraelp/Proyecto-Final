@@ -16,6 +16,6 @@ Para ello, vamos a crear un contenedor Docker con el sistema operativo Ubuntu Se
 ## Pasos a seguir
 
 1. **Instalación de Docker**
-2. **Creacioon del Dockerfile**
+2. **Creacion del Dockerfile**
 
 
