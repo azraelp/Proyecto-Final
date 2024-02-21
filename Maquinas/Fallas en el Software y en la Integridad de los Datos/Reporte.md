@@ -12,4 +12,5 @@
     6. CVE
         - CWE-73: External Control of File Name or Path
             1. CVE-2022-45918
-            2. 
+        - CWE-784: Reliance on Cookies without Validation and Integrity Checking in a Security Decision
+            1. CVE-2009-1549
