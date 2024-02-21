@@ -7,3 +7,7 @@
 ## Martes 20 de febrero 2024 <br>
 ✅ Organización y distribución de tareas diarias <br>
 ✅ Añadiendo contenido al documento proyecto final (información del ataque "Falsificación de Solicitudes del Lado del Servidor") <br>
+
+## Miércoles 21 de febrero 2024 
+✅ Organización y distribución de tareas diarias 
+✅ Búsqueda de información de CVEs para las vulnerabilidades
