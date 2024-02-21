@@ -18,9 +18,10 @@
 
 ## Miércoles 21 de Febrero 2024:
 
-- [ ] Buscar ataques reales con la primera vulnerabilidad asignada.
-- [ ] Investigación de CVE extras de 2023 o posterior para la primera máquina.
-- [ ] Reunión de seguimiento de final de sesión y planificación de tareas del día siguiente.
+- [X] Buscar ataques reales de la vulnerabilidad asignada SSRF.
+- [X] Investigación de CVE para la primera máquina.
+- [X] Investigación profunda sobre Docker.
+- [X] Reunión de seguimiento de final de sesión y planificación de tareas del día siguiente.
 
 ## Jueves 22 de Febrero 2024:
 
