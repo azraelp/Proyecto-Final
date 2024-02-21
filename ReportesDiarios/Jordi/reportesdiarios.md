@@ -17,8 +17,8 @@
 
    Creación del documento principal para el proyecto.
 
-# Reporte 20 de febrero de 2024
 
+# Reporte 20 de febrero de 2024
 
 - Ampliación de la información en el documento [TrabajoFinal.md](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo1(Jordi-JoanMaria-Genis)/Documentacion/TrabajoFinal.md).
     - Buscar información de las vulnerabilidades asignadas del OWASP Top 10.
@@ -26,3 +26,10 @@
 	- Tambien hemos creado los documnteos que van a contener la informacion basica de cada maquina. 
 - Investigacion profunda de las vulnerabilidades asignadas y de los CVEs de 2023 para una correcta implementacion.
 - Planificacion y diseño de la primera maquina, así como los servicios que van a correr en ella.
+
+
+# Reporte 20 de febrero de 2024
+
+- Creación de las imágenes descriptivas de cada máquina
+- Planificacion y diseño de la primera máquina, así como los servicios que van a correr en ella.
+- Búsqueda intensiva de CV de 2023 para aumentar la dificultad de la máquina
