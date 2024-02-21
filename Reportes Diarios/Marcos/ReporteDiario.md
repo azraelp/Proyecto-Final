@@ -23,3 +23,17 @@ Durante el dia de hoy he realizado las siguientes tareas:
 - Crear una maquina virtual en Kali Linux para poder almacenar y ejecutar los Docker
 
 - Crear un documento interno acerca de DockerHub
+
+# Reporte Diario 21 de Febrero de 2024
+
+Durante el dia de hoy he realizado las siguientes tareas:
+
+- Hablar con el grupo y organizar las tareas que realizaremos durante el dia de hoy.
+
+- Seguir documentando internamente el uso de DockerHub
+
+- Subir las imagenes de las maquinas iniciales a DockerHub: https://hub.docker.com/u/marcositb
+
+- Empezar a iniciar los contenedores de Docker para iniciar las maquinas
+
+- Investigar acerca de A08:2021 – Fallas en el Software y en la Integridad de los Datos
