@@ -11,6 +11,7 @@
     - [Características de Docker](#características-de-docker)
     - [Ventajas y desventajas de usar Docker](#ventajas-y-desventajas-de-usar-docker)
 
+
 # Introducción
 En esta documentacion  sé explicara  la creación de una máquina Docker con las siguientes vulnerabilidades:
 
@@ -143,5 +144,13 @@ Las fallas de identificación y autenticación se refieren a problemas relaciona
 - **Seguridad:** Aunque Docker proporciona un alto nivel de aislamiento entre contenedores, aún existen posibles vulnerabilidades de seguridad, especialmente si no se siguen las mejores prácticas de seguridad al crear y configurar imágenes de contenedores o al exponer servicios a través de redes públicas.
 
 - **Rendimiento:** Aunque los contenedores Docker son ligeros y eficientes en recursos, puede haber un pequeño costo de rendimiento asociado con la virtualización a nivel de contenedor en comparación con la ejecución de aplicaciones directamente en el sistema operativo host.
+
+# Maquinas virtuales docker	
+  
+
+## Maquina virtual 1 : Inyección
+
+## Maquina virtual 2 : Fallas de Identificación y Autenticación
+
 
 
