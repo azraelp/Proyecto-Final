@@ -21,15 +21,20 @@ En nuestro caso tenemos asignadas las siguientes vulnerabilidades:
 - Usar software que no está actualizado o que tiene vulnerabilidades conocidas, lo que hace que sea más fácil para los atacantes ingresar al sistema.
   
 Para  prevenirlo podemos usar varios metodos (mejor si se utilizan todos si son aplicables):
-- Tener solo los servicios,puertos y programas que se utilicen
-- Mantener todas las partes actualizadas al dia
-- Mantenerse atento si aparecen vulnerabilidades en el programa utilizado
-- Algún elemento que se encargue de verificar si las configuraciones están correctamente aplicadas
-- Asegurar que las credenciales sean diferentes para cada servicio i programa
-- Para los entornos de desarollo tener estructuras idénticas  para facilitar la detección de falloS de seguridad con diferentes contraseñas
-- Asegurarse que los posibles clientes cumplan con ciertas directivas de seguridad
+- Tener solo los servicios,puertos y programas que se utilicen.
+- Mantener todas las partes actualizadas al dia.
+- Mantenerse atento si aparecen vulnerabilidades en el programa utilizado.
+- Algún elemento que se encargue de verificar si las configuraciones están correctamente aplicadas.
+- Asegurar que las credenciales sean diferentes para cada servicio i programa.
+- Para los entornos de desarollo tener estructuras idénticas  para facilitar la detección de falloS de seguridad con diferentes contraseñas.
+- Asegurarse que los posibles clientes cumplan con ciertas directivas de seguridad.
 
 
 # A09:2021 - Fallas en el Registro y Monitoreo
 
 Esta vulnerabilidad se refiere a la falta de un registro y monitoreo adecuados en un sistema informático o red. Esto significa que no se están registrando adecuadamente eventos importantes, como intentos de acceso no autorizado o cambios en la configuración del sistema. Además, puede indicar que no se están monitoreando de manera efectiva los registros existentes para detectar posibles anomalías o actividades sospechosas. Esta falta de registro y monitoreo puede dificultar la detección temprana de ataques cibernéticos o actividades maliciosas, lo que aumenta el riesgo de compromiso de la seguridad del sistema.
+
+Para  prevenirlo podemos usar varios metodos (mejor si se utilizan todos si son aplicables):
+- Tener un programa o algo que registre y presente lo logs de manera facil, filtrada, y entendible.
+- Hacer testing en la imlpementacion de las nuevas versiones para assegurar que se hagan los logs bien.
+
