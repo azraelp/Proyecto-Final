@@ -1,7 +1,7 @@
 # Semana 1 - Planificación:
 
 
-## Lunes 19 de febrero 2024:
+## Lunes 19 de Febrero 2024:
 
 - [X] Creación de la estructura del branch y organización del equipo de trabajo.
 - [X] Distribución de tareas.
@@ -9,21 +9,45 @@
 - [X] Identificación de recursos necesarios.
 - [X] Organización de reuniones de seguimiento.
 
-## Martes 20 de febrero 2024:
+## Martes 20 de Febrero 2024:
 
 - [X] Investigación sobre las dos vulnerabilidades OWASP Top Ten Web y análisis.
 - [X] Documentar el documento principal con la información de las vulnerabilidades.
 - [X] Organización, planificación y distribución de tareas del día.
 - [X] Seguimiento del proyecto y evaluación.
 
-## Miércoles 21 de febrero 2024:
+## Miércoles 21 de Febrero 2024:
 
 
-## Jueves 22 de febrero 2024:
+## Jueves 22 de Febrero 2024:
 
 
-## Viernes 23 de febrero 2024:
+## Viernes 23 de Febrero 2024:
 
 
-
+<br>
 # Semana 2 - Preparación máquina 1:
+
+
+## Lunes 26 de Febrero 2024:
+
+
+## Martes 27 de Febrero 2024:
+
+
+## Miércoles 28 de Febrero 2024:
+
+
+## Jueves 29 de Febrero 2024:
+
+
+## Viernes 1 de Marzo 2024:
+
+
+
+# Semana 3 - Preparación máquina 1:
+
+
+# Semana 4 - Preparación máquina 2:
+
+# Semana 5 - Preparación máquina 2:
