@@ -15,3 +15,5 @@
 
  ## Miercoles 21/02/2024
 
+- Se pudo subir el archivo dockerfile a github pero no la imagen como tal, a si que utilizaremos docker hub para subir imagenes docker, y tener registro de cambios.
+- 
