@@ -10,5 +10,5 @@
 
 ## Miércoles 21 de febrero 2024 
 ✅ Organización y distribución de tareas diarias <br>
-✅ Búsqueda de información de CVEs para las vulnerabilidades <br>
+✅ Búsqueda de información de CVEs para las vulnerabilidades asignadas <br>
 
