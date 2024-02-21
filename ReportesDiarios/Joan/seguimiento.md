@@ -17,5 +17,5 @@
 ## Miercoles 21/02/2024
 
 - [x] Lluvia de ideas para la realización de la segunda máquina.
-- [x] Discusión con los compañeros sobre el contenido de la segunda máquina.
+- [x] Planificación de la segunda máquina.
 - [x] Investigación de CVE extras para añadir a las máquinas.
