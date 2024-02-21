@@ -25,29 +25,104 @@
 ## Viernes 23 de Febrero 2024:
 
 
-<br>
+
+
 # Semana 2 - Preparación máquina 1:
 
 
 ## Lunes 26 de Febrero 2024:
 
 
+
 ## Martes 27 de Febrero 2024:
+
 
 
 ## Miércoles 28 de Febrero 2024:
 
 
+
 ## Jueves 29 de Febrero 2024:
+
 
 
 ## Viernes 1 de Marzo 2024:
 
 
 
+
 # Semana 3 - Preparación máquina 1:
+
+
+## Lunes 4 de Marzo 2024:
+
+
+
+## Martes 5 de Marzo 2024:
+
+
+
+## Miércoles 6 de Marzo 2024:
+
+
+
+## Jueves 7 de Marzo 2024:
+
+
+
+## Viernes 8 de Marzo 2024:
+
+
 
 
 # Semana 4 - Preparación máquina 2:
 
+
+## Lunes 11 de Marzo 2024:
+
+
+
+## Martes 12 de Marzo 2024:
+
+
+
+## Miércoles 13 de Marzo 2024:
+
+
+
+## Jueves 14 de Marzo 2024:
+
+
+
+## Viernes 15 de Marzo 2024:
+
+
+
 # Semana 5 - Preparación máquina 2:
+
+
+## Lunes 18 de Marzo 2024:
+
+
+
+## Martes 19 de Marzo 2024:
+
+
+
+## Miércoles 20 de Marzo 2024:
+
+
+
+## Jueves 21 de Marzo 2024:
+
+
+
+## Viernes 22 de Marzo 2024:
+
+
+
+# Semana 6 - Probar y documentar:
+
+
+
+
