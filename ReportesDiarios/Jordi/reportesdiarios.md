@@ -31,5 +31,5 @@
 # Reporte 21 de febrero de 2024
 
 - Creación de las imágenes descriptivas de cada máquina
-- Planificacion y diseño de la primera máquina, así como los servicios que van a correr en ella.
+- Planificacion y diseño de la segunda máquina, así como los servicios que van a correr en ella.
 - Búsqueda intensiva de CV de 2023 para aumentar la dificultad de la máquina
