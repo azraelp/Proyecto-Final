@@ -14,3 +14,7 @@
 - [X] Añadido apartado Docker SSRF al documento principal.
 - [ ] Puesta en marcha del docker SSRF.
 
+# Miercoles 21 de febrero 2024:
+- [X] Cambios DockerFile
+- [X] Puesta en marcha del docker SSRF
+
