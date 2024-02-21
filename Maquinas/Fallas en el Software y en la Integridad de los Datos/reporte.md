@@ -1,12 +1,10 @@
- - Primera maquina y su contenido
+ - Segunda maquina y su contenido
     1. Escaneo de puertos
     2. Buscar ficheros ocultos
-    3. Una página web(Posiblemente 2)
-        - Que puedan ejecutar comando desde la url
+    3. Una página web
+        - Que puedan iniciar sesion haciendo SQLI
         - Hacer flag falsas(pero que contengan pista de la flag real) para perder el tiempo
-    4. Un servidor FTP
-        - Con usuarios
-        - Puedan subir y leer archivos
+    4. Hacer SSH con los usuarios mediante el crackeo de contraseñas
     5. Escalada de privilegios
         - Pivoting de usuarios(Permisos restringidos en algunos usuarios)
         - Escalada a root
