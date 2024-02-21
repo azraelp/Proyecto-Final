@@ -28,7 +28,7 @@
 - Planificacion y diseño de la primera maquina, así como los servicios que van a correr en ella.
 
 
-# Reporte 20 de febrero de 2024
+# Reporte 21 de febrero de 2024
 
 - Creación de las imágenes descriptivas de cada máquina
 - Planificacion y diseño de la primera máquina, así como los servicios que van a correr en ella.
