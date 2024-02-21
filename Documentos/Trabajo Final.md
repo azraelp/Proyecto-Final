@@ -88,6 +88,17 @@ Debería existir un proceso de gestión de parches para:
 
     - Al implementar estas estrategias de mitigación, las organizaciones pueden reducir significativamente el riesgo causado por componentes vulnerables y obsoletos, mejorando la resiliencia de la seguridad de sus aplicaciones web contra la explotación y el acceso no autorizado.
 
+## Escenario de ataque real
+
+
+Escenario nº 1: Los componentes normalmente se ejecutan con los mismos privilegios que la propia aplicación, por lo que los fallos en cualquier componente pueden tener un impacto grave. Estos fallos pueden ser accidentales (como un error de programación) o intencionados (como una backdoor en un componente). Algunos ejemplos de vulnerabilidades de componentes explotables descubiertas son:
+
+ - CVE-2017-5638, una vulnerabilidad de ejecución remota de código de Struts 2 que permite la ejecución de código arbitrario en el servidor.
+
+ - Si bien el Internet of Things (IoT) suele ser difícil o imposible de parchear, la importancia de parchearlos puede ser enorme.
+
+Existen herramientas automatizadas para ayudar a los atacantes a encontrar sistemas sin parches o mal configurados. Por ejemplo, el motor de búsqueda Shodan IoT puede ayudar a encontrar dispositivos que aún tienen la vulnerabilidad Heartbleed, parcheada en abril de 2014.
+
 
 
 ## A10:2021 - Falsificación de Solicitudes del Lado del Servidor
