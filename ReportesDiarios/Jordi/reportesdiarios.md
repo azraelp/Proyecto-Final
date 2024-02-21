@@ -8,7 +8,7 @@
 - Recolectar información sobre las vulnerabilidades asignadas.
     - A05:2021 - Configuración de Seguridad Incorrecta.
     - A09:2021 - Fallas en el Registro y Monitoreo.
--Creación del documento principal para el proyecto.
+- Creación del documento principal para el proyecto.
 
 
 # Reporte 20 de febrero de 2024
