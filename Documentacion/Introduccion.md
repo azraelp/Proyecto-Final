@@ -7,17 +7,20 @@
 3. [Fallas de Identificación y Autenticación](#fallas-de-identificación-y-autenticación)
     - [Causas comunes de fallas de identificación y autenticación](#causas-comunes-de-fallas-de-identificación-y-autenticación)
     - [Medidas para mitigar fallas de identificación y autenticación](#medidas-para-mitigar-fallas-de-identificación-y-autenticación)
-4. [Docker](#docker)
+4. [Mariadb](#mariadb)
+    - [Características de Mariadb](#características-de-mariadb)
+    - [Ventajas y desventajas de usar Mariadb](#ventajas-y-desventajas-de-usar-mariadb)
+5. [Docker](#docker)
     - [Características de Docker](#características-de-docker)
     - [Ventajas y desventajas de usar Docker](#ventajas-y-desventajas-de-usar-docker)
-5. [Contenedor Numero 1 Inyección](#contenedor-numero-1-inyección)
+6. [Contenedor Numero 1 Inyección](#contenedor-numero-1-inyección)
     - [Desarrollo de la Vulnerabilidad Principal](#desarrollo-de-la-vulnerabilidad-principal)
     - [Vulnerabilidades CVE Extra](#Vulnerabilidades-cve-extra)
     - [Desarrollo de las Vulnerabilidades Extra](#desarrollo-de-las-vulnerabilidades-extra)
     - [Proceso de explotación de las vulnerabilidades](#proceso-de-explotación-de-las-vulnerabilidades)
     - [Análisis del Contenedor una vez Explotado](#análisis-del-contenedor-una-vez-explotado)
     - [Herramientas Empleadas](#herramientas-empleadas)
-6. [Contenedor Numero 2 Fallas de Identificación y Autenticación](#contenedor-numero-2-fallas-de-identificación-y-autenticación)
+7. [Contenedor Numero 2 Fallas de Identificación y Autenticación](#contenedor-numero-2-fallas-de-identificación-y-autenticación)
     - [Desarrollo de la Vulnerabilidad Principal](#desarrollo-de-la-vulnerabilidad-principal)
     - [Vulnerabilidades CVE Extra](#vulnerabilidades-cve-extra)
     - [Desarrollo de las Vulnerabilidades Extra](#desarrollo-de-las-vulnerabilidades-extra)
@@ -112,8 +115,17 @@ Las fallas de identificación y autenticación son un riesgo relacionado con la 
 - **Educación del Usuario:** Educa a los usuarios sobre prácticas seguras de autenticación, como no compartir contraseñas, evitar el uso de la misma contraseña.
 
 - **Actualizaciones y Parches:** Mantén actualizados los sistemas y aplicaciones para asegurarte de que se hayan corregido las vulnerabilidades conocidas relacionadas con la autenticación y la gestión de identidades.
+# Maiadb
+
+ **¿Qué es Maiadb?**
+
+
+ <p align="center">
+<img  alt="drawing" width="320" height="200" src="https://www.wpsysadmin.com/wp-content/uploads/2021/07/mariadb.png" />
+</p>
 
 # Docker
+
  **¿Qué es Docker?**
 
 Docker es una plataforma de código abierto diseñada para facilitar la creación, implementación y ejecución de aplicaciones dentro de contenedores. Los contenedores son entornos de software ligeros y portátiles que encapsulan todo lo necesario para que una aplicación se ejecute, incluidas las bibliotecas, dependencias y otros componentes, lo que les permite funcionar de manera consistente en cualquier entorno.
