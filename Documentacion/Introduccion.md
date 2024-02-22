@@ -12,16 +12,16 @@
     - [Ventajas y desventajas de usar Docker](#ventajas-y-desventajas-de-usar-docker)
 5. [Contenedor Numero 1 Inyección](#contenedor-numero-1-inyección)
     - [Desarrollo de la Vulnerabilidad Principal)](#desarrollo-de-la-vulnerabilidad-principal)
-    - [Vulnerabilidades (CVEs) Extra](#vulnerabilidades-(cves)-extra)
+    - [Vulnerabilidades (CVEs) Extra](#Vulnerabilidades-cve-extra)
     - [Desarrollo de las Vulnerabilidades Extra](#desarrollo-de-las-vulnerabilidades-extra)
-    - [Proceso de explotación de las vulnerabilidades](#proceso-de-explotación-de-las-vulnerabilidadesa)
+    - [Proceso de explotación de las vulnerabilidades](#proceso-de-explotación-de-las-vulnerabilidades)
     - [Análisis del Contenedor una vez Explotado](#análisis-del-contenedor-una-vez-explotado)
     - [Herramientas Empleadas)](#herramientas-empleadas)
 6. [Contenedor Numero 2 Fallas de Identificación y Autenticación](#contenedor-numero-2-fallas-de-identificación-y-autenticación)
     - [Desarrollo de la Vulnerabilidad Principal](#desarrollo-de-la-vulnerabilidad-principal)
-    - [Vulnerabilidades (CVEs) Extra](#vulnerabilidades-(cves)-extra)
+    - [Vulnerabilidades (CVEs) Extra](#vulnerabilidades-cve-extra)
     - [Desarrollo de las Vulnerabilidades Extra](#desarrollo-de-las-vulnerabilidades-extra)
-    - [Proceso de explotación de las vulnerabilidades](#proceso-de-explotación-de-las-vulnerabilidadesa)
+    - [Proceso de explotación de las vulnerabilidades](#proceso-de-explotación-de-las-vulnerabilidades)
     - [Análisis del Contenedor una vez Explotado](#análisis-del-contenedor-una-vez-explotado)
     - [Herramientas Empleadas](#herramientas-empleadas)
 
@@ -173,7 +173,7 @@ En primer lugar desarrollamos un formulario de inicio de sesión con su respecti
 
 En segundo lugar instalamos MariaDB para gestionar las bases de datos que estarán conectadas al formulario. 
 
-## Vulnerabilidades (CVEs) Extra
+## Vulnerabilidades CVE Extra
 
 ## Desarrollo de las Vulnerabilidades Extra
 
@@ -189,7 +189,7 @@ En segundo lugar instalamos MariaDB para gestionar las bases de datos que estar�
 
 ## Desarrollo de las Vulnerabilidades Extra 
 
-## Vulnerabilidades (CVEs) Extra 
+## Vulnerabilidades CVE Extra 
 
 ## Proceso de explotación de las vulnerabilidades 
 
