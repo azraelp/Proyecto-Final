@@ -37,3 +37,13 @@ Durante el dia de hoy he realizado las siguientes tareas:
 - Empezar a iniciar los contenedores de Docker para iniciar las maquinas
 
 - Investigar acerca de A08:2021 – Fallas en el Software y en la Integridad de los Datos
+
+# Reporte Diario 22 de Febrero de 2024
+
+Durante el dia de hoy he realizado las siguientes tareas:
+
+- Documentar la explicación de la maquina de Fallas y en el Software en la Integridad de los Datos.
+
+- Buscar vulnerabilidades para el A08:2021 – Fallas en el Software y en la Integridad de los Datos
+
+- Ver videos y entender la vulnerabilidad CVE-2013-1465 de deserialización de datos
