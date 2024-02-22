@@ -26,3 +26,9 @@
 - Creación de las imágenes descriptivas de cada máquina
 - Planificacion y diseño de la segunda máquina, así como los servicios que van a correr en ella.
 - Búsqueda intensiva de CV de 2023 para aumentar la dificultad de la máquina
+
+# Reporte 22 de febrero de 2024
+
+- Creación de gráficos para una mejor comprensión de las máquinas
+- Asentar las bases de docker y empezar a crear las primeras imágenes
+- Creación del diseño de la página web para la primera máquina.
