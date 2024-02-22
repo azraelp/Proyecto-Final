@@ -11,7 +11,7 @@
     - [Características de Docker](#características-de-docker)
     - [Ventajas y desventajas de usar Docker](#ventajas-y-desventajas-de-usar-docker)
 5. [Contenedor Numero 1 Inyección](#contenedor-numero-1-inyección)
-    - [Desarrollo de la Vulnerabilidad Principal)](#desarrollo-de-la-vulnerabilidad-principal)
+    - [Desarrollo de la Vulnerabilidad Principal](#desarrollo-de-la-vulnerabilidad-principal)
     - [Vulnerabilidades CVE Extra](#Vulnerabilidades-cve-extra)
     - [Desarrollo de las Vulnerabilidades Extra](#desarrollo-de-las-vulnerabilidades-extra)
     - [Proceso de explotación de las vulnerabilidades](#proceso-de-explotación-de-las-vulnerabilidades)
