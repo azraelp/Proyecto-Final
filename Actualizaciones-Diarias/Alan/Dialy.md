@@ -20,10 +20,15 @@
 
 - [X] Buscar ataques reales de la vulnerabilidad asignada SSRF.
 - [X] Investigación de CVE para la primera máquina.
-- [X] Investigación profunda sobre Docker.
+- [X] Investigación profunda sobre Docker y DockerHub.
 - [X] Reunión de seguimiento de final de sesión y planificación de tareas del día siguiente.
 
 ## Jueves 22 de Febrero 2024:
+
+- [X] Investigar sobre el funcionamiento interno de SSRF y ver ataques reales.
+- [X] Solución de problemas de Docker 
+- [ ] Puesta en marcha del primer contenedor Docker (A10:2021)
+- [ ] Producción y desarrollo de SSRF en Docker.
 
 
 ## Viernes 23 de Febrero 2024:
