@@ -1,19 +1,20 @@
 
 FROM ubuntu:20.04
 
-<!--- Metadatos----->
-LABEL maintainer="Nombre"
+<!--- Poner informacion version, nombre----->
+LABEL maintainer=" 123@gmail.com"
+LABEL version="0.1"
 
 <!--- Actualiza los paquetes----->
 RUN apt-get update
 RUN apt upgrade -y
 
   
-<!---(Instalar paquetes adicionales o dependencias según sea necesario)----->
+<!---(Instalar paquetes adicionales)----->
  RUN apt-get install -y apache2
  RUN apt-get install mariadb-server
 
-<!---(Exponer puertos si tu aplicación lo requiere)----->
+<!---(Exponer puertos)----->
  EXPOSE 80 443
 
 <!---(Copiar archivos o directorios desde el host al contenedor)----->
