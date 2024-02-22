@@ -15,3 +15,6 @@
 - [X] Pruebas de la maquinas
 - [X] Primeras pruebas de la posible pagina web
 
+## 22/02/24 Reporte Diario
+- [X] Pruebas de la maquinas
+- [X] Investigación y pruebas de FTP
