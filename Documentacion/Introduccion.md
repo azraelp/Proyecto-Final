@@ -118,7 +118,7 @@ Las fallas de identificación y autenticación son un riesgo relacionado con la 
 
  **¿Qué es Mariadb?**
  
-MariaDB es una base de datos se  utiliza para el almacenamiento de datos.
+MariaDB  es una bases de datos relacional de código abierto que ofrece poder almacenar y manipular datos de manera eficiente.
 
  <p align="center">
 <img  alt="drawing" width="320" height="200" src="https://www.wpsysadmin.com/wp-content/uploads/2021/07/mariadb.png" />
@@ -139,7 +139,7 @@ MariaDB es una base de datos se  utiliza para el almacenamiento de datos.
 - **Compatibilidad con estándares:** MariaDB cumple los  estándares SQL.
 
  **Desventajas:**
-- **Fragmentación de la comunidad:** Diferentes tipos opiniones dentro de la comunidad de usuarios, dificultad en la adopción y la colaboración.
+- **Fragmentación de la comunidad:** Diferentes tipos opiniones dentro de la comunidad de usuarios, dificultad en la colaboración dentro de la comunidad.
 # Docker
 
  **¿Qué es Docker?**
