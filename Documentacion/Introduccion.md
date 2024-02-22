@@ -182,7 +182,9 @@ En segundo lugar instalamos MariaDB para gestionar las bases de datos que estar�
 ## Análisis del Contenedor una vez Explotado 
 
 ### Herramientas Empleadas 
-
+-docker checkpoint
+-Docker Forensics Toolkit 
+-OWASP ZAP
 # Contenedor Numero 2 Fallas de Identificación y Autenticación
 
 ## Desarrollo de la Vulnerabilidad Principal
