@@ -17,7 +17,7 @@
     - [Proceso de explotación de las vulnerabilidades](#Proceso-de-explotación-de-las-vulnerabilidadesa)
     - [Análisis del Contenedor una vez Explotado](#análisis-del-contenedor-una-vez-explotado)
     - [Herramientas Empleadas)](#herramientas-empleadas)
-6. [Contenedor Numero 2 Fallas de Identificación y Autenticación](#contenedor-numero-2-fallas-de-identificación-y-autenticación-(Contenedor-2))
+6. [Contenedor Numero 2 Fallas de Identificación y Autenticación](#contenedor-numero-2-fallas-de-identificación-y-autenticación)
     - [Desarrollo de la Vulnerabilidad Principal](#desarrollo-de-la-vulnerabilidad-principal)
     - [Vulnerabilidades (CVEs) Extra](#vulnerabilidades-(CVEs)-extra)
     - [Desarrollo de las Vulnerabilidades Extra](#desarrollo-de-las-vulnerabilidades-extra)
