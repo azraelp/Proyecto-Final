@@ -118,14 +118,29 @@ Las fallas de identificación y autenticación son un riesgo relacionado con la 
 # Mariadb
 
  **¿Qué es Mariadb?**
-
+ 
+MariaDB es una base de datos se  utiliza para el almacenamiento de datos.
 
  <p align="center">
 <img  alt="drawing" width="320" height="200" src="https://www.wpsysadmin.com/wp-content/uploads/2021/07/mariadb.png" />
 </p>
-  ## Características de Mariadb
+
 ## Ventajas y desventajas de usar Mariadb
 
+ **Ventajas:**
+
+- **Compatibilidad con MySQL:** Es compatible con la mayoría de las aplicaciones y herramientas diseñadas para MySQL. 
+
+- **Código abierto:** Es un proyecto de código abierto.
+
+
+- **Comunidad activa:** Cuenta con una comunidad de usuarios.
+
+
+- **Compatibilidad con estándares:** MariaDB cumple los  estándares SQL.
+
+ **Desventajas:**
+- **Fragmentación de la comunidad:** Diferentes tipos opiniones dentro de la comunidad de usuarios, dificultad en la adopción y la colaboración.
 # Docker
 
  **¿Qué es Docker?**
