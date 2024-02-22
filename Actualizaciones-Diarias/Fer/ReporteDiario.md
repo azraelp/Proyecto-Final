@@ -12,3 +12,8 @@
 ✅ Organización y distribución de tareas diarias <br>
 ✅ Búsqueda de información de CVEs para las vulnerabilidades asignadas <br>
 ✅ Creación del login (html y css) <br>
+
+## Jueves 22 de febrero 2024
+✅ Organización y distribución de tareas diarias <br>
+✅ Subida del login al servidor y testeo <br>
+:white_large_square: Creacion de una web tienda (Para el ataque SSRF)
