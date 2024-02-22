@@ -115,14 +115,16 @@ Las fallas de identificación y autenticación son un riesgo relacionado con la 
 - **Educación del Usuario:** Educa a los usuarios sobre prácticas seguras de autenticación, como no compartir contraseñas, evitar el uso de la misma contraseña.
 
 - **Actualizaciones y Parches:** Mantén actualizados los sistemas y aplicaciones para asegurarte de que se hayan corregido las vulnerabilidades conocidas relacionadas con la autenticación y la gestión de identidades.
-# Maiadb
+# Mariadb
 
- **¿Qué es Maiadb?**
+ **¿Qué es Mariadb?**
 
 
  <p align="center">
 <img  alt="drawing" width="320" height="200" src="https://www.wpsysadmin.com/wp-content/uploads/2021/07/mariadb.png" />
 </p>
+  ## Características de Mariadb
+## Ventajas y desventajas de usar Mariadb
 
 # Docker
 
