@@ -17,3 +17,10 @@
 - [x] Prueba de montaje de varias vulnerabilidades
 - [x] Desarrollo de una idea principal más clara
 - [x] Avance en la documentación principal 
+
+# Jueves 22 de febrero 2024:
+
+- [x] Búsqueda de CVEs de 2023 en adelante
+- [x] Continuación de desarrollo de un formulario vulnerable a SQL Injection
+- [x] Avance en la documentación principal
+- [x] Búsqueda del funcionamiento de Docker
