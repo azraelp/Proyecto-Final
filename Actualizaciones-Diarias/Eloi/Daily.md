@@ -21,4 +21,4 @@
 # Miercoles 21 de febrero 2024:
 - [X] Cambios DockerFile
 - [X] Solucionar problemas con wireshark en docker
-- [ ] Planificar maquina SSRF
+- [X] Planificar maquina SSRF
