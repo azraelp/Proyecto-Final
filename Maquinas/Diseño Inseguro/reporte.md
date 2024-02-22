@@ -1,7 +1,7 @@
  - Primera maquina y su contenido
     1. Escaneo de puertos
     2. Buscar ficheros ocultos
-    3. Una página web(Posiblemente 2)
+    3. Una página web(fake)
         - Que puedan ejecutar comando desde la url
         - Hacer flag falsas(pero que contengan pista de la flag real) para perder el tiempo
     4. Un servidor FTP
