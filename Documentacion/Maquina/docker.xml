@@ -1,1 +1,20 @@
 
+FROM ubuntu:20.04
+
+<!--- Metadatos----->
+LABEL maintainer="Nombre"
+
+<!--- Actualiza los paquetes----->
+RUN apt-get update
+RUN apt upgrade -y
+
+  
+<!---(Instalar paquetes adicionales o dependencias según sea necesario)----->
+ RUN apt-get install -y apache2
+ RUN apt-get install mariadb-server
+
+<!---(Exponer puertos si tu aplicación lo requiere)----->
+ EXPOSE 80 443
+
+<!---(Copiar archivos o directorios desde el host al contenedor)----->
+COPY /ruta/del/origen /ruta/destino
