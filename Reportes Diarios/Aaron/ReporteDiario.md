@@ -25,3 +25,4 @@
  - Creaciones de imagenes docker y subirlas a DockerHub.
  - Resolver el error de que las imagenes a la hora de hacer run, que antes no funcionaba.
  - He hecho un informe en drive, paso a paso para crear imagen docker, activarla, como modificarla, como guardarla y subirla a DockerHub.
+ - Subiendo imagen a repositorio compartido en vez del mio, para poder trabajar en el mismo repositorio , y la misma imagen.
