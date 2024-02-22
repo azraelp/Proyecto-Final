@@ -19,3 +19,9 @@
 - Creacion de cuenta DockerHub, y repositorios para la subida de imagen de cada maquina.
 - Busqueda de CWE's para maquina diseño inseguro.
 - Tests de imagenes de docker.
+
+ ## Jueves 22/02/2024
+
+ - Creaciones de imagenes docker y subirlas a DockerHub.
+ - Resolver el error de que las imagenes a la hora de hacer run, que antes no funcionaba.
+ - He hecho un informe en drive, paso a paso para crear imagen docker, activarla, como modificarla, como guardarla y subirla a DockerHub.
