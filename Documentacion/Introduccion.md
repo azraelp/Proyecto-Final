@@ -8,7 +8,6 @@
     - [Causas comunes de fallas de identificación y autenticación](#causas-comunes-de-fallas-de-identificación-y-autenticación)
     - [Medidas para mitigar fallas de identificación y autenticación](#medidas-para-mitigar-fallas-de-identificación-y-autenticación)
 4. [Mariadb](#mariadb)
-    - [Características de Mariadb](#características-de-mariadb)
     - [Ventajas y desventajas de usar Mariadb](#ventajas-y-desventajas-de-usar-mariadb)
 5. [Docker](#docker)
     - [Características de Docker](#características-de-docker)
