@@ -19,3 +19,9 @@
 - [x] Lluvia de ideas para la realización de la segunda máquina.
 - [x] Planificación de la segunda máquina.
 - [x] Investigación de CVE extras para añadir a las máquinas.
+
+## Jueves 22/02/2024
+
+- [x] Búsqueda exhaustiva de CVE para implementar en las máquinas.
+- [x] Investigación e intento de implementación del CVE-2023-22515.
+- [x] Instalación de servidor Confluence en máquina local.
