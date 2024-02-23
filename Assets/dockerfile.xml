@@ -1,4 +1,4 @@
-VERSIÓN ALFA
+VERSIÓN BETA
 
 # Usa una imagen base de Ubuntu
 FROM ubuntu:latest
