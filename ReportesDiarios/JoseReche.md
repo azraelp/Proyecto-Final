@@ -19,6 +19,11 @@
 - [X] Replantear CTF.
 
 ## Jueves 22/02/2024
-- [ ]  Investigar aplicación CVE a plugins wordpress.
-- [ ]  Buscar plugins vulnerables a nuestros objetivos.
+- [X]  Investigar aplicación CVE a plugins wordpress.
+- [X]  Buscar plugins vulnerables a nuestros objetivos.
 - [ ]  Reunión de seguimiento de final de sesión y planificación de tareas del día siguiente.
+
+## Viernes 23/02/2024
+- [ ]  Poder llegar a Barcelona para presentar planteamiento.
+- [ ]  Revisar lo que sabemos.
+- [ ]  Plantear detalles finales de la imagen docker.
