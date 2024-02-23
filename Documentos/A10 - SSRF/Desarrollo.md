@@ -11,4 +11,4 @@ El contenedor Docker estará basado en Ubuntu 22.04.3 LTS Server y tendrá insta
 
 El Dockerfile que generará el contenedor es el siguiente:
 ![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/dockerfile.png)
-
+En la primera linea se especifica que imagen se usara para montar el conetendor, despues se realiza una actualizacion de paquetes y se instalan las utilidades necesarias para realizar el ataque SSRF, el parametro **DEBIAN_FRONTEND=noninteractive** se utiliza para que a la hora de instalar los paquetes no aparezca ningun prompt y que se aplique la opcion perdeterminada a la hora de configurar los paquetes en la instalacion, la ultima linea **rm -rf /var/lib/apt/lists/** eliminara los archivos temporales que ya no son necesarios después de la instalación de los paquetes de esta forma se optimiza el espacio del contenedor.
