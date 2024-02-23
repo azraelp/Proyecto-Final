@@ -29,5 +29,6 @@
 
  ## Viernes 23/02/2024
 
+ - Creación de dockerfile para la primera maquina. 
  - Creacion de la imagen de la primera maquina.
  - Configuracion de apache y creacion de pagina web dentro de la imagen.
