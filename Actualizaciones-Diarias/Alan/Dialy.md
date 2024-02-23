@@ -27,11 +27,14 @@
 
 - [X] Investigar sobre el funcionamiento interno de SSRF y ver ataques reales.
 - [X] Solución de problemas de Docker 
-- [ ] Puesta en marcha del primer contenedor Docker (A10:2021)
-- [ ] Producción y desarrollo de SSRF en Docker.
-
+- [X] Puesta en marcha del primer contenedor Docker (A10:2021)
 
 ## Viernes 23 de Febrero 2024:
+
+- [ ] Producción y desarrollo de SSRF en Docker.
+- [ ] 
+- [ ] 
+- [ ] 
 
 
 
