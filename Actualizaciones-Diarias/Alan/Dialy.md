@@ -41,7 +41,6 @@
 
 # Semana 2 - Preparación máquina 1:
 
-
 ## Lunes 26 de Febrero 2024:
 
 
@@ -87,8 +86,8 @@
 
 
 
-# Semana 4 - Preparación máquina 2:
 
+# Semana 4 - Preparación máquina 2:
 
 ## Lunes 11 de Marzo 2024:
 
@@ -110,8 +109,8 @@
 
 
 
-# Semana 5 - Preparación máquina 2:
 
+# Semana 5 - Preparación máquina 2:
 
 ## Lunes 18 de Marzo 2024:
 
@@ -135,6 +134,70 @@
 
 # Semana 6 - Probar y documentar:
 
+## Lunes 25 de Marzo 2024:
+
+
+
+## Martes 26 de Marzo 2024:
+
+
+
+## Miércoles 27 de Marzo 2024:
+
+
+
+## Jueves 28 de Marzo 2024:
+
+
+
+## Viernes 29 de Marzo 2024:
+
+
+
+
+
+# Semana 7 - Aplicar mejoras:
+## Lunes 1 de Abril 2024:
+
+
+
+## Martes 2 de Abril 2024:
+
+
+
+## Miércoles 3 de Abril 2024:
+
+
+
+## Jueves 4 de Abril 2024:
+
+
+
+## Viernes 5 de Abril 2024:
+
+
+
+
+
+# Semana 8 - Aplicar mejoras:
+
+## Lunes 8 de Abril 2024:
+
+
+
+## Martes 9 de Abril 2024:
+
+
+
+## Miércoles 10 de Abril 2024:
+
+
+
+## Jueves 11 de Abril 2024:
+
+
+
+## Viernes 12 de Abril 2024:
 
 
 
