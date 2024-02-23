@@ -19,7 +19,7 @@
 :white_large_square: Creacion de una web tienda (Para el ataque SSRF)<br>
 
 ## Viernes 23 de febrero 2024
-✅ Organización y distribución de tareas diarias 
-✅ Configuración para el uso de Burbsuite
-✅ Buscar soluciones para el problema que habia para la API de la tienda 
-❌ Creación de una web tienda (Para el ataque SSRF) - Cancelada
+✅ Organización y distribución de tareas diarias <br>
+✅ Configuración para el uso de Burbsuite <br>
+✅ Buscar soluciones para el problema que habia para la API de la tienda <br>
+❌ Creación de una web tienda (Para el ataque SSRF) - Cancelada <br>
