@@ -9,3 +9,6 @@ El contenedor docker estara basado en Ubuntu 22.04.3 LTS Server, y tendra instal
 * PHP,  proporciona capacidades para ejecutar y administrar scripts y aplicaciones PHP en el contenedor. Junto con otros paquetes relacionados como php-cli y php-fpm.
 * VIM/NANO, editores de texto.
 
+El dockerfile que generar el contenedor es el siguiente
+
+
