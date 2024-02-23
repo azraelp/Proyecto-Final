@@ -17,3 +17,8 @@
 ✅ Organización y distribución de tareas diarias <br>
 ✅ Subida del login al servidor y testeo <br>
 :white_large_square: Creacion de una web tienda (Para el ataque SSRF)
+
+## Viernes 23 de febrero 2024
+✅ Organización y distribución de tareas diarias <br>
+✅ Buscar soluciones para el problema, que habia para la API de la tienda
+❌ Creacion de una web tienda (Para el ataque SSRF) - Cancelada debido a problemas, para recoger la API
