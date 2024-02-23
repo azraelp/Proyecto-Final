@@ -25,3 +25,9 @@
 - [x] Búsqueda exhaustiva de CVE para implementar en las máquinas.
 - [x] Investigación e intento de implementación del CVE-2023-22515.
 - [x] Instalación de servidor Confluence en máquina local.
+
+## Viernes 23/02/2024
+
+- [x] Planificación y reparto de las tareas de la primera máquina
+- [x] Investigación de como hacer movimiento lateral en la primera máquina
+- [x] Intento de réplica del movimiento lateral en con la creación de diferentes máquinas virtuales en local
