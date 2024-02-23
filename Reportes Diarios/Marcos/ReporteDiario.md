@@ -47,3 +47,15 @@ Durante el dia de hoy he realizado las siguientes tareas:
 - Buscar vulnerabilidades para el A08:2021 – Fallas en el Software y en la Integridad de los Datos
 
 - Ver videos y entender la vulnerabilidad CVE-2013-1465 de deserialización de datos
+
+# Reporte Diario 23 de Febrero de 2024
+
+Durante el dia de hoy he realizado las siguientes tareas:
+
+- Documentar en Documentación Final sobre Docker, DockerHub y usos.
+
+- Iniciar Docker en la maquina virtual de Kali y empezar a instalar los paquetes y servicios necesarios de Docker
+
+- Resolver problemas durante la configuración de Docker
+
+- Empezar a montar el entorno para el CVE https://nvd.nist.gov/vuln/detail/CVE-2019-9053
