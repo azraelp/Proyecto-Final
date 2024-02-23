@@ -31,11 +31,10 @@
 
 ## Viernes 23 de Febrero 2024:
 
-- [ ] Producción y desarrollo de SSRF en Docker.
-- [ ] 
-- [ ] 
-- [ ] 
-
+- [X] Producción y desarrollo de SSRF en Docker.
+- [X] Corrección de errores con puertos y servicios de contenedores Docker.
+- [X] Desarrollo de la vulnerabilidad SSRF
+- [X] Reunión de seguimiento con el equipo
 
 
 
