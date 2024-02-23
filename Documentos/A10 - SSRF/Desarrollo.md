@@ -10,5 +10,5 @@ El contenedor docker estara basado en Ubuntu 22.04.3 LTS Server, y tendra instal
 * VIM/NANO, editores de texto.
 
 El dockerfile que generara el contenedor es el siguiente
-![]([Proyecto-Final/Assets/Img/dockerfile.png](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/dockerfile.png)https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/dockerfile.png)
+![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/dockerfile.png)
 
