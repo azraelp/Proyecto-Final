@@ -19,3 +19,9 @@
 - [X] Pruebas de la maquinas
 - [X] Investigación y pruebas de FTP
 - [X] Finalización de las pruebas de FTP
+
+## 23/02/24 Reporte Diario
+- [X] Pruebas de la maquinas
+- [X] Investigación sobre como retringir a los usuarios de hacer que cosas si y que cosas no
+- [X] Creación de usuarios
+- [X] Planificación lógica de la maquina(Historia de la maquina)
