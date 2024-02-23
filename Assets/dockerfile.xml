@@ -1,1 +1,28 @@
+# Usa una imagen base de Ubuntu
+FROM ubuntu:latest
+
+# Actualiza la lista de paquetes e instala los paquetes necesarios para Wireshark, Apache y SSH
+RUN apt-get update && \
+    DEBIAN_FRONTEND=noninteractive apt-get install -y \
+    wireshark \
+    apache2 \
+    openssh-server \
+    x11-utils \
+    iproute2 \
+    php3 \
+    php-cli \
+    && rm -rf /var/lib/apt/lists/*
+
+# Configura el servidor SSH
+RUN mkdir /var/run/sshd
+
+# Establece la variable de entorno DISPLAY para que apunte al servidor X del sistema anfitrión
+ENV DISPLAY=:0.0
+
+# Expone los puertos 80 para Apache y 22 para SSH
+EXPOSE 80
+EXPOSE 22
+
+# Inicia el servicio de Apache y SSH al iniciar el contenedor
+CMD service ssh start && apache2ctl -D FOREGROUND
 
