@@ -1,3 +1,5 @@
+VERSIÓN ALFA
+
 # Usa una imagen base de Ubuntu
 FROM ubuntu:latest
 
