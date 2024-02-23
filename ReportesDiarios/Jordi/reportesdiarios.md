@@ -32,3 +32,11 @@
 - Creación de gráficos para una mejor comprensión de las máquinas
 - Asentar las bases de docker y empezar a crear las primeras imágenes
 - Creación del diseño de la página web para la primera máquina.
+
+# Reporte 23 de febrero de 2024
+
+- Diseño y creacion de la primera maquina
+    - El servidor ftp ya esta configurado y corriendo en un docker, asi que se da por terminado
+    - La pagina web avanza muy bien, ya que hemos dividio muy bien las taras.
+        - Gestion de sesiones en php
+        - Cracion de la paginas del panel de control 
