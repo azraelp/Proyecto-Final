@@ -16,3 +16,6 @@ En la primera linea se especifica que imagen se usara para montar el conetendor,
 Para crear el contenedor docker usando el dockerfile se usara la opción *build*
 ![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/docker-build.png)
 ![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/docker-build-2.png)
+
+
+# Problemas encontrados en el desarollo
