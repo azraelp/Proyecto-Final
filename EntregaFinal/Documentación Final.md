@@ -134,3 +134,49 @@
   20. Si desconocieramos la IP de nuestro Docker que hemos ejecutado, deberemos ejecutar el siguiente comando:
 
       > docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' nombreContenedor|ImageID
+
+
+
+
+# Maquina Diseño Inseguro
+
+## Creación de la maquina:
+
+- Instalacion de docker a nuestro sistema Ubuntu.
+- Creación de cuenta de DockerHub para guardar las imagenes en la nube y poder compartiras con el grupo.
+- Creación acrivo dockerfile:
+//Ponemos la imagen de sistema que necesitamos
+FROM ubuntu:latest
+
+//Configura el servidor de paquetes para usar un espejo
+RUN sed -i 's/http:\/\/archive.ubuntu.com/http:\/\/es.archive.ubuntu.com/' /etc/apt/sources.list
+
+//Actualiza los paquetes y instala los servicios necesarios
+RUN apt-get update
+RUN apt-get install -y \
+    apache2 \
+    vsftpd \
+    openssh-server
+    
+//Configuramos el servidor FTP
+RUN echo "local_enable=YES" >> /etc/vsftpd.conf
+
+//Copiamos la página web al directorio de Apache
+COPY ./mi_pagina_web.html /var/www/html
+
+//Configuramos el servidor SSH
+RUN mkdir /var/run/sshd
+RUN echo 'root:password' | chpasswd
+RUN sed -i 's/PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config
+
+//Exponemos los puertos necesarios
+EXPOSE 80 20 21 22
+
+//Comando para iniciar los servicios
+CMD service apache2 start && service vsftpd start && /usr/sbin/sshd -D
+
+
+- Abrimos un terminal y nos ponemos como sudo(sudo su).
+- En la misma ruta donde esta el archivo dockerfile ejecutamos el siguiente comando: docker build -t marcositb/grupo4_insecure_design:v1.0
+- 
+  
