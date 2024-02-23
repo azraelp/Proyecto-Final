@@ -96,3 +96,41 @@
   * Dockerfile:
   
       **Definición**: Un Dockerfile es un archivo de texto plano que contiene una serie de instrucciones para construir una imagen de Docker. Las instrucciones incluyen acciones como la instalación de paquetes, la               configuración de variables de entorno y la copia de archivos en la imagen.
+
+## Como utilizar DockerHub y Docker?
+  
+  1. Para empezar nos tenemos que crear una cuenta en [DockerHub](https://hub.docker.com/).
+  2. Una vez tenemos la cuenta creada en DockerHub debemos instalar Docker en nuestra maquina, nosotros lo hemos hecho en Kali Linux siguiendo estos [pasos](https://www.kali.org/docs/containers/installing-docker-on-kali/).
+  3. Con Docker instalado, deberemos iniciar sesión ejecutando el siguiente comando e introduciendo nuestras credenciales de la cuenta de DockerHub.
+     
+     > docker login
+  4. En DockerHub deberemos crear 2 repositorios, 1 para cada maquina que montemos.
+  5. Para antes de subir la imagen de Docker al correspondiente repositorio, deberemos crear un DockerFile dependiendo de nuestras necesidades.
+  6. Para generar la imagen a través del DockerFile ejecutaremos el siguiente comando:
+
+     > docker build -t usuarioDockerHub/nombreImagen:tag . 
+  8. Para iniciar la imagen creada deberemos ejecutar el siguiente comando:
+    
+     > docker run usuarioDockerHub/nombreImagen:tag
+  10. Verificaremos que nuestro docker se encuentra ejecutandose con el comando:
+
+      > docker ps
+  12. Para acceder dentro del contenedor ejecutaremos el siguiente comando:
+
+      > docker exec -it IMAGE_ID bash
+  14. Una vez hayamos hecho los cambios necesarios dentro del contenedor, para aplicar estos cambios debremos ejecutar el siguiente comando para guardar la imagen en una nueva versión:
+
+      > docker commit IMAGE_ID usuarioDockerHub/nombreImagen:tagNuevaVersion
+  15. Para verificar que se nos ha creado una nueva versión de la imagen ejecutaremos el siguiente comando:
+
+      > docker images
+  16. En caso de que queramos eliminar la imagen antigua para no confundirnos deberemos ejecutar el siguiente comando:
+
+      > docker rmi usuarioDockerHub/nombreImagen:tagAntiguaVersion
+  18. Para subir la imagen de Docker que hemos creado a su respectivo repositorio de DockerHub, deberemos tener iniciada la sesión desde nuestra maquina, este paso lo hemos realizado en el numero 3.
+  19. Para subir la imagen se debe tener en cuenta que debe cumplir con la nomenclatura especificada en el repositorio de DockerHub, es decir usuarioDockerHub/nombreRepositorio, en nuestro caso seria marcositb/grupo4_insecure_design. Subiremos la imagen con el siguiente comando:
+
+      > docker push usuarioDockerHub/nombreRepositorio:tagVersion
+  20. Si desconocieramos la IP de nuestro Docker que hemos ejecutado, deberemos ejecutar el siguiente comando:
+
+      > docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' nombreContenedor|ImageID
