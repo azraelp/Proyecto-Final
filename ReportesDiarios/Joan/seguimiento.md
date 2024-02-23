@@ -30,4 +30,4 @@
 
 - [x] Planificación y reparto de las tareas de la primera máquina
 - [x] Investigación de como hacer movimiento lateral en la primera máquina
-- [x] Intento de réplica del movimiento lateral en con la creación de diferentes máquinas virtuales en local
+- [x] Intento de réplica del movimiento lateral con la creación de diferentes máquinas virtuales en local
