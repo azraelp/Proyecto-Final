@@ -197,11 +197,23 @@ El sistema operativo utilizado para el desarrollo de este primer contenedor es U
 
 ## Desarrollo de la Vulnerabilidad Principal 
 
-En primer lugar desarrollamos un formulario de inicio de sesión con su respectivo validador (en PHP). Este será el encargado de lanzar _query_ a la base de datos para verificar si las credenciales introducidas por el cliente forman parte de un usuario válido. Este código no sanitiza la entrada obtenida, es por ello que es vulnerable a un ataque de inyección SQL.
+En primer lugar desarrollamos un formulario de inicio de sesión con su respectivo validador (en PHP). Este será el encargado de lanzar _query_ a la base de datos para verificar si las credenciales introducidas por el cliente forman parte de un usuario válido. Este código no sanitiza la entrada obtenida, es por ello que es vulnerable a un ataque de inyección SQL, como se representa en la siguiente ilustración:
 
-En segundo lugar instalamos MariaDB para gestionar las bases de datos que estarán conectadas al formulario. 
+<p align="center">
+<img  alt="drawing" width="400" height="400" src="https://i.imgur.com/u74Zyuj.png" />
+</p>
+
+En segundo lugar instalamos MariaDB para gestionar las bases de datos que estarán conectadas al formulario. Tras crear las bases de datos con sus respectivos usuarios y verificar la conexión y el buen funcionamiento con el formulario, damos por finalizado la implementación de la vulnerabilidad principal en este contenedor.
 
 ## Vulnerabilidades CVE Extra
+
+Para comenzar con la búsqueda de las CVEs añadidas como extra en la máquina, hay que tener en cuenta los siguientes puntos:
+- **La CVE debe ser del año 2023 o posterior**
+- **La CVE debe ser reproducible**
+- **La CVE debe tener un exploit desarrollado**
+
+CVEs elegidas para su reproducción:
+- **Software vulnerable a RCE (Remote Command Execution)**
 
 ## Desarrollo de las Vulnerabilidades Extra
 
