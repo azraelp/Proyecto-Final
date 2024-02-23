@@ -26,3 +26,8 @@
  - Resolver el error de que las imagenes a la hora de hacer run, que antes no funcionaba.
  - He hecho un informe en drive, paso a paso para crear imagen docker, activarla, como modificarla, como guardarla y subirla a DockerHub.
  - Subiendo imagen a repositorio compartido en vez del mio, para poder trabajar en el mismo repositorio , y la misma imagen.
+
+ ## Viernes 23/02/2024
+
+ - Creacion de la imagen de la primera maquina.
+ - Configuracion de apache y creacion de pagina web dentro de la imagen.
