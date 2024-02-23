@@ -19,6 +19,7 @@ Para crear el contenedor docker usando el dockerfile se usara la opción *build*
 
 
 # Problemas encontrados en el desarollo
+Una vez accediamos al contenedor 
 ![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/error-display.png)
 ![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/error-dumpcap-child.png)
 ![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/error-dumpcap-capabilities.png)
