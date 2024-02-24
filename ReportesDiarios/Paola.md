@@ -11,3 +11,18 @@
 - Buscar vulnerabilidades A02 Fallas criptográficas
 
 - Buscar info sobre como montarlo (web)
+
+## Miércoles 21/02/2024
+
+- Buscar vulnerabilidades A02 Fallas criptográficas
+
+- Buscar info sobre como montarlo (web)
+
+## Jueves 22/02/2024
+
+- Reunión de seguimiento de final de sesión y planificación de tareas del día siguiente.
+
+## Viernes 23/02/2024
+
+- Revisar lo que sabemos.
+- Plantear detalles finales. 
