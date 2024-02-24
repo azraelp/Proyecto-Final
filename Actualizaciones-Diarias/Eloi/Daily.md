@@ -18,7 +18,12 @@
 - [X] Cambios DockerFile
 - [X] Puesta en marcha del docker SSRF
 
-# Miercoles 21 de febrero 2024:
+# Jueves 22 de febrero 2024
 - [X] Cambios DockerFile
 - [X] Solucionar problemas con wireshark en docker
 - [X] Planificar maquina SSRF
+
+# Viernes 23 de febrero 2024
+- [X] Documentacion desarollo docker
+- [X] Planificaicon de servidor web 
+
