@@ -40,3 +40,9 @@
     - La pagina web avanza muy bien, ya que hemos dividio muy bien las taras.
         - Gestion de sesiones en php
         - Cracion de la paginas del panel de control 
+
+
+# Reporte 26 de febrero de 2024
+
+- Creacion de la primera maquina
+    - Diseño y crecion de la pagina web
