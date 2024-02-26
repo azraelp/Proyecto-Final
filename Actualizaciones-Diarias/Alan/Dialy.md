@@ -33,8 +33,8 @@
 
 - [X] Producción y desarrollo de SSRF en Docker.
 - [X] Corrección de errores con puertos y servicios de contenedores Docker.
-- [X] Desarrollo de la vulnerabilidad SSRF
-- [X] Reunión de seguimiento con el equipo
+- [X] Desarrollo de la vulnerabilidad SSRF.
+- [X] Reunión de seguimiento con el equipo.
 
 
 
@@ -42,6 +42,10 @@
 
 ## Lunes 26 de Febrero 2024:
 
+- [X] Desarrollo e investigación de SSRF.
+- [X] Resolución de errores con versiones de Apache2.
+- [X] Planificación de la semana.
+      
 
 
 ## Martes 27 de Febrero 2024:
