@@ -36,6 +36,11 @@ Una vez accediamos al contenedor
 ![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/error-dumpcap-capabilities.png)
 
 # Desarrollo de las webs
-**Login** <br>
+**Web login** <br>
 Se ha realizado un login para la página web que sufrirá la vulnerabilidad de ssrf. Para la creación de la página, hemos utilizado únicamente HTML y CSS. No es una página funcional porque por ahí no se realizara el ataque, solo será una página donde no se podrá interactuar.
 ![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zomeño)/Assets/Img/login-SSRF.png)
+
+**Web tienda** <br>
+Se realizó una búsqueda de información del ataque ssrf para ver que páginas eran más comunes en este tipo de ataque. Habiendo buscado varias fuentes de información, sacamos que unas de las páginas que más sufren de eso son tiendas que comprueban el stock de un producto.
+
+Así que con esta información decidimos montar una web sencilla, usando html y JavaScript. En esta web pondremos que tipo de producto quiere el usuario.
