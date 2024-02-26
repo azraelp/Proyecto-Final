@@ -61,4 +61,4 @@ Así que se hizo, creó otra versión de la web para que obtuviera los datos de 
 Pero como vemos en el buirp suite no detecta la API <br>
 ![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zomeño)/Assets/Img/tiendaweb-7.png)
 
-Tras varios intentos sin éxito, decidimos enfocarlo de otra manera. Y hacer una página parecida al "virustotal".
+Tras varios intentos sin éxito, decidimos enfocarlo de otra manera. Y hacer una página parecida a "virustotal".
