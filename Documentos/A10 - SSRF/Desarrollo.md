@@ -47,4 +47,10 @@ Así que con esta información decidimos montar una web sencilla, usando html y 
 ![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zomeño)/Assets/Img/tiendaweb-1.png)
 
 Y una vez que lo haya seleccionado y le dé al botón de verificar las existencias, mostrará la cantidad de existencias el cual es un número random creado por JavaScript.
+![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zomeño)/Assets/Img/tiendaweb-3.png)
+
+Se intentó a ver si podía sacar la API de la web mediante la verificación de existencias y vimos que el buirp suite no recogía nada. Buscamos información y vimos que lo estábamos haciéndolo mal. Se intentó hacer  lo mismo, pero generando el número a través del PHP en vez de con JavaScript. Y tampoco funcionó.
+![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zomeño)/Assets/Img/tiendaweb-4.png)
+
+Así que se hizo, creó otra versión de la web para que obtuviera los datos de la base de datos. Se ha creado el HTML para mostrar los datos y el PHP para hacer la conexión con la base de datos.
 ![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zomeño)/Assets/Img/tiendaweb-2.png)
