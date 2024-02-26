@@ -147,9 +147,11 @@
 FROM marcositb/grupo4_insecure_design:v1.0
 
 // Exponer los puertos necesarios
+
 EXPOSE 80 20 21 22
 
 // Comando para iniciar los servicios
+
 CMD service apache2 start && service vsftpd start && /usr/sbin/sshd -D
 
 
