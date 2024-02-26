@@ -43,14 +43,14 @@ Se ha realizado un login para la página web que sufrirá la vulnerabilidad de s
 **Web tienda** <br>
 Se realizó una búsqueda de información del ataque ssrf para ver que páginas eran más comunes en este tipo de ataque. Habiendo buscado varias fuentes de información, sacamos que unas de las páginas que más sufren de eso son tiendas que comprueban el stock de un producto.
 
-Así que con esta información decidimos montar una web sencilla, usando html y JavaScript. En esta web pondremos que tipo de producto quiere el usuario.
+Así que con esta información decidimos montar una web sencilla, usando html y JavaScript. En esta web pondremos que tipo de producto quiere el usuario. <br>
 ![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zomeño)/Assets/Img/tiendaweb-1.png)
 
-Y una vez que lo haya seleccionado y le dé al botón de verificar las existencias, mostrará la cantidad de existencias el cual es un número random creado por JavaScript.
+Y una vez que lo haya seleccionado y le dé al botón de verificar las existencias, mostrará la cantidad de existencias el cual es un número random creado por JavaScript. <br>
 ![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zomeño)/Assets/Img/tiendaweb-3.png)
 
-Se intentó a ver si podía sacar la API de la web mediante la verificación de existencias y vimos que el buirp suite no recogía nada. Buscamos información y vimos que lo estábamos haciéndolo mal. Se intentó hacer  lo mismo, pero generando el número a través del PHP en vez de con JavaScript. Y tampoco funcionó.
+Se intentó a ver si podía sacar la API de la web mediante la verificación de existencias y vimos que el buirp suite no recogía nada. Buscamos información y vimos que lo estábamos haciéndolo mal. Se intentó hacer  lo mismo, pero generando el número a través del PHP en vez de con JavaScript. Y tampoco funcionó. <br>
 ![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zomeño)/Assets/Img/tiendaweb-4.png)
 
-Así que se hizo, creó otra versión de la web para que obtuviera los datos de la base de datos. Se ha creado el HTML para mostrar los datos y el PHP para hacer la conexión con la base de datos.
+Así que se hizo, creó otra versión de la web para que obtuviera los datos de la base de datos. Se ha creado el HTML para mostrar los datos y el PHP para hacer la conexión con la base de datos. <br>
 ![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zomeño)/Assets/Img/tiendaweb-2.png)
