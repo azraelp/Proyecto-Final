@@ -29,5 +29,11 @@
 ## Viernes 23/02/2024
 
 - [x] Planificación y reparto de las tareas de la primera máquina
-- [x] Investigación de como hacer movimiento lateral en la primera máquina
+- [x] Investigación de cómo hacer movimiento lateral en la primera máquina
 - [x] Intento de réplica del movimiento lateral con la creación de diferentes máquinas virtuales en local
+
+## Lunes 26/02/2024
+
+- [x] Continuación de la investigación de cómo hacer movimiento lateral en la primera máquina.
+- [x] Réplica del movimiento lateral con la creación de diferentes máquinas virtuales en local.
+- [x] Intento de explotar una CVE para escalar privilegios en una máquina local.
