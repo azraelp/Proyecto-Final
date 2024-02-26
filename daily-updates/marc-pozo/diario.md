@@ -28,7 +28,14 @@
 # Viernes 23 de febrero 2024:
 
 - [x] Búsqueda de CVEs de 2023 en adelante
-- [x] Finalizaicón de desarrollo de un formulario vulnerable a SQL Injection
+- [x] Finalizacón de desarrollo de un formulario vulnerable a SQL Injection
 - [x] Avance en la documentación principal
 - [x] Búsqueda del funcionamiento de Docker
 - [x] Intento de reproducción de un CVE
+
+# Lunes 26 de febrero 2024:
+
+- [x] Búsqueda de CVEs de 2023 en adelante
+- [x] Búsqueda del funcionamiento de Docker
+- [x] Creación de un contenedor con Docker
+- [x] Intento de instalación y configuración de un servicio en Docker
