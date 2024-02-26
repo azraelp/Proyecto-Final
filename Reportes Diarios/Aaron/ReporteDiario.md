@@ -32,3 +32,10 @@
  - Creación de dockerfile para la primera maquina. 
  - Creacion de la imagen de la primera maquina.
  - Configuracion de apache y creacion de pagina web dentro de la imagen.
+
+## Luens 26/02/2024
+
+- Insalacion de servivios y herramientas en la maquina Diseño inseguro.
+- Creación de pagina web y configuracion de ella.
+- Modificacion de ftp, usuarios y permisos.
+- Resolviendo problema de usuarios en ftp.
