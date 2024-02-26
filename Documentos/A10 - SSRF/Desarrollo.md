@@ -19,7 +19,7 @@ Para crear el contenedor docker usando el dockerfile se usara la opción **build
 ![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/docker-build-2.png)
 
 # CTF
-Una vez se accede con el usuario Paco, buscaremos el programa que tenga el permiso SUID, que permite a los usuarios ejecutar un archivo con los privilegios del propietario del archivo. 
+Una vez se accede con el usuario Paco, buscaremos el programa que tenga el permiso SUID, que permite a los usuarios ejecutar un archivo con los privilegios del propietario del archivo. \
 ![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/find_4000_paco.png) \
 Podemos ver que el progrgrama python cuenta con el permiso SUID, aprovechando esta vulnerabilidad podremos acceder al usuario **root** \
 ![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/root_paco.png)
