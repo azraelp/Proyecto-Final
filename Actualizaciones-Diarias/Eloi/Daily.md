@@ -25,5 +25,10 @@
 
 # Viernes 23 de febrero 2024
 - [X] Documentacion desarollo docker
-- [X] Planificaicon de servidor web 
+- [X] Planificaicon de servidor web
+
+# Lunes 26 de febrero 2024
+- [X] Documentacion desarollo docker
+- [X] Planificaicon CTF SSRF
+- [ ] Investigacion SSRF
 
