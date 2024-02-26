@@ -44,3 +44,7 @@ Se ha realizado un login para la página web que sufrirá la vulnerabilidad de s
 Se realizó una búsqueda de información del ataque ssrf para ver que páginas eran más comunes en este tipo de ataque. Habiendo buscado varias fuentes de información, sacamos que unas de las páginas que más sufren de eso son tiendas que comprueban el stock de un producto.
 
 Así que con esta información decidimos montar una web sencilla, usando html y JavaScript. En esta web pondremos que tipo de producto quiere el usuario.
+![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zomeño)/Assets/Img/tiendaweb-1.png)
+
+Y una vez que lo haya seleccionado y le dé al botón de verificar las existencias, mostrará la cantidad de existencias el cual es un número random creado por JavaScript.
+![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zomeño)/Assets/Img/tiendaweb-2.png)
