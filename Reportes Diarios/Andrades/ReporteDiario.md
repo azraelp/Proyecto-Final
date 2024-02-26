@@ -25,3 +25,7 @@
 - [X] Investigación sobre como retringir a los usuarios de hacer que cosas si y que cosas no
 - [X] Creación de usuarios
 - [X] Planificación lógica de la maquina(Historia de la maquina)
+
+## 26/02/24 Reporte Diario
+- [X] Testing de la primera maquina
+- [X] Investigación de errores
