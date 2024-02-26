@@ -25,5 +25,10 @@
 
 ## Viernes 23/02/2024
 - [ ]  Poder llegar a Barcelona para presentar planteamiento.
-- [ ]  Revisar lo que sabemos.
+- [X]  Revisar lo que sabemos.
 - [ ]  Plantear detalles finales de la imagen docker.
+
+## Lunes 26/02/2024
+- [X]  Probar a ramificar una imagen de Wordpress en local.
+- [X]  Empezar a crear una imagen docker en entorno local.
+- [X]  I+D sobre contenedores
