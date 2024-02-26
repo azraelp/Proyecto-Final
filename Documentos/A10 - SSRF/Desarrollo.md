@@ -8,6 +8,7 @@ El contenedor Docker estará basado en Ubuntu 22.04.3 LTS Server y tendrá insta
 * X11, esta utilidad nos permite utilizar Wireshark de forma gráfica desde el contenedor Docker.
 * PHP, proporciona capacidades para ejecutar y administrar scripts y aplicaciones PHP en el contenedor. Junto con otros paquetes relacionados como php-cli y php-fpm.
 * VIM/NANO, editores de texto.
+* Python, servira como vector de entrada a la hora de realizar el escalado de privilegios.
 
 El Dockerfile que generará el contenedor es el siguiente:
 ![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/dockerfile.png)\
