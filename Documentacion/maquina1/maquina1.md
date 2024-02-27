@@ -26,12 +26,15 @@ Dentro del archvio creds.txt habran una credenciales cifradas que te permitiran 
 
 ## Servidor Web
 
-En el sitio web habran bastantes pistas, y la mayor parte de la ctf.
-En primer lugar habra un archvio robots.txt con el siguiente contenido:
+
+En el servidor web habra alojada una pagina web centrada en la apicultura, dando informacion de todo tipo. 
+Aquí pude ver una vista previa del sitio [sitio](https://pro2y38.000webhostapp.com/).
+Tambien habran bastantes pistas, así como un archvio robots.txt con el siguiente contenido:
 
 ![](/Assets/robots.png)
 
 La foto que se menciona estara colgada en el servidor web. La foto es la siguiente:
+
 ![](/Assets/foton.jpeg)
 
 Esta imagen va a contener un archivo zip incrustada en ella, para ello hemos usado el comando **steghide** de linx.
@@ -47,9 +50,13 @@ Una vez echo esto ya tenemos el zip incrustado en la imagen y para extraerlo usm
 
 ![](/Assets/stegextarct.png)
 
-En el servidor web habra alojada una pagina web centrada en la apicultura, dando informacion de todo tipo. 
-Aquí pude ver una vista previa del sitio [sitio](https://pro2y38.000webhostapp.com/).
-A parte del sitio de apicultura tambien habra un panel de control para la pagina web, el panel será el siguiente:
+Dentro del hay un archivo que contiene lo siguiente: 
+
+![](/Assets/zip.png)
+
+Aqui se puede ver la ruta /wcontrol que es un panel de control de pagina web, al acceder al panel de control se abre un panel de inicio de sesion:
+
+![](/Assets/login.png)
 
 
 ## Servidor SSH
@@ -58,7 +65,7 @@ Para lograr la configuración del servidor ssh deseado, lo primero que tenemos q
 
 ![](/Assets/configuracion_ssh_1.PNG)
 
-Una vez hemos generado las llaves ssh, meteremos el contenido de la llave pública dentro de authorized_keys
+Una vez hemos generado las llaves ssh, meteremos el contenido de la llave pública dentro de authorized_keysºº
 
 ![](/Assets/configuracion_ssh_2.PNG)
 
