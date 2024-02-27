@@ -204,7 +204,7 @@ Para instalar tenemos que seguir los siguientes pasos:
 **4.Instalacion docker:**
 
 <p align="center">
-<img  alt="drawing" width="300" height="250" src="https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo2/Documentacion/images/1.jpeg" />
+<img  alt="drawing" width="300" height="350" src="https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo2/Documentacion/images/1.jpeg" />
 </p>
 
 
