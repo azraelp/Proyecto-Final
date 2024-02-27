@@ -42,5 +42,5 @@
 
 ## Martes 27/02/2024
 
-- Modificación de la web.
-- Probando reverse sell en la web para entrar como www-data.
+- Modificación de la web inspirada en The Originals.
+- Probando la reverse sell en la web para entrar como www-data.
