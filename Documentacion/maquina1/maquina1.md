@@ -73,14 +73,14 @@ Este panel de login tiene varias funciones:
 
 ## Servidor SSH
 
-Para lograr la configuración del servidor ssh deseado, lo primero que tenemos que hacer es generar un par de llaves
+Para lograr la configuración del servidor ssh deseado, lo primero que tenemos que hacer es generar un par de llaves. Guardaremos las llaves en la ubicación por defecto, y le pondremos un passphrase a la clave privada para tener una capa más de seguridad a la hora de conectarnos a la máquina vía ssh.
 
 ![](/Assets/configuracion_ssh_1.PNG)
 
-Una vez hemos generado las llaves ssh, meteremos el contenido de la llave pública dentro de authorized_keysºº
+Una vez hemos generado las llaves ssh, meteremos el contenido de la llave pública dentro de authorized_keys, de esta forma, todo aquel que tenga la llave privada y tenga el passphrase podra iniciar sesión en la máquina.
 
 ![](/Assets/configuracion_ssh_2.PNG)
 
-Por ultimo le damos permisos de lectura y ejecución a la carpeta .ssh del usuario en cuestion
+Por último le damos permisos de lectura a la llave privada, y lectura y ejecución a la carpeta .ssh del usuario en cuestión.
 
 ![](/Assets/configuracion_ssh_3.PNG)
