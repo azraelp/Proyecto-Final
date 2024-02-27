@@ -9,3 +9,10 @@
 - [x] Instalación de Docker y entornos
 - [x] Práctica de funcionamiento de docker y componentes.
 - [x] Búsqueda de CVEs extras
+
+# 27/02/2024:
+
+- [x] Configurar Docker en ubuntu server e instalacíon de apache2, mariaDB, y otros servicios para comprobar su funcionamiento. 
+- [x] Práctica de funcionamiento de docker y servicios.
+- [x] Elaboración capturas del proceso de instalación de Docker y contenedor.
+- [x] Intento de configuración de red del contenedor para poder conectar diferentes máquinas. (Fallido)
