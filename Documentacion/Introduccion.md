@@ -194,12 +194,15 @@ Para instalar tenemos que seguir los siguientes pasos:
    - sudo apt-get upgrade
 
 **2.Añadir clave GPC de docker:**
+
     - curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 
 **3.Añadir  repositorio oficial de docker:**
+
     - sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
     
 **4.Instalacion docker:**
+
 <p align="center">
 <img  alt="drawing" width="350" height="200" src="https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo2/Documentacion/images/1.png" />
 </p>
