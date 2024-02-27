@@ -189,9 +189,12 @@ Para instalar tenemos que seguir los siguientes pasos:
 
 **1.Actulizar el sistema:**
 
-   - sudo apt-get update
-   
-   - sudo apt-get upgrade
+
+         - sudo apt-get update
+     
+         - sudo apt-get upgrade
+
+
 
 **2.Añadir clave GPC de docker:**
 
