@@ -43,7 +43,7 @@ Steghide, una herramienta de esteganografía, oculta datos dentro de imágenes d
 
 ![](/Assets/steg.png)
 
-Una vez echo esto ya tenemos el zip incrustado en la. Para extraerlo usmos la misma herramienta pero con otro comando:
+Una vez echo esto ya tenemos el zip incrustado en la imagen y para extraerlo usmos la misma herramienta pero con otro comando:
 
 ![](/Assets/stegextarct.png)
 
