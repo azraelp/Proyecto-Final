@@ -70,6 +70,18 @@ Este panel de login tiene varias funciones:
     - Limitar intentos (Evitar fuerza bruta)
 - Control de sesiones para la pagina
 
+Si el inicio de sesion es exitoso se accede a la configuracion de la web, enc concreto se accede al dashboard.
+
+![](/Assets/dashboard.png)
+
+En este dashboard se pueden observar varias cosas:
+
+- Los recursos que se estan consumiendo que son valor random obtenidos con javascript
+- Un menu lateral con distintos apartados, el cual se matiene en toda la web.
+
+Para la gestion de sessiones lo que hemos hecho es inculir el seguiente codigo en todas las paginas de la web, para evitar que se pueda acceder a ellas si no se ha iniciado session.
+
+![](/Assets/sesiones.png)
 
 
 ## Servidor SSH
