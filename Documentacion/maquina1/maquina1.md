@@ -54,9 +54,21 @@ Dentro del hay un archivo que contiene lo siguiente:
 
 ![](/Assets/zip.png)
 
-Aqui se puede ver la ruta /wcontrol que es un panel de control de pagina web, al acceder al panel de control se abre un panel de inicio de sesion:
+Aqui se puede ver la ruta /wcontrol, que es un panel de control de pagina web, al acceder al panel de control se abre un panel de inicio de sesion:
 
 ![](/Assets/login.png)
+
+
+*Este és el cofdigo:*
+![](/Assets/code-login.png)
+
+Este panel de login tiene varias funciones:
+
+- Control de inicio de sesion
+    - Usuario y contraseña
+    - Limitar intentos (Evitar fuerza bruta)
+- Control de sesiones para la pagina
+
 
 
 ## Servidor SSH
