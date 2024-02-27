@@ -32,3 +32,9 @@
 - [X] Planificaicon CTF SSRF
 - [ ] Investigacion SSRF
 
+# Lunes 26 de febrero 2024
+- [X] Documentacion fallos en el desarollo docker
+- [X] Investigacion como montar web SSRF
+- [ ] Investigar error CORS Header 'Acces-Control-Allow-Origin0 missing' firefox y politica de mismo origen firefox
+
+
