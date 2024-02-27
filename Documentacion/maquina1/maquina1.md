@@ -14,9 +14,9 @@ Para ello, vamos a crear un contenedor Docker con el sistema operativo Ubuntu Se
 - **SSH**: *OpenSSH 9.6p1* --> Para acceso remoto seguro.
 - **HTTP**: *Apache 2.4.58* --> Para el servidor web.
  
-## Configuracion de los servidores
+# Configuracion de los servidores
 
-# Servidor FTP
+## Servidor FTP
 
 El servidor FTP tendra la sigiente estrucutra de archvios.
 
@@ -24,7 +24,7 @@ El servidor FTP tendra la sigiente estrucutra de archvios.
 
 Dentro del archvio creds.txt habran una credenciales cifradas que te permitiran acceder al panel de control de la pagina web.
 
-# Servidor Web
+## Servidor Web
 
 En el sitio web habran bastantes pistas, y la mayor parte de la ctf.
 En primer lugar habra un archvio robots.txt con el siguiente contenido:
@@ -35,6 +35,7 @@ La foto que se menciona estara colgada en el servidor web. La foto es la siguien
 ![](/Assets/foton.jpeg)
 
 Esta imagen va a contener un archivo zip incrustada en ella, para ello hemos usado un pequeño programa que hemos encontrado en python.
+
 En el servidor web habra alojada una pagina web centrada en la apicultura, dando informacion de todo tipo. 
 Aquí pude ver una vista previa del sitio [sitio](https://pro2y38.000webhostapp.com/).
 A parte del sitio de apicultura tambien habra un panel de control para la pagina web, el panel será el siguiente:
