@@ -49,8 +49,8 @@ Para lograr la configuración del servidor ssh deseado, lo primero que tenemos q
 
 Una vez hemos generado las llaves ssh, meteremos el contenido de la llave pública dentro de authorized_keys
 
-![](Assets/configuracion_ssh_2.png)
+![](Assets/configuracion_ssh_2.PNG)
 
 Por ultimo le damos permisos de lectura y ejecución a la carpeta .ssh del usuario en cuestion
 
-![](Assets/configuracion_ssh_3.png)
+![](Assets/configuracion_ssh_3.PNG)
