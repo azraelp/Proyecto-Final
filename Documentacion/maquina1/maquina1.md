@@ -41,3 +41,16 @@ Aquí pude ver una vista previa del sitio [sitio](https://pro2y38.000webhostapp.
 A parte del sitio de apicultura tambien habra un panel de control para la pagina web, el panel será el siguiente:
 
 
+## Servidor SSH
+
+Para lograr la configuración del servidor ssh deseado, lo primero que tenemos que hacer es generar un par de llaves
+
+![](/Assets/configuracion_ssh_1.png)
+
+Una vez hemos generado las llaves ssh, meteremos el contenido de la llave pública dentro de authorized_keys
+
+![](Assets/configuracion_ssh_2.png)
+
+Por ultimo le damos permisos de lectura y ejecución a la carpeta .ssh del usuario en cuestion
+
+![](Assets/configuracion_ssh_3.png)
