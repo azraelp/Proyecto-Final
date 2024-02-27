@@ -46,11 +46,10 @@
 - [X] Resolución de errores con versiones de Apache2.
 - [X] Planificación de la semana.
       
-
-
 ## Martes 27 de Febrero 2024:
 
-
+- [X] Investigación sobre el error de CORS (Cross-Origin Resource Sharing).
+- [X] Reunión grupal.
 
 ## Miércoles 28 de Febrero 2024:
 
