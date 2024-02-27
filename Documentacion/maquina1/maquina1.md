@@ -70,7 +70,7 @@ Este panel de login tiene varias funciones:
     - Limitar intentos (Evitar fuerza bruta)
 - Control de sesiones para la pagina
 
-Si el inicio de sesion es exitoso se accede a la configuracion de la web, enc concreto se accede al dashboard.
+Si el inicio de sesion es exitoso se accede a la configuracion de la web, en concreto se accede al dashboard.
 
 ![](/Assets/dashboard.png)
 
