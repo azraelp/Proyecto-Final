@@ -45,7 +45,7 @@ A parte del sitio de apicultura tambien habra un panel de control para la pagina
 
 Para lograr la configuración del servidor ssh deseado, lo primero que tenemos que hacer es generar un par de llaves
 
-![](/Assets/configuracion_ssh_1.png)
+![](/Assets/configuracion_ssh_1.PNG)
 
 Una vez hemos generado las llaves ssh, meteremos el contenido de la llave pública dentro de authorized_keys
 
