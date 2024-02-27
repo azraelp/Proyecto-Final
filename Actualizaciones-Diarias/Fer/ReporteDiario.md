@@ -27,3 +27,7 @@
 ## Lunes 26 de febrero 2024
 ✅ Organización y distribución de tareas diarias <br>
 ✅ Documentacion en el desarrollo.md
+
+## Martes 27 de febrero 2024 <br>
+✅ Organización y distribución de tareas diarias <br>
+✅ Búsqueda de información de CORS () <br>
