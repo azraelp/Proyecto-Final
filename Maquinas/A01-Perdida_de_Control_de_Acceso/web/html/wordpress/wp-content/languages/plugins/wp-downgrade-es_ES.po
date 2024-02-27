@@ -1,0 +1,121 @@
+# Translation of Plugins - WP Downgrade | Specific Core Version - Stable (latest release) in Spanish (Spain)
+# This file is distributed under the same license as the Plugins - WP Downgrade | Specific Core Version - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2022-03-27 12:06:08+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/4.0.0-alpha.11\n"
+"Language: es\n"
+"Project-Id-Version: Plugins - WP Downgrade | Specific Core Version - Stable (latest release)\n"
+
+#: wp-downgrade.php:162
+msgid "The update could fail. Are you sure that the version number is correct? You can also manually edit the download URL if needed."
+msgstr "La actualización podría fallar. ¿Seguro que el número de la versión es correcto? Si es necesario, también puedes editar manualmente la URL de descarga."
+
+#: wp-downgrade.php:160
+msgid "Attention! The target version does not seem to exist!"
+msgstr "¡Atención! ¡La versión de destino parece que no existe!"
+
+#: wp-downgrade.php:154
+msgid "Up-/Downgrade Core"
+msgstr "Actualizar/volver a una versión anterior del núcleo"
+
+#: wp-downgrade.php:153
+msgid "please go to"
+msgstr "por favor, ve a"
+
+#: wp-downgrade.php:153
+msgid "In order to perform the upgrade/downgrade to WP"
+msgstr "Para realizar la actualización/vuelta a una versión anterior de WP,"
+
+#: wp-downgrade.php:149 wp-downgrade.php:153
+msgid "Update Core"
+msgstr "Actualizar el núcleo"
+
+#: wp-downgrade.php:149
+msgid "<strong>All fine!</strong> You are currently on your desired release. And it will stay like that. <br>If you ever want to <strong>reinstall</strong> "
+msgstr "<strong>¡Todo bien!</strong> Ahora estás en la versión que deseabas. Y seguirá así.<br>Si alguna vez quieres <strong>reinstalar</strong> "
+
+#: wp-downgrade.php:134
+msgid "Usually you <strong>do not</strong> need to change this. But you can, if necessary. Must be a valid URL to a WordPress ZIP. <strong>Be careful!</strong> The content will not be verified! Wordpress will use what ever you give here, even if it does not contain release "
+msgstr "Normalmente, <strong>no</strong> necesitas cambiar esto. Pero puedes, si es necesario. Debe ser una URL válida a un archivo ZIP de WordPress. <strong>¡Ten cuidado!</strong> ¡El contenido no será verificado! WordPress usará lo que tú le indiques aquí, incluso si no contiene la versión "
+
+#: wp-downgrade.php:132
+msgid "edit download URL"
+msgstr "editar la URL de descarga"
+
+#: wp-downgrade.php:120
+msgid "Language Detected"
+msgstr "Idioma detectado"
+
+#: wp-downgrade.php:114
+msgid "Current WP Version"
+msgstr "Versión actual de WP"
+
+#: wp-downgrade.php:110
+msgid "for example \"4.9.8\". Leave empty to disable."
+msgstr "por ejemplo, «4.9.8». Déjalo vacío para desactivarlo."
+
+#: wp-downgrade.php:110
+msgid "WP Releases"
+msgstr "Versiones de WP"
+
+#: wp-downgrade.php:110
+msgid "Exact version number from"
+msgstr "Número exacto de versión de las"
+
+#: wp-downgrade.php:108
+msgid "WordPress Target Version"
+msgstr "Versión WordPress de destino"
+
+#: wp-downgrade.php:72
+msgid "Which WordPress version would you like to up-/downgrade to?"
+msgstr "¿A qué versión de WordPress te gustaría actualizar/volver a una versión anterior?"
+
+#: wp-downgrade.php:70
+msgid "WARNING! You are using this plugin entirely at your own risk! DO MAKE SURE you have a current backup of both your files and database, since a manual version change is deeply affecting your WP installation!"
+msgstr "¡ADVERTENCIA! ¡Estás usando este plugin completamente bajo tu propio riesgo! ASEGÚRATE de que tienes una copia de seguridad actualizada tanto de tus archivos como de la base de datos, ya que un cambio manual de versión ¡afecta profundamente a tu instalación de WP!"
+
+#: wp-downgrade.php:68
+msgid "Inactive"
+msgstr "Inactiva"
+
+#: wp-downgrade.php:68
+msgid "is set as target version"
+msgstr "está establecida como versión de destino"
+
+#: wp-downgrade.php:68
+msgid "WP"
+msgstr "WP"
+
+#: wp-downgrade.php:68
+msgid "Active"
+msgstr "Activa"
+
+#: wp-downgrade.php:68
+msgid "WP Downgrade"
+msgstr "Cambiar a una versión anterior de WP"
+
+#: wp-downgrade.php:48
+msgid "Version number looks strange."
+msgstr "El número de la versión parece extraño."
+
+#. Author of the plugin
+msgid "Reisetiger"
+msgstr "Reisetiger"
+
+#. Description of the plugin
+msgid "WP Downgrade allows you to either downgrade or update WordPress Core to an arbitrary version of your choice. The version you choose is downloaded directly from wordpress.org and installed just like any regular release update. The target version WordPress allows you to update to remains constant until you enter a different one or deactivate the plugin either completely or by leaving the target version field empty."
+msgstr "WP Downgrade te permite tanto volver a una versión anterior como actualizar el núcleo de WordPress a una versión arbitraria de tu elección. La versión que elijas es descargada directamente de wordpress.org e instalada como cualquier actualización de versión normal. La versión de destino de WordPress te permite que la actualización permanezca constante hasta que introduzcas una distinta o desactives el plugin, ya sea completamente o dejando vacío el campo de la versión de destino."
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+msgid "https://www.reisetiger.net"
+msgstr "https://www.reisetiger.net"
+
+#. Plugin Name of the plugin
+msgid "WP Downgrade | Specific Core Version"
+msgstr "WP Downgrade | Specific Core Version"

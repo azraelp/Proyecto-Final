@@ -28,4 +28,7 @@ Comunicacion con el equipo
   - Pruebas con el entorno de wordpress con la vuln de un plugin de login
   - Coordinacion con el equipo
 
-
+## Martes 27/02/2024
+  - Pruebas con el entorno de wordpress con la vuln de un plugin de login
+  - Investigacion de dos plugins de contacto y mapas para su posible uso
+  - Coordinacion con el equipo
