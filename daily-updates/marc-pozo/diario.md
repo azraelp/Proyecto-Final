@@ -39,3 +39,10 @@
 - [x] Búsqueda del funcionamiento de Docker
 - [x] Creación de un contenedor con Docker
 - [x] Intento de instalación y configuración de un servicio en Docker
+
+# Martes 27 de febrero 2024:
+
+- [x] Búsqueda de CVEs de 2023 en adelante
+- [x] Configuración MariaDB en Docker
+- [x] Intento fallido de configuración de red de un contenedor Docker
+- [x] Avance en la documentación
