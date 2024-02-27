@@ -204,7 +204,7 @@ Para instalar tenemos que seguir los siguientes pasos:
 **4.Instalacion docker:**
 
 <p align="center">
-<img  alt="drawing" width="350" height="200" src="[https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo2/Documentacion/images/1.pn](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo2/Documentacion/images/1.jpeg)g" />
+<img  alt="drawing" width="350" height="200" src="https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo2/Documentacion/images/1.jpeg" />
 </p>
 
 
@@ -213,8 +213,9 @@ Para instalar tenemos que seguir los siguientes pasos:
 El sistema operativo utilizado para el desarrollo de este primer contenedor es Ubuntu Server XX. La vulnerabilidad elegida ha sido SQL Injection. Es por ello que el desarrollo de esta estará basado en un formulario cuyos campos serán vulnerables a este tipo de ataque. 
 
 <p align="center">
-<img  alt="drawing" width="350" height="200" src="https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo2/Documentacion/images/1.jpeg" />
+<img  alt="drawing" width="350" height="200" src="https://blogs.zeiss.com/digital-innovation/de/wp-content/uploads/sites/2/2020/05/201909_Security_SQL-Injection_1.png" />
 </p>
+
 
 ## Desarrollo de la Vulnerabilidad Principal 
 
