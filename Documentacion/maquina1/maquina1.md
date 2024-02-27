@@ -59,7 +59,8 @@ Aqui se puede ver la ruta /wcontrol, que es un panel de control de pagina web, a
 ![](/Assets/login.png)
 
 
-*Este és el cofdigo:*
+*Este és el codigo:*
+
 ![](/Assets/code-login.png)
 
 Este panel de login tiene varias funciones:
