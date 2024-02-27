@@ -34,7 +34,18 @@ En primer lugar habra un archvio robots.txt con el siguiente contenido:
 La foto que se menciona estara colgada en el servidor web. La foto es la siguiente:
 ![](/Assets/foton.jpeg)
 
-Esta imagen va a contener un archivo zip incrustada en ella, para ello hemos usado un pequeño programa que hemos encontrado en python.
+Esta imagen va a contener un archivo zip incrustada en ella, para ello hemos usado el comando **steghide** de linx.
+
+Steghide, una herramienta de esteganografía, oculta datos dentro de imágenes digitales utilizando técnicas sofisticadas. Funciona al incrustar datos en bits menos significativos de los píxeles de la imagen, lo que permite que la información permanezca oculta a simple vista. Estos datos pueden ser extraídos posteriormente utilizando la misma herramienta y una contraseña proporcionada durante el proceso de ocultación.
+
+
+*Para poder ocultar el zip tenemos que tener en cuanta que la imagen debe ser formato .jpg*
+
+![](/Assets/steg.png)
+
+Una vez echo esto ya tenemos el zip incrustado en la. Para extraerlo usmos la misma herramienta pero con otro comando:
+
+![](/Assets/stegextarct.png)
 
 En el servidor web habra alojada una pagina web centrada en la apicultura, dando informacion de todo tipo. 
 Aquí pude ver una vista previa del sitio [sitio](https://pro2y38.000webhostapp.com/).
