@@ -27,65 +27,68 @@ Dentro del archvio creds.txt habran una credenciales cifradas que te permitiran 
 ## Servidor Web
 
 
-En el servidor web habra alojada una pagina web centrada en la apicultura, dando informacion de todo tipo. 
+
+En el servidor web habrá alojado una página web centrada en la apicultura, dando información de todo tipo. 
 Aquí pude ver una vista previa del sitio [sitio](https://pro2y38.000webhostapp.com/).
-Tambien habran bastantes pistas, así como un archvio robots.txt con el siguiente contenido:
+También habrá bastantes pistas, así como un archivo robots.txt con el siguiente contenido:
 
 ![](/Assets/robots.png)
 
-La foto que se menciona estara colgada en el servidor web. La foto es la siguiente:
+La foto que se menciona estará colgada en el servidor web. La foto es la siguiente:
 
 ![](/Assets/foton.jpeg)
 
-Esta imagen va a contener un archivo zip incrustada en ella, para ello hemos usado el comando **steghide** de linx.
+Esta imagen va a contener un archivo ZIP incrustado en ella, para ello hemos usado el comando **steghide** de Linux.
 
-Steghide, una herramienta de esteganografía, oculta datos dentro de imágenes digitales utilizando técnicas sofisticadas. Funciona al incrustar datos en bits menos significativos de los píxeles de la imagen, lo que permite que la información permanezca oculta a simple vista. Estos datos pueden ser extraídos posteriormente utilizando la misma herramienta y una contraseña proporcionada durante el proceso de ocultación.
+Steghide, una herramienta de estenografía, oculta datos dentro de imágenes digitales utilizando técnicas sofisticadas. Funciona al incrustar datos en bits menos significativos de los píxeles de la imagen, lo que permite que la información permanezca oculta a simple vista. Estos datos pueden ser extraídos posteriormente utilizando la misma herramienta y una contraseña proporcionada durante el proceso de ocultación.
 
 
-*Para poder ocultar el zip tenemos que tener en cuanta que la imagen debe ser formato .jpg*
+*Para poder ocultar el ZIP tenemos que tener en cuenta que la imagen debe ser en formato .jpg*
 
 ![](/Assets/steg.png)
 
-Una vez echo esto ya tenemos el zip incrustado en la imagen y para extraerlo usmos la misma herramienta pero con otro comando:
+Una vez hecho esto, ya tenemos el ZIP incrustado en la imagen y para extraerlo usamos la misma herramienta pero con otro comando:
 
 ![](/Assets/stegextarct.png)
 
-Dentro del hay un archivo que contiene lo siguiente: 
+Dentro de él hay un archivo que contiene lo siguiente: 
 
 ![](/Assets/zip.png)
 
-Aqui se puede ver la ruta /wcontrol, que es un panel de control de pagina web, al acceder al panel de control se abre un panel de inicio de sesion:
+Aquí se puede ver la ruta /wcontrol, que es un panel de control de página web. Al acceder al panel de control, se abre un panel de inicio de sesión:
 
 ![](/Assets/login.png)
 
 
-*Este és el codigo:*
+*Este es el código:*
 
 ![](/Assets/code-login.png)
 
 Este panel de login tiene varias funciones:
 
-- Control de inicio de sesion
+- Control de inicio de sesión
     - Usuario y contraseña
     - Limitar intentos (Evitar fuerza bruta)
-- Control de sesiones para la pagina
+- Control de sesiones para la página
 
-Dentro del panel hay varias paginas:
+Dentro del panel hay varias páginas:
 
-1. Dashbord
+1. Dashboard
 
 ![](/Assets/dashboard.png)
 
 En este dashboard se pueden observar varias cosas:
 
-- Los recursos que se estan consumiendo, que son valor random obtenidos con javascript
-- Un menu lateral con distintos apartados, el cual se matiene en toda la web.
+- Los recursos que se están consumiendo, que son valores random obtenidos con JavaScript
+- Un menú lateral con distintos apartados, el cual se mantiene en toda la web.
 
-Para la gestion de sessiones lo que hemos hecho es inculir el seguiente codigo en todas las paginas de la web, para evitar que se pueda acceder a ellas si no se ha iniciado session.
+Para la gestión de sesiones, lo que hemos hecho es incluir el siguiente código en todas las páginas de la web, para evitar que se pueda acceder a ellas si no se ha iniciado sesión.
 
 ![](/Assets/sesiones.png)
 
 2. Usuarios
+
+
 
 
 ## Servidor SSH
