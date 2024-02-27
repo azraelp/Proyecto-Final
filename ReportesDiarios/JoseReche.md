@@ -32,3 +32,9 @@
 - [X]  Probar a ramificar una imagen de Wordpress en local.
 - [X]  Empezar a crear una imagen docker en entorno local.
 - [X]  I+D sobre contenedores
+
+## Martes 27/02/2024
+- [X]  Debatir continuidad de plugins del CEV.
+- [X]  Acordar con michael una mejor estructuración referente al wordpress contra docker.
+- [ ]  Terminar el prototipo de la imagen.
+- [ ]  Hacer que se suban los datos del wordpress al github para poder hacer pruebas con el prototipo de imagen.
