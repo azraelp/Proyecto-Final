@@ -20,7 +20,7 @@ Para ello, vamos a crear un contenedor Docker con el sistema operativo Ubuntu Se
 
 El servidor FTP tendra la sigiente estrucutra de archvios.
 
-![](/Assets/Dockerfile1.0.png)
+![](/Assets/rutasftp.png)
 
 Dentro del archvio creds.txt habran una credenciales cifradas que te permitiran acceder al panel de control de la pagina web.
 
