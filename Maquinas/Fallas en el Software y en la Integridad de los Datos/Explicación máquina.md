@@ -4,7 +4,7 @@
 Esta máquina está específicamente diseñada para explotar la vulnerabilidad ***A08:2021 – Fallas en el Software y en la Integridad de los Datos*** y otras vulnerabilidades.
 
 ## Planteamiento
-Para cumplir con este objetivo, la máquina alojará varios servicios como **FTP**, **SSH**, MySQL** y **Apache** que alojarán la plataforma de **CubeCart**.
+Para cumplir con este objetivo, la máquina alojará varios servicios como **FTP**, **SSH**, **MySQL** y **Apache** que alojarán la plataforma de **CubeCart**.
 Estos servicios se encontrarán expuestos externamente para que cuando el atacante realice un reconocimiento pueda detectarlos.
 
 El servicio **FTP** podrá ser accesible de forma anónima y en él se podrá ver una imagen de una **Basket**; de esta forma se le dará una pista al atacante.
