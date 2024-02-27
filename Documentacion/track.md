@@ -8,14 +8,14 @@ Para el desarrollo del formulario hemos empleado únicamente HTML, CSS y PHP.
 
 El script en php está hecho de manera que no valida correctamente la entrada. De esta manera es vulnerable a inyección SQL.
 
-Representación gráfica de la validación errónea:
+**Representación gráfica de la validación errónea:**
 
 <p align="center">
-<img  alt="drawing" width=600" height="200" src="./images/form.png" />
+<img  alt="drawing" width="400" height="400" src="./images/sqli.png" />
 </p>
 
-Apariencia final del formulario:
+**Apariencia final del formulario:**
 
 <p align="center">
-<img  alt="drawing" width="300" height="300" src="./images/form.png" />
+<img  alt="drawing" width="400" height="400" src="./images/form.png" />
 </p>
