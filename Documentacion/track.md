@@ -17,5 +17,5 @@ El script en php está hecho de manera que no valida correctamente la entrada. D
 **Apariencia final del formulario:**
 
 <p align="center">
-<img  alt="drawing" width="400" height="400" src="./images/form.png" />
+<img  alt="drawing" width="600" height="400" src="./images/formularioFinal.png" />
 </p>
