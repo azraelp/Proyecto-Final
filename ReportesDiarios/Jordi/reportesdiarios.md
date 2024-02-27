@@ -48,7 +48,7 @@
     - Diseño y crecion de la pagina web
 
 
-# Reporte 26 de febrero de 2024
+# Reporte 27 de febrero de 2024
 
 - Documentar la primera maquina
 - Crear una imagen con un zip con steghide
