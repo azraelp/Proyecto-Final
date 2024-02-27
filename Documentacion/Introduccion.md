@@ -14,18 +14,13 @@
     - [Ventajas y desventajas de usar Docker](#ventajas-y-desventajas-de-usar-docker)
 6. [Contenedor Numero 1 Inyección](#contenedor-numero-1-inyección)
     - [Desarrollo de la Vulnerabilidad Principal](#desarrollo-de-la-vulnerabilidad-principal)
-    - [Vulnerabilidades CVE Extra](#Vulnerabilidades-cve-extra)
-    - [Desarrollo de las Vulnerabilidades Extra](#desarrollo-de-las-vulnerabilidades-extra)
-    - [Proceso de explotación de las vulnerabilidades](#proceso-de-explotación-de-las-vulnerabilidades)
-    - [Análisis del Contenedor una vez Explotado](#análisis-del-contenedor-una-vez-explotado)
-    - [Herramientas Empleadas](#herramientas-empleadas)
-7. [Contenedor Numero 2 Fallas de Identificación y Autenticación](#contenedor-numero-2-fallas-de-identificación-y-autenticación)
-    - [Desarrollo de la Vulnerabilidad Principal](#desarrollo-de-la-vulnerabilidad-principal)
     - [Vulnerabilidades CVE Extra](#vulnerabilidades-cve-extra)
     - [Desarrollo de las Vulnerabilidades Extra](#desarrollo-de-las-vulnerabilidades-extra)
     - [Proceso de explotación de las vulnerabilidades](#proceso-de-explotación-de-las-vulnerabilidades)
     - [Análisis del Contenedor una vez Explotado](#análisis-del-contenedor-una-vez-explotado)
     - [Herramientas Empleadas](#herramientas-empleadas)
+7. [Contenedor Numero 2 Fallas de Identificación y Autenticación](#contenedor-numero-2-fallas-de-identificación-y-autenticación)
+    
 
 
 
@@ -186,6 +181,13 @@ Docker es una plataforma de código abierto diseñada para facilitar la creació
 - **Seguridad:** Aunque Docker proporciona un alto nivel de aislamiento entre contenedores, aún existen posibles vulnerabilidades de seguridad, especialmente si no se siguen las mejores prácticas de seguridad al crear y configurar imágenes de contenedores o al exponer servicios a través de redes públicas.
 
 - **Rendimiento:** Aunque los contenedores Docker son ligeros y eficientes en recursos, puede haber un pequeño costo de rendimiento asociado con la virtualización a nivel de contenedor en comparación con la ejecución de aplicaciones directamente en el sistema operativo host.
+
+
+# Instalacion de Docker
+<p align="center">
+<img  alt="drawing" width="350" height="200" src="https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo2/Documentacion/images/1.png" />
+</p>
+
 
 # Contenedor Numero 1 Inyección
 
