@@ -1,6 +1,6 @@
 # Indice
 
-1. [Introducción](#introducción)
+1. [Introducción](#introducción) <!-- Resalta al pasar el ratón -->
 2. [Inyección](#inyección)
     - [Descripción de diferentes tipos de ataques de inyección](#descripción-de-diferentes-tipos-de-ataques-de-inyección)
     - [Medidas para prevenir ataques de inyección](#medidas-para-prevenir-ataques-de-inyección)
