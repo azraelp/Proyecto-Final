@@ -25,9 +25,8 @@
 7. [Contenedor Numero 2 Fallas de Identificación y Autenticación](#contenedor-numero-2-fallas-de-identificación-y-autenticación)
     
 
-<a id="indice">
 # Introducción
-</a>
+
 
 En el siguiente documento se explicará la creación de un contenedor en Docker con los siguientes riesgos del OWASP TOP 10:
 
