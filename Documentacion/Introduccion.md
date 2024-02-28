@@ -144,17 +144,17 @@ Para instalar tenemos que seguir los siguientes pasos:
 
 **1.Actulizamos el sistema:**
 
-         - sudo apt-get update
+          sudo apt-get update
      
-         - sudo apt-get upgrade
+          sudo apt-get upgrade
          
 **2.Instalacion Mariadb:**
 
-        - sudo apt install mariadb-server
+         sudo apt install mariadb-server
         
 **3.Para cinfigurar ponemos el siguiente comando que nos permite poner contraseña a root de Mariadb:**
 
-        - sudo mysql_secure_installation
+         sudo mysql_secure_installation
 
 # Docker
 
@@ -210,22 +210,22 @@ Para instalar tenemos que seguir los siguientes pasos:
 **1.Actulizar el sistema:**
 
 
-         - sudo apt-get update
+          sudo apt-get update
      
-         - sudo apt-get upgrade
+          sudo apt-get upgrade
 
 
 **2.Añadir clave GPC de docker:**
 
-        - curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+         curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 
 **3.Añadir  repositorio oficial de docker:**
 
-        - sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable
+         sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable
     
 **4.Instalacion docker:**
 
-        - sudo apt install docker-ce docker-ce-cli containerd.io
+         sudo apt install docker-ce docker-ce-cli containerd.io
 
 
 
