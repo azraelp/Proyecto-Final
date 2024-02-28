@@ -39,8 +39,12 @@ El motivo por el cual surgia este error era que el propio wireshark no contaba c
 ![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/chmod700.png) \
 En este caso el error se producia debido a que el docker no contaba con las capabilites necesarias que le otorgan permisos para poder realizar las capturas de trafico. Esto se soluciono especificando las capabilites necesarias al hacer la puesta en marcha del docker, **--cap-add=NET_ADMIN --cap-add=NET_RAW** \ 
 ![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/error-dumpcap-capabilities.png) \
+<br>
+Hicimos el desarrollo de 2 páginas web, con la intención de realizar un ataque SSRF desde la URL en el navegador cliente. Al ver que no funcionaba, optamos por ver la consola del navegador (F12). Fue en ese punto cuando vimos que el propio navegador aplica una política la cual bloquea este tipo de acciones que se ejecutan al hacer un SSRF.
 
+![]https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zomeño)/Assets/Img/SameOriginPolicy.png
 
+<br>
 
 # Desarrollo de las webs
 **Web login** <br>
