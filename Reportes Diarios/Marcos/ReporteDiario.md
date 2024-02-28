@@ -71,3 +71,13 @@ Durante el dia de hoy he realizado las siguientes tareas:
 - Planificar de nuevo la explicación de la maquina de Diseño inseguro.
 
 - Buscar videos e información de como montar una vulnerabilidad en FTP acerca de permisos indebidos.
+
+# Reporte Diario 28 de Febrero de 2024
+
+Durante el dia de hoy he realizado las siguientes tareas:
+
+- Ayudar a Aaron a montar correctamente el FTP en la maquina de diseño inseguro
+
+- Hemos tenido problemas al intentar configurar un usuario local que sea usuario FTP y que no se le pueda permitir el acceso solo por SSH o a traves del su
+
+- Corregir y dejar correctamente planificado la explicación de la maquina de diseño inseguro.
