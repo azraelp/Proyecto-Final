@@ -48,3 +48,10 @@
 - Documentación sobre la configuración del servicio ssh en el documento de la máquina uno.
     - He añadido a la documentación de la máquina uno como vamos a configurar el ssh de la primera máquina para poder conseguir el movimiento lateral entre usuarios.
 - Creación de un logo para la página web de la máquina uno.
+
+## Miercoles 28/02/2024
+
+- Investigación de formas de escalar privilegios en la primera máquina.
+    - He estado investigando diferentes formas de poder escalar privilegios en una máquina ubuntu server.
+- Avances en la página web.
+    - Hemos estado avanzando y mejorando la página web para que tenga productos y diferentes secciones.
