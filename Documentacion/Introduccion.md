@@ -44,7 +44,7 @@ Es un riesgo que implica la posibilidad de inserción de código malicioso en un
 <img  alt="drawing" width=600" height="200" src="https://www.indusface.com/wp-content/uploads/2019/08/OWASP-Part1-4.png" />
 </p>
 
-## Descripción de diferentes tipos de ataques de inyección:
+## [Descripción de diferentes tipos de ataques de inyección:](#índice)
 
 - **SQL Injection:** Se insertan comandos SQL maliciosos en las entradas de datos de una aplicación web. Esto permite a los atacantes poder manipular las peticiones hechas a la base de datos, obteniendo, modificando o eliminando información y datos confidenciales.
 
@@ -56,7 +56,7 @@ Es un riesgo que implica la posibilidad de inserción de código malicioso en un
 
 - **XPath Injection:** Se dirige a sistemas que utilizan expresiones XPath para realizar consultas en documentos XML.
 
-## Medidas para prevenir ataques de inyección:
+## [Medidas para prevenir ataques de inyección:](#índice)
 
 Para prevenir los ataques de inyección podemos emplear las siguientes medidas:
 
@@ -76,14 +76,14 @@ Para prevenir los ataques de inyección podemos emplear las siguientes medidas:
 
 - **Educación y Concienciación:** Capacita a los desarrolladores, administradores de sistemas y usuarios finales sobre las mejores prácticas de seguridad.
 
-# Fallas de Identificación y Autenticación
+# [Fallas de Identificación y Autenticación](#índice)
 
 Las fallas de identificación y autenticación son un riesgo relacionado con la gestión de credenciales de usuario y los procesos de verificación de identidad en sistemas informáticos. Estas fallas pueden permitir a los atacantes acceder de forma no autorizada a sistemas, datos o recursos protegidos.
 <p align="center">
 <img  alt="drawing" width="250" height="200" src="https://www.grupocibernos.com/hubfs/blog-error%20de%20autenticaci%C3%B3n.jpg" />
 </p>
 
-## Causas comunes de fallas de identificación y autenticación
+## [Causas comunes de fallas de identificación y autenticación](#índice)
 
 - **Contraseñas Débiles:** Las contraseñas débiles, como "123456" o "password", son vulnerables.
 
@@ -99,7 +99,7 @@ Las fallas de identificación y autenticación son un riesgo relacionado con la 
 
 - **Falta de Educación del Usuario:** Los usuarios pueden no estar al tanto de las mejores prácticas de seguridad, como la importancia de utilizar contraseñas seguras y no compartir sus credenciales con otros.
 
- ## Medidas para mitigar fallas de identificación y autenticación:
+ ## [Medidas para mitigar fallas de identificación y autenticación:](#índice)
 
 - **Contraseñas Seguras:** Establecer requisitos mínimos de complejidad de contraseña (longitud, caracteres especiales, combinación de letras mayúsculas y minúsculas, etc.) y educar a los usuarios sobre la importancia de evitar contraseñas fáciles de adivinar.
 
@@ -114,7 +114,7 @@ Las fallas de identificación y autenticación son un riesgo relacionado con la 
 - **Educación del Usuario:** Educa a los usuarios sobre prácticas seguras de autenticación, como no compartir contraseñas, evitar el uso de la misma contraseña.
 
 - **Actualizaciones y Parches:** Mantén actualizados los sistemas y aplicaciones para asegurarte de que se hayan corregido las vulnerabilidades conocidas relacionadas con la autenticación y la gestión de identidades.
-# Mariadb
+# [Mariadb](#índice)
 
  **¿Qué es Mariadb?**
  
@@ -124,7 +124,7 @@ MariaDB  es una bases de datos relacional de código abierto que ofrece poder al
 <img  alt="drawing" width="320" height="200" src="https://www.wpsysadmin.com/wp-content/uploads/2021/07/mariadb.png" />
 </p>
 
-## Ventajas y desventajas de usar Mariadb
+## [Ventajas y desventajas de usar Mariadb](#índice)
 
  **Ventajas:**
 
@@ -141,7 +141,7 @@ MariaDB  es una bases de datos relacional de código abierto que ofrece poder al
  **Desventajas:**
 - **Fragmentación de la comunidad:** Diferentes tipos opiniones dentro de la comunidad de usuarios, dificultad en la colaboración dentro de la comunidad.
 
-# Instalacion y configuracion Mariadb
+# [Instalacion y configuracion Mariadb](#índice)
 Para instalar tenemos que seguir los siguientes pasos:
 
 **1.Actulizamos el sistema:**
@@ -158,7 +158,7 @@ Para instalar tenemos que seguir los siguientes pasos:
 
          sudo mysql_secure_installation
 
-# Docker
+# [Docker](#índice)
 
  **¿Qué es Docker?**
 
@@ -167,7 +167,7 @@ Docker es una plataforma de código abierto diseñada para facilitar la creació
 <img  alt="drawing" width="320" height="200" src="https://d1.awsstatic.com/acs/characters/Logos/Docker-Logo_Horizontel_279x131.b8a5c41e56b77706656d61080f6a0217a3ba356d.png" />
 </p>
 
-  ## Características de Docker
+  ## [Características de Docker](#índice)
 
 - **Portabilidad:** El contenedor Docker podremos desplegarlo en cualquier otro sistema que soporte esta tecnología.
 
@@ -183,7 +183,7 @@ Docker es una plataforma de código abierto diseñada para facilitar la creació
  
 - **Reutilización de Imágenes:** Docker utiliza un modelo de imágenes y contenedores que fomenta la reutilización y compartición de imágenes de aplicaciones entre desarrolladores y equipos.
 
-## Ventajas y desventajas de usar Docker
+## [Ventajas y desventajas de usar Docker](#índice)
 
  **Ventajas:**
 
@@ -206,7 +206,7 @@ Docker es una plataforma de código abierto diseñada para facilitar la creació
 - **Rendimiento:** Aunque los contenedores Docker son ligeros y eficientes en recursos, puede haber un pequeño costo de rendimiento asociado con la virtualización a nivel de contenedor en comparación con la ejecución de aplicaciones directamente en el sistema operativo host.
 
 
-# Instalacion de Docker
+# [Instalacion de Docker](#índice)
 Para instalar tenemos que seguir los siguientes pasos:
 
 **1.Actulizar el sistema:**
@@ -231,7 +231,7 @@ Para instalar tenemos que seguir los siguientes pasos:
 
 
 
-# Contenedor Numero 1 Inyección
+# [Contenedor Numero 1 Inyección](#índice)
 
 El sistema operativo utilizado para el desarrollo de este primer contenedor es Ubuntu Server XX. La vulnerabilidad elegida ha sido SQL Injection. Es por ello que el desarrollo de esta estará basado en un formulario cuyos campos serán vulnerables a este tipo de ataque. 
 
@@ -240,7 +240,7 @@ El sistema operativo utilizado para el desarrollo de este primer contenedor es U
 </p>
 
 
-## Desarrollo de la Vulnerabilidad Principal 
+## [Desarrollo de la Vulnerabilidad Principal](#índice)
 
 1.Atacante hace fuzzing y encuentra el panel de inicio de cerdos (/login)
 
@@ -266,7 +266,7 @@ En primer lugar desarrollamos un formulario de inicio de sesión con su respecti
 
 En segundo lugar instalamos MariaDB para gestionar las bases de datos que estarán conectadas al formulario. Tras crear las bases de datos con sus respectivos usuarios y verificar la conexión y el buen funcionamiento con el formulario, damos por finalizado la implementación de la vulnerabilidad principal en este contenedor.
 
-## Vulnerabilidades CVE Extra
+## [Vulnerabilidades CVE Extra](#índice)
 
 Para comenzar con la búsqueda de las CVEs añadidas como extra en la máquina, hay que tener en cuenta los siguientes puntos:
 - **La CVE debe ser del año 2023 o posterior**
@@ -276,15 +276,15 @@ Para comenzar con la búsqueda de las CVEs añadidas como extra en la máquina, 
 CVEs elegidas para su reproducción:
 - **Software vulnerable a RCE (Remote Command Execution)**
 
-## Desarrollo de las Vulnerabilidades Extra
+## [Desarrollo de las Vulnerabilidades Extra](#índice)
 
-## Proceso de explotación de las vulnerabilidades 
+## [Proceso de explotación de las vulnerabilidades](#índice)](#índice) 
 
-## Análisis del Contenedor una vez Explotado 
+## [Análisis del Contenedor una vez Explotado](#índice)
 
-### Herramientas Empleadas 
+### [Herramientas Empleadas](#índice)
 
-# Contenedor Numero 2 Fallas de Identificación y Autenticación
+# [Contenedor Numero 2 Fallas de Identificación y Autenticación](#índice)
 
 ## Desarrollo de la Vulnerabilidad Principal
 
