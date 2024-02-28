@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>SSRF 1</title>
 </head>
 <body>
-    <h1>SSRF 1</h1>
+    <h1 id="logo"><img src="lupa.png" alt="Lupa"> URL Validator</h1>
+        <p>Analiza URL sospechosas para detectar malware.</p> 
     <form id="ssrfForm" action="info.php">
-        <label for="urlInput">Introduce la URL objetivo:</label><br>
-        <input type="text" id="urlInput" name="url"><br><br>
-        <input type="submit" value="Realizar SSRF">
+        <label for="urlInput"></label><br>
+        <input type="text" id="urlInput" name="url" placeholder="Introduce la URL objetivo"><br><br>
+        <input type="submit" value="Validar URL">
     </form>
 </body>
 </html>
