@@ -28,8 +28,11 @@ Configuración del archivo /etc/apache2/apache2.conf
 <br>
 ![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zomeño)/Assets/Img/apache2.conf.png)
 <br>
-Será necesario habilitar el módulo headers con el comando
+Será necesario habilitar el módulo headers con el comando:
 > sudo a2enmod headers.load && sudo service apache2 reload
+<br>
+La parte esencial en SSRF es poder acceder a recursos inaccesibles como un cliente normal, ya sea un servicio específico, otro host de la red u otros. Nosotros optamos por habilitar un puerto extra, así que para eso teníamos que modificar el archivo /etc/apache2/ports.conf y añadir el puerto específico.
+![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zomeño)/Assets/Img/ports.conf.png)
 
 
 # CTF
