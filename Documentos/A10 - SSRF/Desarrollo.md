@@ -44,7 +44,6 @@ Hicimos el desarrollo de 2 páginas web, con la intención de realizar un ataque
 
 ![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/SameOriginPolicy.png) \
 
-<br>
 
 # Desarrollo de las webs
 **Web login** <br>
