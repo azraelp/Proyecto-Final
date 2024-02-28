@@ -136,6 +136,24 @@ MariaDB  es una bases de datos relacional de código abierto que ofrece poder al
 
  **Desventajas:**
 - **Fragmentación de la comunidad:** Diferentes tipos opiniones dentro de la comunidad de usuarios, dificultad en la colaboración dentro de la comunidad.
+
+# Instalacion y configuracion Mariadb
+Para instalar tenemos que seguir los siguientes pasos:
+
+**1.Actulizamos el sistema:**
+
+         - sudo apt-get update
+     
+         - sudo apt-get upgrade
+         
+**2.Instalacion Mariadb:**
+
+        - sudo apt install mariadb-server
+        
+**3.Para cinfigurar ponemos el siguiente comando que nos permite poner contraseña a root Mariadb:**
+
+        - sudo mysql_secure_installation
+
 # Docker
 
  **¿Qué es Docker?**
