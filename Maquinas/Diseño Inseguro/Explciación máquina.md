@@ -17,12 +17,20 @@ El servicio de **MySQL** tendrá la función de almacenar usuarios en la BBDD.
 
 El servicio de apache alojará nuestra misma pagina web que es una web de **fans de la serie de los originales**. Dicha web será vulnerable a la vuelnerabilidad **Diseño Inseguro**, que será la **CVE-xxx-xxx**.
 
-Con está vulnerabilidad consite en abusar que la URL no está bien diseñada, pasandole a la URL "../" con un parametro en especifico podrá ver fichero que solo el administrador tendria acceso.
+Una vez que el atacante haya hecho escaneo de puerto encontrar varios servicio entre ellos el servicio **FTP**. El atacante podrá acceder de forma anonima donde se encontrar un fichero con el contenido de varias contraseñas(Para depistar) y se le dará una pista al atacante. A parte el fichero en contendra unzip o otro fichero, que se podrá ver con la herramienta **binwalk**, dentro de ese fichero o unzip contendra la contraseña del **usuario FTP codificada o cifrada**. Ya que el atacante sabes previamente que usuarios hay podrá intentar acceder.
 
-El ataquen podrá ver que usuario hay en esa maquina para así tener una idea una vez que quiera acceder a la maquina de la web.
+Una vez que el atcante haya hecho el escaneo de puerto encontrar varios ervicio entre ellos el servicio **FTP**
+El atacante podrá acceder de forma anonimadonde se encontrar un fichero con una conversación entre el usuario FTP y el administrador. El atacante al no saber que usuario hay en a maquina hara un enumeración para ver que usuario hay que la maquina y quien es el posible **usuario FTP**.
 
-Una vez que el atacante haya hecho escaneo de puerto encontrar varios servicio entre ellos el servicio **FTP**. El atacante podrá acceder de forma anonima donde se encontrar un fichero con el contenido de varias contraseñas(Para depistar) y se le dará una pista al atacante. A parte el fichero en contendra unzip o otro fichero, que se podrá ver con la herramienta x, dentro de ese fichero o unzip contendra la contraseña del **usuario FTP codificada o cifrada**. Ya que el atacante sabes previamente que usuarios hay podrá intentar acceder.
+A raiz de eso, el atacante tendrá que usar la herramienta hydra una vez que haya encontrado el **usuario FTP**, para intentar hacer fuerza bruta con el fichero **rockyou.txt**.
 
+Una vez haya podido adivinar la contraseña con hydra y el atacante entre con el usuario **Elijah** tendrá que investigar que carpeta tiene los permiso para poder subir fichero y con ello una **reverse shell**.
+
+Una vez que el atacante haya podido entrar mediante **reverse shell**, entrá como **www-data** una vez dentro tienes que encontrar un fichero con el nombre x que contedrá contraseña para despitar y una pista de la contraseña para que pueda decifrar la contraseña del usuario **Marcel**.
+
+Una vez que le atacante entre con el usuario **Marcel en el home/marcel/** encontrará la primera flag, dentro del fichero abra otro fichero que contendrá la contraseña cifrada en diferentes codificaciones y cifrados. Dicho usuario está retringio lo que puede hacer. EL atacante tendrá que investigar como poder extrager el fichero que esta encondido en la flag.
+
+Ya decifrada la contraseña y una vez se accedan como el usuario caroline el atacante tendrá que buscar el permisos SUID para poder excalar a privilegio a root una vez que sea root encontrará la segunda flag **/root/**
 
 Una vez que puedan acceder al usuario FTP, el atacante tendra que decubrir en que carpeta puede subir**ficheros**.
 

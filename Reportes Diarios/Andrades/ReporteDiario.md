@@ -29,3 +29,9 @@
 ## 26/02/24 Reporte Diario
 - [X] Testing de la primera maquina
 - [X] Investigación de errores
+
+## 27/02/24 Reporte Diario
+- [X] Testing de la primera maquina
+- [X] Redación de la maquina
+- [X] soluciones de algunos errores
+- [X] Readación de la explicación de la maquina
