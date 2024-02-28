@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSRF 2</title>
+</head>
+<body>
+    <h1>SSRF 2</h1>
+    <form id="ssrfForm">
+        <label for="urlInput">Introduce la URL objetivo:</label><br>
+        <input type="text" id="urlInput" name="url"><br><br>
+        <input type="submit" value="Realizar SSRF">
+    </form>
+
+    <div id="result"></div>
+
+    <script>
+        document.getElementById('ssrfForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevenir el envío del formulario
+
+            var urlObjetivo = document.getElementById('urlInput').value;
+            var xhr = new XMLHttpRequest();
+
+            xhr.open('GET', urlObjetivo, true);
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === XMLHttpRequest.DONE) {
+                    if (xhr.status === 200) {
+                        document.getElementById('result').innerHTML = xhr.responseText;
+                    } else {
+                        document.getElementById('result').innerHTML = 'Error al realizar la solicitud.';
+                    }
+                }
+            };
+
+            xhr.send();
+        });
+    </script>
+</body>
+</html>

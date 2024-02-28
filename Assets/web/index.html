@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSRF 1</title>
+</head>
+<body>
+    <h1>SSRF 1</h1>
+    <form id="ssrfForm" action="info.php">
+        <label for="urlInput">Introduce la URL objetivo:</label><br>
+        <input type="text" id="urlInput" name="url"><br><br>
+        <input type="submit" value="Realizar SSRF">
+    </form>
+<body>
+</html>
