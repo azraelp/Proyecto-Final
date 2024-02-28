@@ -1,4 +1,4 @@
-# Semana 1 Planificación
+# Semana 1: Planificación
 ## Lunes 19 de febrero 2024 <br>
 ✅ Organización del equipo <br>
 ✅ Organización y distribución de tareas diarias <br>
@@ -25,6 +25,7 @@
 ✅ Buscar soluciones para el problema que habia para la API de la tienda <br>
 ❌ Creación de una web tienda (Para el ataque SSRF) - Cancelada <br>
 
+# Semana 2: Preparación máquina
 ## Lunes 26 de febrero 2024
 ✅ Organización y distribución de tareas diarias <br>
 ✅ Documentacion en el desarrollo.md <br>
