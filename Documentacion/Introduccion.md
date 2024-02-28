@@ -206,6 +206,7 @@ Para instalar tenemos que seguir los siguientes pasos:
     
 **4.Instalacion docker:**
 
+    - sudo apt install docker-ce docker-ce-cli containerd.io
 
 
 
