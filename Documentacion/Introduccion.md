@@ -1,4 +1,4 @@
-# Índice
+# Indice
 
 1. [Introducción](#introducción)
 2. [Inyección](#inyección)
