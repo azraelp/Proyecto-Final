@@ -52,7 +52,16 @@ También hemos configurado directivas extras para poder filtrar el acceso a esta
 
 ![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zomeño)/Assets/Img/server.com.conf.png)
 
+<br>
 
+Ahora ya que tenemos toda la configuración falta habilitar el mod que utilizamos para crear la directiva, este mod es el rewrite de Apache
+> sudo a2enmod rewrite.load && sudo service apache2 restart
+
+Y por último tenemos que habilitar el site que hemos creado desde 0. Para ello:
+> sudo a2ensite server.com.conf && sudo service apache2 reload
+
+Y a partir de ahora, siempre que hagamos un cambio en este archivo tendríamos que deshabilitar y habilitar el site de nuevo, y posteriormente recargar el servidor de Apache.
+> sudo a2dissite server.com.conf sudo a2ensite server.com.conf && sudo service apache2 reload
 
 # CTF
 Una vez se accede con el usuario Paco, buscaremos el programa que tenga el permiso SUID. \
