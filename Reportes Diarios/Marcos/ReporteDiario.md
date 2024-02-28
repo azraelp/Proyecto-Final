@@ -59,3 +59,15 @@ Durante el dia de hoy he realizado las siguientes tareas:
 - Resolver problemas durante la configuración de Docker
 
 - Empezar a montar el entorno para el CVE https://nvd.nist.gov/vuln/detail/CVE-2019-9053
+
+# Reporte Diario 27 de Febrero de 2024
+
+Durante el dia de hoy he realizado las siguientes tareas:
+
+- Ayudar en la maquina de Diseño inseguro.
+
+- Montar una reverse shell para la maquina de Diseño inseguro.
+
+- Planificar de nuevo la explicación de la maquina de Diseño inseguro.
+
+- Buscar videos e información de como montar una vulnerabilidad en FTP acerca de permisos indebidos.
