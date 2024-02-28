@@ -38,10 +38,11 @@ La parte esencial en SSRF es poder acceder a recursos inaccesibles como un clien
 
 <br>
 
-El siguiente paso a seguir era crear un site específico para nuestra página web oculta del puerto 5000. Así que copiamos el archivo 000-default.conf, el cual se encarga de guardar la configuración de la página predeterminada de apache (/var/www/html) y creamos el archivo con otro nombre.
+El siguiente paso a seguir era crear un site específico para nuestra página web oculta del puerto 5000. Así que copiamos el archivo 000-default.conf, ubicado en la ruta /etc/apache2/sites-available, el cual se encarga de guardar la configuración de la página predeterminada de apache (/var/www/html) y creamos el archivo con otro nombre.
 > cp 000-default.conf server.com.conf
 
-Una vez tengamos el archivo de configuración del site pasamos a editarlo
+Una vez tengamos el archivo de configuración del site pasamos a editarlo (con vim) y modificaremos los siguientes valores:
+Cambiaremos la primera linea de
 
 
 <br>
