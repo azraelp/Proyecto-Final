@@ -1,3 +1,4 @@
+# Semana 1 Planificación
 ## Lunes 19 de febrero 2024 <br>
 ✅ Organización del equipo <br>
 ✅ Organización y distribución de tareas diarias <br>
