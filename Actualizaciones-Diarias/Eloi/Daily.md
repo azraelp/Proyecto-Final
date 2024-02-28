@@ -37,4 +37,8 @@
 - [X] Investigacion como montar web SSRF
 - [ ] Investigar error CORS Header 'Acces-Control-Allow-Origin0 missing' firefox y politica de mismo origen firefox
 
+# Miercoles 28 de febrero 2024
+- [X] Actualizar index.html de SSRF
+- [X] Crear style.css para SSRF
+- [X] Reunion general de grupo
 
