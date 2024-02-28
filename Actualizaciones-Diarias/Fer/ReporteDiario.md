@@ -37,4 +37,4 @@
 ✅ Búsqueda de información de CORS <br>
 
 ## Miércoles 28 de febrero 2024
-✅ Reunión de los avances en el proyecto
+✅ Reunión de los avances del proyecto
