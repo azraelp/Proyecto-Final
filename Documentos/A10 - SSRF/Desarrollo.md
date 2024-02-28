@@ -45,8 +45,8 @@ Hicimos el desarrollo de 2 páginas web, con la intención de realizar un ataque
 ![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/SameOriginPolicy.png) 
 <br>
 
-Tambien probamos a instalar una versión anterior de apache para aprovechar una vulnerabilidad de SSRF (CVE-2021-44224) (https://www.cybersecurity-help.cz/vulnerabilities/59057/)
-
+También probamos a instalar una versión anterior de Apache para aprovechar una vulnerabilidad de SSRF (CVE-2021-44224) [Vulnerabilidad](https://www.cybersecurity-help.cz/vulnerabilities/59057/)
+Esta vulnerabilidad podía explotarse entre las versiones 
 
 # Desarrollo de las webs
 **Web login** <br>
