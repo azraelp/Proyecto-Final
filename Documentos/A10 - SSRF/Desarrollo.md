@@ -36,6 +36,17 @@ La parte esencial en SSRF es poder acceder a recursos inaccesibles como un clien
 
 ![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zomeño)/Assets/Img/ports.conf.png)
 
+<br>
+
+El siguiente paso a seguir era crear un site específico para nuestra página web oculta del puerto 5000. Así que copiamos el archivo 000-default.conf, el cual se encarga de guardar la configuración de la página predeterminada de apache (/var/www/html).
+> cp 000-default.conf server.com.conf
+
+<br>
+
+![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zomeño)/Assets/Img/server.com.conf.png)
+
+
+
 # CTF
 Una vez se accede con el usuario Paco, buscaremos el programa que tenga el permiso SUID. \
 ![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/find_4000_paco.png) \
