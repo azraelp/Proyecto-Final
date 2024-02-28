@@ -12,14 +12,14 @@ El contenedor Docker estará basado en Ubuntu 22.04.3 LTS Server y tendrá insta
 
 El Dockerfile que generará el contenedor es el siguiente:
 ![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/dockerfile.png)\
-En la primera línea se específica que imagen se usará para montar el conetendor, despues se realiza una actualizacion de paquetes y se instalan las utilidades necesarias para realizar el ataque SSRF, el parámetro **DEBIAN_FRONTEND=noninteractive** se utiliza para que a la hora de instalar los paquetes no aparezca ningún prompt y que se aplique la opción perdeterminada a la hora de configurar los paquetes en la instalación, la última línea **rm -rf /var/lib/apt/lists/** eliminará los archivos temporales que ya no son necesarios después de la instalación de los paquetes, de esta forma se optimiza el espacio del contenedor. A continuación se crea el directorio sshd dentro de /var/run, esto se realiza de forma autoamtica a la hora de poner en marcha el servicio SSH sin embargo es mejor crearlo antes de poner en marcha el servicio por si se necesita de antemano. A continuación se establece que la variable de entorno **DISPLAY** apunte al display de la máquina anfitrión, esto nos servirá para poder usar Wireshark de forma grafica. Por último se abren los puertos necesarios para los servicios SSH y Apache y se ponen en marcha dichos servicios.
+En la primera línea se específica que imagen se usará para montar el contenedor, después se realiza una actualización de paquetes y se instalan las utilidades necesarias para realizar el ataque SSRF, el parámetro **DEBIAN_FRONTEND=noninteractive** se utiliza para que a la hora de instalar los paquetes no aparezca ningún prompt y que se aplique la opción predeterminada a la hora de configurar los paquetes en la instalación, la última línea **rm -rf /var/lib/apt/lists/** eliminará los archivos temporales que ya no son necesarios después de la instalación de los paquetes, de esta forma se optimiza el espacio del contenedor. A continuación se crea el directorio sshd dentro de /var/run, esto se realiza de forma automática a la hora de poner en marcha el servicio SSH sin embargo es mejor crearlo antes de poner en marcha el servicio por si se necesita de antemano. A continuación se establece que la variable de entorno **DISPLAY** apunte al display de la máquina anfitrión, esto nos servirá para poder usar Wireshark de forma gráfica. Por último se abren los puertos necesarios para los servicios SSH y Apache y se ponen en marcha dichos servicios.
 
 Para crear el contenedor Docker usando el dockerfile se usará la opción **build**
 ![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/docker-build.png)
 ![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/docker-build-2.png)
 
 
-Para poder realizar el escalado de privilegios se le aplicara el permiso SUID que permite a los usuarios ejecutar un archivo con los privilegios del propietario del archivo. De esta forma el usuario Paco podra acceder como root. \
+Para poder realizar el escalado de privilegios se le aplicara el permiso SUID que permite a los usuarios ejecutar un archivo con los privilegios del propietario del archivo. De esta forma el usuario Paco podrá acceder como root. \
 ![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/suid_python3.png)
 
 # Desarrollo de Apache y configuración principal - SSRF
@@ -73,10 +73,10 @@ Podemos ver que el progrgrama python cuenta con el permiso SUID, aprovechando es
 
 
 # Problemas encontrados en el desarollo
-Una vez accediamos al contenedor se intenta ejecutar Wireshark de forma fallida, ya que no se puede conectar a ninguna GUI para solucionar este problema se específico la variable de entorno **DISPLAY** para que fuera la misma que la de la máquina local ademas se específico que las aplicaciones locales tuvieran acceso al servidor de ventanas X con el comando **xhost +local:**
+Una vez accedíaamos al contenedor se intenta ejecutar Wireshark de forma fallida, ya que no se puede conectar a ninguna GUI para solucionar este problema se específico la variable de entorno **DISPLAY** para que fuera la misma que la de la máquina local ademas se específico que las aplicaciones locales tuvieran acceso al servidor de ventanas X con el comando **xhost +local:**
 ![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/error-display.png) \
 ![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/localhostx.png) \
-El motivo por el cual surgia este error era que el propio Wireshark no contaba con los permisos suficientes para poder ejecutarse, al añadirle permisos de ejecución con  **chmod** se ejecuta el programa.
+El motivo por el cual surgía este error era que el propio Wireshark no contaba con los permisos suficientes para poder ejecutarse, al añadirle permisos de ejecución con  **chmod** se ejecuta el programa.
 ![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/error-dumpcap-child.png) \
 ![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/lswireshark.png) \
 ![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/chmod700.png) \
@@ -89,15 +89,15 @@ Hicimos el desarrollo de 2 páginas web, con la intención de realizar un ataque
 <br>
 
 También probamos a instalar una versión anterior de Apache para aprovechar una vulnerabilidad de SSRF (CVE-2021-44224) [Vulnerabilidad](https://www.cybersecurity-help.cz/vulnerabilities/59057/)
-Esta vulnerabilidad podía explotarse entre las versiones de Apache 2.4.7 - 2.4.51. El contenedor contaba con la versión de Apache 2.4.52, así que desinstalamos el Apache con purge, remove y autoremove. Y una vez con todas las carpetas totalmente exterminadas decidimos a descargar el paquete de Apache vulnerable a SSRF. Para eso antes debiamos instalar ciertos paquetes y dependencias, wget para poder descargar el paquete. Las dependecias necesarias fueron: libapr1-dev, libaprutil1-dev, libpcre3-dev, gcc y make. Una vez acabamos de seguir los pasos de instalación del paquete. Al ejecutar apache2 -v obteniamos la misma versión que anteriormente habíamos desinstalado (2.4.52). Hubo varios intentos con nuevos contenedores para poder instalar la versión de Apache vulnerable (2.4.7), pero no hubo forma de hacer esto efectivo.
+Esta vulnerabilidad podía explotarse entre las versiones de Apache 2.4.7 - 2.4.51. El contenedor contaba con la versión de Apache 2.4.52, así que desinstalamos el Apache con purge, remove y autoremove. Y una vez con todas las carpetas totalmente exterminadas decidimos a descargar el paquete de Apache vulnerable a SSRF. Para eso antes debíamos instalar ciertos paquetes y dependencias, wget para poder descargar el paquete. Las dependencias necesarias fueron: libapr1-dev, libaprutil1-dev, libpcre3-dev, gcc y make. Una vez acabamos de seguir los pasos de instalación del paquete. Al ejecutar apache2 -v obteníamos la misma versión que anteriormente habíamos desinstalado (2.4.52). Hubo varios intentos con nuevos contenedores para poder instalar la versión de Apache vulnerable (2.4.7), pero no hubo forma de hacer esto efectivo.
 
 # Desarrollo de las webs
 **Web login** <br>
-Se ha realizado un login para la página web que sufrirá la vulnerabilidad de ssrf. Para la creación de la página, hemos utilizado únicamente HTML y CSS. No es una página funcional porque por ahí no se realizara el ataque, solo será una página donde no se podrá interactuar.
+Se ha realizado un login para la página web que sufrirá la vulnerabilidad de SSRF. Para la creación de la página, hemos utilizado únicamente HTML y CSS. No es una página funcional porque por ahí no se realizara el ataque, solo será una página donde no se podrá interactuar.
 ![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zomeño)/Assets/Img/login-SSRF.png)
 
 **Web tienda** <br>
-Se realizó una búsqueda de información del ataque ssrf para ver que páginas eran más comunes en este tipo de ataque. Habiendo buscado varias fuentes de información, sacamos que unas de las páginas que más sufren de eso son tiendas que comprueban el stock de un producto.
+Se realizó una búsqueda de información del ataque SSRF para ver que páginas eran más comunes en este tipo de ataque. Habiendo buscado varias fuentes de información, sacamos que unas de las páginas que más sufren de eso son tiendas que comprueban el stock de un producto.
 
 Así que con esta información decidimos montar una web sencilla, utilizando HTML y JavaScript. En esta web pondremos que tipo de producto quiere el usuario. <br>
 ![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zomeño)/Assets/Img/tiendaweb-2.png)
@@ -116,3 +116,4 @@ Pero como vemos en el Burpsuite no detecta la API <br>
 ![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zomeño)/Assets/Img/tiendaweb-7.png)
 
 Tras varios intentos sin éxito, decidimos enfocarlo de otra manera. Y hacer una página parecida a "VirusTotal".
+¡
