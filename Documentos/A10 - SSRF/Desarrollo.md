@@ -67,13 +67,13 @@ Y a partir de ahora, siempre que hagamos un cambio en este archivo tendríamos q
 
 Una vez se accede con el usuario Paco, buscaremos el programa que tenga el permiso SUID. \
 ![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/find_4000_paco.png) \
-Podemos ver que el progrgrama python cuenta con el permiso SUID, aprovechando esta vulnerabilidad podremos acceder al usuario **root** 
+Podemos ver que el programa python cuenta con el permiso SUID, aprovechando esta vulnerabilidad podremos acceder al usuario **root** 
 ![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/root_paco.png)
 
 
 
 # Problemas encontrados en el desarollo
-Una vez accedíaamos al contenedor se intenta ejecutar Wireshark de forma fallida, ya que no se puede conectar a ninguna GUI para solucionar este problema se específico la variable de entorno **DISPLAY** para que fuera la misma que la de la máquina local ademas se específico que las aplicaciones locales tuvieran acceso al servidor de ventanas X con el comando **xhost +local:**
+Una vez accedíamos al contenedor se intenta ejecutar Wireshark de forma fallida, ya que no se puede conectar a ninguna GUI para solucionar este problema se específico la variable de entorno **DISPLAY** para que fuera la misma que la de la máquina local ademas se específico que las aplicaciones locales tuvieran acceso al servidor de ventanas X con el comando **xhost +local:**
 ![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/error-display.png) \
 ![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/localhostx.png) \
 El motivo por el cual surgía este error era que el propio Wireshark no contaba con los permisos suficientes para poder ejecutarse, al añadirle permisos de ejecución con  **chmod** se ejecuta el programa.
