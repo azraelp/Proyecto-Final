@@ -37,4 +37,10 @@
 - [X]  Debatir continuidad de plugins del CEV.
 - [X]  Acordar con michael una mejor estructuración referente al wordpress contra docker.
 - [ ]  Terminar el prototipo de la imagen.
-- [ ]  Hacer que se suban los datos del wordpress al github para poder hacer pruebas con el prototipo de imagen.
+- [X]  Hacer que se suban los datos del wordpress al github para poder hacer pruebas con el prototipo de imagen.
+
+## Miércoles 28/02/2024
+- [X]  Terminar prototipo de la imagen.
+- [X]  Crear un compose para tener Wordpress y DB.
+- [X]  Dockerizar el trabajo de Michael.
+- [X]  Re-organizar repositorio, asignar estándares a seguir al subir datos.
