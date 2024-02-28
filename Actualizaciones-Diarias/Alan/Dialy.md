@@ -53,7 +53,8 @@
 
 ## Miércoles 28 de Febrero 2024:
 
-
+- [ ] Desarrollo de CTF.
+- [ ] Reunión grupal.
 
 ## Jueves 29 de Febrero 2024:
 
