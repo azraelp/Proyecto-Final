@@ -46,7 +46,7 @@ Cambiaremos la primera linea del archivo de <VirtualHost *:80> por <VirtualHost 
 Cambiaremos el DocumentRoot por la ruta donde estarán los archivos de la web. **DocumentRoot /var/www/server**
 Añadiremos la líneas **ServerName** y **ServerAlias** con los valores convenientes del dominio. En este caso dejaremos localhost.
 También hemos configurado directivas extras para poder filtrar el acceso a esta página y mostrar un mensaje de acceso denegado a usuarios que accedan desde el exterior.
-
+Únicamente se podrá acceder al recurso original de este puerto si el acceso viene de localhost.
 
 <br>
 
