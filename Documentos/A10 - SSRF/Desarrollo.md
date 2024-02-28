@@ -12,9 +12,9 @@ El contenedor Docker estará basado en Ubuntu 22.04.3 LTS Server y tendrá insta
 
 El Dockerfile que generará el contenedor es el siguiente:
 ![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/dockerfile.png)\
-En la primera linea se especifica que imagen se usara para montar el conetendor, despues se realiza una actualizacion de paquetes y se instalan las utilidades necesarias para realizar el ataque SSRF, el parametro **DEBIAN_FRONTEND=noninteractive** se utiliza para que a la hora de instalar los paquetes no aparezca ningun prompt y que se aplique la opcion perdeterminada a la hora de configurar los paquetes en la instalacion, la ultima linea **rm -rf /var/lib/apt/lists/** eliminara los archivos temporales que ya no son necesarios después de la instalación de los paquetes, de esta forma se optimiza el espacio del contenedor. A continuacion se crea el directorio sshd dentro de /var/run, esto se realiza de forma autoamtica a la hora de poner en marcha el servicio SSH sin embargo es mejor crearlo antes de poner en marcha el servicio por si se necesita de antemano. A continuacion se establece que la variable de entorno **DISPLAY** apunte al display de la maquina anfitriona, esto nos servira para poder usar wireshark de forma grafica. Por ultimo se abren los puertos necesarios para los servicios SSH y apache y se ponen en marcha dichos servicios.
+En la primera línea se especifica que imagen se usará para montar el conetendor, despues se realiza una actualizacion de paquetes y se instalan las utilidades necesarias para realizar el ataque SSRF, el parámetro **DEBIAN_FRONTEND=noninteractive** se utiliza para que a la hora de instalar los paquetes no aparezca ningun prompt y que se aplique la opción perdeterminada a la hora de configurar los paquetes en la instalacion, la última línea **rm -rf /var/lib/apt/lists/** eliminara los archivos temporales que ya no son necesarios después de la instalación de los paquetes, de esta forma se optimiza el espacio del contenedor. A continuación se crea el directorio sshd dentro de /var/run, esto se realiza de forma autoamtica a la hora de poner en marcha el servicio SSH sin embargo es mejor crearlo antes de poner en marcha el servicio por si se necesita de antemano. A continuación se establece que la variable de entorno **DISPLAY** apunte al display de la máquina anfitriona, esto nos servira para poder usar wireshark de forma grafica. Por último se abren los puertos necesarios para los servicios SSH y Apache y se ponen en marcha dichos servicios.
 
-Para crear el contenedor docker usando el dockerfile se usara la opción **build**
+Para crear el contenedor Docker usando el dockerfile se usará la opción **build**
 ![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/docker-build.png)
 ![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/docker-build-2.png)
 
@@ -64,6 +64,7 @@ Y a partir de ahora, siempre que hagamos un cambio en este archivo tendríamos q
 > sudo a2dissite server.com.conf sudo a2ensite server.com.conf && sudo service apache2 reload
 
 # CTF
+
 Una vez se accede con el usuario Paco, buscaremos el programa que tenga el permiso SUID. \
 ![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/find_4000_paco.png) \
 Podemos ver que el progrgrama python cuenta con el permiso SUID, aprovechando esta vulnerabilidad podremos acceder al usuario **root** 
@@ -72,14 +73,14 @@ Podemos ver que el progrgrama python cuenta con el permiso SUID, aprovechando es
 
 
 # Problemas encontrados en el desarollo
-Una vez accediamos al contenedor se intenta ejecutar Wireshark de forma fallida, ya que no se puede conectar a ninguna GUI para solucionar este problema se especifico la variable de enterno **DISPLAY** para que fuera la misma que la de la maquina local ademas se especifico que las aplicaciones locales tuvieran acceso al servidor de ventanas X con el comando **xhost +local:**
+Una vez accediamos al contenedor se intenta ejecutar Wireshark de forma fallida, ya que no se puede conectar a ninguna GUI para solucionar este problema se específico la variable de entorno **DISPLAY** para que fuera la misma que la de la máquina local ademas se específico que las aplicaciones locales tuvieran acceso al servidor de ventanas X con el comando **xhost +local:**
 ![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/error-display.png) \
 ![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/localhostx.png) \
-El motivo por el cual surgia este error era que el propio wireshark no contaba con los permisos suficientes para poder ejecutarse, al añadirle permisos de ejecucion con  **chmod** se ejecuta el programa.
+El motivo por el cual surgia este error era que el propio Wireshark no contaba con los permisos suficientes para poder ejecutarse, al añadirle permisos de ejecución con  **chmod** se ejecuta el programa.
 ![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/error-dumpcap-child.png) \
 ![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/lswireshark.png) \
 ![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/chmod700.png) \
-En este caso el error se producia debido a que el docker no contaba con las capabilites necesarias que le otorgan permisos para poder realizar las capturas de trafico. Esto se soluciono especificando las capabilites necesarias al hacer la puesta en marcha del docker, **--cap-add=NET_ADMIN --cap-add=NET_RAW** \ 
+En este caso el error se producía debido a que el Docker no contaba con las capabilites necesarias que le otorgan permisos para poder realizar las capturas de tráfico. Esto se solucionó especificando las capabilites necesarias al hacer la puesta en marcha del Docker, **--cap-add=NET_ADMIN --cap-add=NET_RAW** \ 
 ![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/error-dumpcap-capabilities.png) \
 <br>
 Hicimos el desarrollo de 2 páginas web, con la intención de realizar un ataque SSRF desde la URL en el navegador cliente. Al ver que no funcionaba, optamos por ver la consola del navegador (F12). Fue en ese punto cuando vimos que el propio navegador aplica una política la cual bloquea este tipo de acciones que se ejecutan al hacer un SSRF.
@@ -98,20 +99,20 @@ Se ha realizado un login para la página web que sufrirá la vulnerabilidad de s
 **Web tienda** <br>
 Se realizó una búsqueda de información del ataque ssrf para ver que páginas eran más comunes en este tipo de ataque. Habiendo buscado varias fuentes de información, sacamos que unas de las páginas que más sufren de eso son tiendas que comprueban el stock de un producto.
 
-Así que con esta información decidimos montar una web sencilla, usando html y JavaScript. En esta web pondremos que tipo de producto quiere el usuario. <br>
+Así que con esta información decidimos montar una web sencilla, utilizando HTML y JavaScript. En esta web pondremos que tipo de producto quiere el usuario. <br>
 ![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zomeño)/Assets/Img/tiendaweb-2.png)
 
 Y una vez que lo haya seleccionado y le dé al botón de verificar las existencias, mostrará la cantidad de existencias el cual es un número random creado por JavaScript. <br>
 ![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zomeño)/Assets/Img/tiendaweb-3.png)
 
-Se intentó a ver si podía sacar la API de la web mediante la verificación de existencias y vimos que el buirp suite no recogía nada. Buscamos información y vimos que lo estábamos haciéndolo mal. <br>
+Se intentó a ver si podía sacar la API de la web mediante la verificación de existencias y vimos que el Burpsuite no recogía nada. Buscamos información y vimos que lo estábamos haciéndolo mal. <br>
 ![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zomeño)/Assets/Img/tiendaweb-4.png)
 
 Así que se hizo, creó otra versión de la web para que obtuviera los datos de la base de datos. Se ha creado el HTML para mostrar los datos y el PHP para hacer la conexión con la base de datos. <br>
 ![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zomeño)/Assets/Img/tiendaweb-5.png)
 ![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zomeño)/Assets/Img/tiendaweb-6.png)
 
-Pero como vemos en el buirp suite no detecta la API <br>
+Pero como vemos en el Burpsuite no detecta la API <br>
 ![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zomeño)/Assets/Img/tiendaweb-7.png)
 
-Tras varios intentos sin éxito, decidimos enfocarlo de otra manera. Y hacer una página parecida a "virustotal".
+Tras varios intentos sin éxito, decidimos enfocarlo de otra manera. Y hacer una página parecida a "VirusTotal".
