@@ -32,15 +32,16 @@ Será necesario habilitar el módulo headers con el comando:
 > sudo a2enmod headers.load && sudo service apache2 reload
 <br>
 La parte esencial en SSRF es poder acceder a recursos inaccesibles como un cliente normal, ya sea un servicio específico, otro host de la red u otros. Nosotros optamos por habilitar un puerto extra, así que para eso teníamos que modificar el archivo /etc/apache2/ports.conf y añadir el puerto específico.
-<br>
+a
+
 ![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zomeño)/Assets/Img/ports.conf.png)
-<br>
 
 # CTF
 Una vez se accede con el usuario Paco, buscaremos el programa que tenga el permiso SUID. \
 ![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/find_4000_paco.png) \
 Podemos ver que el progrgrama python cuenta con el permiso SUID, aprovechando esta vulnerabilidad podremos acceder al usuario **root** 
 ![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/root_paco.png)
+
 
 
 # Problemas encontrados en el desarollo
