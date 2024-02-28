@@ -9,6 +9,7 @@
     - [Medidas para mitigar fallas de identificación y autenticación](#medidas-para-mitigar-fallas-de-identificación-y-autenticación)
 4. [Mariadb](#mariadb)
     - [Ventajas y desventajas de usar Mariadb](#ventajas-y-desventajas-de-usar-mariadb)
+    - [Instalacion y configuracion Mariadb](#instalacion-y-configuracion-mariadb)
 5. [Docker](#docker)
     - [Características de Docker](#características-de-docker)
     - [Ventajas y desventajas de usar Docker](#ventajas-y-desventajas-de-usar-docker)
@@ -150,7 +151,7 @@ Para instalar tenemos que seguir los siguientes pasos:
 
         - sudo apt install mariadb-server
         
-**3.Para cinfigurar ponemos el siguiente comando que nos permite poner contraseña a root Mariadb:**
+**3.Para cinfigurar ponemos el siguiente comando que nos permite poner contraseña a root de Mariadb:**
 
         - sudo mysql_secure_installation
 
