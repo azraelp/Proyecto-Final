@@ -86,9 +86,12 @@ Para la gestión de sesiones, lo que hemos hecho es incluir el siguiente código
 
 ![](/Assets/sesiones.png)
 
+
 2. Usuarios
 
+![](/Assets/usuaris.png)
 
+En este panel se puede ver los usuairos que hay registrados en la pagina.  
 
 
 ## Servidor SSH
