@@ -26,8 +26,8 @@
 ## Jueves 22 de Febrero 2024:
 
 - [X] Investigar sobre el funcionamiento interno de SSRF y ver ataques reales.
-- [X] Solución de problemas de Docker 
-- [X] Puesta en marcha del primer contenedor Docker (A10:2021)
+- [X] Solución de problemas de Docker.
+- [X] Puesta en marcha del primer contenedor Docker (A10:2021).
 
 ## Viernes 23 de Febrero 2024:
 
@@ -35,7 +35,6 @@
 - [X] Corrección de errores con puertos y servicios de contenedores Docker.
 - [X] Desarrollo de la vulnerabilidad SSRF.
 - [X] Reunión de seguimiento con el equipo.
-
 
 
 # Semana 2 - Preparación máquina 1:
@@ -53,7 +52,8 @@
 
 ## Miércoles 28 de Febrero 2024:
 
-- [ ] Desarrollo de CTF.
+- [X] Desarrollo de CTF.
+- [ ] Documentación de días anteriores.
 - [ ] Reunión grupal.
 
 ## Jueves 29 de Febrero 2024:
