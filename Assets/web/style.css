@@ -1,0 +1,62 @@
+body {
+    font-family: "Google Sans", Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+    background-color: #272e3f;
+    color: #ccc;
+    text-align: center;
+    box-sizing: border-box;
+    color-scheme: dark;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 1140px;
+    margin: auto;
+    padding: 9.75px;
+    padding-top: 19.75px;
+}
+
+h1, h2, h3, p {
+    font-family: "Google Sans", Roboto, RobotoDraft, Helvetica, Arial, sans-serif; 
+    margin-top: 10px; 
+}
+
+#logo {
+    color: rgb(135, 170, 249);
+    font-size: 32px;
+    display: inline-flex; /* Para alinear el título y la imagen en línea */
+    align-items: center; /* Para alinear verticalmente los elementos */
+}
+
+#logo img {
+    height: 50px; /* Igualar la altura de la imagen al tamaño del texto */
+    margin-right: 10px; /* Agregar un margen derecho para separar la imagen del texto */
+}
+
+#urlInput {
+    background-color: rgb(39, 46, 63);
+    border-color: rgb(88, 105, 141);
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 1px;
+    color: rgb(255, 255, 255);
+    cursor: text;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 10px;
+    width: 300px;
+}
+
+input[type="submit"] {
+    background-color: rgb(135, 170, 249);
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #4b9fe1;
+}
