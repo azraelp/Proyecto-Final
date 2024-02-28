@@ -60,7 +60,7 @@ Ahora ya que tenemos toda la configuración falta habilitar el mod que utilizamo
 Y por último tenemos que habilitar el site que hemos creado desde 0. Para ello:
 > sudo a2ensite server.com.conf && sudo service apache2 reload
 
-Y a partir de ahora, siempre que hagamos un cambio en este archivo tendríamos que deshabilitar y habilitar el site de nuevo, y posteriormente recargar el servidor de Apache.
+Y a partir de ahora, siempre que hagamos un cambio en este archivo tendríamos que deshabilitar y habilitar el site de nuevo, y posteriormente recargar el servidor de Apache para aplicar los cambios correctamente.
 > sudo a2dissite server.com.conf sudo a2ensite server.com.conf && sudo service apache2 reload
 
 # CTF
