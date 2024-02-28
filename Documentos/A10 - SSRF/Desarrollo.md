@@ -42,7 +42,7 @@ En este caso el error se producia debido a que el docker no contaba con las capa
 <br>
 Hicimos el desarrollo de 2 páginas web, con la intención de realizar un ataque SSRF desde la URL en el navegador cliente. Al ver que no funcionaba, optamos por ver la consola del navegador (F12). Fue en ese punto cuando vimos que el propio navegador aplica una política la cual bloquea este tipo de acciones que se ejecutan al hacer un SSRF.
 
-![]https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zomeño)/Assets/Img/SameOriginPolicy.png \
+![]https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/SameOriginPolicy.png \
 
 <br>
 
