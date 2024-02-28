@@ -25,6 +25,7 @@ Para poder realizar el escalado de privilegios se le aplicara el permiso SUID qu
 # Desarrollo de Apache - SSRF
 
 Configuración del archivo /etc/apache2/apache2.conf
+<br>
 ![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zomeño)/Assets/Img/apache2.conf.png)
 <br>
 Será necesario habilitar el módulo headers con el comando
