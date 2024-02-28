@@ -195,18 +195,17 @@ Para instalar tenemos que seguir los siguientes pasos:
          - sudo apt-get upgrade
 
 
-
 **2.Añadir clave GPC de docker:**
 
-    - curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+        - curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 
 **3.Añadir  repositorio oficial de docker:**
 
-    - sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable
+        - sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable
     
 **4.Instalacion docker:**
 
-    - sudo apt install docker-ce docker-ce-cli containerd.io
+        - sudo apt install docker-ce docker-ce-cli containerd.io
 
 
 
