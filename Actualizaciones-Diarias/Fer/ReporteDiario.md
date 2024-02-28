@@ -25,6 +25,8 @@
 ✅ Buscar soluciones para el problema que habia para la API de la tienda <br>
 ❌ Creación de una web tienda (Para el ataque SSRF) - Cancelada <br>
 
+<br>
+
 # Semana 2: Preparación máquina
 ## Lunes 26 de febrero 2024
 ✅ Organización y distribución de tareas diarias <br>
