@@ -22,7 +22,7 @@ Para crear el contenedor Docker usando el dockerfile se usará la opción **buil
 Para poder realizar el escalado de privilegios se le aplicara el permiso SUID que permite a los usuarios ejecutar un archivo con los privilegios del propietario del archivo. De esta forma el usuario Paco podra acceder como root. \
 ![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/suid_python3.png)
 
-# Desarrollo de Apache - SSRF
+# Desarrollo de Apache y configuración principal - SSRF
 
 Configuración del archivo /etc/apache2/apache2.conf
 <br>
