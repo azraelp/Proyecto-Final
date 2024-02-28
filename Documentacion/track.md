@@ -83,9 +83,13 @@ Comprobación:
 <img  alt="drawing" width="600" height="500" src="./images/9.png" />
 </p>
 
+## Instalación PHP y Prueba Conexión DB con Validador
 
+Instalamos php y sus respectivos módulos:
 
-## Prueba Conexión DB con Validador PHP
+<p align="center">
+<img  alt="drawing" width="600" height="100" src="./images/10.png" />
+</p>
 
 ## Prueba Creación de Snapshot en Docker
 
@@ -109,3 +113,29 @@ sudo docker run -it --name ubuntu1 ubuntu1
 <img  alt="drawing" width="600" height="100" src="./images/8.png" />
 </p>
 
+## Implementación 1r CVE Extra [File Upload]
+
+En primer lugar descargamos el software y lo descomprimimos en la ruta /var/www/html. Una vez hecho esto creamos la base de datos:
+
+<p align="center">
+<img  alt="drawing" width="600" height="300" src="./images/11.png" />
+</p>
+
+A continuación importamos el archivo .sql que viene con el software, y verificamos que se hayan creado las tablas:
+
+<p align="center">
+<img  alt="drawing" width="600" height="400" src="./images/12.png" />
+</p>
+
+Finalmente comprobamos accediendo mediante el navegador:
+
+<p align="center">
+<img  alt="drawing" width="600" height="300" src="./images/13.png" />
+</p>
+
+E iniciamos sesión para verificar que está conectado con la base de datos de igual manera:
+
+
+<p align="center">
+<img  alt="drawing" width="600" height="300" src="./images/14.png" />
+</p>
