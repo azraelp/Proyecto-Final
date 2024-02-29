@@ -38,3 +38,6 @@
 
 ## Miércoles 28 de febrero 2024
 ✅ Reunión de los avances del proyecto
+
+## Jueves 29 de febrero 2024
+✅ Reunión de los avances del proyecto (Presencialmente en Grail)
