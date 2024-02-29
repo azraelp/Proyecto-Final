@@ -70,15 +70,15 @@ Para prevenir los ataques de inyección podemos emplear las siguientes medidas:
 
 - **Limitar Privilegios:** Limitar los permisos de los usuario y servicios para que tengan los privilegios mínimos necesarios para realizar sus funciones.
 
-- **Actualizaciones y Parches:** Mantén actualizados todos los software.
+- **Actualizaciones y Parches:** Manténer actualizados todos los software.
 
-- **Seguridad en la Capa de Red:** Utiliza firewalls y sistemas de detección de intrusiones para monitorear y filtrar el tráfico malicioso.
+- **Seguridad en la Capa de Red:** Utilizar firewalls y sistemas de detección de intrusiones para monitorear y filtrar el tráfico malicioso.
 
 - **Educación:** Educar a las perosnas sobre las mejores prácticas de seguridad.
 
 # [Fallas de Identificación y Autenticación](#índice)
 
-Las fallas de identificación y autenticación es un riesgo relacionado con la gestión de credenciales de usuario y los procesos de verificación de identidad en sistemas informáticos. Estas fallas pueden permitir a los atacantes acceder de forma no autorizada a sistemas, datos o recursos protegidos.
+Las fallas de identificación y autenticación es un riesgo relacionado con la gestión de credenciales de usuario y los procesos de verificación de identidad en sistemas informáticos. Este riesgo permite a los atacantes acceder de forma no autorizada a datos sensibles.
 <p align="center">
 <img  alt="drawing" width="250" height="200" src="https://www.grupocibernos.com/hubfs/blog-error%20de%20autenticaci%C3%B3n.jpg" />
 </p>
@@ -192,7 +192,7 @@ Docker es una plataforma de código abierto diseñada para facilitar la creació
 
 - **Comunidad Fragmentada:** Diferentes tipos opiniones dentro de la comunidad de usuarios, dificultad en la colaboración dentro de la comunidad.
 
-- **Rendimiento:** El rendimiento de la virtualización a nivel de contenedor en menor que las aplicaiones desde el host.
+- **Rendimiento:** El rendimiento de la virtualización a nivel de contenedor en menor que las aplicaiones fuera del contenedor.
 
 
 # [Instalacion de Docker](#índice)
