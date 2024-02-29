@@ -49,3 +49,7 @@
 
 - Repartimiento de permisos ftp.
 - Prohibición de registro en sistema operativo con el usuario elijah(ftp).
+
+## Jueves 29/02/2024
+
+- Resolución del problema de permisos de ftp.Elijah solo puede entrar por ftp nada mas.
