@@ -2,9 +2,8 @@
 
 
 1. [ Desarrollo Formulario Vulnerable a SQLi](#desarrollo-formulario-vulnerable-a-sqli)
-2. [Instalación de Docker - Creación y Desarrollo Contenedor Numero 1](#instalación-de-docker-reación-y-desarrollo-contenedor-numero-1)
+2.    [Instalación de Docker - Creación y Desarrollo Contenedor Numero 1](#instalación-de-docker-reación-y-desarrollo-contenedor-numero-1)
 3. [Prueba Instalación MariaDB](#prueba-instalación-mariadb)
-   
 4.[Instalación PHP y Prueba Conexión DB con Validador](#instalación-php-y-prueba-conexión-db-con-validador)
 
 5.[Instalación PHP y Prueba Conexión DB con Validador](#prueba-creación-de-snapshot-en-docker)
@@ -36,7 +35,7 @@ El script en php está hecho de manera que no valida correctamente la entrada. D
 <img  alt="drawing" width="600" height="400" src="./images/formularioFinal.png" />
 </p>
 
-# Instalación de Docker Creación y Desarrollo Contenedor Nº1
+# Instalación de Docker Creación y Desarrollo Contenedor Numero 1
 
 Para el desarrollo del primer contenedor, instalamos Docker siguiendo el [tutorial](https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository) de la documentación oficial de Docker. Una vez hecho esto comenzamos con la creación del contenedor de manera manual:
 
