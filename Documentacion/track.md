@@ -60,7 +60,7 @@ A continuación creamos el contenedor con esta imágen:
 <img  alt="drawing" width="600" height="70" src="./images/4.png" />
 </p>
 
-## [Prueba Instalación MariaDB](#índice)
+# [Prueba Instalación MariaDB](#índice)
 
 Para instalar y poner contraseña a root dentro del contenedor:
 
@@ -108,7 +108,7 @@ Instalamos php y sus respectivos módulos:
 <img  alt="drawing" width="600" height="100" src="./images/10.png" />
 </p>
 
-## [Prueba Creación de Snapshot en Docker](#índice)
+# [Prueba Creación de Snapshot en Docker](#índice)
 
 Comando empleado:
 
@@ -130,7 +130,7 @@ sudo docker run -it --name ubuntu1 ubuntu1
 <img  alt="drawing" width="600" height="100" src="./images/8.png" />
 </p>
 
-## [Implementación 1r CVE Extra File Upload](#índice)
+# [Implementación 1r CVE Extra File Upload](#índice)
 
 En primer lugar descargamos el software y lo descomprimimos en la ruta /var/www/html. Una vez hecho esto creamos la base de datos:
 
