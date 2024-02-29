@@ -10,7 +10,7 @@
 
 5.[Instalación PHP y Prueba Conexión DB con Validador](#prueba-creación-de-snapshot-en-docker)
 
-6.[Implementación 1r CVE Extra File Upload](#implementación-1r-cve-extra-file-upload)
+6.[Implementación CVE Extra](#implementación-cve-extra)
 
 
 
@@ -133,8 +133,18 @@ sudo docker run -it --name ubuntu1 ubuntu1
 <img  alt="drawing" width="600" height="100" src="./images/8.png" />
 </p>
 
-# [Implementación 1r CVE Extra File Upload](#índice)
+# [Implementación CVE Extra](#índice)
 
+Estos son los CVE extras que hemos elegido:
+   - CVE-2023-37629
+
+ Que es CVE-2023-37629?
+ esta vulnerablidad es sobre la carga de archivos. Un usuario no autenticado puede cargar un archivo php.
+ 
+ La solucion para CVE-2023-37629?
+ 
+Actualizar los programas o filtrar y limitar los paquetes subidos por el usuario 
+ 
 En primer lugar descargamos el software y lo descomprimimos en la ruta /var/www/html. Una vez hecho esto creamos la base de datos:
 
 <p align="center">
