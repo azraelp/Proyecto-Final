@@ -1,4 +1,4 @@
-<a id="índice">**Indice**</a>
+# índice
 
 
 1. [Introducción](#introducción)<!-- Resalta al pasar el ratón -->
