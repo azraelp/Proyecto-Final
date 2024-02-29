@@ -116,4 +116,8 @@ Pero como vemos en el Burpsuite no detecta la API <br>
 ![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zomeño)/Assets/Img/tiendaweb-7.png)
 
 Tras varios intentos sin éxito, decidimos enfocarlo de otra manera. Y hacer una página parecida a "VirusTotal".
-¡
+
+
+
+PathHIjacking para lo que sea
+Invesitgar volcado de memoria desde docker
