@@ -44,3 +44,12 @@
 
 - Modificación de la web inspirada en The Originals.
 - Probando la reverse sell en la web para entrar como www-data.
+
+## Miercoles 28/02/2024
+
+- Repartimiento de permisos ftp.
+- Prohibición de registro en sistema operativo con el usuario elijah(ftp).
+
+## Jueves 29/02/2024
+
+- Resolución del problema de permisos de ftp.Elijah solo puede entrar por ftp nada mas.
