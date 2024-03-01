@@ -37,7 +37,12 @@
 ✅ Búsqueda de información de CORS <br>
 
 ## Miércoles 28 de febrero 2024
-✅ Reunión de los avances del proyecto
+✅ Reunión de los avances del proyecto <br>
 
 ## Jueves 29 de febrero 2024
-✅ Reunión de los avances del proyecto (Presencialmente en Grail)
+✅ Reunión de los avances del proyecto (Presencialmente en Grail) <br>
+
+## Viernes 1 de marzo 2024
+✅ Organización y distribución de tareas diarias <br>
+✅ Búsqueda de información de path hijacking <br>
+✅ Arreglar la web para que valide la página correctamente <br>
