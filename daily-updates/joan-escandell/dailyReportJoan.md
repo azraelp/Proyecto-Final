@@ -26,3 +26,15 @@
 - [x] Capturas del proceso de configuración del contenedor para la documentación.
 - [x] Configuración formulario de login y portal de la web.
 - [x] Configuración de usuario para realizar movimiento lateral.
+
+# 01/03/2024:
+ 
+- [x] Configuración de apache2 y sitio web.
+- [x] Creación y adaptación formulario vulnerable SQLi 
+- [x] Creación usuario/gruopos de sistema y distintos permisos.
+- [x] Capturas del proceso de configuración para la documentación.
+- [x] Configuración formulario de login y portal de la web.
+- [x] Configuración de usuario para realizar movimiento lateral.
+- [x] Pruebas de ataque con Hydra a formulario web.
+- [x] Pruebas de ataque con SQLmap a formulario con la ayuda de BurpSuite.
+- [x] Terminar en términos generales el CTF a falta de últimos detalles.
