@@ -53,3 +53,10 @@
 ## Jueves 29/02/2024
 
 - Resolución del problema de permisos de ftp.Elijah solo puede entrar por ftp nada mas.
+
+## Viernes 01/03/2024
+
+- Creación de zip con contraseña dentro de una imagen(jpg).
+- Subida de imagen con los cambios realizados hoy :
+![image](https://github.com/Dani-ITB24/Proyecto-Final/assets/157145186/0b72577a-b692-4cbc-bc4c-bc9673d5f1f1)
+
