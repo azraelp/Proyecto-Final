@@ -24,3 +24,12 @@
 -Millorar la pagina web
 -Canviar i millorar l'apatatat de productes de la web
 
+## Dijous 29-02-24-
+-Reunio presencail amb el grup
+-Control de progres presencial
+-Acabar de perfilar la pagina web
+
+## Divendres 01-03-24-
+-Recerca de escalada de privilegis
+-Recerca de moviment lateral
+
