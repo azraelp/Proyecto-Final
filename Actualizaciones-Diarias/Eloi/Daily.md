@@ -41,4 +41,12 @@
 - [X] Actualizar index.html de SSRF
 - [X] Crear style.css para SSRF
 - [X] Reunion general de grupo
+      
+# Jueves 29 de febrero 2024
+- [X] Reunion de grupo presencial
+
+# Viernes 1 de marzo 2024
+- [X] Busqueda de informacion sobre Path Hijacking
+- [X] Replanificar escalado de privilegios en CTF
+- [X] Configurar escalado de privilegikos utilizando Path Hijacking
 
