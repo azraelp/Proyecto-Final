@@ -169,3 +169,13 @@ E iniciamos sesión para verificar que está conectado con la base de datos de i
 <p align="center">
 <img  alt="drawing" width="600" height="300" src="./images/14.png" />
 </p>
+
+# [Creación de Usuarios](#índice)
+
+Creamos todos los usuarios que formarán parte del CTF, entre los que se encuentran:
+
+- pastorPaco 
+- pastorJose
+- granjero
+
+El escalado a root se hará desde el usuario "granjero". El usuario "pastorPaco" será el usuario puente hacia "granjero". Y el usuario "pastorJose" es un simple _rabbit hole_.
