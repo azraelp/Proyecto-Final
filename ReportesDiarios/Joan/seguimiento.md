@@ -55,3 +55,13 @@
     - He estado investigando diferentes formas de poder escalar privilegios en una máquina ubuntu server.
 - Avances en la página web.
     - Hemos estado avanzando y mejorando la página web para que tenga productos y diferentes secciones.
+
+## Jueves 29/02/2024
+
+- Primera revision presencial.
+- Cambiar el archivo .md de Genis.
+
+## Viernes 01/03/2024
+
+- Investigación sobre nuevas forma de hacer movimiento lateral y escalada de privilegios
+    - Debido a los comentarios de ayer sobre que no les gusta a los evaluadores la forma en la que hacemos movimiento lateral entre usuarios y escalamos privilegios, he estado investigando formas más complejas de hacer el movimiento lateral y la escalada de privilegios. La semana que viene probaremos de implementarlos.
