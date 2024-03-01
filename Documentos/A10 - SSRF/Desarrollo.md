@@ -91,6 +91,11 @@ Hicimos el desarrollo de 2 páginas web, con la intención de realizar un ataque
 También probamos a instalar una versión anterior de Apache para aprovechar una vulnerabilidad de SSRF (CVE-2021-44224) [Vulnerabilidad](https://www.cybersecurity-help.cz/vulnerabilities/59057/)
 Esta vulnerabilidad podía explotarse entre las versiones de Apache 2.4.7 - 2.4.51. El contenedor contaba con la versión de Apache 2.4.52, así que desinstalamos el Apache con purge, remove y autoremove. Y una vez con todas las carpetas totalmente exterminadas decidimos a descargar el paquete de Apache vulnerable a SSRF. Para eso antes debíamos instalar ciertos paquetes y dependencias, wget para poder descargar el paquete. Las dependencias necesarias fueron: libapr1-dev, libaprutil1-dev, libpcre3-dev, gcc y make. Una vez acabamos de seguir los pasos de instalación del paquete. Al ejecutar apache2 -v obteníamos la misma versión que anteriormente habíamos desinstalado (2.4.52). Hubo varios intentos con nuevos contenedores para poder instalar la versión de Apache vulnerable (2.4.7), pero no hubo forma de hacer esto efectivo.
 
+Para poder realizar el escalado a root se ha utilizado la vulnerabilidad path hijacking, en un principio se inento hacer de una forma simple utilizando un script basico de bash, el cual se usaria para que el atacante cambiase la variable de entorno **PATH** para ejecutar su cat y no el comando. Despues de añadir el SUID al script se ejecutaba pero no con los permisos de usuario, pero se ejecutaba con el usuario basico Francisca. 
+![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/scriptbash.png) 
+![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/scriptbashsuid.png) 
+![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/whoamifrancisca.png) 
+
 # Desarrollo de las webs
 **Web login** <br>
 Se ha realizado un login para la página web que sufrirá la vulnerabilidad de SSRF. Para la creación de la página, hemos utilizado únicamente HTML y CSS. No es una página funcional porque por ahí no se realizara el ataque, solo será una página donde no se podrá interactuar.
