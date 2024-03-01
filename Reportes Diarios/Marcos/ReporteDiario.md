@@ -81,3 +81,14 @@ Durante el dia de hoy he realizado las siguientes tareas:
 - Hemos tenido problemas al intentar configurar un usuario local que sea usuario FTP y que no se le pueda permitir el acceso solo por SSH o a traves del su
 
 - Corregir y dejar correctamente planificado la explicación de la maquina de diseño inseguro.
+
+# Reporte Diario 1 de Marzo de 2024
+
+Durante el dia de hoy he realizado las siguientes tareas:
+
+- Preparar el escalado de privilegios a través de Python Library Hijacking
+
+- Resolver problemas durante el Python Library Hijacking **(Sorry, user caroline is not allowed to execute)**
+
+- Subir la versión de la maquina a DockerHub con la versión 2.1
+
