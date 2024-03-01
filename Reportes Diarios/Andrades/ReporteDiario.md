@@ -40,3 +40,8 @@
 - [X] Testing de la primera maquina
 - [X] Redación de la maquina
 - [X] soluciones de algunos errores
+
+## 1/03/24 Reporte Diario
+- [X] Testing de la primera maquina
+- [X] Uso de la herramienta binwalk para oculta unzip dentro de una foto.
+- [X] Investigación sobre python library hijacking
