@@ -44,3 +44,11 @@
 - [X]  Crear un compose para tener Wordpress y DB.
 - [X]  Dockerizar el trabajo de Michael.
 - [X]  Re-organizar repositorio, asignar estándares a seguir al subir datos.
+
+## Jueves 29/02/2024
+- [X]  Reunión de seguimiento.
+
+## Viernes 01/03/2024
+- [X]  Reconstruir el plan de máquinas.
+- [X]  I+D Sobre el nuevo planteamiento.
+- [X]  Pruebas en local.
