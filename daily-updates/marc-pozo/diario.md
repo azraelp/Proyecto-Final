@@ -46,3 +46,22 @@
 - [x] Configuración MariaDB en Docker
 - [x] Intento fallido de configuración de red de un contenedor Docker
 - [x] Avance en la documentación
+
+# Miércoles 28 de febrero 2024:
+
+- [x] Búsqueda de CVEs de 2023 en adelante
+- [x] Configuración formulario en Docker
+- [x] Intento satisfactorio de configuración de red de un contenedor Docker
+- [x] Avance en la documentación
+
+# Jueves 29 de febrero 2024:
+
+- [x] Búsqueda de CVEs de 2023 en adelante
+- [x] Avance en la documentación
+
+# Viernes 1 de marzo 2024:
+
+- [x] Mejora del planteamiento del CTF
+- [x] Creación de los usuarios del contenedor
+- [x] Avance y solución de errores del contenedor
+- [x] Intento de explotación del formulario con Hydra
