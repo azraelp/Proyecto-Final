@@ -9,27 +9,27 @@
 - Recerca de possibles vulnerbilitats que es podrien afegir a les CTF
 
 ## Divendres 23-02-24-
--Investigacio per a fer una bona pagina web
--Creacio de pagines web de probes
--Recerca de recursos compartits que puguin ajudar al projecte
+- Investigacio per a fer una bona pagina web
+- Creacio de pagines web de probes
+- Recerca de recursos compartits que puguin ajudar al projecte
 
 ## Dilluns 26-02-24-
--Millora de la pagina web
+- Millora de la pagina web
 
 ## Dimarts 27-02-24-
--Canviar i millorar la pagina web
--Creacio de pagina de productes a la web
+- Canviar i millorar la pagina web
+- Creacio de pagina de productes a la web
 
 ## Dimecres 28-02-24-
--Millorar la pagina web
--Canviar i millorar l'apatatat de productes de la web
+- Millorar la pagina web
+- Canviar i millorar l'apatatat de productes de la web
 
 ## Dijous 29-02-24-
--Reunio presencail amb el grup
--Control de progres presencial
--Acabar de perfilar la pagina web
+- Reunio presencail amb el grup
+- Control de progres presencial
+- Acabar de perfilar la pagina web
 
 ## Divendres 01-03-24-
--Recerca de escalada de privilegis
--Recerca de moviment lateral
+- Recerca de escalada de privilegis
+- Recerca de moviment lateral
 
