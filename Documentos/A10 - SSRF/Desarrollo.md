@@ -72,7 +72,7 @@ Podemos ver que el programa python cuenta con el permiso SUID, aprovechando esta
 
 
 
-# Problemas encontrados en el desarollo
+# Problemas encontrados en el desarrollo
 Una vez accedíamos al contenedor se intenta ejecutar Wireshark de forma fallida, ya que no se puede conectar a ninguna GUI para solucionar este problema se específico la variable de entorno **DISPLAY** para que fuera la misma que la de la máquina local ademas se específico que las aplicaciones locales tuvieran acceso al servidor de ventanas X con el comando **xhost +local:**
 ![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/error-display.png) \
 ![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/localhostx.png) \
@@ -119,5 +119,5 @@ Tras varios intentos sin éxito, decidimos enfocarlo de otra manera. Y hacer una
 
 
 
-PathHIjacking para lo que sea
-Invesitgar volcado de memoria desde docker
+PathHijacking para lo que sea
+Investigar volcado de memoria desde docker

@@ -53,12 +53,14 @@
 ## Miércoles 28 de Febrero 2024:
 
 - [X] Desarrollo de CTF.
-- [ ] Documentación de días anteriores.
-- [ ] Reunión grupal.
+- [X] Documentación de días anteriores.
+- [X] Reunión grupal.
 
 ## Jueves 29 de Febrero 2024:
 
-
+- [X] Primera revisión.
+- [X] Montar los contenedores en Grail.
+- [X] Plantear ideas para la CTF.
 
 ## Viernes 1 de Marzo 2024:
 
