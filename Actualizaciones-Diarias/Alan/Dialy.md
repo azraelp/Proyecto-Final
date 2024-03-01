@@ -64,7 +64,9 @@
 
 ## Viernes 1 de Marzo 2024:
 
-
+- [X] Investigar sobre Path Hijacking, ver ejemplos y ataques reales.
+- [X] Intentos múltiples de hacer más difícil el SSRF de la CTF.
+- [X] Tests de path Hijacking.
 
 
 # Semana 3 - Preparación máquina 1:
@@ -72,23 +74,28 @@
 
 ## Lunes 4 de Marzo 2024:
 
-
+- [ ] 
+- [ ] 
 
 ## Martes 5 de Marzo 2024:
 
-
+- [ ] 
+- [ ] 
 
 ## Miércoles 6 de Marzo 2024:
 
-
+- [ ] 
+- [ ] 
 
 ## Jueves 7 de Marzo 2024:
 
-
+- [ ] 
+- [ ] 
 
 ## Viernes 8 de Marzo 2024:
 
-
+- [ ] 
+- [ ] 
 
 
 
@@ -96,72 +103,60 @@
 
 ## Lunes 11 de Marzo 2024:
 
-
+- [ ] 
+- [ ] 
 
 ## Martes 12 de Marzo 2024:
 
-
+- [ ] 
+- [ ] 
 
 ## Miércoles 13 de Marzo 2024:
 
-
+- [ ] 
+- [ ] 
 
 ## Jueves 14 de Marzo 2024:
 
-
+- [ ] 
+- [ ] 
 
 ## Viernes 15 de Marzo 2024:
 
-
+- [ ] 
+- [ ] 
 
 
 # Semana 5 - Preparación máquina 2:
 
 ## Lunes 18 de Marzo 2024:
 
-
+- [ ] 
+- [ ] 
 
 ## Martes 19 de Marzo 2024:
 
-
+- [ ] 
+- [ ] 
 
 ## Miércoles 20 de Marzo 2024:
 
-
+- [ ] 
+- [ ] 
 
 ## Jueves 21 de Marzo 2024:
 
-
+- [ ] 
+- [ ] 
 
 ## Viernes 22 de Marzo 2024:
 
-
-
-# Semana 6 - Probar y documentar:
-
-## Lunes 25 de Marzo 2024:
+- [ ] 
+- [ ] 
 
 
 
-## Martes 26 de Marzo 2024:
-
-
-
-## Miércoles 27 de Marzo 2024:
-
-
-
-## Jueves 28 de Marzo 2024:
-
-
-
-## Viernes 29 de Marzo 2024:
-
-
-
-
-
-# Semana 7 - Aplicar mejoras:
+# Semana 6 - :
 ## Lunes 1 de Abril 2024:
 
 
@@ -183,8 +178,7 @@
 
 
 
-
-# Semana 8 - Aplicar mejoras:
+# Semana 7 - :
 
 ## Lunes 8 de Abril 2024:
 
@@ -205,4 +199,23 @@
 ## Viernes 12 de Abril 2024:
 
 
+# Semana 8 - :
+
+## Lunes 15 de Abril 2024:
+
+
+
+## Martes 16 de Abril 2024:
+
+
+
+## Miércoles 17 de Abril 2024:
+
+
+
+## Jueves 18 de Abril 2024:
+
+
+
+## Viernes 19 de Abril 2024:
 
