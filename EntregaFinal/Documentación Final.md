@@ -174,6 +174,9 @@ Para configurar los permisos del anonymous y los del usuario elijah tenemos que 
 
 ![vsftpd](https://github.com/Dani-ITB24/Proyecto-Final/assets/157145186/87d2c177-1526-4dda-b3ba-549a1d9d8c65)
 
+- Y passwd le ponemos al usuario elijah /sbin/nologin para que solo se pueda hacer login desde ftp.
+  ![image](https://github.com/Dani-ITB24/Proyecto-Final/assets/157145186/1b775ca7-0ca6-4f51-a9c3-7b11c87749dd)
+
 
 ## Que vulnerabilidades hemos hecho y como las hemos implementado:
 
