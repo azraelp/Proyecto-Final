@@ -30,7 +30,7 @@ Dentro del archvio creds.txt habran una credenciales cifradas que te permitiran 
 
 En el servidor web habrá alojado una página web centrada en la apicultura, dando información de todo tipo. 
 Aquí pude ver una vista previa del sitio [sitio](https://pro2y38.000webhostapp.com/).
-También habrá bastantes pistas, así como un archivo robots.txt con el siguiente contenido:
+También habrá bastantes pistas, así como un archivo notas.md el cual se encotrara como un comentario en un archivo css y tendra el siguiente contenido:
 
 ![](/Assets/robots.png)
 
