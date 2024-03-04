@@ -62,24 +62,24 @@
 
 
 # Reporte 04 de marzo de 2024
-*Como el viernes no pude hacer nada hoy le he dedicado mas horas*
+*Como el viernes no pude hacer nada, hoy le he dedicado más horas.*
 
-- He rediseñado la parte iniicial de la maquina1, en lugar de dar pistas en el robots.txt lo hacemos en un comentario
+- He rediseñado la parte inicial de la maquina 1, en lugar de dar pistas en el robots.txt lo hacemos en un comentario.
 ![](/ReportesDiarios/Jordi/img/comentariocss.jpg)
 
-- He terminado el panel de control de la pagina web:
+- He terminado el panel de control de la página web:
 ![](/ReportesDiarios/Jordi/img/config.jpg)
 
-- Todos los cmapos llevan a esta pagina
-    - En la que no existse una contraseña correcta, es solo un rabbit hole
+- Todos las opciones dirigen a esta página.
+    - En la que no existe una contraseña correcta, es solo un rabbit hole
 ![](/ReportesDiarios/Jordi/img/password.jpg)
 
 
-- Menos la pagina de Apache2 status que lleva aquí:
-    - Que es donde tienes que modificar con burp y conseguir la reverse shell.
+- Menos la página de Apache2 status que lleva aquí:
+    - Que es donde tienes que modificar con BurpSuite y conseguir la reverse shell.
 ![](/ReportesDiarios/Jordi/img/statusapache.jpg)
 
 
-- Tambien he hecho prubeas con dockerhub y he creado una primera version de la ctf.
+- Tambien he hecho pruebas con DockerHub y he creado una primera versión de la ctf.
 ![](/ReportesDiarios/Jordi/img/dockerhubcli.png)
 ![](/ReportesDiarios/Jordi/img/dockerhubweb.png)
