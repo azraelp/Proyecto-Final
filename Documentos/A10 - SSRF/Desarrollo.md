@@ -1,7 +1,6 @@
 <span style="color:black;">1. [Introducción](#introducción)  </span> 
-<span style="color:black;">2.</span> [Sección 1](#sección-1)  
-<span style="color:black;">3.</span> [Sección 2](#sección-2)  
-<span style="color:black;">4.</span> [Conclusiones](#conclusiones)  
+
+
 ---
 
 ## Introducción
