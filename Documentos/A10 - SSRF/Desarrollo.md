@@ -5,10 +5,7 @@
 <span style="color:black;">3. [ Desarrollo de Apache y configuración principal - SSRF](#Apache)</span><br>
 <span style="color:black;">4. [ CTF](#CTF)</span><br>
 <span style="color:black;">5. [ Problemas encontrados en el desarrollo](#Problemas)</span><br>
-<span style="color:black;">6. [ Desarrollo de las webs](#Desarrollo)</span><br>
-<span style="color:black;">7. [ CTF](#CTF)</span><br>
-<span style="color:black;">8. [ CTF](#CTF)</span><br>
-<span style="color:black;">9. [ CTF](#CTF)</span><br>
+<span style="color:black;">6. [ Desarrollo de las webs](#Desarrollo-webs)</span><br>
 ---
 <br>
 
@@ -112,7 +109,7 @@ Para poder realizar el escalado a root se ha utilizado la vulnerabilidad path hi
 ![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/whoamifrancisca.png) 
 
 
-<h1 name="Desarrollo">Desarrollo de las webs</h1>
+<h1 name="Desarrollo-webs">Desarrollo de las webs</h1>
 
 **Web login** <br>
 Se ha realizado un login para la página web que sufrirá la vulnerabilidad de SSRF. Para la creación de la página, hemos utilizado únicamente HTML y CSS. No es una página funcional porque por ahí no se realizara el ataque, solo será una página donde no se podrá interactuar.
