@@ -26,3 +26,8 @@
 
 - Revisar lo que sabemos.
 - Plantear detalles finales. 
+
+
+## Lunes 04/03/2024
+
+- Preparación de la maquina: Usuario de sftp enjaulado, Reverse shell 
