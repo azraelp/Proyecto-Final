@@ -157,7 +157,7 @@
 
 
 
-# Semana 6 - :
+# Semana 6 - Probar y documentar:
 ## Lunes 1 de Abril 2024:
 
 
@@ -179,7 +179,7 @@
 
 
 
-# Semana 7 - :
+# Semana 7 - Aplicar mejoras:
 
 ## Lunes 8 de Abril 2024:
 
@@ -200,7 +200,7 @@
 ## Viernes 12 de Abril 2024:
 
 
-# Semana 8 - :
+# Semana 8 - Creación CTF:
 
 ## Lunes 15 de Abril 2024:
 
