@@ -59,3 +59,27 @@
 
 - Documentar la primera maquina
 - He heco pruebas con docker y he buscado como compartir dockers con dockerhub
+
+
+# Reporte 04 de marzo de 2024
+*Como el viernes no pude hacer nada hoy le he dedicado mas horas*
+
+- He rediseñado la parte iniicial de la maquina1, en lugar de dar pistas en el robots.txt lo hacemos en un comentario
+![](/ReportesDiarios/Jordi/img/comentariocss.jpg)
+
+- He terminado el panel de control de la pagina web:
+![](/ReportesDiarios/Jordi/img/config.jpg)
+
+- Todos los cmapos llevan a esta pagina
+    - En la que no existse una contraseña correcta, es solo un rabbit hole
+![](/ReportesDiarios/Jordi/img/password.jpg)
+
+
+- Menos la pagina de Apache2 status que lleva aquí:
+    - Que es donde tienes que modificar con burp y conseguir la reverse shell.
+![](/ReportesDiarios/Jordi/img/statusapache.jpg)
+
+
+- Tambien he hecho prubeas con dockerhub y he creado una primera version de la ctf.
+![](/ReportesDiarios/Jordi/img/dockerhubcli.png)
+![](/ReportesDiarios/Jordi/img/dockerhubweb.png)
