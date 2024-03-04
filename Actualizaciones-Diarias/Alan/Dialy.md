@@ -74,8 +74,9 @@
 ## Lunes 4 de Marzo 2024:
 
 - [ ] Gestionar los movimentos laterales y la escalada de privilegios de la CTF. 
-- [ ] 
-
+- [ ] Avanzar la documentación de tareas realizadas.
+- [ ] Reunión de seguimiento grupal y planteamiento de tareas para la semana.
+ 
 ## Martes 5 de Marzo 2024:
 
 - [ ] 
