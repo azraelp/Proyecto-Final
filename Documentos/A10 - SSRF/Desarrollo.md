@@ -1,16 +1,16 @@
 # **Índice**
 
 <span>1. [Introducción](#introducción)</span><br>
-<span style="color:black;">2. [Sección 1](#sección-1)</span><br>
-<span style="color:black;">3. [Sección 2](#sección-2)</span><br>
+<span style="color:black;">2. [ Desarrollo del contenedor](#Desarrollo)</span><br>
+<span style="color:black;">3. [ Desarrollo de Apache y configuración principal - SSRF](#Apache)</span><br>
 <span style="color:black;">4. [Conclusiones](#conclusiones)</span><br>
 -
 <br>
 
-## Introducción
+## Introducción <h1 name="introducción"></h1>
 Para desarrollar el contenedor Docker, se ha tenido en cuenta que debe ser vulnerable al ataque A10:2021 - SSRF. Para que nuestro contenedor sea vulnerable, deberá alojar una página web que permita al usuario hacer una consulta de stock sobre ciertos productos. El objetivo del atacante será capturar esta petición y forjar una nueva que le permita acceder a un recurso interno del servidor.
 
-# Desarrollo del contenedor <h1 name="id1"></h1>
+## Desarrollo del contenedor <h1 name="Desarrollo"></h1>
 El contenedor Docker estará basado en Ubuntu 22.04.3 LTS Server y tendrá instalados los siguientes programas:
 * Wireshark, el cual nos permitirá realizar una captura de red mientras se ejecuta el ataque. Esta captura será analizada posteriormente.
 * Apache, nos permitirá tener un servidor web alojado en Docker donde se podrá realizar el ataque SSRF.
@@ -31,7 +31,7 @@ Para crear el contenedor Docker usando el dockerfile se usará la opción **buil
 Para poder realizar el escalado de privilegios se le aplicara el permiso SUID que permite a los usuarios ejecutar un archivo con los privilegios del propietario del archivo. De esta forma el usuario Paco podrá acceder como root. \
 ![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/suid_python3.png)
 
-# Desarrollo de Apache y configuración principal - SSRF
+# Desarrollo de Apache y configuración principal - SSRF <h1 name="Apache"></h1>
 
 Configuración del archivo /etc/apache2/apache2.conf
 <br>
