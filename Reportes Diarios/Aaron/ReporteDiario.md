@@ -60,3 +60,7 @@
 - Subida de imagen con los cambios realizados hoy :
 ![image](https://github.com/Dani-ITB24/Proyecto-Final/assets/157145186/0b72577a-b692-4cbc-bc4c-bc9673d5f1f1)
 
+## Lunes 04/03/2024
+
+- Documentacion de todo lo creado y utilizado.
+
