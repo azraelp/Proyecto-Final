@@ -1,4 +1,4 @@
-1.&nbsp; [Introducción](#introducción)
+1.&nbsp; [Introducción](#introducción)<br>
 2. [Sección 1](#sección-1)
 3. [Sección 2](#sección-2)
 4. [Conclusiones](#conclusiones)
