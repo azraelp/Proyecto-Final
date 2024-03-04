@@ -45,3 +45,8 @@
 - [X] Testing de la primera maquina
 - [X] Uso de la herramienta binwalk para oculta unzip dentro de una foto.
 - [X] Investigación sobre python library hijacking
+
+## 4/03/24 Reporte Diario
+- [X] investigación sobre herramienta forense
+    - hay fichero que no se encuentra en el los docker que complica la ejecución del forense
+- [] Error al instalar una versión actua del ssh
