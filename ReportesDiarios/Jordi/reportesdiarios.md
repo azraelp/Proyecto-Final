@@ -46,3 +46,16 @@
 
 - Creacion de la primera maquina
     - Diseño y crecion de la pagina web
+
+
+# Reporte 27 de febrero de 2024
+
+- Documentar la primera maquina
+- Crear una imagen con un zip con steghide
+- Mejorar la pagina web
+
+
+# Reporte 28 de febrero de 2024
+
+- Documentar la primera maquina
+- He heco pruebas con docker y he buscado como compartir dockers con dockerhub
