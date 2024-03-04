@@ -234,28 +234,26 @@ Para comenzar con la búsqueda de las CVEs añadidas como extra en la máquina, 
 - **La CVE debe tener un exploit desarrollado**
 
 CVEs elegidas para su reproducción:
-- **File update (CVE-2023-37629)**
- 
-**Que es CVE-2023-37629?** 
 
-Esta vulnerablidad es sobre la carga de archivos. Un usuario no autenticado puede cargar un archivo php.
+- **CVE-2023-37629**
 
+Esta vulnerablidad permite al usuario subir archivos maliciosos con el fin de obtener acceso al servidor, por ejemplo un script en php que ejecute una reverse shell.
 
-**La solucion para CVE-2023-37629?**
+**Mitigación**
 
-Actualizar los programas o filtrar y limitar los paquetes subidos por el usuario
+Para mitigar esta vulnerabilidad lo único que debemos hacer es sanitizar la subida de archivos, permitiendo únicamente la subida de imágenes y nada más.
 
+- **CVE-2023-32784**
 
-## [Desarrollo de la Vulnerabilidad](#índice)
+Esta vulnerablidad permite al usuario dumpear la clave maestra de KeePass en texto claro, permitiendo así un posible escalado de privilegios.
 
-1.Atacante hace fuzzing y encuentra el panel de inicio de cerdos 
+**Mitigación**
 
-2.El atacante consigue entrar en el panel (via sqli, fuerza bruta, dupeando la db...) y hace File Upload (para subir una Reverse Shell) y
-entrar como el usuario www-data.
+Para mitigar esta vulnerabilidad lo único que debemos hacer es actualizar la versión.
 
-3.Una vez dentro del contenedor con el usuario www-data listas archivos y vainas y encuentras un archivo oculto (.rutaFinal) que te redirije al login in del "Banco De Credenciales" (
+## [Desarrollo de las Vulnerabilidades](#índice)
 
-
+### SQL Injection
 
 En primer lugar desarrollamos un formulario de inicio de sesión con su respectivo validador (en PHP). Este será el encargado de lanzar _query_ a la base de datos para verificar si las credenciales introducidas por el cliente forman parte de un usuario válido. Este código no sanitiza la entrada obtenida, es por ello que es vulnerable a un ataque de inyección SQL, como se representa en la siguiente ilustración:
 
@@ -263,15 +261,27 @@ En primer lugar desarrollamos un formulario de inicio de sesión con su respecti
 <img  alt="drawing" width="400" height="400" src="https://i.imgur.com/u74Zyuj.png"/>
 </p>
 
-
 En segundo lugar instalamos MariaDB para gestionar las bases de datos que estarán conectadas al formulario. 
-
 
 Tras crear las bases de datos con sus respectivos usuarios y verificar la conexión y el buen funcionamiento con el formulario, damos por finalizado la implementación de la vulnerabilidad principal en este contenedor.
 
+### CVE Extra N1 - CVE-2023-37629
 
+En primer lugar descargamos el software vulnerable desde este [enlace](https://www.sourcecodester.com/php/11814/online-pig-management-system-basic-free-version.html). A continuación descomprimimos el archivo en la ruta /var/www/html.
 
+Una vez hecho esto, creamos una base de datos llamada "pig" e importamos el archivo pig.sql que se encuentra dentro de la carpeta "database":
 
+Finalmente modificamos el archivo "db.php" donde introducimos las credenciales de acceso:
+
+<p align="center">
+<img  alt="drawing" width="400" height="200" src="imagen.png"/>
+</p>
+
+### CVE Extra N1 - CVE-2023-32784
+
+En primer lugar descargamos el software vulnerable (cualquier versión de KeePass anterior a la 2.54)
+
+Una vez hecho esto, configuramos la aplicación con una clave maestra y metemos contenido dentro del gestor de contraseñas.
 
 ## [Análisis del Contenedor una vez Explotado](#índice)
 
