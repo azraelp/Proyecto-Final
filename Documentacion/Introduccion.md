@@ -274,7 +274,7 @@ Una vez hecho esto, creamos una base de datos llamada "pig" e importamos el arch
 Finalmente modificamos el archivo "db.php" donde introducimos las credenciales de acceso:
 
 <p align="center">
-<img  alt="drawing" width="400" height="200" src="imagen.png"/>
+<img  alt="drawing" width="650" height="200" src="./images/imagen.png"/>
 </p>
 
 ### CVE Extra N1 - CVE-2023-32784
