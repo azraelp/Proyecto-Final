@@ -65,3 +65,9 @@
 - [x] Creación de los usuarios del contenedor
 - [x] Avance y solución de errores del contenedor
 - [x] Intento de explotación del formulario con Hydra
+
+# Lunes 4 de marzo 2024:
+
+- [x] Creación de almacenamiento de logs
+- [x] Comienzo y redacción del walkthrough
+- [x] Intento de explotaciión del formulario con BurpSuite (Intruder)
