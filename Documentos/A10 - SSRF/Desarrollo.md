@@ -1,7 +1,7 @@
 1.&nbsp; [Introducción](#introducción)<br>
-2.&nbsp; [Sección 1](#sección-1)<br>
-3.&nbsp; [Sección 2](#sección-2)<br>
-4.&nbsp; [Conclusiones](#conclusiones)<br>
+2.&nbsp; [Sección 1](#sección-1)
+3.&nbsp; [Sección 2](#sección-2)
+4.&nbsp; [Conclusiones](#conclusiones)
 
 ---
 
