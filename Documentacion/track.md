@@ -1,16 +1,16 @@
-# índice
+# Índice
 
-1.[ Desarrollo Formulario Vulnerable a SQLi](#desarrollo-formulario-vulnerable-a-sqli)
+1. [ Desarrollo Formulario Vulnerable a SQLi](#desarrollo-formulario-vulnerable-a-sqli)
    
-2.[Instalación de Docker Creación y Desarrollo Contenedor Numero 1](#instalación-de-docker-creación-y-desarrollo-contenedor-numero-1)
+2. [Instalación de Docker Creación y Desarrollo Contenedor Numero 1](#instalación-de-docker-creación-y-desarrollo-contenedor-numero-1)
 
-3.[Prueba Instalación MariaDB](#prueba-instalación-mariadb)
+3. [Prueba Instalación MariaDB](#prueba-instalación-mariadb)
    
-4.[Instalación PHP y Prueba Conexión DB con Validador](#instalación-php-y-prueba-conexión-db-con-validador)
+4. [Instalación PHP y Prueba Conexión DB con Validador](#instalación-php-y-prueba-conexión-db-con-validador)
 
-5.[Instalación PHP y Prueba Conexión DB con Validador](#prueba-creación-de-snapshot-en-docker)
+5. [Instalación PHP y Prueba Conexión DB con Validador](#prueba-creación-de-snapshot-en-docker)
 
-6.[Implementación CVE Extra](#implementación-cve-extra)
+6. [Implementación CVE Extra](#implementación-cve-extra)
 
 
 
@@ -192,7 +192,7 @@ Para poder realizar un análisis forense una vez explotada la máquina, hemos me
 <img  alt="drawing" width="600" height="100" src="./images/logs.png" />
 </p>
 
-# [Walkthrough](#índice)
+# [(NOT FINISHED) Walkthrough](#índice)
 
 En primer lugar hacemos un escaneo de puertos para ver qué puertos hay abiertos:
 
@@ -238,8 +238,42 @@ A continuación exploramos un poco el panel de administración y encontramos una
 <img  alt="drawing" width="600" height="400" src="./images/addPig2.png" />
 </p>
 
-A continuación ejecutamos el archivo .php que hemos subido y cuya función es ejecutar una reverse shell:
+A continuación ponemos un puerto en escucha y ejecutamos el archivo .php que hemos subido y cuya función es ejecutar una reverse shell:
+
+<p align="center">
+<img  alt="drawing" width="600" height="200" src="./images/ncListenPort.png" />
+</p>
 
 <p align="center">
 <img  alt="drawing" width="600" height="400" src="./images/executeReverse.png" />
+</p>
+
+Y ya estamos conectados a la máquina con el usuario **www-data**:
+
+<p align="center">
+<img  alt="drawing" width="600" height="200" src="./images/www-data.png" />
+</p>
+
+Con este usuario encontramos un directorio diferente dentro de /html:
+
+<p align="center">
+<img  alt="drawing" width="250" height="200" src="./images/way1.png" />
+</p>
+
+Accedemos vía navegador y encontramos otro panel de inicio de sesión:
+
+<p align="center">
+<img  alt="drawing" width="700" height="600" src="./images/bancoCredencialesPrivado.png" />
+</p>
+
+Afortunadamente este sí es vulnerable a SQL Injection por lo que nos facilita en gran medida el bypass de acceso:
+
+<p align="center">
+<img  alt="drawing" width="700" height="600" src="./images/loginBancoSQLi.png" />
+</p>
+
+Una vez hecho el bypass, nos redirige a un "banco de credenciales" donde parece haber las credenciales de varios usuarios, aparentemente encodeadas en :
+
+<p align="center">
+<img  alt="drawing" width="450" height="400" src="./images/finalCredentials.png" />
 </p>
