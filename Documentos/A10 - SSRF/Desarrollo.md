@@ -141,7 +141,5 @@ Una vez se accede con el usuario Paco, buscaremos el programa que tenga el permi
 Podemos ver que el programa python cuenta con el permiso SUID, aprovechando esta vulnerabilidad podremos acceder al usuario **root** 
 ![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/root_paco.png)
 
-
-
-PathHijacking para lo que sea
-Investigar volcado de memoria desde docker
+Podremos descubrir la passphrase utilizada para la clave privada utilizando john
+![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/johnwordlist.png)
