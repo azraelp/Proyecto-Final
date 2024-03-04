@@ -46,3 +46,8 @@
 ✅ Organización y distribución de tareas diarias <br>
 ✅ Búsqueda de información de path hijacking <br>
 ✅ Arreglar la web para que valide la página correctamente <br>
+
+# Semana 3: Preparación máquina
+## Lunes 26 de febrero 2024
+✅ Organización y distribución de tareas diarias <br>
+✅ Documentacion en el desarrollo.md <br>
