@@ -74,7 +74,7 @@
 ## Lunes 4 de Marzo 2024:
 
 - [X] Organizar la documentación (estaba todo añadido sin orden).
-- [ ] Gestionar los movimentos laterales y la escalada de privilegios de la CTF. 
+- [ ] Gestionar los movimientos laterales y la escalada de privilegios de la CTF. 
 - [ ] Avanzar la documentación de tareas realizadas.
 - [ ] Reunión de seguimiento grupal y planteamiento de tareas para la semana.
  
