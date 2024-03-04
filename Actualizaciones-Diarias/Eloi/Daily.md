@@ -50,3 +50,7 @@
 - [X] Replanificar escalado de privilegios en CTF
 - [X] Configurar escalado de privilegikos utilizando Path Hijacking
 
+# Viernes 1 de marzo 2024
+- [X] Busqueda de informacion sobre SSH
+- [ ] Intento de conexion por SSH via clave privada
+
