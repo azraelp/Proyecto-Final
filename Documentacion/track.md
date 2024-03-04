@@ -178,4 +178,17 @@ Creamos todos los usuarios que formarán parte del CTF, entre los que se encuent
 - pastorJose
 - granjero
 
+<p align="center">
+<img  alt="drawing" width="600" height="100" src="./images/AA.png" />
+</p>
+
 El escalado a root se hará desde el usuario "granjero". El usuario "pastorPaco" será el usuario puente hacia "granjero". Y el usuario "pastorJose" es un simple _rabbit hole_.
+
+# [Implementación de Logs](#índice)
+
+Para poder realizar un análisis forense una vez explotada la máquina, hemos mejorado el código de los scripts de validación de ambos formularios con la finalidad de almacenar logs de inicio de sesión, almacenando los campos introducidos por el cliente:
+
+<p align="center">
+<img  alt="drawing" width="600" height="100" src="./images/logs.png" />
+</p>
+
