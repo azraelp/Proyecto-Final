@@ -1,7 +1,6 @@
-1.&nbsp; [Introducción](#introducción)<br>
-2.&nbsp; [Sección 1](#sección-1)
-3.&nbsp; [Sección 2](#sección-2)
-4.&nbsp; [Conclusiones](#conclusiones)
+**Índice**
+1. &nbsp; [Introducción](#Introducción)
+2. [Segundo apartado](#id2)
 
 ---
 
