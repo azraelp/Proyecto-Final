@@ -1,9 +1,4 @@
-<style>
-  h1.anchor {
-    color: inherit;
-    text-decoration: none;
-  }
-</style>
+
 
 
 **Índice**   
