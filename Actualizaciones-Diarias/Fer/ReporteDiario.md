@@ -6,7 +6,7 @@
 
 <h1 name="Semana1">Semana 1: Planificación</h1>
 ---
-<h2>Lunes 19 de febrero 2024</h2><br>
+<h2>Lunes 19 de febrero 2024</h2>
 ✅ Organización del equipo <br>
 ✅ Organización y distribución de tareas diarias <br>
 ✅ Creación de la carpeta y del archivo del reporte diario <br>
