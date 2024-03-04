@@ -67,12 +67,13 @@
 - [X] Investigar sobre Path Hijacking, ver ejemplos y ataques reales.
 - [X] Intentos múltiples de hacer más difícil el SSRF de la CTF.
 - [X] Tests de path Hijacking.
-
+- [X] Correcciones en la documentación.
 
 # Semana 3 - Preparación máquina 1:
 
 ## Lunes 4 de Marzo 2024:
 
+- [X] Organizar la documentación (estaba todo añadido sin orden).
 - [ ] Gestionar los movimentos laterales y la escalada de privilegios de la CTF. 
 - [ ] Avanzar la documentación de tareas realizadas.
 - [ ] Reunión de seguimiento grupal y planteamiento de tareas para la semana.
