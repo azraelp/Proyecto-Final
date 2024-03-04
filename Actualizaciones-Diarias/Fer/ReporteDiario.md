@@ -2,7 +2,6 @@
 <span style="color:black;">[ Semana 2: Preparación máquina](#Semana2)</span><br>
 <span style="color:black;">[ Semana 3: Preparación máquina](#Semana3)</span><br>
 ---
-<br>
 
 <h1 name="Semana1">Semana 1: Planificación</h1>
 <h2>Lunes 19 de febrero 2024</h2>
