@@ -1,23 +1,8 @@
-<table>
-  <tbody>
-    <tr>
-      <td>1.</td>
-      <td><a href="#introducción">Introducción</a></td>
-    </tr>
-    <tr>
-      <td>2.</td>
-      <td><a href="#sección-1">Sección 1</a></td>
-    </tr>
-    <tr>
-      <td>3.</td>
-      <td><a href="#sección-2">Sección 2</a></td>
-    </tr>
-    <tr>
-      <td>4.</td>
-      <td><a href="#conclusiones">Conclusiones</a></td>
-    </tr>
-  </tbody>
-</table>
+1.&nbsp; [Introducción](#introducción)<br>
+2.&nbsp; [Sección 1](#sección-1)<br>
+3.&nbsp; [Sección 2](#sección-2)<br>
+4.&nbsp; [Conclusiones](#conclusiones)<br>
+
 ---
 
 ## Introducción
