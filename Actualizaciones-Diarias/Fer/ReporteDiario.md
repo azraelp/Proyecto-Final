@@ -5,6 +5,7 @@
 <br>
 
 <h1 name="Semana1">Semana 1: Planificación</h1>
+<br>
 ## Lunes 19 de febrero 2024 <br>
 ✅ Organización del equipo <br>
 ✅ Organización y distribución de tareas diarias <br>
