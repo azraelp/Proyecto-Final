@@ -1,5 +1,5 @@
 <style>
-  a.anchor {
+  h1.anchor {
     color: inherit;
     text-decoration: none;
   }
