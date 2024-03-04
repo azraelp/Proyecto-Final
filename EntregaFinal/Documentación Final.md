@@ -162,7 +162,7 @@ CMD service apache2 start && service vsftpd start && /usr/sbin/sshd -D
 - Entramos dentro de la maquina haciendo un docker exec -it idContenedor bash.
 - Hemos tenido que instalar por nuestra cuenta diferentes herramientas como: vim, python3.10, nano, etc.
 
-##FTP
+## FTP
 
 Lo primero que hemos hecho es mirar si el servicio de ftp esta encendido con service vsftpd status, si esta encendido bien si no hacemos service vsftpd start.
 
