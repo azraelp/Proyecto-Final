@@ -1,18 +1,13 @@
 # **Índice**
 
 <span style="color:black;">1. [ Introducción](#introducción)</span><br>
-<span style="color:black;">2. [ Desarrollo del contenedor](#Desarrollo)</span><br>
-<span style="color:black;">3. [ Desarrollo de Apache y configuración principal - SSRF](#Apache)</span><br>
-<span style="color:black;">4. [ CTF](#CTF)</span><br>
+<span style="color:black;">2. [ Desarrollo de Apache y configuración principal - SSRF](#Apache)</span><br>
+<span style="color:black;">3. [ Desarrollo del contenedor](#Desarrollo)</span><br>
+<span style="color:black;">4. [ Desarrollo de las webs](#Desarrollo-webs)</span><br>
 <span style="color:black;">5. [ Problemas encontrados en el desarrollo](#Problemas)</span><br>
-<span style="color:black;">6. [ Desarrollo de las webs](#Desarrollo-webs)</span><br>
+<span style="color:black;">6. [ CTF](#CTF)</span><br>
 ---
-Introducción
-Desarrollo de Apache y configuración principal - SSRF
-Desarrollo del contenedor
-Desarrollo de las webs
-Problemas encontrados en el desarrollo
-CTF
+
 <br>
 
 <h1 name="introducción">Introducción</h1>
@@ -83,42 +78,6 @@ Para poder realizar el escalado de privilegios se le aplicara el permiso SUID qu
 ![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/suid_python3.png)
 
 
-
-<h1 name="CTF">CTF</h1>
-
-Una vez se accede con el usuario Paco, buscaremos el programa que tenga el permiso SUID. \
-![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/find_4000_paco.png) \
-Podemos ver que el programa python cuenta con el permiso SUID, aprovechando esta vulnerabilidad podremos acceder al usuario **root** 
-![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/root_paco.png)
-
-
-
-<h1 name="Problemas">Problemas encontrados en el desarrollo</h1>
-
-Una vez accedíamos al contenedor se intenta ejecutar Wireshark de forma fallida, ya que no se puede conectar a ninguna GUI para solucionar este problema se específico la variable de entorno **DISPLAY** para que fuera la misma que la de la máquina local ademas se específico que las aplicaciones locales tuvieran acceso al servidor de ventanas X con el comando **xhost +local:**
-![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/error-display.png) \
-![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/localhostx.png) \
-El motivo por el cual surgía este error era que el propio Wireshark no contaba con los permisos suficientes para poder ejecutarse, al añadirle permisos de ejecución con  **chmod** se ejecuta el programa.
-![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/error-dumpcap-child.png) \
-![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/lswireshark.png) \
-![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/chmod700.png) \
-En este caso el error se producía debido a que el Docker no contaba con las capabilites necesarias que le otorgan permisos para poder realizar las capturas de tráfico. Esto se solucionó especificando las capabilites necesarias al hacer la puesta en marcha del Docker, **--cap-add=NET_ADMIN --cap-add=NET_RAW** \ 
-![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/error-dumpcap-capabilities.png) \
-<br>
-Hicimos el desarrollo de 2 páginas web, con la intención de realizar un ataque SSRF desde la URL en el navegador cliente. Al ver que no funcionaba, optamos por ver la consola del navegador (F12). Fue en ese punto cuando vimos que el propio navegador aplica una política la cual bloquea este tipo de acciones que se ejecutan al hacer un SSRF.
-
-![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/SameOriginPolicy.png) 
-<br>
-
-También probamos a instalar una versión anterior de Apache para aprovechar una vulnerabilidad de SSRF (CVE-2021-44224) [Vulnerabilidad](https://www.cybersecurity-help.cz/vulnerabilities/59057/)
-Esta vulnerabilidad podía explotarse entre las versiones de Apache 2.4.7 - 2.4.51. El contenedor contaba con la versión de Apache 2.4.52, así que desinstalamos el Apache con purge, remove y autoremove. Y una vez con todas las carpetas totalmente exterminadas decidimos a descargar el paquete de Apache vulnerable a SSRF. Para eso antes debíamos instalar ciertos paquetes y dependencias, wget para poder descargar el paquete. Las dependencias necesarias fueron: libapr1-dev, libaprutil1-dev, libpcre3-dev, gcc y make. Una vez acabamos de seguir los pasos de instalación del paquete. Al ejecutar apache2 -v obteníamos la misma versión que anteriormente habíamos desinstalado (2.4.52). Hubo varios intentos con nuevos contenedores para poder instalar la versión de Apache vulnerable (2.4.7), pero no hubo forma de hacer esto efectivo.
-
-Para poder realizar el escalado a root se ha utilizado la vulnerabilidad path hijacking, en un principio se intentó hacer de una forma simple utilizando un script básico de bash, el cual se usaría para que el atacante cambiase la variable de entorno **PATH** para ejecutar su cat y no el comando. Después de añadir el SUID al script se ejecutaba pero no con los permisos de usuario, pero se ejecutaba con el usuario básico Francisca. 
-![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/scriptbash.png) 
-![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/scriptbashsuid.png) 
-![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/whoamifrancisca.png) 
-
-
 <h1 name="Desarrollo-webs">Desarrollo de las webs</h1>
 
 **Web login** <br>
@@ -148,6 +107,41 @@ Tras varios intentos sin éxito, decidimos enfocarlo de otra manera. Y hacer una
 
 
 Esta página contará con un script que validara que se haya insertado una dirección válida. En el caso de que intenten acceder a la información de nuestro servidor mediante las direcciones localhost y 127.0.0.1, saltara una alerta diciendo que no son válidas esas direcciones y no te dejara acceder.
+
+<h1 name="Problemas">Problemas encontrados en el desarrollo</h1>
+
+Una vez accedíamos al contenedor se intenta ejecutar Wireshark de forma fallida, ya que no se puede conectar a ninguna GUI para solucionar este problema se específico la variable de entorno **DISPLAY** para que fuera la misma que la de la máquina local ademas se específico que las aplicaciones locales tuvieran acceso al servidor de ventanas X con el comando **xhost +local:**
+![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/error-display.png) \
+![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/localhostx.png) \
+El motivo por el cual surgía este error era que el propio Wireshark no contaba con los permisos suficientes para poder ejecutarse, al añadirle permisos de ejecución con  **chmod** se ejecuta el programa.
+![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/error-dumpcap-child.png) \
+![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/lswireshark.png) \
+![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/chmod700.png) \
+En este caso el error se producía debido a que el Docker no contaba con las capabilites necesarias que le otorgan permisos para poder realizar las capturas de tráfico. Esto se solucionó especificando las capabilites necesarias al hacer la puesta en marcha del Docker, **--cap-add=NET_ADMIN --cap-add=NET_RAW** \ 
+![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/error-dumpcap-capabilities.png) \
+<br>
+Hicimos el desarrollo de 2 páginas web, con la intención de realizar un ataque SSRF desde la URL en el navegador cliente. Al ver que no funcionaba, optamos por ver la consola del navegador (F12). Fue en ese punto cuando vimos que el propio navegador aplica una política la cual bloquea este tipo de acciones que se ejecutan al hacer un SSRF.
+
+![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/SameOriginPolicy.png) 
+<br>
+
+También probamos a instalar una versión anterior de Apache para aprovechar una vulnerabilidad de SSRF (CVE-2021-44224) [Vulnerabilidad](https://www.cybersecurity-help.cz/vulnerabilities/59057/)
+Esta vulnerabilidad podía explotarse entre las versiones de Apache 2.4.7 - 2.4.51. El contenedor contaba con la versión de Apache 2.4.52, así que desinstalamos el Apache con purge, remove y autoremove. Y una vez con todas las carpetas totalmente exterminadas decidimos a descargar el paquete de Apache vulnerable a SSRF. Para eso antes debíamos instalar ciertos paquetes y dependencias, wget para poder descargar el paquete. Las dependencias necesarias fueron: libapr1-dev, libaprutil1-dev, libpcre3-dev, gcc y make. Una vez acabamos de seguir los pasos de instalación del paquete. Al ejecutar apache2 -v obteníamos la misma versión que anteriormente habíamos desinstalado (2.4.52). Hubo varios intentos con nuevos contenedores para poder instalar la versión de Apache vulnerable (2.4.7), pero no hubo forma de hacer esto efectivo.
+
+Para poder realizar el escalado a root se ha utilizado la vulnerabilidad path hijacking, en un principio se intentó hacer de una forma simple utilizando un script básico de bash, el cual se usaría para que el atacante cambiase la variable de entorno **PATH** para ejecutar su cat y no el comando. Después de añadir el SUID al script se ejecutaba pero no con los permisos de usuario, pero se ejecutaba con el usuario básico Francisca. 
+![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/scriptbash.png) 
+![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/scriptbashsuid.png) 
+![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/whoamifrancisca.png) 
+
+
+
+<h1 name="CTF">CTF</h1>
+
+Una vez se accede con el usuario Paco, buscaremos el programa que tenga el permiso SUID. \
+![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/find_4000_paco.png) \
+Podemos ver que el programa python cuenta con el permiso SUID, aprovechando esta vulnerabilidad podremos acceder al usuario **root** 
+![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/root_paco.png)
+
 
 
 PathHijacking para lo que sea
