@@ -1,4 +1,8 @@
-# Semana 1: Planificación
+<span style="color:black;">1. [ Semana 1: Planificación](#Semana1)</span><br>
+
+<br>
+
+<h1 name="Semana1">Semana 1: Planificación</h1>
 ## Lunes 19 de febrero 2024 <br>
 ✅ Organización del equipo <br>
 ✅ Organización y distribución de tareas diarias <br>
