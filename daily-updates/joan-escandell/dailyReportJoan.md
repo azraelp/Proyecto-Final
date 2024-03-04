@@ -31,10 +31,20 @@
  
 - [x] Configuración de apache2 y sitio web.
 - [x] Creación y adaptación formulario vulnerable SQLi 
-- [x] Creación usuario/gruopos de sistema y distintos permisos.
+- [x] Creación usuario/grupos de sistema y distintos permisos.
 - [x] Capturas del proceso de configuración para la documentación.
 - [x] Configuración formulario de login y portal de la web.
 - [x] Configuración de usuario para realizar movimiento lateral.
 - [x] Pruebas de ataque con Hydra a formulario web.
 - [x] Pruebas de ataque con SQLmap a formulario con la ayuda de BurpSuite.
 - [x] Terminar en términos generales el CTF a falta de últimos detalles.
+
+# 04/03/2024:
+ 
+- [x] Realización de capturas del proceso de ataque a la máquina para la explicación del walkthrough.
+- [x] Configuración de SSH para la conexión y escalada de privilegios en el contenedor Docker.
+- [x] Configuración de red de contendor de Docker.
+- [x] Configuración formulario de login y portal de la web.
+- [x] Configuración de ficheros "logs.txt" para ambos formularios de la web.
+- [x] Pruebas de ataque de fuerza bruta con BurpSuite Intruder.
+- [x] Pruebas de "push" para subir Docker Images a GitHub.
