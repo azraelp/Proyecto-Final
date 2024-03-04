@@ -10,7 +10,7 @@
 ## Introducción <h1 name="introducción"></h1>
 Para desarrollar el contenedor Docker, se ha tenido en cuenta que debe ser vulnerable al ataque A10:2021 - SSRF. Para que nuestro contenedor sea vulnerable, deberá alojar una página web que permita al usuario hacer una consulta de stock sobre ciertos productos. El objetivo del atacante será capturar esta petición y forjar una nueva que le permita acceder a un recurso interno del servidor.
 
-## Desarrollo del contenedor <h1 name="Desarrollo"></h1>
+Desarrollo del contenedor <h1 name="Desarrollo"></h1>
 El contenedor Docker estará basado en Ubuntu 22.04.3 LTS Server y tendrá instalados los siguientes programas:
 * Wireshark, el cual nos permitirá realizar una captura de red mientras se ejecuta el ataque. Esta captura será analizada posteriormente.
 * Apache, nos permitirá tener un servidor web alojado en Docker donde se podrá realizar el ataque SSRF.
