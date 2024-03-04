@@ -10,10 +10,10 @@
 
 <br>
 
-<h1 name="introducción">Introducción</h1>
+<h1 name="introducción">1. Introducción</h1>
 Para desarrollar el contenedor Docker, se ha tenido en cuenta que debe ser vulnerable al ataque A10:2021 - SSRF. Para que nuestro contenedor sea vulnerable, deberá alojar una página web que permita al usuario hacer una consulta de stock sobre ciertos productos. El objetivo del atacante será capturar esta petición y forjar una nueva que le permita acceder a un recurso interno del servidor.
 
-<h1 name="Apache">Desarrollo de Apache y configuración principal - SSRF</h1>
+<h1 name="Apache">2. Desarrollo de Apache y configuración principal - SSRF</h1>
 
 Configuración del archivo /etc/apache2/apache2.conf
 <br>
@@ -56,7 +56,7 @@ Y a partir de ahora, siempre que hagamos un cambio en este archivo tendríamos q
 
 
 
-<h1 name="Desarrollo">Desarrollo del contenedor</h1>
+<h1 name="Desarrollo">3. Desarrollo del contenedor</h1>
 El contenedor Docker estará basado en Ubuntu 22.04.3 LTS Server y tendrá instalados los siguientes programas:
 * Wireshark, el cual nos permitirá realizar una captura de red mientras se ejecuta el ataque. Esta captura será analizada posteriormente.
 * Apache, nos permitirá tener un servidor web alojado en Docker donde se podrá realizar el ataque SSRF.
@@ -78,7 +78,7 @@ Para poder realizar el escalado de privilegios se le aplicara el permiso SUID qu
 ![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/suid_python3.png)
 
 
-<h1 name="Desarrollo-webs">Desarrollo de las webs</h1>
+<h1 name="Desarrollo-webs">4. Desarrollo de las webs</h1>
 
 **Web login** <br>
 Se ha realizado un login para la página web que sufrirá la vulnerabilidad de SSRF. Para la creación de la página, hemos utilizado únicamente HTML y CSS. No es una página funcional porque por ahí no se realizara el ataque, solo será una página donde no se podrá interactuar.
@@ -108,7 +108,7 @@ Tras varios intentos sin éxito, decidimos enfocarlo de otra manera. Y hacer una
 
 Esta página contará con un script que validara que se haya insertado una dirección válida. En el caso de que intenten acceder a la información de nuestro servidor mediante las direcciones localhost y 127.0.0.1, saltara una alerta diciendo que no son válidas esas direcciones y no te dejara acceder.
 
-<h1 name="Problemas">Problemas encontrados en el desarrollo</h1>
+<h1 name="Problemas">5. Problemas encontrados en el desarrollo</h1>
 
 Una vez accedíamos al contenedor se intenta ejecutar Wireshark de forma fallida, ya que no se puede conectar a ninguna GUI para solucionar este problema se específico la variable de entorno **DISPLAY** para que fuera la misma que la de la máquina local ademas se específico que las aplicaciones locales tuvieran acceso al servidor de ventanas X con el comando **xhost +local:**
 ![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/error-display.png) \
@@ -135,7 +135,7 @@ Para poder realizar el escalado a root se ha utilizado la vulnerabilidad path hi
 
 
 
-<h1 name="CTF">CTF</h1>
+<h1 name="CTF">6. CTF</h1>
 
 Una vez se accede con el usuario Paco, buscaremos el programa que tenga el permiso SUID. \
 ![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/find_4000_paco.png) \
