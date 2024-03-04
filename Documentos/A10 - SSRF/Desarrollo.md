@@ -26,9 +26,7 @@ La parte esencial en SSRF es poder acceder a recursos inaccesibles como un clien
 <br>
 
 ![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zomeño)/Assets/Img/ports.conf.png)
-
 <br>
-
 El siguiente paso a seguir era crear un site específico para nuestra página web oculta del puerto 5000. Así que copiamos el archivo 000-default.conf, ubicado en la ruta /etc/apache2/sites-available, el cual se encarga de guardar la configuración de la página predeterminada de apache (/var/www/html) y creamos el archivo con otro nombre.
 > cp 000-default.conf server.com.conf
 
@@ -76,6 +74,7 @@ Para crear el contenedor Docker usando el dockerfile se usará la opción **buil
 
 Para poder realizar el escalado de privilegios se le aplicara el permiso SUID que permite a los usuarios ejecutar un archivo con los privilegios del propietario del archivo. De esta forma el usuario Paco podrá acceder como root. \
 ![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/suid_python3.png)
+
 
 
 <h1 name="Desarrollo-webs">4. Desarrollo de las webs</h1>
