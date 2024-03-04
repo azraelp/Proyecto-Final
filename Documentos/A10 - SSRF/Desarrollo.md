@@ -1,10 +1,11 @@
-**Índice**
+# **Índice**
 
 <span>1. [Introducción](#introducción)</span><br>
 <span style="color:black;">2. [Sección 1](#sección-1)</span><br>
 <span style="color:black;">3. [Sección 2](#sección-2)</span><br>
 <span style="color:black;">4. [Conclusiones](#conclusiones)</span><br>
 -
+<br>
 
 ## Introducción
 Para desarrollar el contenedor Docker, se ha tenido en cuenta que debe ser vulnerable al ataque A10:2021 - SSRF. Para que nuestro contenedor sea vulnerable, deberá alojar una página web que permita al usuario hacer una consulta de stock sobre ciertos productos. El objetivo del atacante será capturar esta petición y forjar una nueva que le permita acceder a un recurso interno del servidor.
