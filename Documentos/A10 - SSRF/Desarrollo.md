@@ -1,5 +1,5 @@
 **Índice**
-1. &nbsp; [Introducción](#Introducción)
+1.&nbsp; [Introducción](#Introducción)
 2. [Segundo apartado](#id2)
 
 ---
