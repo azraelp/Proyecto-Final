@@ -3,8 +3,13 @@
 <span style="color:black;">1. [ Introducción](#introducción)</span><br>
 <span style="color:black;">2. [ Desarrollo del contenedor](#Desarrollo)</span><br>
 <span style="color:black;">3. [ Desarrollo de Apache y configuración principal - SSRF](#Apache)</span><br>
-<span style="color:black;">4. [ Conclusiones](#conclusiones)</span><br>
--
+<span style="color:black;">4. [ CTF](#CTF)</span><br>
+<span style="color:black;">5. [ Problemas encontrados en el desarrollo](#Problemas)</span><br>
+<span style="color:black;">6. [ Desarrollo de las webs](#Desarrollo)</span><br>
+<span style="color:black;">7. [ CTF](#CTF)</span><br>
+<span style="color:black;">8. [ CTF](#CTF)</span><br>
+<span style="color:black;">9. [ CTF](#CTF)</span><br>
+---
 <br>
 
 <h1 name="introducción">Introducción</h1>
@@ -72,7 +77,7 @@ Y por último tenemos que habilitar el site que hemos creado desde 0. Para ello:
 Y a partir de ahora, siempre que hagamos un cambio en este archivo tendríamos que deshabilitar y habilitar el site de nuevo, y posteriormente recargar el servidor de Apache para aplicar los cambios correctamente.
 > sudo a2dissite server.com.conf sudo a2ensite server.com.conf && sudo service apache2 reload
 
-# CTF
+<h1 name="CTF">CTF</h1>
 
 Una vez se accede con el usuario Paco, buscaremos el programa que tenga el permiso SUID. \
 ![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/find_4000_paco.png) \
@@ -81,7 +86,8 @@ Podemos ver que el programa python cuenta con el permiso SUID, aprovechando esta
 
 
 
-# Problemas encontrados en el desarrollo
+<h1 name="Problemas">Problemas encontrados en el desarrollo</h1>
+
 Una vez accedíamos al contenedor se intenta ejecutar Wireshark de forma fallida, ya que no se puede conectar a ninguna GUI para solucionar este problema se específico la variable de entorno **DISPLAY** para que fuera la misma que la de la máquina local ademas se específico que las aplicaciones locales tuvieran acceso al servidor de ventanas X con el comando **xhost +local:**
 ![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/error-display.png) \
 ![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/localhostx.png) \
@@ -100,12 +106,14 @@ Hicimos el desarrollo de 2 páginas web, con la intención de realizar un ataque
 También probamos a instalar una versión anterior de Apache para aprovechar una vulnerabilidad de SSRF (CVE-2021-44224) [Vulnerabilidad](https://www.cybersecurity-help.cz/vulnerabilities/59057/)
 Esta vulnerabilidad podía explotarse entre las versiones de Apache 2.4.7 - 2.4.51. El contenedor contaba con la versión de Apache 2.4.52, así que desinstalamos el Apache con purge, remove y autoremove. Y una vez con todas las carpetas totalmente exterminadas decidimos a descargar el paquete de Apache vulnerable a SSRF. Para eso antes debíamos instalar ciertos paquetes y dependencias, wget para poder descargar el paquete. Las dependencias necesarias fueron: libapr1-dev, libaprutil1-dev, libpcre3-dev, gcc y make. Una vez acabamos de seguir los pasos de instalación del paquete. Al ejecutar apache2 -v obteníamos la misma versión que anteriormente habíamos desinstalado (2.4.52). Hubo varios intentos con nuevos contenedores para poder instalar la versión de Apache vulnerable (2.4.7), pero no hubo forma de hacer esto efectivo.
 
-Para poder realizar el escalado a root se ha utilizado la vulnerabilidad path hijacking, en un principio se inento hacer de una forma simple utilizando un script basico de bash, el cual se usaria para que el atacante cambiase la variable de entorno **PATH** para ejecutar su cat y no el comando. Despues de añadir el SUID al script se ejecutaba pero no con los permisos de usuario, pero se ejecutaba con el usuario basico Francisca. 
+Para poder realizar el escalado a root se ha utilizado la vulnerabilidad path hijacking, en un principio se intentó hacer de una forma simple utilizando un script básico de bash, el cual se usaría para que el atacante cambiase la variable de entorno **PATH** para ejecutar su cat y no el comando. Después de añadir el SUID al script se ejecutaba pero no con los permisos de usuario, pero se ejecutaba con el usuario básico Francisca. 
 ![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/scriptbash.png) 
 ![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/scriptbashsuid.png) 
 ![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/whoamifrancisca.png) 
 
-# Desarrollo de las webs
+
+<h1 name="Desarrollo">Desarrollo de las webs</h1>
+
 **Web login** <br>
 Se ha realizado un login para la página web que sufrirá la vulnerabilidad de SSRF. Para la creación de la página, hemos utilizado únicamente HTML y CSS. No es una página funcional porque por ahí no se realizara el ataque, solo será una página donde no se podrá interactuar.
 ![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zomeño)/Assets/Img/login-SSRF.png)
