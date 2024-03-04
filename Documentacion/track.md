@@ -179,7 +179,7 @@ Creamos todos los usuarios que formarán parte del CTF, entre los que se encuent
 - granjero
 
 <p align="center">
-<img  alt="drawing" width="600" height="100" src="./images/AA.png" />
+<img  alt="drawing" width="600" height="100" src="./images/etcPasswd.png" />
 </p>
 
 El escalado a root se hará desde el usuario "granjero". El usuario "pastorPaco" será el usuario puente hacia "granjero". Y el usuario "pastorJose" es un simple _rabbit hole_.
@@ -192,3 +192,54 @@ Para poder realizar un análisis forense una vez explotada la máquina, hemos me
 <img  alt="drawing" width="600" height="100" src="./images/logs.png" />
 </p>
 
+# [Walkthrough](#índice)
+
+En primer lugar hacemos un escaneo de puertos para ver qué puertos hay abiertos:
+
+<p align="center">
+<img  alt="drawing" width="600" height="200" src="./images/nmap.png" />
+</p>
+
+A continuación accedemos vía navegador al puerto 80 para ver la web:
+
+<p align="center">
+<img  alt="drawing" width="600" height="400" src="./images/oos.png" />
+</p>
+
+Parece que no hay nada interesante, hacemos un ataque de fuzzing al URL para ver posibles directorios ocultos y encontramos el siguiente:
+
+<p align="center">
+<img  alt="drawing" width="600" height="400" src="./images/gobuster.png" />
+</p>
+
+Accedemso y aparentemente hay un panel de inicio de sesión. No parece ser vulnerable, así que intentamos hacer fuerza bruta sobre este formulario con BurpSuite:
+
+<p align="center">
+<img  alt="drawing" width="600" height="400" src="./images/intruder1.png" />
+</p>
+
+<p align="center">
+<img  alt="drawing" width="600" height="300" src="./images/intruder2.png" />
+</p>
+
+Se diferencia un código de status 302, por lo que probamos esas credenciales y en efecto son funcionales:
+
+<p align="center">
+<img  alt="drawing" width="600" height="400" src="./images/loggedin.png" />
+</p>
+
+A continuación exploramos un poco el panel de administración y encontramos una función donde puedes añadir un cerdo a la base de datos. En este formulario te deja subir una imagen, sin embargo se nos permite subir un archivo .php ya que no está bien sanitizado:
+
+<p align="center">
+<img  alt="drawing" width="600" height="500" src="./images/addPig1.png" />
+</p>
+
+<p align="center">
+<img  alt="drawing" width="600" height="400" src="./images/addPig2.png" />
+</p>
+
+A continuación ejecutamos el archivo .php que hemos subido y cuya función es ejecutar una reverse shell:
+
+<p align="center">
+<img  alt="drawing" width="600" height="400" src="./images/executeReverse.png" />
+</p>
