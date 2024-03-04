@@ -1,3 +1,11 @@
+<style>
+  a.anchor {
+    color: inherit;
+    text-decoration: none;
+  }
+</style>
+
+
 **Índice**   
 1. [Desarrollo del contenedor](#id1)
 
