@@ -30,4 +30,5 @@
 
 ## Lunes 04/03/2024
 
-- Preparación de la maquina: Usuario de sftp enjaulado, Reverse shell 
+- Preparación de la maquina: Usuario de sftp enjaulado, Reverse shell. Miro varios tutoriales y paginas,( https://www.youtube.com/watch?v=sXnKAEk8DdI,https://www.techrepublic.com/article/how-to-use-sftp-with-a-chroot-jail/)
+Sigo investigando mañana.
