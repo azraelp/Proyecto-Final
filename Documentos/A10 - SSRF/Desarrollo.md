@@ -1,6 +1,23 @@
-<span style="color:black;">1. [Introducción](#introducción)  </span> 
-
-
+<table>
+  <tbody>
+    <tr>
+      <td>1.</td>
+      <td><a href="#introducción">Introducción</a></td>
+    </tr>
+    <tr>
+      <td>2.</td>
+      <td><a href="#sección-1">Sección 1</a></td>
+    </tr>
+    <tr>
+      <td>3.</td>
+      <td><a href="#sección-2">Sección 2</a></td>
+    </tr>
+    <tr>
+      <td>4.</td>
+      <td><a href="#conclusiones">Conclusiones</a></td>
+    </tr>
+  </tbody>
+</table>
 ---
 
 ## Introducción
