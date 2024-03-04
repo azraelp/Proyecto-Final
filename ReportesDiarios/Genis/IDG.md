@@ -2,8 +2,8 @@
 20-02:apendre de A05:2021 – Configuración de Seguridad Incorrecta,
 21-02:recerca i documentacio de vulnerabilitats 
 
-## Dijous 22-02
--24- Insatlacio ,actualitzacio de una maquina linux per a poder fer probas.
+## Dijous 22-02-24
+- Insatlacio ,actualitzacio de una maquina linux per a poder fer probas.
 - Instalacio de els programes necersaris a linux.
 - Recerca de informacio de docker.
 - Recerca de possibles vulnerbilitats que es podrien afegir a les CTF
@@ -25,7 +25,7 @@
 - Canviar i millorar l'apatatat de productes de la web
 
 ## Dijous 29-02-24-
-- Reunio presencail amb el grup
+- Reunio presencial amb el grup
 - Control de progres presencial
 - Acabar de perfilar la pagina web
 
@@ -33,3 +33,6 @@
 - Recerca de escalada de privilegis
 - Recerca de moviment lateral
 
+## Dilluns 04-03-24-
+- Donarme de alta a dockerhub
+- Apendre de docker
