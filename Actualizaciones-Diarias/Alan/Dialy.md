@@ -71,10 +71,9 @@
 
 # Semana 3 - Preparación máquina 1:
 
-
 ## Lunes 4 de Marzo 2024:
 
-- [ ] 
+- [ ] Gestionar los movimentos laterales y la escalada de privilegios de la CTF. 
 - [ ] 
 
 ## Martes 5 de Marzo 2024:
