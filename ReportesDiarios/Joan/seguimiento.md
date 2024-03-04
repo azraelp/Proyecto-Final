@@ -65,3 +65,8 @@
 
 - Investigación sobre nuevas forma de hacer movimiento lateral y escalada de privilegios
     - Debido a los comentarios de ayer sobre que no les gusta a los evaluadores la forma en la que hacemos movimiento lateral entre usuarios y escalamos privilegios, he estado investigando formas más complejas de hacer el movimiento lateral y la escalada de privilegios. La semana que viene probaremos de implementarlos.
+
+## Lunes 04/03/2024
+
+- Intento de implementación de la escalada de privilegios
+    - He estado intentando entender e implementar una nueva escalada de privilegios en una máquina local para la máquina uno.
