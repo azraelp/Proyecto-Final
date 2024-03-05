@@ -272,8 +272,70 @@ Afortunadamente este sí es vulnerable a SQL Injection por lo que nos facilita e
 <img  alt="drawing" width="700" height="600" src="./images/loginBancoSQLi.png" />
 </p>
 
-Una vez hecho el bypass, nos redirige a un "banco de credenciales" donde parece haber las credenciales de varios usuarios, aparentemente encodeadas en :
+Una vez hecho el bypass, nos redirige a un "banco de credenciales" donde parece haber las credenciales de varios usuarios, aparentemente encodeadas en Base64:
 
 <p align="center">
 <img  alt="drawing" width="450" height="400" src="./images/finalCredentials.png" />
+</p>
+
+Lo desencodeamos:
+
+<p align="center">
+<img  alt="drawing" width="450" height="400" src="./images/base64Decode.png" />
+</p>
+
+Y obtenemos una posible contraseña. A continuación nos conectamos vía SSH para probar si funciona:
+
+<p align="center">
+<img  alt="drawing" width="450" height="400" src="./images/sshPastorPaco.png" />
+</p>
+
+Accedemos correctamente, y lo primero que encontramos es un archivo .zip protegido con contraseña, así que nos los llevamos a la máquina atacante mediante SCP y probamos a hacer fuerza bruta por si la contraseña fuese débil. Obtenemos el hash del zip e iniciamos el ataque:
+
+<p align="center">
+<img  alt="drawing" width="850" height="200" src="./images/scp.png" />
+</p>
+
+<p align="center">
+<img  alt="drawing" width="750" height="300" src="./images/zip2john.png" />
+</p>
+
+Al realizar el ataque descubrimos la contraseña del zip, al extraerlo vemos que dentro de este hay un archivo llamado "granjero.txt":
+
+<p align="center">
+<img  alt="drawing" width="750" height="300" src="./images/john.png" />
+</p>
+
+Al listar el contenido vemos las credenciales de un usuario nuevo, cuya contraseña está también cifrada en Base64:
+
+<p align="center">
+<img  alt="drawing" width="450" height="400" src="./images/granjero.txt.png" />
+</p>
+
+La desencodeamos:
+
+<p align="center">
+<img  alt="drawing" width="450" height="400" src="./images/XXXXX.png" />
+</p>
+
+Accedemos mediante SSH para comprobar si funcionan, y sí lo hacen:
+
+<p align="center">
+<img  alt="drawing" width="450" height="400" src="./images/sshGranjero.png" />
+</p>
+
+Lo primero que hacemos es listar los grupos y por suerte este usuario está en el grupo root y sudo, por lo que el escalado de privilegios es simplemente ejecutar un comando:
+
+<p align="center">
+<img  alt="drawing" width="450" height="100" src="./images/groups.png" />
+</p>
+
+<p align="center">
+<img  alt="drawing" width="650" height="150" src="./images/getRoot.png" />
+</p>
+
+Y finalmente encontramos la flag root.txt en el directorio  /root:
+
+<p align="center">
+<img  alt="drawing" width="450" height="150" src="./images/XXXXXXXXXXX.png" />
 </p>
