@@ -40,7 +40,6 @@ También hemos configurado directivas extras para poder filtrar el acceso a esta
 <br>
 
 ![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zomeño)/Assets/Img/server.com.conf.png)
-
 <br>
 
 Ahora ya que tenemos toda la configuración falta habilitar el mod que utilizamos para crear la directiva, este mod es el rewrite de Apache
