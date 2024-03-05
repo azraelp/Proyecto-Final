@@ -79,6 +79,6 @@
 ![](/ReportesDiarios/Joan/img/2024-03-05_18-54.png)
 
 - Creación de una imagen para poder hacer el movimiento lateral
--   Dentro de la imagen estará el contenido al que se hace referencia en el archivo mencionado anteriormente
+    - Dentro de la imagen estará el contenido al que se hace referencia en el archivo mencionado anteriormente
 
 ![](/ReportesDiarios/Joan/img/bee.jpg)
