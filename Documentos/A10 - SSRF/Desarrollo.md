@@ -80,8 +80,21 @@ Para poder realizar el escalado de privilegios se le aplicara el permiso SUID qu
 <h1 name="Desarrollo-webs">4. Desarrollo de las webs</h1>
 
 **Web login** <br>
-Se ha realizado un login para la página web que sufrirá la vulnerabilidad de SSRF. Para la creación de la página, hemos utilizado únicamente HTML y CSS. No es una página funcional porque por ahí no se realizara el ataque, solo será una página donde no se podrá interactuar.
+Se ha realizado un login falso para la página web. Para la creación de la página, hemos utilizado únicamente HTML y CSS. No es una página funcional porque por ahí no se realizara el ataque, solo será una página donde no se podrá interactuar.
+<br>
 ![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zomeño)/Assets/Img/login-SSRF.png)
+
+**Web principal**<br>
+Se ha realizado una página web que simula ser un validador de ULRs, la información recogida por el formulario es tratada y procesada por una función php vulnerable.
+<br>
+![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zomeño)/Assets/Img/web-principal.png)
+<br>
+
+**Web secundaria**<br>
+También se ha desarrollado una página web secundaria en otro puerto diferente 
+<br>
+![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zomeño)/Assets/Img/endesarrollo.png)
+
 
 **Web tienda** <br>
 Se realizó una búsqueda de información del ataque SSRF para ver que páginas eran más comunes en este tipo de ataque. Habiendo buscado varias fuentes de información, sacamos que unas de las páginas que más sufren de eso son tiendas que comprueban el stock de un producto.
