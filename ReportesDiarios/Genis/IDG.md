@@ -36,3 +36,6 @@
 ## Dilluns 04-03-24-
 - Donarme de alta a dockerhub
 - Apendre de docker
+
+## Dimarts 05-03-24-
+- Ajuda i soport a les tasques de els altres membres de l'equip
