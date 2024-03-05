@@ -91,10 +91,12 @@ Se ha realizado una página web que simula ser un validador de ULRs, la informac
 <br>
 
 **Web secundaria**<br>
-También se ha desarrollado una página web secundaria en otro puerto diferente 
+También se ha desarrollado una página web secundaria en otro puerto diferente. Esta web ofrece cierta información, es una web oculta para cualquier cliente que no esté en la red privada. 
 <br>
 ![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zomeño)/Assets/Img/endesarrollo.png)
 
+**Acceso denegado a la web secundaria**
+Si intentamos acceder a este puerto secundario web, nos saltará un mensaje diciendo que no 
 
 **Web tienda** <br>
 Se realizó una búsqueda de información del ataque SSRF para ver que páginas eran más comunes en este tipo de ataque. Habiendo buscado varias fuentes de información, sacamos que unas de las páginas que más sufren de eso son tiendas que comprueban el stock de un producto.
