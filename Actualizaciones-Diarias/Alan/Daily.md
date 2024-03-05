@@ -82,7 +82,7 @@
 
 - [X] Actualización de las webs.
 - [X] Documentación sobre el desarrollo de todas las webs.
-- [ ] 
+- [X] Reorganización de la documentación - retoques finales del desarrollo.md
 
 ## Miércoles 6 de Marzo 2024:
 
