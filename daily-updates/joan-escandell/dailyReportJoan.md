@@ -49,7 +49,7 @@
 - [x] Pruebas de ataque de fuerza bruta con BurpSuite Intruder.
 - [x] Pruebas de "push" para subir Docker Images a GitHub.
 
-# 04/03/2024:
+# 05/03/2024:
  
 - [x] Ubicar y configurar directorios para las flags user.txt y root.txt
 - [x] Configuración de ZIP con contraseña para explotar con fuerza bruta.
