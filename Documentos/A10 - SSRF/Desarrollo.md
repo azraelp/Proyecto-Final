@@ -2,9 +2,10 @@
 
 <span style="color:black;">1. [ Introducción](#introducción)</span><br>
 <span style="color:black;">2. [ Desarrollo del contenedor](#Desarrollo)</span><br>
-<span style="color:black;">3. [ Desarrollo de Apache y configuración principal - SSRF](#Apache)</span><br>
-<span style="color:black;">4. [ Desarrollo de las webs](#Desarrollo-webs)</span><br>
-<span style="color:black;">5. [ Problemas encontrados en el desarrollo](#Problemas)</span><br>
+<span style="color:black;">3. [ Configuración de Apache y configuración principal - SSRF](#Apache)</span><br>
+<span style="color:black;">4. [ Configuración del servidor SSH](#confSSH)</span><br>
+<span style="color:black;">5. [ Desarrollo de las webs](#Desarrollo-webs)</span><br>
+<span style="color:black;">6. [ Problemas encontrados en el desarrollo](#Problemas)</span><br>
 ---
 
 <br>
@@ -77,8 +78,13 @@ Y a partir de ahora, siempre que hagamos un cambio en este archivo tendríamos q
 
 
 
+<h1 name="confSSH">4. Configuración del servidor SSH</h1>
 
-<h1 name="Desarrollo-webs">4. Desarrollo de las webs</h1>
+
+
+
+
+<h1 name="Desarrollo-webs">5. Desarrollo de las webs</h1>
 
 **Web login** <br>
 Se ha realizado un login falso para la página web. Para la creación de la página, hemos utilizado únicamente HTML y CSS. No es una página funcional porque por ahí no se realizara el ataque, solo será una página donde no se podrá interactuar.
@@ -105,7 +111,7 @@ Si intentamos acceder a este puerto secundario web, nos saltará un mensaje dici
 
 
 
-<h1 name="Problemas">5. Problemas encontrados en el desarrollo</h1>
+<h1 name="Problemas">6. Problemas encontrados en el desarrollo</h1>
 
 Una vez accedíamos al contenedor se intenta ejecutar Wireshark de forma fallida, ya que no se puede conectar a ninguna GUI para solucionar este problema se específico la variable de entorno **DISPLAY** para que fuera la misma que la de la máquina local ademas se específico que las aplicaciones locales tuvieran acceso al servidor de ventanas X con el comando **xhost +local:**
 ![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/error-display.png) \
