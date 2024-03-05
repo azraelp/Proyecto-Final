@@ -83,3 +83,10 @@
 - Tambien he hecho pruebas con DockerHub y he creado una primera versión de la ctf.
 ![](/ReportesDiarios/Jordi/img/dockerhubcli.png)
 ![](/ReportesDiarios/Jordi/img/dockerhubweb.png)
+
+# Reporte 05 de marzo de 2024
+
+- He complicado un poco la maquina, cifrando las credenciales que hay en el servidor ftp.
+- He editado el hexadecimal de una imagen, para almacenar ahi unas credenciales.
+
+![](/ReportesDiarios/Jordi/img/hexeditor.jpg)
