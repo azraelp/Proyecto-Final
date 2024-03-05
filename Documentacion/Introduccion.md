@@ -332,7 +332,30 @@ Para mitigar esta vulnerabilidad lo único que debemos hacer es actualizar la ve
 <img  alt="drawing" width="550" height="400" src="https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo2/Documentacion/images/granjero.txt.png" />
 </p>
 
-14.Nos conectamos al usuario granjero
+14.Nos conectamos al usuario granjero y miramos lo que hay dentro.
+<p align="center">
+<img  alt="drawing" width="550" height="400" src="https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo2/Documentacion/images/flagUser.png" />
+</p>
+
+15.Miramos que grupos esta el usuario granjero
+<p align="center">
+<img  alt="drawing" width="550" height="400" src="https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo2/Documentacion/images/groups.png" />
+
+
+16.Hacemos sudo su y entramos en el usuario root.
+</p>
+
+<p align="center">
+<img  alt="drawing" width="550" height="400" src="https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo2/Documentacion/images/getRoot.png" />
+</p>
+
+17. Por ultimo buscamos la flag de root.
+
+<p align="center">
+<img  alt="drawing" width="550" height="400" src="https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo2/Documentacion/images/flagRoot.png" />
+</p>
+
+
 ## [Análisis del Contenedor una vez Explotado](#índice)
 
 ### [Herramientas Empleadas](#índice)
