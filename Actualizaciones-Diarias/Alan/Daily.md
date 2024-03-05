@@ -75,12 +75,13 @@
 
 - [X] Organizar la documentación (estaba todo añadido sin orden).
 - [X] Gestionar los movimientos laterales y la escalada de privilegios de la CTF. 
-- [ ] Avanzar la documentación de tareas realizadas.
-- [ ] Reunión de seguimiento grupal y planteamiento de tareas para la semana.
+- [X] Avanzar la documentación de tareas realizadas.
+- [X] Reunión de seguimiento grupal y planteamiento de tareas para la semana.
  
 ## Martes 5 de Marzo 2024:
 
-- [ ] 
+- [X] Actualización de las webs.
+- [X] Documentación sobre el desarrollo de todas las webs.
 - [ ] 
 
 ## Miércoles 6 de Marzo 2024:
