@@ -48,3 +48,12 @@
 - [x] Configuración de ficheros "logs.txt" para ambos formularios de la web.
 - [x] Pruebas de ataque de fuerza bruta con BurpSuite Intruder.
 - [x] Pruebas de "push" para subir Docker Images a GitHub.
+
+# 04/03/2024:
+ 
+- [x] Ubicar y configurar directorios para las flags user.txt y root.txt
+- [x] Configuración de ZIP con contraseña para explotar con fuerza bruta.
+- [x] Buscar posibles CVE que se pudieran implementar.
+- [x] Tomar capturas y subirlas a GitHub para el Walkthrough.
+- [x] Solucionar problemas con puertos de Docker y la máquina Ubuntu Server
+- [x] Pruebas de "push" para subir Docker Images a GitHub.
