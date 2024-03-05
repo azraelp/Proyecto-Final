@@ -1,8 +1,8 @@
 # **Índice**
 
 <span style="color:black;">1. [ Introducción](#introducción)</span><br>
-<span style="color:black;">2. [ Desarrollo de Apache y configuración principal - SSRF](#Apache)</span><br>
-<span style="color:black;">3. [ Desarrollo del contenedor](#Desarrollo)</span><br>
+<span style="color:black;">2. [ Desarrollo del contenedor](#Desarrollo)</span><br>
+<span style="color:black;">3. [ Desarrollo de Apache y configuración principal - SSRF](#Apache)</span><br>
 <span style="color:black;">4. [ Desarrollo de las webs](#Desarrollo-webs)</span><br>
 <span style="color:black;">5. [ Problemas encontrados en el desarrollo](#Problemas)</span><br>
 ---
@@ -12,7 +12,32 @@
 <h1 name="introducción">1. Introducción</h1>
 Para desarrollar el contenedor Docker, se ha tenido en cuenta que debe ser vulnerable al ataque A10:2021 - SSRF. Para que nuestro contenedor sea vulnerable, deberá alojar una página web que permita al usuario hacer una consulta de stock sobre ciertos productos. El objetivo del atacante será capturar esta petición y forjar una nueva que le permita acceder a un recurso interno del servidor.
 
-<h1 name="Apache">2. Desarrollo de Apache y configuración principal - SSRF</h1>
+
+<h1 name="Desarrollo">2. Desarrollo del contenedor</h1>
+El contenedor Docker estará basado en Ubuntu 22.04.3 LTS Server y tendrá instalados los siguientes programas:
+* Wireshark, el cual nos permitirá realizar una captura de red mientras se ejecuta el ataque. Esta captura será analizada posteriormente.
+* Apache, nos permitirá tener un servidor web alojado en Docker donde se podrá realizar el ataque SSRF.
+* X11, esta utilidad nos permite utilizar Wireshark de forma gráfica desde el contenedor Docker.
+* PHP, proporciona capacidades para ejecutar y administrar scripts y aplicaciones PHP en el contenedor. Junto con otros paquetes relacionados como php-cli y php-fpm.
+* VIM/NANO, editores de texto.
+* Python, servirá como vector de entrada a la hora de realizar el escalado de privilegios.
+
+El Dockerfile que generará el contenedor es el siguiente:
+![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/dockerfile.png)\
+En la primera línea se específica que imagen se usará para montar el contenedor, después se realiza una actualización de paquetes y se instalan las utilidades necesarias para realizar el ataque SSRF, el parámetro **DEBIAN_FRONTEND=noninteractive** se utiliza para que a la hora de instalar los paquetes no aparezca ningún prompt y que se aplique la opción predeterminada a la hora de configurar los paquetes en la instalación, la última línea **rm -rf /var/lib/apt/lists/** eliminará los archivos temporales que ya no son necesarios después de la instalación de los paquetes, de esta forma se optimiza el espacio del contenedor. A continuación se crea el directorio sshd dentro de /var/run, esto se realiza de forma automática a la hora de poner en marcha el servicio SSH sin embargo es mejor crearlo antes de poner en marcha el servicio por si se necesita de antemano. A continuación se establece que la variable de entorno **DISPLAY** apunte al display de la máquina anfitrión, esto nos servirá para poder usar Wireshark de forma gráfica. Por último se abren los puertos necesarios para los servicios SSH y Apache y se ponen en marcha dichos servicios.
+
+Para crear el contenedor Docker usando el dockerfile se usará la opción **build**
+![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/docker-build.png)
+![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/docker-build-2.png)
+
+
+Para poder realizar el escalado de privilegios se le aplicara el permiso SUID que permite a los usuarios ejecutar un archivo con los privilegios del propietario del archivo. De esta forma el usuario Paco podrá acceder como root. \
+![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/suid_python3.png)
+<br>
+
+
+
+<h1 name="Apache">3. Desarrollo de Apache y configuración principal - SSRF</h1>
 
 Configuración del archivo /etc/apache2/apache2.conf
 <br>
@@ -52,27 +77,6 @@ Y a partir de ahora, siempre que hagamos un cambio en este archivo tendríamos q
 
 
 
-<h1 name="Desarrollo">3. Desarrollo del contenedor</h1>
-El contenedor Docker estará basado en Ubuntu 22.04.3 LTS Server y tendrá instalados los siguientes programas:
-* Wireshark, el cual nos permitirá realizar una captura de red mientras se ejecuta el ataque. Esta captura será analizada posteriormente.
-* Apache, nos permitirá tener un servidor web alojado en Docker donde se podrá realizar el ataque SSRF.
-* X11, esta utilidad nos permite utilizar Wireshark de forma gráfica desde el contenedor Docker.
-* PHP, proporciona capacidades para ejecutar y administrar scripts y aplicaciones PHP en el contenedor. Junto con otros paquetes relacionados como php-cli y php-fpm.
-* VIM/NANO, editores de texto.
-* Python, servirá como vector de entrada a la hora de realizar el escalado de privilegios.
-
-El Dockerfile que generará el contenedor es el siguiente:
-![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/dockerfile.png)\
-En la primera línea se específica que imagen se usará para montar el contenedor, después se realiza una actualización de paquetes y se instalan las utilidades necesarias para realizar el ataque SSRF, el parámetro **DEBIAN_FRONTEND=noninteractive** se utiliza para que a la hora de instalar los paquetes no aparezca ningún prompt y que se aplique la opción predeterminada a la hora de configurar los paquetes en la instalación, la última línea **rm -rf /var/lib/apt/lists/** eliminará los archivos temporales que ya no son necesarios después de la instalación de los paquetes, de esta forma se optimiza el espacio del contenedor. A continuación se crea el directorio sshd dentro de /var/run, esto se realiza de forma automática a la hora de poner en marcha el servicio SSH sin embargo es mejor crearlo antes de poner en marcha el servicio por si se necesita de antemano. A continuación se establece que la variable de entorno **DISPLAY** apunte al display de la máquina anfitrión, esto nos servirá para poder usar Wireshark de forma gráfica. Por último se abren los puertos necesarios para los servicios SSH y Apache y se ponen en marcha dichos servicios.
-
-Para crear el contenedor Docker usando el dockerfile se usará la opción **build**
-![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/docker-build.png)
-![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/docker-build-2.png)
-
-
-Para poder realizar el escalado de privilegios se le aplicara el permiso SUID que permite a los usuarios ejecutar un archivo con los privilegios del propietario del archivo. De esta forma el usuario Paco podrá acceder como root. \
-![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/suid_python3.png)
-<br>
 
 <h1 name="Desarrollo-webs">4. Desarrollo de las webs</h1>
 
