@@ -70,4 +70,10 @@
 
 - [x] Creación de almacenamiento de logs
 - [x] Comienzo y redacción del walkthrough
-- [x] Intento de explotaciión del formulario con BurpSuite (Intruder)
+- [x] Intento de explotación del formulario con BurpSuite (Intruder)
+
+# Martes 5 de marzo 2024:
+
+- [x] Redacción del walkthrough
+- [x] Revisión de funcionamiento del CTF
+- [x] Intento fallido de recreación de un CVE
