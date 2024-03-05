@@ -92,3 +92,12 @@ Durante el dia de hoy he realizado las siguientes tareas:
 
 - Subir la versión de la maquina a DockerHub con la versión 2.1
 
+# Reporte Diario 4 de Marzo de 2024
+
+Durante el dia de hoy he realizado las siguientes tareas:
+
+- Eliminar archivos residuales e historiales de los usuarios de la maquina de diseño inseguro
+
+- Desinstalar la versión de OpenSSH 8.1 e intentar instalar OpenSSH 7.2 para que sea vulnerable ante **SSH User Enumeration**
+
+- Resolver problemas al intentar instalar OpenSSH 7.2, sin conseguir instalarlo correctamente debido a un error **error: field 'evp' has incomplete type**
