@@ -70,3 +70,15 @@
 
 - Intento de implementación de la escalada de privilegios
     - He estado intentando entender e implementar una nueva escalada de privilegios en una máquina local para la máquina uno.
+
+## Martes 05/03/2024
+
+- Creación de un binario para lograr un nuevo movimiento lateral
+    - Hemos creado un binario que tendrá SUID y contendrá pistas para poder hacer movimiento lateral
+
+![](/img/2024-03-05_18-54.png)
+
+- Creación de una imagen para poder hacer el movimiento lateral
+-   Dentro de la imagen estará el contenido al que se hace referencia en el archivo mencionado anteriormente
+
+![](/img/bee.jpg)
