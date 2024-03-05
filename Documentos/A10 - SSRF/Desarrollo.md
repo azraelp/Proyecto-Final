@@ -72,8 +72,7 @@ Para crear el contenedor Docker usando el dockerfile se usará la opción **buil
 
 Para poder realizar el escalado de privilegios se le aplicara el permiso SUID que permite a los usuarios ejecutar un archivo con los privilegios del propietario del archivo. De esta forma el usuario Paco podrá acceder como root. \
 ![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/suid_python3.png)
-
-
+<br>
 
 <h1 name="Desarrollo-webs">4. Desarrollo de las webs</h1>
 
@@ -100,29 +99,7 @@ Si intentamos acceder a este puerto secundario web, nos saltará un mensaje dici
 ![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zomeño)/Assets/Img/accesoprohibido.png)
 <br>
 
-**Web tienda** <br>
-Se realizó una búsqueda de información del ataque SSRF para ver que páginas eran más comunes en este tipo de ataque. Habiendo buscado varias fuentes de información, sacamos que unas de las páginas que más sufren de eso son tiendas que comprueban el stock de un producto.
 
-Así que con esta información decidimos montar una web sencilla, utilizando HTML y JavaScript. En esta web pondremos que tipo de producto quiere el usuario. <br>
-![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zomeño)/Assets/Img/tiendaweb-2.png)
-
-Y una vez que lo haya seleccionado y le dé al botón de verificar las existencias, mostrará la cantidad de existencias el cual es un número random creado por JavaScript. <br>
-![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zomeño)/Assets/Img/tiendaweb-3.png)
-
-Se intentó a ver si podía sacar la API de la web mediante la verificación de existencias y vimos que el Burpsuite no recogía nada. Buscamos información y vimos que lo estábamos haciéndolo mal. <br>
-![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zomeño)/Assets/Img/tiendaweb-4.png)
-
-Así que se hizo, creó otra versión de la web para que obtuviera los datos de la base de datos. Se ha creado el HTML para mostrar los datos y el PHP para hacer la conexión con la base de datos. <br>
-![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zomeño)/Assets/Img/tiendaweb-5.png)
-![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zomeño)/Assets/Img/tiendaweb-6.png)
-
-Pero como vemos en el Burpsuite no detecta la API <br>
-![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zomeño)/Assets/Img/tiendaweb-7.png)
-
-Tras varios intentos sin éxito, decidimos enfocarlo de otra manera. Y hacer una página parecida a "VirusTotal". En esta página habrá un campo que es donde se insertara en la dirección de una web. 
-
-
-Esta página contará con un script que validara que se haya insertado una dirección válida. En el caso de que intenten acceder a la información de nuestro servidor mediante las direcciones localhost y 127.0.0.1, saltara una alerta diciendo que no son válidas esas direcciones y no te dejara acceder.
 
 <h1 name="Problemas">5. Problemas encontrados en el desarrollo</h1>
 
@@ -148,6 +125,29 @@ Para poder realizar el escalado a root se ha utilizado la vulnerabilidad path hi
 ![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/scriptbash.png) 
 ![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/scriptbashsuid.png) 
 ![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/whoamifrancisca.png) 
+<br>
+
+**Web tienda** <br>
+Se realizó una búsqueda de información del ataque SSRF para ver que páginas eran más comunes en este tipo de ataque. Habiendo buscado varias fuentes de información, sacamos que unas de las páginas que más sufren de eso son tiendas que comprueban el stock de un producto.
+
+Así que con esta información decidimos montar una web sencilla, utilizando HTML y JavaScript. En esta web pondremos que tipo de producto quiere el usuario. <br>
+![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zomeño)/Assets/Img/tiendaweb-2.png)
+
+Y una vez que lo haya seleccionado y le dé al botón de verificar las existencias, mostrará la cantidad de existencias el cual es un número random creado por JavaScript. <br>
+![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zomeño)/Assets/Img/tiendaweb-3.png)
+
+Se intentó a ver si podía sacar la API de la web mediante la verificación de existencias y vimos que el Burpsuite no recogía nada. Buscamos información y vimos que lo estábamos haciéndolo mal. <br>
+![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zomeño)/Assets/Img/tiendaweb-4.png)
+
+Así que se hizo, creó otra versión de la web para que obtuviera los datos de la base de datos. Se ha creado el HTML para mostrar los datos y el PHP para hacer la conexión con la base de datos. <br>
+![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zomeño)/Assets/Img/tiendaweb-5.png)
+![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zomeño)/Assets/Img/tiendaweb-6.png)
+
+Pero como vemos en el Burpsuite no detecta la API <br>
+![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zomeño)/Assets/Img/tiendaweb-7.png)
+
+Tras varios intentos sin éxito, decidimos enfocarlo de otra manera. Y hacer una página parecida a "VirusTotal". En esta página habrá un campo que es donde se insertara en la dirección de una web. 
 
 
+Esta página contará con un script que validara que se haya insertado una dirección válida. En el caso de que intenten acceder a la información de nuestro servidor mediante las direcciones localhost y 127.0.0.1, saltara una alerta diciendo que no son válidas esas direcciones y no te dejara acceder.
 
