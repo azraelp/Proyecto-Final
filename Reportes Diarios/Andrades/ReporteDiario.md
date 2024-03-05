@@ -49,4 +49,11 @@
 ## 4/03/24 Reporte Diario
 - [X] investigación sobre herramienta forense
     - hay fichero que no se encuentra en el los docker que complica la ejecución del forense
-- [] Error al instalar una versión actua del ssh
+- [X] Error al instalar una versión anterior del Openssh-server
+    - El errores es que no en los repositorios estandar no se encuentra dicha version porque es muy antigua y no cumple ya con los estandar de seguridad del sistema
+       wget https://mirrors.wikimedia.org/ubuntu/ubuntu/pool/main/o/openssh/openssh-server_7.2p2-4_amd64.deb
+       sudo dpkg -i --force-all openssh-server_7.2p2-4_amd64.deb
+       apt --fix-broken install
+       apt-cache policy openssh-server
+![alt text](image.png)
+
