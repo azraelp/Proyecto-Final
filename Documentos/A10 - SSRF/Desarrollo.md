@@ -5,7 +5,6 @@
 <span style="color:black;">3. [ Desarrollo del contenedor](#Desarrollo)</span><br>
 <span style="color:black;">4. [ Desarrollo de las webs](#Desarrollo-webs)</span><br>
 <span style="color:black;">5. [ Problemas encontrados en el desarrollo](#Problemas)</span><br>
-<span style="color:black;">6. [ CTF](#CTF)</span><br>
 ---
 
 <br>
@@ -152,12 +151,3 @@ Para poder realizar el escalado a root se ha utilizado la vulnerabilidad path hi
 
 
 
-<h1 name="CTF">6. CTF</h1>
-
-Una vez se accede con el usuario Paco, buscaremos el programa que tenga el permiso SUID. \
-![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/find_4000_paco.png) \
-Podemos ver que el programa python cuenta con el permiso SUID, aprovechando esta vulnerabilidad podremos acceder al usuario **root** 
-![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/root_paco.png)
-
-Podremos descubrir la passphrase utilizada para la clave privada utilizando john
-![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/johnwordlist.png)
