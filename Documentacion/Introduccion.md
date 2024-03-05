@@ -1,6 +1,5 @@
 # índice
 
-
 1. [Introducción](#introducción)
 2. [Inyección](#inyección)
     - [Descripción de diferentes tipos de ataques de inyección](#descripción-de-diferentes-tipos-de-ataques-de-inyección)
@@ -253,36 +252,87 @@ Para mitigar esta vulnerabilidad lo único que debemos hacer es actualizar la ve
 
 ## [Desarrollo de las Vulnerabilidades](#índice)
 
-### SQL Injection
-
-En primer lugar desarrollamos un formulario de inicio de sesión con su respectivo validador (en PHP). Este será el encargado de lanzar _query_ a la base de datos para verificar si las credenciales introducidas por el cliente forman parte de un usuario válido. Este código no sanitiza la entrada obtenida, es por ello que es vulnerable a un ataque de inyección SQL, como se representa en la siguiente ilustración:
+1.Atacante hace fuzzing y encuentra el panel de inicio de cerdos.
 
 <p align="center">
-<img  alt="drawing" width="400" height="400" src="https://i.imgur.com/u74Zyuj.png"/>
+<img  alt="drawing" width="350" height="200" src="https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo2/Documentacion/images/gobuster.png" />
 </p>
 
-En segundo lugar instalamos MariaDB para gestionar las bases de datos que estarán conectadas al formulario. 
+2.Entra en la pagina login y usa la herramienta burpsuite para hacer un ataque de fuerza bruta.
+<p align="center">
+<img  alt="drawing" width="550" height="300" src="https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo2/Documentacion/images/intruder1.png" />
+</p>
+<p align="center">
+<img  alt="drawing" width="550" height="300" src="https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo2/Documentacion/images/intruder2.png" />
+</p>
 
-Tras crear las bases de datos con sus respectivos usuarios y verificar la conexión y el buen funcionamiento con el formulario, damos por finalizado la implementación de la vulnerabilidad principal en este contenedor.
-
-### CVE Extra N1 - CVE-2023-37629
-
-En primer lugar descargamos el software vulnerable desde este [enlace](https://www.sourcecodester.com/php/11814/online-pig-management-system-basic-free-version.html). A continuación descomprimimos el archivo en la ruta /var/www/html.
-
-Una vez hecho esto, creamos una base de datos llamada "pig" e importamos el archivo pig.sql que se encuentra dentro de la carpeta "database":
-
-Finalmente modificamos el archivo "db.php" donde introducimos las credenciales de acceso:
+3.Despues de saltar el login el atacante sube un archivo php en la pagina web.
 
 <p align="center">
-<img  alt="drawing" width="650" height="200" src="./images/imagen.png"/>
+<img  alt="drawing" width="550" height="400" src="https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo2/Documentacion/images/addPig1.png" />
 </p>
 
-### CVE Extra N1 - CVE-2023-32784
+4.Luego el atacante tiene que ir updatefolder donde esta su archvio php y lo ejecuta para hacer una Reverse Shell.
 
-En primer lugar descargamos el software vulnerable (cualquier versión de KeePass anterior a la 2.54)
+<p align="center">
+<img  alt="drawing" width="550" height="400" src="https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo2/Documentacion/images/uploadfolder.png" />
+</p>
 
-Una vez hecho esto, configuramos la aplicación con una clave maestra y metemos contenido dentro del gestor de contraseñas.
+5.Nos ponemos con el netcat escuchando en el puerto 4444 para entrar al sistema.
 
+<p align="center">
+<img  alt="drawing" width="550" height="400" src="https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo2/Documentacion/images/www-data.png" />
+</p>
+
+6.Hemos entrado al sistema con el usuario www-data miramos lo que hay con el comando ls , hacemos otro ls para ver lo que hay dentro de la carpeta compartidos por ultimo hacemos un cat para ver lo que hay en datos.txt .
+
+<p align="center">
+<img  alt="drawing" width="550" height="400" src="https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo2/Documentacion/images/way2.png" />
+</p>
+
+7.Vamos a la pagina banco de credenciales.
+
+<p align="center">
+<img  alt="drawing" width="550" height="400" src="https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo2/Documentacion/images/bancoCredencialesPrivado.png" />
+</p>
+
+8.Hacemos un ataque sql injection a la pagina banco de credenciales.
+
+<p align="center">
+<img  alt="drawing" width="550" height="400" src="https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo2/Documentacion/images/loginBancoSQLi.png" />
+</p>
+
+9.Nos saldra los nombres de usuarios con sus contraseñas incriptadas en base64.
+
+<p align="center">
+<img  alt="drawing" width="550" height="400" src="https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo2/Documentacion/images/finalCredentials.png" />
+</p>
+
+10.Vamos a desencriptar las contraseñas encriptadas en base 64.
+
+<p align="center">
+<img  alt="drawing" width="550" height="400" src="https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo2/Documentacion/images/base64Decode.png" />
+</p>
+
+11.Entramos en el usuario Pastorpaco y hacemos ls para ver lo que hay.
+
+<p align="center">
+<img  alt="drawing" width="550" height="400" src="https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo2/Documentacion/images/sshPastorPaco.png" />
+</p>
+
+12.Usamos jhon the ripper para romper la contraseña de credencialesseguras.zip
+
+<p align="center">
+<img  alt="drawing" width="550" height="400" src="https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo2/Documentacion/images/john.png" />
+</p>
+
+13.Cuando rompamos la contraseña abrimos el zip y vemos lo que hay dentro.
+
+<p align="center">
+<img  alt="drawing" width="550" height="400" src="https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo2/Documentacion/images/granjero.txt.png" />
+</p>
+
+14.Nos conectamos al usuario granjero
 ## [Análisis del Contenedor una vez Explotado](#índice)
 
 ### [Herramientas Empleadas](#índice)
