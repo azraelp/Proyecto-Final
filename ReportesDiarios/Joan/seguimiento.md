@@ -76,9 +76,9 @@
 - Creación de un binario para lograr un nuevo movimiento lateral
     - Hemos creado un binario que tendrá SUID y contendrá pistas para poder hacer movimiento lateral
 
-![](/img/2024-03-05_18-54.png)
+![](/ReportesDiarios/Joan/img/2024-03-05_18-54.png)
 
 - Creación de una imagen para poder hacer el movimiento lateral
 -   Dentro de la imagen estará el contenido al que se hace referencia en el archivo mencionado anteriormente
 
-![](/img/bee.jpg)
+![](/ReportesDiarios/Joan/img/bee.jpg)
