@@ -19,6 +19,8 @@ RUN apt update && \
 # Exponer puerto 80 para apache y 22 para SSH
 EXPOSE 80
 EXPOSE 22
+EXPOSE 21
+EXPOSE 20
 
 # Estartear el servicio de apache y SSH
 CMD service ssh start && apache2ctl -D FOREGROUND
