@@ -51,6 +51,10 @@
 ✅ Arreglar la web para que valide la página correctamente <br>
 
 <h1 name="Semana3">Semana 3: Preparación máquina</h1>
-<h2>Lunes 26 de febrero 2024</h2>
+<h2>Lunes 4 de marzo 2024</h2>
 ✅ Organización y distribución de tareas diarias <br>
 ✅ Documentacion en el desarrollo.md <br>
+
+## Martes 5 de marzo 2024
+✅ Organización y distribución de tareas diarias <br>
+✅ Buscar formas para ocultar la llave privada <br>
