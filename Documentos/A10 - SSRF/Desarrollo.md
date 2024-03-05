@@ -2,7 +2,7 @@
 
 <span style="color:black;">1. [ Introducción](#introducción)</span><br>
 <span style="color:black;">2. [ Desarrollo del contenedor](#Desarrollo)</span><br>
-<span style="color:black;">3. [ Configuración de Apache y configuración principal - SSRF](#Apache)</span><br>
+<span style="color:black;">3. [ Desarrollo de Apache y configuraciones SSRF](#Apache)</span><br>
 <span style="color:black;">4. [ Configuración del servidor SSH](#confSSH)</span><br>
 <span style="color:black;">5. [ Desarrollo de las webs](#Desarrollo-webs)</span><br>
 <span style="color:black;">6. [ Problemas encontrados en el desarrollo](#Problemas)</span><br>
@@ -38,7 +38,7 @@ Para poder realizar el escalado de privilegios se le aplicara el permiso SUID qu
 
 
 
-<h1 name="Apache">3. Desarrollo de Apache y configuración principal - SSRF</h1>
+<h1 name="Apache">3. Desarrollo de Apache y configuraciones SSRF</h1>
 
 Configuración del archivo /etc/apache2/apache2.conf
 <br>
