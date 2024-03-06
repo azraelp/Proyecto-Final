@@ -90,4 +90,4 @@
 - He editado el hexadecimal de una imagen, para almacenar ahi unas credenciales.
 
 ![](/ReportesDiarios/Jordi/img/hexeditor.jpg)
-![](/ReportesDiarios/Jordi/img/escalada.gif)
+![](/ReportesDiarios/Jordi/img/movimiento.gif)
