@@ -194,6 +194,9 @@ En la web podemos obserbar una galeria con diferentes personajes, donde el ataca
 
 ![image](https://github.com/Dani-ITB24/Proyecto-Final/assets/157145186/0ce0aa3a-6ba9-45a4-988c-ba699a50ad58)
 
+El atacante intentara acceder con cada uno de los usuario hasta que de con el indicado en este caso elijah, haciendole un hydra al ftp.
+
+![image](https://github.com/Dani-ITB24/Proyecto-Final/assets/157145186/edbee44e-e7c7-4c34-be78-c65ced4b303e)
 
 Este usuario no tiene nada dentro, pero si tiene permisos diferentes como el de subir un fichero.
 
@@ -255,4 +258,12 @@ Una vez extraido el zip, tenemos un archivo txt llamado pwd.txt con muchos nombr
 
 ![image](https://github.com/Dani-ITB24/Proyecto-Final/assets/157145186/2313c247-08eb-4d2b-b04e-e85a793a84ee)
 
-El atacante hara un Hydra
+El atacante hara un Hydra al usuario caroline con la lista de contraseñas extraida del zip.
+
+![image](https://github.com/Dani-ITB24/Proyecto-Final/assets/157145186/f602d607-3988-4dec-aa4d-9c24ae449441)
+
+Al encontrar la contraseña podemos entrar desde ssh con este usuario.
+
+![image](https://github.com/Dani-ITB24/Proyecto-Final/assets/157145186/ad01370f-5a11-4e81-a82e-ccd673c18917)
+
+
