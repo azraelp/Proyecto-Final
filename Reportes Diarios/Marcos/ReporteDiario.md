@@ -101,3 +101,19 @@ Durante el dia de hoy he realizado las siguientes tareas:
 - Desinstalar la versión de OpenSSH 8.1 e intentar instalar OpenSSH 7.2 para que sea vulnerable ante **SSH User Enumeration**
 
 - Resolver problemas al intentar instalar OpenSSH 7.2, sin conseguir instalarlo correctamente debido a un error **error: field 'evp' has incomplete type**
+
+# Reporte Diario 6 de Marzo de 2024
+
+Durante el dia de hoy he realizado las siguientes tareas:
+
+- Realizar cambios en la maquina final sin explotar ya que habian contraseñas sin estar en los diccionarios más comunes, entre otros cambios imprevistos en configuraciones
+
+- Volver a configurar OpenSSH 7.2 junto con la ayuda de Andrades en la maquina final sin explotar
+
+- Realizar la explotación de la maquina final y tomar las pertinentes capturas para preparar el WriteUp
+
+- Subir las maquinas **sin explotar** y **explotada** al DockerHub
+
+- Maquina versión sin explotar: https://hub.docker.com/layers/marcositb/grupo4_insecure_design/versionFinal/images/sha256-3166ec740998943b507de638bf53dadbdb9c379f142385259f8fab3df5306ad9?context=repo
+
+- Maquina versión explotada: https://hub.docker.com/layers/marcositb/grupo4_insecure_design/versionExplotada/images/sha256-857aaa09d326d933e97b54050ccf83764b80551bd54ff28abb718e7997d9c377?context=repo
