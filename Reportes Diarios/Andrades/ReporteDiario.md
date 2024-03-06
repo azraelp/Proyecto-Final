@@ -61,6 +61,7 @@
 - [X] intentado solucionar el error que no deja iniciar el docker porque no tenia está libreria libcrypto.so.1.0.0
 wget http://security.ubuntu.com/ubuntu/pool/main/o/openssl1.0/libssl1.0.0_1.0.2n-1ubuntu5.13_amd64.deb
 apt install ./libssl1.0.0_1.0.2n-1ubuntu5.13_amd64.deb
+Y después comentar la linea include del fichero /etc/ssh/ssh_config
     - [X] Nuevo error que no me deja iniar la maquina 
 - [] intentado buscar uba manera para podes descargar una imagen desde el contenedor a la maquina local
 
