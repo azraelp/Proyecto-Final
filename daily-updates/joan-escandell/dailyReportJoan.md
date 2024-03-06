@@ -57,3 +57,11 @@
 - [x] Tomar capturas y subirlas a GitHub para el Walkthrough.
 - [x] Solucionar problemas con puertos de Docker y la máquina Ubuntu Server
 - [x] Pruebas de "push" para subir Docker Images a GitHub.
+
+# 06/03/2024:
+ 
+- [x] Configurar y probar logs para todos los servicios.
+- [x] Configurar fichero de logs y ruta para Apache2.
+- [x] Configurar fichero de logs y ruta para SSH (de momento no conseguimos configurarlo).
+- [x] Configurar fichero de logs y ruta para MySQL.
+- [x] Prueba y error de todos los sistemas de logs.
