@@ -64,8 +64,16 @@
 
 - Documentacion de todo lo creado y utilizado.
 
-## Martes 045/03/2024
+## Martes 05/03/2024
 
 - Ayer y hoy con fiebre por anginas
 - Intento de resolver problema de cambio de version ssh. Al realizar este cambio el contenedor se apaga y si quiero iniciarlo de nuevo sale esto:
   ![image](https://github.com/Dani-ITB24/Proyecto-Final/assets/157145186/84489cba-d651-4142-b29c-26f8251b8fc5)
+
+## Miercoles 06/03/2024
+
+- Primera maquina lista.
+- He acabado la explicación de parte del ataque a la maquina.
+- Cambio de contraseña en el elijah y del zip que esta dentro de la imagen, ya la contraseña de cada una de ellas estaba en un numero muy elevado(8 millones), y cuando alguien intente hacer un hydra para sacar una de las contraseñas puede pasarse demasiado tiempo.
+- Visualización de logs de la maquina para intentar hacer el analisis forense.
+- Busqueda de herramientas para hacer un analisis forense con imagen docker.
