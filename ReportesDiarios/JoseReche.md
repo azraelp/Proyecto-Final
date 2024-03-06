@@ -52,3 +52,13 @@
 - [X]  Reconstruir el plan de máquinas.
 - [X]  I+D Sobre el nuevo planteamiento.
 - [X]  Pruebas en local.
+
+## Lunes 04/03/2024
+- [ ]  Trabajar sobre la web base una vez esté subido al github.
+
+## Martes 05/03/2024
+- [ ] Trabajar sobre la web base una vez esté subido al github.
+
+## Miércoles 06/03/2024
+- [ ] Trabajar sobre la web base una vez esté subido al github.
+- [X] Coordinar al Azrael para que revise mi trabajo
