@@ -84,10 +84,19 @@
 ![](/ReportesDiarios/Jordi/img/dockerhubcli.png)
 ![](/ReportesDiarios/Jordi/img/dockerhubweb.png)
 
+
 # Reporte 05 de marzo de 2024
 
 - He complicado un poco la maquina, cifrando las credenciales que hay en el servidor ftp.
 - He editado el hexadecimal de una imagen, para almacenar ahi unas credenciales.
 
 ![](/ReportesDiarios/Jordi/img/hexeditor.jpg)
+
+# Reporte 05 de marzo de 2024
+
+He crado una imagen para tener mas claro el movimiento dentro de la maquina.
+
 ![](/ReportesDiarios/Jordi/img/movimiento.gif)
+
+- He avanzado muvho en el docker, completando el movimiento lateral
+- Hemos tenido un problema y es que no podiamos hacer la revrse shell via command inyection y lo que hemos hecho es buscar una alternativa, y lo que hacemos es subir una revrse shell en php.
