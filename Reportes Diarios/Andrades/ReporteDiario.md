@@ -58,12 +58,12 @@
 ![alt text](image.png)
 
 ## 5/03/24 Reporte Diario
-- [X] intentado solucionar el error que no deja iniciar el docker porque no tenia está libreria libcrypto.so.1.0.0
+- [X] intentado solucionar el error que no deja iniciar el docker porque no tenia está libreria **libcrypto.so.1.0.0**
 wget http://security.ubuntu.com/ubuntu/pool/main/o/openssl1.0/libssl1.0.0_1.0.2n-1ubuntu5.13_amd64.deb
 apt install ./libssl1.0.0_1.0.2n-1ubuntu5.13_amd64.deb
 Y después comentar la linea include del fichero /etc/ssh/ssh_config
     - [X] Nuevo error que no me deja iniar la maquina 
-- [] intentado buscar uba manera para podes descargar una imagen desde el contenedor a la maquina local
+- [] intentado buscar una manera para podes descargar una imagen desde el contenedor a la maquina local
 
 ## 5/03/24 Reporte Diario
 - [] Problemas con el servicio rsyslog, una vez que lo descarga y intenta iniciar el servico no lo encuentra.
