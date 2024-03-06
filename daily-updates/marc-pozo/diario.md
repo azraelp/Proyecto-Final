@@ -77,3 +77,9 @@
 - [x] Redacción del walkthrough
 - [x] Revisión de funcionamiento del CTF
 - [x] Intento fallido de recreación de un CVE
+
+# Martes 5 de marzo 2024:
+
+- [x] Redacción del walkthrough
+- [x] Intento de fallido de adición de logs SSH
+
