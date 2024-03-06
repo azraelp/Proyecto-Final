@@ -287,10 +287,10 @@ Lo desencodeamos:
 Y obtenemos una posible contraseña. A continuación nos conectamos vía SSH para probar si funciona:
 
 <p align="center">
-<img  alt="drawing" width="450" height="400" src="./images/sshPastorPaco.png" />
+<img  alt="drawing" width="450" height="400" src="./images/flagUser.png" />
 </p>
 
-Accedemos correctamente, y lo primero que encontramos es un archivo .zip protegido con contraseña, así que nos los llevamos a la máquina atacante mediante SCP y probamos a hacer fuerza bruta por si la contraseña fuese débil. Obtenemos el hash del zip e iniciamos el ataque:
+Accedemos correctamente, y lo primero que encontramos es un archivo .zip protegido con contraseña y la flag "user.txt", así que nos los llevamos a la máquina atacante mediante SCP y probamos a hacer fuerza bruta por si la contraseña fuese débil. Obtenemos el hash del zip e iniciamos el ataque:
 
 <p align="center">
 <img  alt="drawing" width="850" height="200" src="./images/scp.png" />
@@ -315,7 +315,7 @@ Al listar el contenido vemos las credenciales de un usuario nuevo, cuya contrase
 La desencodeamos:
 
 <p align="center">
-<img  alt="drawing" width="450" height="400" src="./images/XXXXX.png" />
+<img  alt="drawing" width="450" height="400" src="./images/granjeroDecode.png" />
 </p>
 
 Accedemos mediante SSH para comprobar si funcionan, y sí lo hacen:
@@ -337,5 +337,5 @@ Lo primero que hacemos es listar los grupos y por suerte este usuario está en e
 Y finalmente encontramos la flag root.txt en el directorio  /root:
 
 <p align="center">
-<img  alt="drawing" width="450" height="150" src="./images/XXXXXXXXXXX.png" />
+<img  alt="drawing" width="450" height="150" src="./images/flagRoot.png" />
 </p>
