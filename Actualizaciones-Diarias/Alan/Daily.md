@@ -86,7 +86,7 @@
 
 ## Miércoles 6 de Marzo 2024:
 
-- [ ] Acabar de poner capturas y completar la documentación 
+- [ ] Acabar de poner capturas y completar la documentación.
 - [ ] 
 
 ## Jueves 7 de Marzo 2024:
