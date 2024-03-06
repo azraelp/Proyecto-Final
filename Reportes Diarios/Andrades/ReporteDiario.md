@@ -53,6 +53,7 @@
     - El errores es que no en los repositorios estandar no se encuentra dicha version porque es muy antigua y no cumple ya con los estandar de seguridad del sistema
        wget https://mirrors.wikimedia.org/ubuntu/ubuntu/pool/main/o/openssh/openssh-server_7.2p2-4_amd64.deb
        sudo dpkg -i --force-all openssh-server_7.2p2-4_amd64.deb
+       //
        apt --fix-broken install
        apt-cache policy openssh-server
 ![alt text](image.png)
@@ -64,6 +65,6 @@ apt install ./libssl1.0.0_1.0.2n-1ubuntu5.13_amd64.deb
 Y después comentar la linea include del fichero /etc/ssh/ssh_config
     - [X] Nuevo error que no me deja iniar la maquina 
 
-## 5/03/24 Reporte Diario
+## 6/03/24 Reporte Diario
 - [] Problemas con el servicio rsyslog, una vez que lo descarga y intenta iniciar el servico no lo encuentra.
 ![alt text](image-1.png)
