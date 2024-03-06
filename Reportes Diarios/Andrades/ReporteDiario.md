@@ -63,18 +63,7 @@ wget http://security.ubuntu.com/ubuntu/pool/main/o/openssl1.0/libssl1.0.0_1.0.2n
 apt install ./libssl1.0.0_1.0.2n-1ubuntu5.13_amd64.deb
 Y después comentar la linea include del fichero /etc/ssh/ssh_config
     - [X] Nuevo error que no me deja iniar la maquina 
-- [] intentado buscar una manera para podes descargar una imagen desde el contenedor a la maquina local
 
 ## 5/03/24 Reporte Diario
 - [] Problemas con el servicio rsyslog, una vez que lo descarga y intenta iniciar el servico no lo encuentra.
 ![alt text](image-1.png)
-
->apt-get install libssl-dev
->wget https://www.openwall.com/john/k/john-1.9.0-jumbo-1.tar.gz
->cd john-1.9.0-jumbo-1/src
->./configure && make
-
->mkdir /usr/share/wordlists/
->cd /usr/share/wordlists/
->wget https://github.com/brannondorsey/naive-hashcat/releases/download/data/rockyou.txt
-
