@@ -158,6 +158,3 @@ Pero como vemos en el Burpsuite no detecta la API <br>
 
 Tras varios intentos sin éxito, decidimos enfocarlo de otra manera. Y hacer una página parecida a "VirusTotal". En esta página habrá un campo que es donde se insertara en la dirección de una web. 
 
-
-Esta página contará con un script que validara que se haya insertado una dirección válida. En el caso de que intenten acceder a la información de nuestro servidor mediante las direcciones localhost y 127.0.0.1, saltara una alerta diciendo que no son válidas esas direcciones y no te dejara acceder.
-
