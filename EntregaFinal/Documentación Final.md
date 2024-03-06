@@ -255,4 +255,12 @@ Una vez extraido el zip, tenemos un archivo txt llamado pwd.txt con muchos nombr
 
 ![image](https://github.com/Dani-ITB24/Proyecto-Final/assets/157145186/2313c247-08eb-4d2b-b04e-e85a793a84ee)
 
-El atacante hara un Hydra
+El atacante hara un Hydra al usuario caroline con la lista de contraseñas extraida del zip.
+
+![image](https://github.com/Dani-ITB24/Proyecto-Final/assets/157145186/f602d607-3988-4dec-aa4d-9c24ae449441)
+
+Al encontrar la contraseña podemos entrar desde ssh con este usuario.
+
+![image](https://github.com/Dani-ITB24/Proyecto-Final/assets/157145186/ad01370f-5a11-4e81-a82e-ccd673c18917)
+
+
