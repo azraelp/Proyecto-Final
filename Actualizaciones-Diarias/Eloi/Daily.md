@@ -59,3 +59,7 @@
 - [X] Conseguida conexion por SSH via clave privada
 - [ ] Realizar pentest del docker y documentar los pasos
 
+- [X] Agregar capturaas restantes y actualizar documentación
+- [X] Realizar pentest local y documentarlo.
+ 
+
