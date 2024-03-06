@@ -87,7 +87,9 @@
 ## Miércoles 6 de Marzo 2024:
 
 - [ ] Acabar de poner capturas y completar la documentación.
+- [ ] Hacer el pentest y documentarlo.
 - [ ] 
+
 
 ## Jueves 7 de Marzo 2024:
 
