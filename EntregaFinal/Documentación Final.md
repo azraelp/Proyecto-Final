@@ -224,6 +224,13 @@ Y en el terminal atacante podemos observar que nos hemos registrado como www-dat
 Dentro de este usuario encontramos que no podemos acceder a ningun archivo con privilegios, pero obserbamos que hay un usuario llamado Caroline.
 Y en el directorio /etc encontramos una imaghen de carolina la cual si la descargamos a la maquina local y le hacemos un binwalk vemos que tiene un zip dentro.
 
+Para descargar la imagen a la maquina local ponemos como ww-data abrir un servidor web en el puerto 8080
+
+![image](https://github.com/Dani-ITB24/Proyecto-Final/assets/157145186/ce5514a1-0d3d-46bf-829e-44f6d5f097b2)
+
+En la maquina atacante hacemos un wget http://IP:puerto/caroline.jpg
+
+
 ![image](https://github.com/Dani-ITB24/Proyecto-Final/assets/157145186/f7c96f07-1548-4f95-a17f-7c4541b04aed)
 
 Para extraer este zip ponemos binwalk -e carolina.jpg, y nos crea una carpeta con el zip.
@@ -241,3 +248,11 @@ Por eso el atacante tendra que usar zip2jhon para sacar el hash de este zip.
 ![image](https://github.com/Dani-ITB24/Proyecto-Final/assets/157145186/4bc0cfa5-8cd2-4729-9c48-a7c9f34f3b82)
 
 Y con el hash 
+
+
+
+Una vez extraido el zip, tenemos un archivo txt llamado pwd.txt con muchos nombre, que podrian ser contraseñas.
+
+![image](https://github.com/Dani-ITB24/Proyecto-Final/assets/157145186/2313c247-08eb-4d2b-b04e-e85a793a84ee)
+
+El atacante hara un Hydra
