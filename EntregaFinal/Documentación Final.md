@@ -194,6 +194,9 @@ En la web podemos obserbar una galeria con diferentes personajes, donde el ataca
 
 ![image](https://github.com/Dani-ITB24/Proyecto-Final/assets/157145186/0ce0aa3a-6ba9-45a4-988c-ba699a50ad58)
 
+El atacante intentara acceder con cada uno de los usuario hasta que de con el indicado en este caso elijah, haciendole un hydra al ftp.
+
+![image](https://github.com/Dani-ITB24/Proyecto-Final/assets/157145186/edbee44e-e7c7-4c34-be78-c65ced4b303e)
 
 Este usuario no tiene nada dentro, pero si tiene permisos diferentes como el de subir un fichero.
 
