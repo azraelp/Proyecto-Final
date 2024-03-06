@@ -32,3 +32,13 @@
 
 - Preparación de la maquina: Usuario de sftp enjaulado, Reverse shell. Miro varios tutoriales y paginas,( https://www.youtube.com/watch?v=sXnKAEk8DdI,https://www.techrepublic.com/article/how-to-use-sftp-with-a-chroot-jail/)
 Sigo investigando mañana.
+
+## Martes 05/03/2024
+- Pruebas de usuario enjaulado en maquina virtual
+Consigo usuario enjaulado 
+Creo archivo reverse shell para el usuario enjaulado (https://github.com/pentestmonkey/php-reverse-shell/blob/master/php-reverse-shell.php#L16)
+
+## Miércoles 06/03/2024
+Crontab, usuario tiene que añadir comando para reverseshell usuario root
+
+
