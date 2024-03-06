@@ -82,3 +82,8 @@
     - Dentro de la imagen estará el contenido al que se hace referencia en el archivo mencionado anteriormente
 
 ![](/ReportesDiarios/Joan/img/bee.jpg)
+
+## Miercoles 06/03/2024
+
+- Creación de la primera máquina.
+    - He estado ayudando a crear la primera máquina. Hemos juntando todas las partes que hemos estado configurando y creando hasta la fecha, verificando que todo funcione correctamente.
