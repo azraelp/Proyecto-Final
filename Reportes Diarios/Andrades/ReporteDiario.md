@@ -70,4 +70,6 @@ Y después comentar la linea include del fichero /etc/ssh/sshd_config
 ![alt text](image-1.png)
 ![alt text](image-2.png)
 
+No se a podido solucionar los errores del rsyslog y no se a podido implementar el archivo **auth.log**.
+
 dpkg -l | grep -i libssl1.0
