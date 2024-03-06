@@ -68,6 +68,6 @@ Y después comentar la linea include del fichero /etc/ssh/sshd_config
 ## 6/03/24 Reporte Diario
 - [] Problemas con el servicio rsyslog, una vez que lo descarga y intenta iniciar el servico no lo encuentra.
 ![alt text](image-1.png)
-
+![alt text](image-2.png)
 
 dpkg -l | grep -i libssl1.0
