@@ -58,3 +58,8 @@
 ## Martes 5 de marzo 2024
 ✅ Organización y distribución de tareas diarias <br>
 ✅ Buscar formas para ocultar la llave privada <br>
+
+## Miércoles 6 de marzo 2024
+✅ Organización y distribución de tareas diarias <br>
+✅ Montar Docker con contenedor para sacar capturas para la documentación
+✅ Capturas para la documentación
