@@ -62,9 +62,12 @@
 - [X] intentado solucionar el error que no deja iniciar el docker porque no tenia está libreria **libcrypto.so.1.0.0**
 wget http://security.ubuntu.com/ubuntu/pool/main/o/openssl1.0/libssl1.0.0_1.0.2n-1ubuntu5.13_amd64.deb
 apt install ./libssl1.0.0_1.0.2n-1ubuntu5.13_amd64.deb
-Y después comentar la linea include del fichero /etc/ssh/ssh_config
+Y después comentar la linea include del fichero /etc/ssh/sshd_config
     - [X] Nuevo error que no me deja iniar la maquina 
 
 ## 6/03/24 Reporte Diario
 - [] Problemas con el servicio rsyslog, una vez que lo descarga y intenta iniciar el servico no lo encuentra.
 ![alt text](image-1.png)
+
+
+dpkg -l | grep -i libssl1.0
