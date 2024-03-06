@@ -39,3 +39,8 @@
 
 ## Dimarts 05-03-24-
 - Ajuda i soport a les tasques de els altres membres de l'equip
+
+## Dimecres 05-03-24-
+- Ajuda i soport a les tasques de els altres membres de l'equip
+- Probes 
+
