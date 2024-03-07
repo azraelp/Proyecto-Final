@@ -87,6 +87,7 @@ Utilizamos **WFUZZ** para escanear la pagina web e identificar rutas escondidas,
 ![](Imagenes/5_diseñoInseguro.png)
 
 Como a través de la web no visualizamos nada más, ni ningun vector de ataque, nos conectamos al **ftp** con el usuario **anonymous** ya que este esta habilitado.
+
 Intentamos realizar varias acciones con **anonymous** pero verificamos que este no tiene permisos para realizar ninguna acción.
 
 ![](Imagenes/6_diseñoInseguro.png)
@@ -103,19 +104,76 @@ Al volver a revisar las versiones de los servicios, nos damos cuenta que la vers
 
 ![](Imagenes/9_diseñoInseguro.png)
 
-Mediante **wget** nos descargamos el CVE-2018-15473![https://github.com/epi052/cve-2018-15473/tree/master] y le damos permisos de ejecución.
-Despues utilizamos el fichero con los usuarios escogidos de la web y verificamos que el usuario **elijah** existe en el sistema.
+Mediante **wget** nos descargamos el [CVE-2018-15473](https://github.com/epi052/cve-2018-15473/tree/master) y le damos permisos de ejecución.
+
+Despues ejecutamos el script de **enumeración de usuarios** junto con el fichero de nombres de usuarios creado a través de los personajes de la web, de esta forma verificamos que el usuario **elijah** existe en el sistema.
 
 ![](Imagenes/10_diseñoInseguro.png)
 
-Realizamos un escaneo de los puertos de la maquina.
+Con la herramienta de **Hydra** hacemos fuerza bruta al servicio de **FTP** con el diccionario de contraseñas de **rockyou.txt** y el usuario **elijah**, de esta forma obtenemos la contraseña de **elijah** que nos permitirá acceder al **FTP**.
 
 ![](Imagenes/11_diseñoInseguro.png)
-
-Realizamos un escaneo de los puertos de la maquina.
-
 ![](Imagenes/12_diseñoInseguro.png)
 
+En **FTP** nos autenticamos como **elijah** y conseguimos acceso, al acceder vemos que **elijah** puede visualizar y acceder a la carpeta **documents**, además dentro de **documents** visualiza y puede acceder dentro del directorio **elijah**. Dentro del directorio **elijah** verificamos que podemos subir ficheros, por lo cual creamos un fichero en **PHP** que nos permita ejecutar comandos via web.
+
+Este fichero lo llamamos **cmd.php** y lo subimos dentro del directorio **elijah**, además le damos permisos de ejecución.
+
+![](Imagenes/14_diseñoInseguro.png)
+![](Imagenes/13_diseñoInseguro.png)
+
+En la web accedemos a
+
+![](Imagenes/15_diseñoInseguro.png)
+
 Realizamos un escaneo de los puertos de la maquina.
 
-![](Imagenes/13_diseñoInseguro.png)
+![](Imagenes/16_diseñoInseguro.png)
+
+Realizamos un escaneo de los puertos de la maquina.
+
+![](Imagenes/17_diseñoInseguro.png)
+
+Realizamos un escaneo de los puertos de la maquina.
+
+![](Imagenes/18_diseñoInseguro.png)
+
+Realizamos un escaneo de los puertos de la maquina.
+
+![](Imagenes/19_diseñoInseguro.png)
+
+Realizamos un escaneo de los puertos de la maquina.
+
+![](Imagenes/20_diseñoInseguro.png)
+
+Realizamos un escaneo de los puertos de la maquina.
+
+![](Imagenes/21_diseñoInseguro.png)
+
+Realizamos un escaneo de los puertos de la maquina.
+
+![](Imagenes/22_diseñoInseguro.png)
+
+Realizamos un escaneo de los puertos de la maquina.
+
+![](Imagenes/23_diseñoInseguro.png)
+
+Realizamos un escaneo de los puertos de la maquina.
+
+![](Imagenes/24_diseñoInseguro.png)
+
+Realizamos un escaneo de los puertos de la maquina.
+
+![](Imagenes/25_diseñoInseguro.png)
+
+Realizamos un escaneo de los puertos de la maquina.
+
+![](Imagenes/26_diseñoInseguro.png)
+
+Realizamos un escaneo de los puertos de la maquina.
+
+![](Imagenes/27_diseñoInseguro.png)
+
+Realizamos un escaneo de los puertos de la maquina.
+
+![](Imagenes/28_diseñoInseguro.png)
