@@ -117,3 +117,13 @@ Durante el dia de hoy he realizado las siguientes tareas:
 - Maquina versión sin explotar: https://hub.docker.com/layers/marcositb/grupo4_insecure_design/versionFinal/images/sha256-3166ec740998943b507de638bf53dadbdb9c379f142385259f8fab3df5306ad9?context=repo
 
 - Maquina versión explotada: https://hub.docker.com/layers/marcositb/grupo4_insecure_design/versionExplotada/images/sha256-857aaa09d326d933e97b54050ccf83764b80551bd54ff28abb718e7997d9c377?context=repo
+
+# Reporte Diario 7 de Marzo de 2024
+
+Durante el dia de hoy he realizado las siguientes tareas:
+
+- Mejorar la explicación del diseño inseguro y detallar al maximo posible
+
+- Subir imagenes de la explotación de la maquina al GitHub
+
+- Empezar con el WriteUp de la maquina de diseño inseguro
