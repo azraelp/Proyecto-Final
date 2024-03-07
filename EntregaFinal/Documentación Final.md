@@ -282,19 +282,32 @@ Empresa cliente: The Originals
 Fecha de inicio: 07/03/24, 15:50  
 Fecha de finalización 07/03/24, xx:xx  
 ## Forense
-1. INTRODUCCION  
-1.1 Informacion recibida
+1. **INTRODUCCION**  
+1.1 **Informacion recibida**  
 La empresa The Originals solicita analizar un equipo que ha sido atacado. Se solicita al analista en cuestión determinar si ha sido comprometido. La empresa sospecha que el atacante pudo haber escalado permisos debido a una mala administración de los servicios y configuración del equipo.  
-1.2 Conceptos y terminología
+<br>**1.2 Conceptos y terminología**  
+Contamos con un equipo de respuesta a incidentes que nos permite identificar, recuperar, reconstruir y analizar evidencias de lo ocurrido. Este equipo forense nos ayuda a llevar a cabo investigaciones, ya sean de naturaleza criminal o no.  
+<br>En la actualidad, un incidente de seguridad informática puede considerarse como una violación o intento de violación de la política de seguridad.  
+<br>Existen diferentes tipos de incidentes. En este caso, nos enfrentamos a un Ataque de Escalada de Privilegios Externa, lo que indica que el objetivo del atacante es obtener un nivel más alto de acceso del que originalmente poseía, con el fin de controlar, manipular o comprometer el sistema.  
+<br>1.3 **Prevención de ataques a sistemas**  
+Para la prevención de ataque tenemos que tener en cuenta:  
+    - Tener una correcta gestión de actualizaciones de hardware y software, ya que muchos de los ataques influyen en estas vulnerabilidades.  
+    - Hacer una buena gestión de configuración tanto como hardware y software, ya que también muchos ataques influyen que está mal configurado un servicio.  
+    - Revisar que los servidores tengan un tipo de privilegio mínimo, esto es para que tengan un nivel de registros mínimos y tener más controlado el tráfico de personas que pasan por el servidor.  
 
-Contamos con un equipo de respuesta a incidentes que nos permite identificar, recuperar, reconstruir y analizar evidencias de lo ocurrido. Este equipo forense nos ayuda a llevar a cabo investigaciones, ya sean de naturaleza criminal o no.
+    En este caso se tendría que haber tenido en cuenta la posible incidencia de que una persona interna a la empresa intente acceder a datos privados o intentar atacar a la empresa con el propósito de acabar con ella o para ganar algo, en casi todos los casos dinero. Se tendría que haber prohibido ciertas conexiones entre trabajadores para que a esta persona le sea mucho más difícil poder acceder o atacar a otras personas de la empresa, porque si es el caso de que puede , esta puede ir atacando a personas con más privilegios que ella y acabado en el ordenador principal para tener acceso a toda la empresa.
 
-En la actualidad, un incidente de seguridad informática puede considerarse como una violación o intento de violación de la política de seguridad.
 
-Existen diferentes tipos de incidentes. En este caso, nos enfrentamos a un Ataque de Escalada de Privilegios Externa, lo que indica que el objetivo del atacante es obtener un nivel más alto de acceso del que originalmente poseía, con el fin de controlar, manipular o comprometer el sistema.
+En este caso tendría que a ver configurado bien los servicios, solo dando los permisos necesarios. Mientras que los usuarios no tener permisos de más para que no puedan escalar privilegios.
 
-1.3  Prevención de ataques a sistemas 
+
+
 1.4 Aspectos legales
+
+Si con el primer análisis se sospecha de que el incidente ha sido desde el exterior de la propia red de la empresa. Se tendrá que utilizar tiempo para investigar bien por donde y que se ha utilizado para provocar este incidente, hasta llegar al causante de esto, asegurándose antes de que esta persona es la culpable.
+
+En este caso se ha realizado un sabotaje informático, un delito de alteración de datos, programas o documentos en redes o sistemas informáticos.
+
 2. Fases de Análisis Digital
 
 2.1 Identificación del incidente: búsqueda y recopilación de evidencias 
@@ -303,5 +316,8 @@ La resolución de un posible equipo de uso ilegítimo por parte de un atacante, 
 2.1.2 Análisis de la evidencia(capturas con explicación)
 2.2 Metodología 
 3. Herramientas para Análisis Forense Digital
+/var/log/apache2/access.log
+/var/log/apache2/error.log 
+/var/log/vsftpd.log
 4. Conclusión
 5. Biografía y URL

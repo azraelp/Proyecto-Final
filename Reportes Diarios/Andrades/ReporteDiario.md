@@ -72,4 +72,6 @@ Y después comentar la linea include del fichero /etc/ssh/sshd_config
 
 No se a podido solucionar los errores del rsyslog y no se a podido implementar el archivo **auth.log**.
 
-dpkg -l | grep -i libssl1.0
+## 7/03/24 Reporte Diario
+
+- [] Documentación del analisis forense en la documentación final
