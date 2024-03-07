@@ -75,5 +75,11 @@
 - Primera maquina lista.
 - He acabado la explicación de parte del ataque a la maquina.
 - Cambio de contraseña en el elijah y del zip que esta dentro de la imagen, ya la contraseña de cada una de ellas estaba en un numero muy elevado(8 millones), y cuando alguien intente hacer un hydra para sacar una de las contraseñas puede pasarse demasiado tiempo.
-- Visualización de logs de la maquina para intentar hacer el analisis forense.
-- Busqueda de herramientas para hacer un analisis forense con imagen docker.
+- Visualización de logs de la maquina para intentar hacer el análisis forense.
+- Busqueda de herramientas para hacer un análisis forense con imagen docker.
+
+## Jueves 07/03/2024
+
+- Epiece del análisis forense.
+- Utilización de guia para el análisis anteriormente utilizada para otros análisis forense.
+- Modificaciones de la documentación final.
