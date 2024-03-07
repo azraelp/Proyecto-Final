@@ -59,7 +59,11 @@
 - [X] Conseguida conexion por SSH via clave privada
 - [ ] Realizar pentest del docker y documentar los pasos
 
-- [X] Agregar capturaas restantes y actualizar documentación
+# Miercoles 6 de marzo 2024
+- [X] Agregar capturas restantes y actualizar documentación
 - [X] Realizar pentest local y documentarlo.
- 
 
+# Jueves 7 de marzo 2024
+- [X] Terminar documentacion pentest y desarrollo
+- [X] Actualizacion dockerfile y configuraciones para la primera snapshot
+- [X] Reparticion de tareas
