@@ -66,7 +66,56 @@ Para configurar el entorno utilizaremos un contenedor Docker con el sistema oper
 
 ## WriteUp (vista atacante)
 
-Realizamos un escaneo de los puertos de la maquina.
+Realizamos un escaneo de los puertos de la maquina y lo exportamos a un fichero
 
 ![](Imagenes/1_diseñoInseguro.png)
 
+Con un script en python extraemos los puertos del fichero e identificamos que son los puertos **21, 22 y 80**.
+
+![](Imagenes/2_diseñoInseguro.png)
+
+Sabiendo los puertos realizamos un escaneo de los puertos para saber sus versiones y ejecutar unos scripts basicos para identificar alguna vulnerabilidad mediante **nmap**
+
+![](Imagenes/3_diseñoInseguro.png)
+
+Accedemos a la web y mediante Wappalyzer visualizamos información acerca de la pagina web, por ejemplo, visualizamos que interpreta php.
+
+![](Imagenes/4_diseñoInseguro.png)
+
+Utilizamos **WFUZZ** para escanear la pagina web e identificar rutas escondidas, de esta forma encontramos las rutas **ftp** y **documents**
+
+![](Imagenes/5_diseñoInseguro.png)
+
+Como a través de la web no visualizamos nada más, ni ningun vector de ataque, nos conectamos al **ftp** con el usuario **anonymous** ya que este esta habilitado.
+Intentamos realizar varias acciones con **anonymous** pero verificamos que este no tiene permisos para realizar ninguna acción.
+
+![](Imagenes/6_diseñoInseguro.png)
+
+Si investigamos mejor la web, vemos que se mencionan personajes de la serie **The Originals**, por lo cual crearemos un fichero con estos nombres.
+
+![](Imagenes/7_diseñoInseguro.png)
+
+El fichero con los nombres se verá de la siguiente forma.
+
+![](Imagenes/8_diseñoInseguro.png)
+
+Al volver a revisar las versiones de los servicios, nos damos cuenta que la versión 7.2 de SSH es vulnerable a enumeración de usuarios del sistema.
+
+![](Imagenes/9_diseñoInseguro.png)
+
+Mediante **wget** nos descargamos el CVE-2018-15473![https://github.com/epi052/cve-2018-15473/tree/master] y le damos permisos de ejecución.
+Despues utilizamos el fichero con los usuarios escogidos de la web y verificamos que el usuario **elijah** existe en el sistema.
+
+![](Imagenes/10_diseñoInseguro.png)
+
+Realizamos un escaneo de los puertos de la maquina.
+
+![](Imagenes/11_diseñoInseguro.png)
+
+Realizamos un escaneo de los puertos de la maquina.
+
+![](Imagenes/12_diseñoInseguro.png)
+
+Realizamos un escaneo de los puertos de la maquina.
+
+![](Imagenes/13_diseñoInseguro.png)
