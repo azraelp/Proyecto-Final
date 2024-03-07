@@ -81,9 +81,9 @@ Y a partir de ahora, siempre que hagamos un cambio en este archivo tendríamos q
 <h1 name="confSSH">4. Configuración del servidor SSH</h1>
 
 **Preparacion de usuarios** <br>
-Se ha creado un directorio con el nombre de sshkeys_user con una configuración específica. El directorio tendrá los permisos de leer y escribir para el usuario root, mientras que el grupo dbAdmin solo tendrá permisos de lectura. Además dentro de este grupo estará guardado el usuario Francisca.
+Se ha creado un directorio con el nombre de sshkeys_user con una configuración específica. El directorio tendrá los permisos de leer y escribir para el usuario root, mientras que el grupo dbAdmin solo tendrá permisos de lectura. Además dentro de este grupo estará guardado el usuario Francisca. 
 
-Se han generado las claves ssh para el usuario Francisca, también se han generado las claves pública (id_rsa.pub) y privada (id_rsa).
+Se han generado las claves ssh para el usuario Francisca, también se han generado la clave pública (id_rsa.pub) y la clave privada (id_rsa). Estas claves estarán guardadas dentro de la carpeta ssh (/home/ssh/).
 
 
 
