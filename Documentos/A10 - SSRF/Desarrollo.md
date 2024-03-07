@@ -38,7 +38,13 @@ Para poder realizar el escalado de privilegios se le aplicara el permiso SUID qu
 <br>
 
 <h1 name="Apache">3. Configuración de usuarios</h1>
+En la maquina encontraremos dos usuarios Paco y Francisca. Paco tiene una contraseña debil para poder realizar la conexion ssh descubriendo su contraseña con fuerza bruta y Francisca pertenece al grupo dbadmin para que pueda ejecutar el programa backupdb el cual contiene el bit SUID.
 
+![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/useraddpaco.png)
+
+![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/useraddfrancisca.png)
+
+![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/usermod-dbadmin-francisca.png)
 <h1 name="Apache">4. Desarrollo de Apache y configuraciones SSRF</h1>
 
 Configuración del archivo /etc/apache2/apache2.conf
