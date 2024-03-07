@@ -92,7 +92,9 @@
 ## Jueves 7 de Marzo 2024:
 
 - [X] Reunión inicial de seguimiento y planificación de final de etapa (máquina 1). 
-- [ ] Documentación sobre pentest.
+- [X] Documentación sobre pentest.
+- [X] Fusionar los 2 dockerfile (Wireshark y apache) en un dockerfile definitivo.
+- [X] Pruebas de docker push a Docker Hub (todo ok).
 - [ ] Fusionar los 2 contenedores de desarrollo/prueba que teníamos hasta el momento en 1 solo contenedor definitivo.
 - [ ] Hacer el push de la snapshot del contenedor Docker (sin atacar).
 - [ ] Hacer el pentest.
