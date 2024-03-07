@@ -22,7 +22,7 @@ RUN apt-get update && \
 RUN mkdir /var/run/sshd
 
 # Descarga rockyou.txt
-RUN wget https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiwuOj4t-KEAxXlTaQEHc9zAaEQFnoECAYQAQ&url=https%3A%2F%2Fgithub.com%2Fbrannondorsey%2Fnaive-hashcat%2Freleases%2Fdownload%2Fdata%2Frockyou.txt&usg=AOvVaw3snAERl1mU6Ccr4WFEazBd&cshid=1709824335737456&opi=89978449
+RUN wget https://github.com/brannondorsey/naive-hashcat/releases/download/data/rockyou.txt
 
 # Establece la variable de entorno DISPLAY para que apunte al servidor X del sistema anfitrión
 ENV DISPLAY=:0.0
