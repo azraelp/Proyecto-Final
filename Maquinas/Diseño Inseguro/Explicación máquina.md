@@ -63,3 +63,8 @@ Para configurar el entorno utilizaremos un contenedor Docker con el sistema oper
 7. **Aplicar mejoras y corregir errores/problemas**
 8. **Volver a testear las vulnerabilidades**
 9. **Redactar el reporte y documentación final**
+
+## WriteUp (vista atacante)
+
+
+
