@@ -1,38 +1,35 @@
 # índice
 
 1. [Introducción](#introducción)
-2. [Inyección](#inyección)
-    - [Descripción de diferentes tipos de ataques de inyección](#descripción-de-diferentes-tipos-de-ataques-de-inyección)
-    - [Medidas para prevenir ataques de inyección](#medidas-para-prevenir-ataques-de-inyección)
-3. [Fallas de Identificación y Autenticación](#fallas-de-identificación-y-autenticación)
-    - [Causas comunes de fallas de identificación y autenticación](#causas-comunes-de-fallas-de-identificación-y-autenticación)
-    - [Medidas para mitigar fallas de identificación y autenticación](#medidas-para-mitigar-fallas-de-identificación-y-autenticación)
-4. [Mariadb](#mariadb)
-    - [Ventajas y desventajas de usar Mariadb](#ventajas-y-desventajas-de-usar-mariadb)
-    - [Instalacion y configuracion Mariadb](#instalacion-y-configuracion-mariadb)
-5. [Docker](#docker)
-    - [Características de Docker](#características-de-docker)
-    - [Ventajas y desventajas de usar Docker](#ventajas-y-desventajas-de-usar-docker)
-    - [Instalacion de Docker](#instalacion-de-docker)
-
-6. [Contenedor Numero 1 Inyección](#contenedor-numero-1-inyección)
+2. [Información Sobre los Riesgos Obtenidos]
+    - [Inyección](#inyeccion)
+    - [Fallas de Identificación y Autenticación](#fallas-de-identificación-y-autenticación)
+3. [Información Sobre los Componentes Fundamentales](#información-sobre-los-componentes-fundamentales)
+    - [MariaDB](#mariadb)
+    - [Docker](#docker)
+    - [Apache](#apache)
+    - [PHP](#php)
+8. [Desarrollo Contenedor Numero 1 - Inyección](#contenedor-numero-1-inyección)
     - [Vulnerabilidades CVE Extra](#vulnerabilidades-cve-extra)
-    - [Desarrollo de la Vulnerabilidad](#desarrollo-de-la-vulnerabilidad)
+    - [Desarrollo de las Vulnerabilidades](#desarrollo-de-la-vulnerabilidad)
+    - [_Walkthrough_ Explotación del Contenedor] (#desarrollo-de-la-vulnerabilidad)
     - [Análisis del Contenedor una vez Explotado](#análisis-del-contenedor-una-vez-explotado)
-    - [Herramientas Empleadas](#herramientas-empleadas)
-7. [Contenedor Numero 2 Fallas de Identificación y Autenticación](#contenedor-numero-2-fallas-de-identificación-y-autenticación)
-    
+9. [Desarrollo Contenedor Numero 2 Fallas de Identificación y Autenticación](#contenedor-numero-2-fallas-de-identificación-y-autenticación)
+    - [Vulnerabilidades CVE Extra](#vulnerabilidades-cve-extra)
+    - [Desarrollo de las Vulnerabilidades](#desarrollo-de-la-vulnerabilidad)
+    - [_Walkthrough_ Explotación del Contenedor] (#desarrollo-de-la-vulnerabilidad)
+    - [Análisis del Contenedor una vez Explotado](#análisis-del-contenedor-una-vez-explotado)    
 
 # [Introducción](#índice)
 
-
-En el siguiente documento se explicará la creación de un contenedor en Docker con los siguientes riesgos del OWASP TOP 10:
+El propósito principal de este documento es mostrar la creación de dos contenedor en Docker con los siguientes riesgos del OWASP TOP 10:
 
 - **A03:2021 - Inyección**
 - **A07:2021 - Fallas de Identificación y Autenticación**
 
-A continuación se explicarán en profundidad los riesgos mencionados, cómo explotarla y cómo mitigarla.
+Cada uno de los 2 contenedores tendrá únicamente 1 riesgo de los mencionados. Por otro lado, se implementarán vulnerabilidades descubiertas de 2023 en adelante.
 
+A continuación se explicarán en profundidad los riesgos mencionados, desde la descripción hasta la mitigación.
 
 # [Inyección](#índice)
 
@@ -41,7 +38,7 @@ Es un riesgo de inserción de código malicioso en una entrada de datos para obt
 <img  alt="drawing" width=600" height="200" src="https://www.indusface.com/wp-content/uploads/2019/08/OWASP-Part1-4.png" />
 </p>
 
-## [Descripción de diferentes tipos de ataques de inyección:](#índice)
+## Ataques de Inyección
 
 - **SQL Injection:** Se insertan comandos SQL maliciosos en las entradas de datos de una aplicación web. 
 
@@ -53,21 +50,25 @@ Es un riesgo de inserción de código malicioso en una entrada de datos para obt
 
 - **XPath Injection:** Se dirige a sistemas que utilizan expresiones XPath para realizar consultas en documentos XML.
 
-## [Medidas para prevenir ataques de inyección:](#índice)
+## Impacto
+
+Las inyecciones pueden dar lugar a la obtención y distribución no autorizada de información sensible, alteración de datos, ejecución remota de comandos, o incluso la toma de control completo del sistema. Estos riesgos pueden tener repercusiones significativas en la integridad, confidencialidad y disponibilidad de los sistemas y datos afectados.
+
+## Mitigación
 
 Para prevenir los ataques de inyección podemos emplear las siguientes medidas:
 
-- **Validación de Entradas de Usuario:** Valida y filtra todas las entradas de usuario.
+- **Validación de Entradas de Usuario:** Validar y filtrar todas las entradas de usuario.
 
-- **Parámetros Preparados:** Utiliza consultas parametrizadas.
+- **Parámetros Preparados:** Utilizar consultas parametrizadas.
 
-- **Escapado de Caracteres:** Escapa los caracteres especiales antes de incluirlos en consultas SQL.
+- **Escapado de Caracteres:** Escapar los caracteres especiales antes de incluirlos en consultas SQL.
 
-- **Validación de Datos de Formulario:** Valida y filtrar los datos del formulario. 
+- **Validación de Datos de Formulario:** Validar y filtrar los datos del formulario. 
 
-- **Limitar Privilegios:** Limitar los permisos de los usuario y servicios para que tengan los privilegios mínimos necesarios para realizar sus funciones.
+- **Privilegios Mínimos:** Limitar los permisos de los usuario y servicios para que tengan los privilegios mínimos necesarios para realizar sus funciones.
 
-- **Actualizaciones y Parches:** Manténer actualizados todos los software.
+- **Actualizaciones y Parches:** Mantener actualizados todo el software.
 
 - **Seguridad en la Capa de Red:** Utilizar firewalls y sistemas de detección de intrusiones para monitorear y filtrar el tráfico malicioso.
 
@@ -82,21 +83,23 @@ Las fallas de identificación y autenticación es un riesgo relacionado con la g
 
 ## [Causas comunes de fallas de identificación y autenticación](#índice)
 
-- **Contraseñas Débiles:** Las contraseñas débiles.
+- **Contraseñas Débiles:** Las contraseñas deben cumplir unos requisitos mínimos para estar clasificadas como "no débiles".
 
-- **Falta de Autenticación Multifactor (MFA):** La autenticación multifactor agrega una capa adicional de seguridad al no tener hay menos seguridad.
+- **Falta de Autenticación Multifactor (MFA):** La autenticación multifactor agrega una capa adicional de seguridad.
 
 - **Reutilización de Contraseñas:** Si los usuarios utilizan la misma contraseña para múltiples servicios, el compromiso de una sola cuenta puede poner en riesgo todas las demás cuentas asociadas con esa contraseña.
 
 - **Falta de Protección contra Ataques de Fuerza Bruta:** Los atancates que usan fuerza bruta intentaran adivinar las contraseñas probando una gran cantidad de combinaciones posibles. 
 
-- **Ataques de Phishing:** Los atancates que usan phishing utilizan técnicas de ingeniería social para engañar a los usuarios para divulga informacion sensible.
-
-- **Falta de Monitoreo y Detección de Anomalías:** Permite que los atacantes accedan a sistemas sin ser detectados.
+- **Falta de Monitoreo y Detección de Anomalías:** Permite que los atacantes accedan a los sistemas sin ser detectados.
 
 - **Falta de Educación del los Usuarios:** No informar a los usuarios de las mejores prácticas de seguridad.
 
- ## [Medidas para mitigar fallas de identificación y autenticación:](#índice)
+## Impacto
+
+Este riesgo puede derivar en acceso no autorizado, suplantación de identidad, exposición de credenciales y violación de privacidad. Las consecuencias incluyen la posibilidad de pérdida de datos, violación de la privacidad, y riesgos de cumplimiento normativo.
+
+## Mitigacion
 
 - **Contraseñas Seguras:** Establecer requisitos mínimos de complejidad de contraseña (longitud, caracteres especiales, combinación de letras mayúsculas y minúsculas) 
 
@@ -104,7 +107,7 @@ Las fallas de identificación y autenticación es un riesgo relacionado con la g
   
 - **Gestión de Sesiones:** Implementar mecanismos para gestionar adecuadamente el tiempo de conexion de los usuarios.
   
-- **Protección contra Ataques de Fuerza Bruta:** Bloqueo de cuenta después de varios intentos de inicio de sesión fallidos.
+- **Protección contra Ataques de Fuerza Bruta:** Bloquear una cuenta después de varios intentos de inicio de sesión fallidos.
 
 - **Monitoreo de Actividad de Usuario:** Implementar sistemas de monitoreo para detectar y responder a actividades de usuarios anómalas o maliciosas.
 
@@ -112,49 +115,58 @@ Las fallas de identificación y autenticación es un riesgo relacionado con la g
 
 - **Actualizaciones y Parches:** Mantener actualizados los sistemas y aplicaciones.
   
-# [Mariadb](#índice)
+# [MariaDB](#índice)
 
  **¿Qué es Mariadb?**
  
-MariaDB  es una bases de datos relacional de código abierto que ofrece poder almacenar y manipular datos de manera eficiente.
+MariaDB es un sistema de gestión de bases de datos de código abierto que ofrece poder almacenar y manipular datos de manera eficiente.
 
  <p align="center">
 <img  alt="drawing" width="320" height="200" src="https://www.wpsysadmin.com/wp-content/uploads/2021/07/mariadb.png" />
 </p>
 
-## [Ventajas y desventajas de usar Mariadb](#índice)
+## Ventajas y desventajas de MariaDB
 
- **Ventajas:**
+**Ventajas:**
 
 - **Compatibilidad con MySQL:** Es compatible con la mayoría de las aplicaciones y herramientas diseñadas para MySQL. 
 
 - **Código abierto:** Es un proyecto de código abierto.
 
-
 - **Comunidad activa:** Cuenta con una comunidad de usuarios.
-
 
 - **Compatibilidad con estándares:** MariaDB cumple los  estándares SQL.
 
  **Desventajas:**
-- **Fragmentación de la comunidad:** Diferentes tipos opiniones dentro de la comunidad de usuarios, dificultad en la colaboración dentro de la comunidad.
+ 
+- **Complejidad de Migración:** Si estás migrando desde otro sistema de gestión de bases de datos (DBMS), la complejidad de la migración puede ser bastante complicada.
 
-# [Instalacion y configuracion Mariadb](#índice)
-Para instalar tenemos que seguir los siguientes pasos:
+- **Menor Frecuencia de Actualizaciones:** MariaDB se suele actualizar menos en comparación con otros sistemas de bases de datos. Esto implica que no tenga las últimas características y mejoras de seguridad.
 
-**1.Actulizamos el sistema:**
+## Instalacion y Configuración 
 
-          sudo apt-get update
-     
-          sudo apt-get upgrade
-         
-**2.Instalacion Mariadb:**
+Para instalar y poner contraseña a root ejecutamos los siguientes comandos:
 
-         sudo apt install mariadb-server
+```
+apt install mariadb-server
+service mariadb start
+mariadb
+```
+
+Una vez dentro:
+
+```
+USE mysql;
+ALTER USER 'root'@'localhost' IDENTIFIED BY 'contraseña';
+flush privileges;
+exit;
+```
         
-**3.Para cinfigurar ponemos el siguiente comando que nos permite poner contraseña a root de Mariadb:**
+Una manera alternativa de configurar esto es ejecutando el siguiente comando:
 
-         sudo mysql_secure_installation
+```
+sudo mysql_secure_installation
+```
 
 # [Docker](#índice)
 
@@ -165,22 +177,13 @@ Docker es una plataforma de código abierto diseñada para facilitar la creació
 <img  alt="drawing" width="320" height="200" src="https://d1.awsstatic.com/acs/characters/Logos/Docker-Logo_Horizontel_279x131.b8a5c41e56b77706656d61080f6a0217a3ba356d.png" />
 </p>
 
-  ## [Características de Docker](#índice)
-
-- **Portabilidad:** El contenedor Docker podremos desplegarlo en cualquier otro sistema que soporte esta tecnología.
-
-- **Ligereza:** Los contenedores Docker son ligeros y rápidos de crear, iniciar y detener.
-
-- **Aislamiento:** Cada contenedor tiene su propio sistema de archivos, espacio de nombres de red y espacio de nombres de   proceso, lo que evita conflictos entre aplicaciones.
- 
-- **Reutilización de Imágenes:** Docker utiliza un modelo de imágenes y contenedores que fomenta la reutilización y compartición de imágene.
-
-## [Ventajas y desventajas de usar Docker](#índice)
+## [Ventajas y desventajas de Docker](#índice)
 
  **Ventajas:**
 
 - **Portabilidad:** Los contenedores Docker proporcionan una forma fácil y rápida de empaquetar una aplicación y todas sus dependencias en un entorno aislado.
 
+- **Ligereza:** Los contenedores Docker son ligeros y rápidos de crear, iniciar y detener.
 
 - **Aislamiento:** Docker proporciona un alto nivel de aislamiento entre contenedores cada contenedor tiene su propio sistema de archivos.
 
@@ -189,33 +192,28 @@ Docker es una plataforma de código abierto diseñada para facilitar la creació
 
 - **Comunidad Fragmentada:** Diferentes tipos opiniones dentro de la comunidad de usuarios, dificultad en la colaboración dentro de la comunidad.
 
-- **Rendimiento:** El rendimiento de la virtualización a nivel de contenedor en menor que las aplicaiones fuera del contenedor.
+- **Rendimiento:** El rendimiento de la virtualización a nivel de contenedor en menor que las aplicaciones fuera del contenedor.
 
+## Instalacion de Docker
+Para instalar debemos seguir los siguientes pasos:
 
-# [Instalacion de Docker](#índice)
-Para instalar tenemos que seguir los siguientes pasos:
+**1. Añadir clave GPC de docker:**
 
-**1.Actulizar el sistema:**
+```
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+```
 
+**2. Añadir repositorio oficial de docker:**
 
-          sudo apt-get update
-     
-          sudo apt-get upgrade
-
-
-**2.Añadir clave GPC de docker:**
-
-         curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-
-**3.Añadir  repositorio oficial de docker:**
-
-         sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable
+```
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable
+```
     
-**4.Instalacion docker:**
+**3. Instalacion docker:**
 
-         sudo apt install docker-ce docker-ce-cli containerd.io
-
-
+```
+sudo apt install docker-ce docker-ce-cli containerd.io
+```
 
 # [Contenedor Numero 1 Inyección](#índice)
 
@@ -225,14 +223,18 @@ El sistema operativo utilizado para el desarrollo de este primer contenedor es U
 <img  alt="drawing" width="350" height="200" src="https://blogs.zeiss.com/digital-innovation/de/wp-content/uploads/sites/2/2020/05/201909_Security_SQL-Injection_1.png" />
 </p>
 
-## [Vulnerabilidades CVE Extra](#índice)
+## Planteamiento y Componentes
 
-Para comenzar con la búsqueda de las CVEs añadidas como extra en la máquina, hay que tener en cuenta los siguientes puntos:
+TO DO
+
+## Vulnerabilidades CVE Extra
+
+Para realizar la búsqueda de las CVEs añadidas como extra en la máquina, hay que tener en cuenta los siguientes puntos:
 - **La CVE debe ser del año 2023 o posterior**
 - **La CVE debe ser reproducible**
 - **La CVE debe tener un exploit desarrollado**
 
-CVEs elegidas para su reproducción:
+CVE Extra elegida para su reproducción:
 
 - **CVE-2023-37629**
 
@@ -351,6 +353,7 @@ Para mitigar esta vulnerabilidad lo único que debemos hacer es actualizar la ve
 <img  alt="drawing" width="550" height="400" src="https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo2/Documentacion/images/flagRoot.png" />
 </p>
 
+## Walkthrough
 
 ## [Análisis del Contenedor una vez Explotado](#índice)
 
@@ -358,4 +361,14 @@ Para mitigar esta vulnerabilidad lo único que debemos hacer es actualizar la ve
 
 # [Contenedor Numero 2 Fallas de Identificación y Autenticación](#índice)
 
+## Planteamiento y Componentes
 
+TO DO
+
+## Vulnerabilidades CVE Extra
+
+## Desarrollo de las Vulnerabilidades
+
+## Walkthrough
+
+## Análisis del Contenedor una vez Explotado
