@@ -107,3 +107,7 @@ Una vez hemos generado las llaves ssh, meteremos el contenido de la llave públi
 Por último le damos permisos de lectura a la llave privada, y lectura y ejecución a la carpeta .ssh del usuario en cuestión.
 
 ![](/Assets/configuracion_ssh_3.PNG)
+
+## Walkthrough
+
+![](Assets/2024-03-07_18-19.png)
