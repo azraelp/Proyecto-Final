@@ -25,7 +25,7 @@ El contenedor Docker estará basado en Ubuntu 22.04.3 LTS Server y tendrá insta
 * Python, servirá como vector de entrada a la hora de realizar el escalado de privilegios.
 
 El Dockerfile que generará el contenedor es el siguiente:
-![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/dockerfile.png)\
+![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/dockerfile-final.png)\
 En la primera línea se específica que imagen se usará para montar el contenedor, después se realiza una actualización de paquetes y se instalan las utilidades necesarias para realizar el ataque SSRF, el parámetro **DEBIAN_FRONTEND=noninteractive** se utiliza para que a la hora de instalar los paquetes no aparezca ningún prompt y que se aplique la opción predeterminada a la hora de configurar los paquetes en la instalación, la última línea **rm -rf /var/lib/apt/lists/** eliminará los archivos temporales que ya no son necesarios después de la instalación de los paquetes, de esta forma se optimiza el espacio del contenedor. A continuación se crea el directorio sshd dentro de /var/run, esto se realiza de forma automática a la hora de poner en marcha el servicio SSH sin embargo es mejor crearlo antes de poner en marcha el servicio por si se necesita de antemano. A continuación se establece que la variable de entorno **DISPLAY** apunte al display de la máquina anfitrión, esto nos servirá para poder usar Wireshark de forma gráfica. Por último se abren los puertos necesarios para los servicios SSH y Apache y se ponen en marcha dichos servicios.
 
 Para crear el contenedor Docker usando el dockerfile se usará la opción **build**
