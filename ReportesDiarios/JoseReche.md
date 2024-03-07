@@ -62,3 +62,7 @@
 ## Miércoles 06/03/2024
 - [ ] Trabajar sobre la web base una vez esté subido al github.
 - [X] Coordinar al Azrael para que revise mi trabajo
+
+## Jueves 07/03/2024
+- [X] Perfilar web PHP nueva.
+- [X] Coordinar equipo.
