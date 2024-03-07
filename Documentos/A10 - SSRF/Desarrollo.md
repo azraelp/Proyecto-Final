@@ -80,8 +80,8 @@ Y a partir de ahora, siempre que hagamos un cambio en este archivo tendríamos q
 
 <h1 name="confSSH">4. Configuración del servidor SSH</h1>
 
-
-
+**Preparacion de usuarios** <br>
+Se ha creado un directorio con el nombre de sshkeys_user con una configuración específica. El directorio tendrá los permisos de leer y escribir para el usuario root, mientras que el grupo dbAdmin solo tendrá permisos de lectura. Además dentro de este grupo estará guardado el usuario Francisca.
 
 
 <h1 name="Desarrollo-webs">5. Desarrollo de las webs</h1>
