@@ -86,16 +86,18 @@
 
 ## Miércoles 6 de Marzo 2024:
 
-- [ ] Acabar de poner capturas y completar la documentación.
-- [ ] Hacer el pentest y documentarlo.
-- [ ] 
-
+- [X] Acabar de poner capturas y completar la documentación.
+- [X] Hacer el pentest y documentarlo.
 
 ## Jueves 7 de Marzo 2024:
 
-- [ ] 
-- [ ] 
-
+- [X] Reunión inicial de seguimiento y planificación de final de etapa (máquina 1). 
+- [ ] Documentación sobre pentest.
+- [ ] Fusionar los 2 contenedores de desarrollo/prueba que teníamos hasta el momento en 1 solo contenedor definitivo.
+- [ ] Hacer el push de la snapshot del contenedor Docker (sin atacar).
+- [ ] Hacer el pentest.
+- [ ] Hacer el push de la snapshot del contenedor Docker (atacado).
+ 
 ## Viernes 8 de Marzo 2024:
 
 - [ ] 
