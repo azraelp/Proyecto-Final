@@ -29,6 +29,33 @@ Comunicacion con el equipo
   - Coordinacion con el equipo
 
 ## Martes 27/02/2024
-  - Pruebas con el entorno de wordpress con la vuln de un plugin de login
+  - Gestion del equipo
   - Investigacion de dos plugins de contacto y mapas para su posible uso
   - Coordinacion con el equipo
+
+## Miercoles 28/02/2024
+  - Gestion del equipo
+  - Pruebas con el entorno de wordpress con la vuln de un plugin de login para hacer uso de la vulnerabilidad con el cve CVE-2023-4916
+  - Investigacion de dos plugins de contacto y mapas para su posible uso
+  - Coordinacion con el equipo
+
+## Jueves 29/02/2024
+  - Gestion del equipo
+  - Pruebas con el entorno de wordpress con la vuln de un plugin de login para hacer uso de la vulnerabilidad con el cve CVE-2023-4916
+  - Investigacion de dos plugins de contacto y mapas para su posible uso
+  - Coordinacion con el equipo
+
+## Viernes 1/03/2024
+  - Gestion del equipo
+  - Al no poder conseguir vulnerar el plugin se habla con el equipo para hacer la web nosotros
+  - Coordinacion con el equipo
+
+## Martes 4/03/2024
+  - Gestion del equipo
+  - Revision del entorno una vez vulnerado via web que es por donde comienza 
+  - Creacion de la configuracion de la siguiente fase, ssh ftp, permisos 
+
+## Michael 5/03/2024
+  - Gestion del equipo
+  - Revision del entorno una vez vulnerado via web que es por donde comienza 
+  - Creacion de la configuracion de la siguiente fase, ssh ftp, permisos 
