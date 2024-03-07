@@ -2,10 +2,11 @@
 
 <span style="color:black;">1. [ Introducción](#introducción)</span><br>
 <span style="color:black;">2. [ Desarrollo del contenedor](#Desarrollo)</span><br>
-<span style="color:black;">3. [ Desarrollo de Apache y configuraciones SSRF](#Apache)</span><br>
-<span style="color:black;">4. [ Configuración del servidor SSH](#confSSH)</span><br>
-<span style="color:black;">5. [ Desarrollo de las webs](#Desarrollo-webs)</span><br>
-<span style="color:black;">6. [ Problemas encontrados en el desarrollo](#Problemas)</span><br>
+<span style="color:black;">3. [ Confiuracion de usuarios](#ConfUsers)</span><br>
+<span style="color:black;">4. [ Desarrollo de Apache y configuraciones SSRF](#Apache)</span><br>
+<span style="color:black;">5. [ Configuración del servidor SSH](#confSSH)</span><br>
+<span style="color:black;">6. [ Desarrollo de las webs](#Desarrollo-webs)</span><br>
+<span style="color:black;">7. [ Problemas encontrados en el desarrollo](#Problemas)</span><br>
 ---
 
 <br>
@@ -36,9 +37,9 @@ Para poder realizar el escalado de privilegios se le aplicara el permiso SUID qu
 ![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/suid_python3.png)
 <br>
 
+<h1 name="Apache">3. Configuración de usuarios</h1>
 
-
-<h1 name="Apache">3. Desarrollo de Apache y configuraciones SSRF</h1>
+<h1 name="Apache">4. Desarrollo de Apache y configuraciones SSRF</h1>
 
 Configuración del archivo /etc/apache2/apache2.conf
 <br>
@@ -78,7 +79,7 @@ Y a partir de ahora, siempre que hagamos un cambio en este archivo tendríamos q
 
 
 
-<h1 name="confSSH">4. Configuración del servidor SSH</h1>
+<h1 name="confSSH">5. Configuración del servidor SSH</h1>
 
 **Preparacion de usuarios** <br>
 Se ha creado un directorio con el nombre de sshkeys_user con una configuración específica. El directorio tendrá los permisos de leer y escribir para el usuario root, mientras que el grupo dbAdmin solo tendrá permisos de lectura. Además dentro de este grupo estará guardado el usuario Francisca. 
@@ -88,7 +89,7 @@ Se han generado las claves ssh para el usuario Francisca, también se han genera
 
 
 
-<h1 name="Desarrollo-webs">5. Desarrollo de las webs</h1>
+<h1 name="Desarrollo-webs">6. Desarrollo de las webs</h1>
 
 **Web login** <br>
 Se ha realizado un login falso para la página web. Para la creación de la página, hemos utilizado únicamente HTML y CSS. No es una página funcional porque por ahí no se realizara el ataque, solo será una página donde no se podrá interactuar.
@@ -115,7 +116,7 @@ Si intentamos acceder a este puerto secundario web, nos saltará un mensaje dici
 
 
 
-<h1 name="Problemas">6. Problemas encontrados en el desarrollo</h1>
+<h1 name="Problemas">7. Problemas encontrados en el desarrollo</h1>
 
 Una vez accedíamos al contenedor se intenta ejecutar Wireshark de forma fallida, ya que no se puede conectar a ninguna GUI para solucionar este problema se específico la variable de entorno **DISPLAY** para que fuera la misma que la de la máquina local ademas se específico que las aplicaciones locales tuvieran acceso al servidor de ventanas X con el comando **xhost +local:**
 ![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/error-display.png) \
