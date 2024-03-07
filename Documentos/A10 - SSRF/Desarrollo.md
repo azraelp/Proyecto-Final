@@ -85,7 +85,6 @@ Se ha creado un directorio con el nombre de sshkeys_user con una configuración 
 
 Se han generado las claves ssh para el usuario Francisca, también se han generado las claves pública (id_rsa.pub) y privada (id_rsa).
 
-Una vez que ya hayamos generado las claves, el atacante ya podrá tener acceso al usuario Francisca. El atacante mediante el uso de la clave privada del ssh podrá tener acceso al usuario Francisca
 
 
 
