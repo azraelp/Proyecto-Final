@@ -35,10 +35,16 @@ Sigo investigando mañana.
 
 ## Martes 05/03/2024
 - Pruebas de usuario enjaulado en maquina virtual
-Consigo usuario enjaulado 
-Creo archivo reverse shell para el usuario enjaulado (https://github.com/pentestmonkey/php-reverse-shell/blob/master/php-reverse-shell.php#L16)
+- Consigo usuario enjaulado 
+- Creo archivo reverse shell para el usuario enjaulado (https://github.com/pentestmonkey/php-reverse-shell/blob/master/php-reverse-shell.php#L16)
 
 ## Miércoles 06/03/2024
-Crontab, usuario tiene que añadir comando para reverseshell usuario root
+- Empiezo a mirar crontab 
 
+## Jueves 22/02/2024
 
+- Usuario test con permisos para usar crontab y hacer reverse shell (https://stackoverflow.com/questions/55240626/bash-reverse-shell-command-cron-job-not-working-i-give-up)
+
+## Viernes 23/02/2024
+
+- Analisis forense, logs.
