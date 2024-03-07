@@ -83,7 +83,10 @@ Y a partir de ahora, siempre que hagamos un cambio en este archivo tendríamos q
 **Preparacion de usuarios** <br>
 Se ha creado un directorio con el nombre de sshkeys_user con una configuración específica. El directorio tendrá los permisos de leer y escribir para el usuario root, mientras que el grupo dbAdmin solo tendrá permisos de lectura. Además dentro de este grupo estará guardado el usuario Francisca.
 
-Se han generado las claves ssh para el usuario Francisca, tambien se han generado las claves publica (id_rsa.pub) y privada (id_rsa).
+Se han generado las claves ssh para el usuario Francisca, también se han generado las claves pública (id_rsa.pub) y privada (id_rsa).
+
+Una vez que ya hayamos generado las 
+
 
 
 <h1 name="Desarrollo-webs">5. Desarrollo de las webs</h1>
