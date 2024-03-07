@@ -233,6 +233,9 @@ Para descargar la imagen a la maquina local ponemos como ww-data abrir un servid
 
 En la maquina atacante hacemos un wget http://IP:puerto/caroline.jpg
 
+![image](https://github.com/Dani-ITB24/Proyecto-Final/assets/157145186/c0e7a6ba-9e95-4290-8f70-9bb01d0fddbc)
+
+Al descargarla se hace un binwalk imagen y vemos que dentro tiene una imagen
 
 ![image](https://github.com/Dani-ITB24/Proyecto-Final/assets/157145186/f7c96f07-1548-4f95-a17f-7c4541b04aed)
 
