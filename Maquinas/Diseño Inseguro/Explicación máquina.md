@@ -68,5 +68,5 @@ Para configurar el entorno utilizaremos un contenedor Docker con el sistema oper
 
 Realizamos un escaneo de los puertos de la maquina.
 
-![](../Imagenes/1_diseñoInseguro.png)
+![](Imagenes/1_diseñoInseguro.png)
 
