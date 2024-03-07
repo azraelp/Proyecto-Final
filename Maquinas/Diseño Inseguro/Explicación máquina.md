@@ -7,12 +7,14 @@ Esta máquina está específicamente diseñada para explotar la vulnerabilidad *
 Para cumplir con este objetivo, la máquina alojará varios servicios como **FTP**, **SSH** y **Apache**.
 
 Estos servicios se encontrarán expuestos externamente para que cuando el atacante realice un reconocimiento pueda detectarlos.
-****
+
 El servicio **FTP** podrá ser accesible de forma anónima.
 
 El servicio de **SSH** no tendrá ninguna función más que despistar al atacante.
 
 El servicio de **apache** alojará nuestra pagina web la cual esta inspirada en la serie **Los Originales**. La web será vulnerable a la vulnerabilidad **Diseño Inseguro**, la cual estará enfocada a una gestión insegura de los permisos de usuarios FTP.
+
+****
 
 Para comenzar el atacante realizará un reconocimiento de los servicios expuestos por la maquina, y de primeras podrá ver que el servicio **FTP** es propenso a hacer un login mediante el usuario de **anonymous** y que el **SSH** es propenso a enumeración de usuarios.
 
