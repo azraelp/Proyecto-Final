@@ -42,7 +42,7 @@ Una vez tenga acceso con el usuario **root**, el atacante podrá visualizar el f
 Para configurar el entorno utilizaremos un contenedor Docker con el sistema operativo Ubuntu Server. Los servicios que utilizaremos son:
 
 - **FTP**: *vsftpd* version 3.0.3 --> Para transferencia de archivos.
-- **SSH**: *OpenSSH 9.6p1* --> Para acceso remoto seguro.
+- **SSH**: *OpenSSH 9.6p1*/7.2p2 --> Para acceso remoto seguro.
 - **HTTP**: *Apache 2.4.58* --> Para el servidor web.
  
 ## Pasos a seguir

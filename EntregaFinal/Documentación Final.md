@@ -267,3 +267,23 @@ Al encontrar la contraseña podemos entrar desde ssh con este usuario.
 ![image](https://github.com/Dani-ITB24/Proyecto-Final/assets/157145186/ad01370f-5a11-4e81-a82e-ccd673c18917)
 
 
+## Forense
+1. INTRODUCCION  
+La resolución de un posible equipo de uso ilegítimo por parte de un atacante, que aprovechó algunas vulnerabilidades en varios servicios incorporados en dicho equipo. Estos servicios no estaban bien configurados, lo que le dio al atacante la oportunidad de acceder de forma comprometedora al equipo.  
+Analista: Andrades González Paulino  
+Empresa cliente: The Originals  
+Fecha de inicio: 07/03/24, 15:50  
+Fecha de finalización 07/03/24, xx:xx  
+
+1.1 Informacion recibida
+1.2 Conceptos y terminología
+1.3  Prevención de ataques a sistemas 
+1.4 Aspectos legales
+Fases de Análisis Digital
+2.1 Identificación del incidente: búsqueda y recopilación de evidencias 
+2.1.1 Recopilación de evidencias. 
+2.1.2 Análisis de la evidencia(capturas con explicación)
+2.2 Metodología 
+3 Herramientas para Análisis Forense Digital
+4 Conclusión
+5 Biografía y URL
