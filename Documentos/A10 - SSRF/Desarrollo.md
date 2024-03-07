@@ -35,7 +35,7 @@ Para crear el contenedor Docker usando el dockerfile se usará la opción **buil
 <br>
 
 <h1 name="ConfUsers">3. Configuración de usuarios</h1>
-En la maquina encontraremos dos usuarios Paco y Francisca. Paco tiene una contraseña debil para poder realizar la conexion ssh descubriendo su contraseña con fuerza bruta y Francisca pertenece al grupo dbadmin para que pueda ejecutar el programa backupdb el cual contiene el bit SUID.
+En la maquina encontraremos dos usuarios Paco y Francisca. Paco tiene una contraseña débil para poder realizar la conexión ssh descubriendo su contraseña con fuerza bruta y Francisca pertenece al grupo dbadmin para que pueda ejecutar el programa backupdb el cual contiene el bit SUID.
 
 ![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/useraddpaco.png)
 
@@ -85,7 +85,7 @@ Y a partir de ahora, siempre que hagamos un cambio en este archivo tendríamos q
 <h1 name="confSSH">5. Configuración del servidor SSH</h1>
 
 **Preparación de usuarios** <br>
-Se ha creado un directorio con el nombre de sshkeys_user con una configuración específica. El directorio tendrá los permisos de leer y escribir para el usuario root, mientras que el grupo dbAdmin solo tendrá permisos de lectura y por ultimo permiso de lectura para otros. Ademas se copiara la clave privada SSH de Francisca para que a la hora de realizar el ataque se pueda obtener y realizar la conexion SSH usando su calve privada. \
+Se ha creado un directorio con el nombre de sshkeys_user con una configuración específica. El directorio tendrá los permisos de leer y escribir para el usuario root, mientras que el grupo dbAdmin solo tendrá permisos de lectura y por ultimo permiso de lectura para otros. Ademas se copiara la clave privada SSH de Francisca para que a la hora de realizar el ataque se pueda obtener y realizar la conexión SSH usando su calve privada. \
 ![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zomeño)/Assets/Img/mkdir_sshkeys.png)
 ![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zomeño)/Assets/Img/chmod_sshkeys.png) \
 Las claves ssh de Francisca se han generado de esta forma con la passphrase laracroft.
