@@ -66,5 +66,7 @@ Para configurar el entorno utilizaremos un contenedor Docker con el sistema oper
 
 ## WriteUp (vista atacante)
 
+Realizamos un escaneo de los puertos de la maquina.
 
+![Escaneo Puertos](../Imagenes/1_diseñoInseguro.jpg)
 
