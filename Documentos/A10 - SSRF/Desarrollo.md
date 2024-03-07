@@ -32,9 +32,6 @@ Para crear el contenedor Docker usando el dockerfile se usará la opción **buil
 ![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/docker-build.png)
 ![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/docker-build-2.png)
 
-
-Para poder realizar el escalado de privilegios se le aplicara el permiso SUID que permite a los usuarios ejecutar un archivo con los privilegios del propietario del archivo. De esta forma el usuario Paco podrá acceder como root. \
-![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zome%C3%B1o)/Assets/Img/suid_python3.png)
 <br>
 
 <h1 name="Apache">3. Configuración de usuarios</h1>
@@ -88,10 +85,14 @@ Y a partir de ahora, siempre que hagamos un cambio en este archivo tendríamos q
 <h1 name="confSSH">5. Configuración del servidor SSH</h1>
 
 **Preparación de usuarios** <br>
-Se ha creado un directorio con el nombre de sshkeys_user con una configuración específica. El directorio tendrá los permisos de leer y escribir para el usuario root, mientras que el grupo dbAdmin solo tendrá permisos de lectura. Además dentro de este grupo estará guardado el usuario Francisca. 
+Se ha creado un directorio con el nombre de sshkeys_user con una configuración específica. El directorio tendrá los permisos de leer y escribir para el usuario root, mientras que el grupo dbAdmin solo tendrá permisos de lectura y por ultimo permiso de lectura para otros. Ademas se copiara la clave privada SSH de Francisca para que a la hora de realizar el ataque se pueda obtener y realizar la conexion SSH usando su calve privada. \
+![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zomeño)/Assets/Img/mkdir_sshkeys.png)
+![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zomeño)/Assets/Img/chmod_sshkeys.png) \
+Las claves ssh de Francisca se han generado de esta forma con la passphrase laracroft.
+![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zomeño)/Assets/Img/ssh-keygen_francisca.png)
 
-Se han generado las claves ssh para el usuario Francisca, también se han generado la clave pública (id_rsa.pub) y la clave privada (id_rsa). Estas claves estarán guardadas dentro de la carpeta ssh (/home/ssh/).
-
+Para que se pueda acceder al usuario de Francisca usando la calve SSH privada deberemos añadir la clave publica id_rsa.pub al fichero authorized_keys que se encuentra en el directorio /home/francisca/.ssh
+![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zomeño)/Assets/Img/id_rsa_pub_authorized_keys.png)
 
 
 
