@@ -15,8 +15,7 @@ RUN apt-get update && \
     php \
     php-cli \
     php-fpm \
-    john \
-    ssh2john \
+    john-data \
     && rm -rf /var/lib/apt/lists/*
 
 # Configura el servidor SSH
