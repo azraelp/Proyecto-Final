@@ -253,9 +253,9 @@ Por eso el atacante tendra que usar zip2jhon para sacar el hash de este zip.
 
 ![image](https://github.com/Dani-ITB24/Proyecto-Final/assets/157145186/4bc0cfa5-8cd2-4729-9c48-a7c9f34f3b82)
 
-Y con el hash 
+Y con el hash le hacemos un john con la worlist de roockyou para encontrar la contraseña.
 
-
+![image](https://github.com/Dani-ITB24/Proyecto-Final/assets/157145186/7606ff5b-c493-4caf-8bff-d4ebdcd7ae33)
 
 Una vez extraido el zip, tenemos un archivo txt llamado pwd.txt con muchos nombre, que podrian ser contraseñas.
 
