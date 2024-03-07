@@ -111,3 +111,37 @@ Por último le damos permisos de lectura a la llave privada, y lectura y ejecuci
 ## Walkthrough
 
 ![](/Assets/walkthrough/2024-03-07_18-19.png)
+
+![](/Assets/walkthrough/2024-03-07_18-21.png)
+
+![](/Assets/walkthrough/2024-03-07_18-26.png)
+
+![](/Assets/walkthrough/2024-03-07_18-26_1.png)
+
+![](/Assets/walkthrough/2024-03-07_18-27.png)
+
+![](/Assets/walkthrough/2024-03-07_18-28.png)
+
+![](/Assets/walkthrough/2024-03-07_18-28_1.png)
+
+![](/Assets/walkthrough/2024-03-07_18-30.png)
+
+![](/Assets/walkthrough/2024-03-07_18-34.png)
+
+![](/Assets/walkthrough/2024-03-07_18-41.png)
+
+![](/Assets/walkthrough/2024-03-07_18-42.png)
+
+![](/Assets/walkthrough/2024-03-07_18-46.png)
+
+![](/Assets/walkthrough/2024-03-07_18-48.png)
+
+![](/Assets/walkthrough/2024-03-07_18-48_1.png)
+
+![](/Assets/walkthrough/2024-03-07_18-56.png)
+
+![](/Assets/walkthrough/2024-03-07_18-57.png)
+
+![](/Assets/walkthrough/2024-03-07_18-58.png)
+
+![](/Assets/walkthrough/2024-03-07_18-58_1.png)
