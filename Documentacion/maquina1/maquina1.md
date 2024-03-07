@@ -110,4 +110,4 @@ Por último le damos permisos de lectura a la llave privada, y lectura y ejecuci
 
 ## Walkthrough
 
-![](Assets/2024-03-07_18-19.png)
+![](/Assets/2024-03-07_18-19.png)
