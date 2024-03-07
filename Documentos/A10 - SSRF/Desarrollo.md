@@ -2,7 +2,7 @@
 
 <span style="color:black;">1. [ Introducción](#introducción)</span><br>
 <span style="color:black;">2. [ Desarrollo del contenedor](#Desarrollo)</span><br>
-<span style="color:black;">3. [ Confiuracion de usuarios](#ConfUsers)</span><br>
+<span style="color:black;">3. [ Configuración de usuarios](#ConfUsers)</span><br>
 <span style="color:black;">4. [ Desarrollo de Apache y configuraciones SSRF](#Apache)</span><br>
 <span style="color:black;">5. [ Configuración del servidor SSH](#confSSH)</span><br>
 <span style="color:black;">6. [ Desarrollo de las webs](#Desarrollo-webs)</span><br>
@@ -81,7 +81,7 @@ Y a partir de ahora, siempre que hagamos un cambio en este archivo tendríamos q
 
 <h1 name="confSSH">5. Configuración del servidor SSH</h1>
 
-**Preparacion de usuarios** <br>
+**Preparación de usuarios** <br>
 Se ha creado un directorio con el nombre de sshkeys_user con una configuración específica. El directorio tendrá los permisos de leer y escribir para el usuario root, mientras que el grupo dbAdmin solo tendrá permisos de lectura. Además dentro de este grupo estará guardado el usuario Francisca. 
 
 Se han generado las claves ssh para el usuario Francisca, también se han generado la clave pública (id_rsa.pub) y la clave privada (id_rsa). Estas claves estarán guardadas dentro de la carpeta ssh (/home/ssh/).
