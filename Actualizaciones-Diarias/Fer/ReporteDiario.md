@@ -63,3 +63,7 @@
 ✅ Organización y distribución de tareas diarias <br>
 ✅ Montar Docker con contenedor para sacar capturas para la documentación <br>
 ✅ Capturas para la documentación <br>
+
+## Jueves 7 de marzo 2024
+✅ Organización y distribución de tareas diarias <br>
+✅ Documentacion en el desarrollo.md <br>
