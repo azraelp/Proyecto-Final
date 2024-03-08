@@ -1,9 +1,9 @@
 # índice
 
 1. [Introducción](#introducción)
-2. [Información Sobre los Riesgos Obtenidos](#[información-sobre-los-riesgos-obtenidos)
-    - [Inyección](#inyeccion)
-    - [Fallas de Identificación y Autenticación](#fallas-de-identificación-y-autenticación)
+2. [Informacion Sobre los Riesgos Obtenidos](#[informacion-sobre-los-riesgos-obtenidos)
+    - [Inyeccion](#inyeccion)
+    - [Fallas de Identificación y Autenticación](#fallas-de-identificacion-y-autenticación)
 3. [Información Sobre los Componentes Fundamentales](#información-sobre-los-componentes-fundamentales)
     - [MariaDB](#mariadb)
     - [Docker](#docker)
