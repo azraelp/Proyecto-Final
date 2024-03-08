@@ -221,6 +221,72 @@ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubun
 sudo apt install docker-ce docker-ce-cli containerd.io
 ```
 
+## [Apache](#índice)
+
+Apache es un servidor web de código abierto.
+
+<p align="center">
+<img  alt="drawing" width="250" height="200" src="https://www.ibxagency.com/blog/wp-content/uploads/2014/06/apache_server2.jpg" />
+</p>
+
+ **Ventajas y desventajas de Apache**
+ 
+**Ventajas:**
+
+- **Código Abierto:** Es un software de código abierto.
+
+
+- **Soporte para múltiples plataformas:** Apache es compatible con una amplia gama de sistemas operativos.
+
+- **Comunidad activa::** Apache cuenta con una gran comunidad de usuarios. 
+
+**Desventajas:**
+
+
+- **Consumo de recursos:** Requiere más recursos que otros servidores web.
+
+ **Instalacion de Apache**
+
+Para instalar apache tienes que poner este comando:
+
+```
+sudo apt install apache2
+```
+
+## [PHP](#índice)
+
+PHP es un lenguaje de programación de código abierto interpretado del lado del servidor.
+
+<p align="center">
+<img  alt="drawing" width="250" height="200" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/1200px-PHP-logo.svg.png" />
+</p>
+
+ **Ventajas y desventajas de PHP**
+ 
+**Ventajas:**
+
+
+- **Integración con HTML:** PHP se puede integrar fácilmente con HTML
+
+- **Soporte para Bases de Datos:** PHP tiene un soporte para la gestión de bases de datos.
+
+- **Comunidad activa::** PHP cuenta con una gran comunidad de usuarios. 
+
+**Desventajas:**
+
+
+- **Rendimiento:** En comparación con otros lenguajes de programación PHP puede tener un rendimiento relativamente inferior depende de la circunstancia.
+
+
+
+ **Instalacion de PHP**
+
+Para instalar apache tienes que poner este comando:
+
+```
+sudo apt install libapache2-mod-php
+```
+
 # [Contenedor Numero 1 Inyección](#índice)
 
 El sistema operativo utilizado para el desarrollo de este primer contenedor es Ubuntu Server XX. La vulnerabilidad elegida ha sido SQL Injection. Es por ello que el desarrollo de esta estará basado en un formulario cuyos campos serán vulnerables a este tipo de ataque. 
