@@ -75,3 +75,7 @@ No se a podido solucionar los errores del rsyslog y no se a podido implementar e
 ## 7/03/24 Reporte Diario
 
 - [] Documentación del analisis forense en la documentación final
+
+## 8/03/24 Reporte Diario
+
+- [x] Documentación del analisis forense en la documentación final

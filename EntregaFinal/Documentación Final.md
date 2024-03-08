@@ -282,7 +282,7 @@ Empresa cliente: The Originals
 Fecha de inicio: 07/03/24, 15:50  
 Fecha de finalización 07/03/24, xx:xx  
 ## Forense
-1. **INTRODUCCION**
+1. **INTRODUCCION**  
 
 1.1 **Informacion recibida**  
 La empresa The Originals solicita analizar un equipo que ha sido atacado. Se solicita al analista en cuestión determinar si ha sido comprometido. La empresa sospecha que el atacante pudo haber escalado permisos debido a una mala administración de los servicios y configuración del equipo.
@@ -326,11 +326,36 @@ La resolución de un posible equipo de uso ilegítimo por parte de un atacante, 
 
 2.1.2 Análisis de la evidencia
 
+<<<<<<< Updated upstream
+=======
+access.log/apache
+![alt text](image-1.png)
+![alt text](image-2.png)
+![alt text](image-11.png)
+
+error.log/apache
+![alt text](image.png)
+![alt text](image-4.png)
+![alt text](image-5.png)
+![alt text](image-6.png)
+
+ftp.log
+![alt text](image-7.png)
+![alt text](image-8.png)
+![alt text](image-9.png)
+![alt text](image-10.png)
+
+
+>>>>>>> Stashed changes
 2.2 Metodología NIST
 
 La metodología del NIST se basa en un proceso de tres pasos: evaluación del riesgo; mitigación del riesgo; y análisis y evaluación
 
 3. Herramientas para Análisis Forense Digital
+- Docker
 
 4. Conclusión
+
+Se ha intentado garantizar la mejor calidad de las evidencias durante todo este proceso. Sin embargo, dada la situación que ha experimentado la empresa, es crucial prestar mayor atención al control de las actualizaciones y a la seguridad en el diseño del servidor para evitar la recurrencia de este problema. Además, se deben implementar medidas como el cambio periódico de las contraseñas de cada usuario, establecer un límite máximo de intentos y asegurarse de que las contraseñas no sean vulnerables, todo ello con el fin de garantizar la seguridad de la empresa.
+
 5. Biografía y URL
