@@ -1,7 +1,7 @@
 # índice
 
 1. [Introducción](#introducción)
-2. [Información Sobre los Riesgos Obtenidos]
+2. [Información Sobre los Riesgos Obtenidos](#[información-sobre-los-riesgos-obtenidos)
     - [Inyección](#inyeccion)
     - [Fallas de Identificación y Autenticación](#fallas-de-identificación-y-autenticación)
 3. [Información Sobre los Componentes Fundamentales](#información-sobre-los-componentes-fundamentales)
@@ -12,8 +12,9 @@
 8. [Desarrollo Contenedor Numero 1 - Inyección](#contenedor-numero-1-inyección)
     - [Vulnerabilidades CVE Extra](#vulnerabilidades-cve-extra)
     - [Desarrollo de las Vulnerabilidades](#desarrollo-de-la-vulnerabilidad)
-    - [_Walkthrough_ Explotación del Contenedor] (#desarrollo-de-la-vulnerabilidad)
     - [Análisis del Contenedor una vez Explotado](#análisis-del-contenedor-una-vez-explotado)
+    - [Herramientas Empleadas](#herramientas-empleadas)
+
 9. [Desarrollo Contenedor Numero 2 Fallas de Identificación y Autenticación](#contenedor-numero-2-fallas-de-identificación-y-autenticación)
     - [Vulnerabilidades CVE Extra](#vulnerabilidades-cve-extra)
     - [Desarrollo de las Vulnerabilidades](#desarrollo-de-la-vulnerabilidad)
@@ -31,14 +32,16 @@ Cada uno de los 2 contenedores tendrá únicamente 1 riesgo de los mencionados. 
 
 A continuación se explicarán en profundidad los riesgos mencionados, desde la descripción hasta la mitigación.
 
-# [Inyección](#índice)
+# [Información Sobre los Riesgos Obtenidos](#índice)
+
+## [Inyección](#índice)
 
 Es un riesgo de inserción de código malicioso en una entrada de datos para obtener acceso no autorizado o realizar acciones no deseadas.
 <p align="center">
 <img  alt="drawing" width=600" height="200" src="https://www.indusface.com/wp-content/uploads/2019/08/OWASP-Part1-4.png" />
 </p>
 
-## Ataques de Inyección
+**Ataques de Inyección**
 
 - **SQL Injection:** Se insertan comandos SQL maliciosos en las entradas de datos de una aplicación web. 
 
@@ -50,11 +53,11 @@ Es un riesgo de inserción de código malicioso en una entrada de datos para obt
 
 - **XPath Injection:** Se dirige a sistemas que utilizan expresiones XPath para realizar consultas en documentos XML.
 
-## Impacto
+**Impacto**
 
 Las inyecciones pueden dar lugar a la obtención y distribución no autorizada de información sensible, alteración de datos, ejecución remota de comandos, o incluso la toma de control completo del sistema. Estos riesgos pueden tener repercusiones significativas en la integridad, confidencialidad y disponibilidad de los sistemas y datos afectados.
 
-## Mitigación
+**Mitigación**
 
 Para prevenir los ataques de inyección podemos emplear las siguientes medidas:
 
@@ -81,7 +84,7 @@ Las fallas de identificación y autenticación es un riesgo relacionado con la g
 <img  alt="drawing" width="250" height="200" src="https://www.grupocibernos.com/hubfs/blog-error%20de%20autenticaci%C3%B3n.jpg" />
 </p>
 
-## [Causas comunes de fallas de identificación y autenticación](#índice)
+**Causas comunes de fallas de identificación y autenticación**
 
 - **Contraseñas Débiles:** Las contraseñas deben cumplir unos requisitos mínimos para estar clasificadas como "no débiles".
 
@@ -95,11 +98,11 @@ Las fallas de identificación y autenticación es un riesgo relacionado con la g
 
 - **Falta de Educación del los Usuarios:** No informar a los usuarios de las mejores prácticas de seguridad.
 
-## Impacto
+**Impacto**
 
 Este riesgo puede derivar en acceso no autorizado, suplantación de identidad, exposición de credenciales y violación de privacidad. Las consecuencias incluyen la posibilidad de pérdida de datos, violación de la privacidad, y riesgos de cumplimiento normativo.
 
-## Mitigacion
+**Mitigacion**
 
 - **Contraseñas Seguras:** Establecer requisitos mínimos de complejidad de contraseña (longitud, caracteres especiales, combinación de letras mayúsculas y minúsculas) 
 
@@ -114,8 +117,10 @@ Este riesgo puede derivar en acceso no autorizado, suplantación de identidad, e
 - **Educación del Usuario:** Educar a los usuarios sobre prácticas seguras de autenticación.
 
 - **Actualizaciones y Parches:** Mantener actualizados los sistemas y aplicaciones.
-  
-# [MariaDB](#índice)
+
+# [Información Sobre los Componentes Fundamentales](#índice)
+
+## [MariaDB](#índice)
 
  **¿Qué es Mariadb?**
  
@@ -125,7 +130,7 @@ MariaDB es un sistema de gestión de bases de datos de código abierto que ofrec
 <img  alt="drawing" width="320" height="200" src="https://www.wpsysadmin.com/wp-content/uploads/2021/07/mariadb.png" />
 </p>
 
-## Ventajas y desventajas de MariaDB
+ **Ventajas y desventajas de MariaDB**
 
 **Ventajas:**
 
@@ -143,7 +148,7 @@ MariaDB es un sistema de gestión de bases de datos de código abierto que ofrec
 
 - **Menor Frecuencia de Actualizaciones:** MariaDB se suele actualizar menos en comparación con otros sistemas de bases de datos. Esto implica que no tenga las últimas características y mejoras de seguridad.
 
-## Instalacion y Configuración 
+ **Instalacion y Configuración** 
 
 Para instalar y poner contraseña a root ejecutamos los siguientes comandos:
 
@@ -168,7 +173,7 @@ Una manera alternativa de configurar esto es ejecutando el siguiente comando:
 sudo mysql_secure_installation
 ```
 
-# [Docker](#índice)
+## [Docker](#índice)
 
  **¿Qué es Docker?**
 
@@ -177,7 +182,7 @@ Docker es una plataforma de código abierto diseñada para facilitar la creació
 <img  alt="drawing" width="320" height="200" src="https://d1.awsstatic.com/acs/characters/Logos/Docker-Logo_Horizontel_279x131.b8a5c41e56b77706656d61080f6a0217a3ba356d.png" />
 </p>
 
-## [Ventajas y desventajas de Docker](#índice)
+ **Ventajas y desventajas de Docker**
 
  **Ventajas:**
 
@@ -194,7 +199,8 @@ Docker es una plataforma de código abierto diseñada para facilitar la creació
 
 - **Rendimiento:** El rendimiento de la virtualización a nivel de contenedor en menor que las aplicaciones fuera del contenedor.
 
-## Instalacion de Docker
+
+ **Instalacion de Docker**
 Para instalar debemos seguir los siguientes pasos:
 
 **1. Añadir clave GPC de docker:**
@@ -223,11 +229,8 @@ El sistema operativo utilizado para el desarrollo de este primer contenedor es U
 <img  alt="drawing" width="350" height="200" src="https://blogs.zeiss.com/digital-innovation/de/wp-content/uploads/sites/2/2020/05/201909_Security_SQL-Injection_1.png" />
 </p>
 
-## Planteamiento y Componentes
 
-TO DO
-
-## Vulnerabilidades CVE Extra
+## [Vulnerabilidades CVE Extra](#índice)
 
 Para realizar la búsqueda de las CVEs añadidas como extra en la máquina, hay que tener en cuenta los siguientes puntos:
 - **La CVE debe ser del año 2023 o posterior**
@@ -352,8 +355,6 @@ Para mitigar esta vulnerabilidad lo único que debemos hacer es actualizar la ve
 <p align="center">
 <img  alt="drawing" width="550" height="400" src="https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo2/Documentacion/images/flagRoot.png" />
 </p>
-
-## Walkthrough
 
 ## [Análisis del Contenedor una vez Explotado](#índice)
 
