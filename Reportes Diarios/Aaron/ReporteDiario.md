@@ -83,3 +83,9 @@
 - Epiece del análisis forense.
 - Utilización de guia para el análisis anteriormente utilizada para otros análisis forense.
 - Modificaciones de la documentación final.
+
+## Viernes 08/03/2024
+
+- Actualizacion del analisis fornese.
+- Busqueda de logs para ver cuando se ejecutan los diferentes scripts.
+- idea de la seguna maquina
