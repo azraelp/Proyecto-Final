@@ -324,19 +324,19 @@ La resolución de un posible equipo de uso ilegítimo por parte de un atacante, 
 - /var/log/apache2/error.log 
 - /var/log/vsftpd.log
 
-2.1.2 Análisis de la evidencia
+2.1.2 Análisis de la evidencia  
 
 ![image](https://github.com/Dani-ITB24/Proyecto-Final/assets/160489903/6fea04ba-189d-44b8-b401-7f2a0b303b28)
 
-access.log/apache
+access.log/apache  
 ![image](https://github.com/Dani-ITB24/Proyecto-Final/assets/160489903/ea56c380-16cf-49dd-ac46-4d0ae03e5354)
 ![image](https://github.com/Dani-ITB24/Proyecto-Final/assets/160489903/50f67178-b541-4825-995b-ca962811a802)
 
-error.log/apache
+error.log/apache  
 ![image](https://github.com/Dani-ITB24/Proyecto-Final/assets/160489903/e0a0212f-3845-4609-a5ff-2b516acceb4d)
 ![image](https://github.com/Dani-ITB24/Proyecto-Final/assets/160489903/90c57fe3-c55d-45c1-ac59-ab20b9b924f8)
 
-ftp.log
+ftp.log  
 ![image](https://github.com/Dani-ITB24/Proyecto-Final/assets/160489903/dd89fa31-9796-4250-92cd-bccb58ddefc5)
 ![image](https://github.com/Dani-ITB24/Proyecto-Final/assets/160489903/45b7e58b-0e20-41e8-9581-d990daf6a235)
 ![image](https://github.com/Dani-ITB24/Proyecto-Final/assets/160489903/ad1006ac-7e83-4667-9c27-0e880fe3f09a)
