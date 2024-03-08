@@ -229,7 +229,8 @@ Apache es un servidor web de código abierto.
 <img  alt="drawing" width="250" height="200" src="https://www.ibxagency.com/blog/wp-content/uploads/2014/06/apache_server2.jpg" />
 </p>
 
- **Ventajas y desventajas de Apache**
+ **Ventajas y desventajas de Apache:**
+ 
  
 **Ventajas:**
 
@@ -244,8 +245,9 @@ Apache es un servidor web de código abierto.
 
 
 - **Consumo de recursos:** Requiere más recursos que otros servidores web.
+  
 
- **Instalacion de Apache**
+ **Instalacion de Apache:**
 
 Para instalar apache tienes que poner este comando:
 
@@ -261,7 +263,8 @@ PHP es un lenguaje de programación de código abierto interpretado del lado del
 <img  alt="drawing" width="250" height="200" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/1200px-PHP-logo.svg.png" />
 </p>
 
- **Ventajas y desventajas de PHP**
+
+ **Ventajas y desventajas de PHP:**
  
 **Ventajas:**
 
@@ -279,9 +282,9 @@ PHP es un lenguaje de programación de código abierto interpretado del lado del
 
 
 
- **Instalacion de PHP**
+ **Instalacion de PHP:**
 
-Para instalar apache tienes que poner este comando:
+Para instalar PHP tienes que poner este comando:
 
 ```
 sudo apt install libapache2-mod-php
