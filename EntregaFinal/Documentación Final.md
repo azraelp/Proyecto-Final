@@ -294,34 +294,41 @@ Contamos con un equipo de respuesta a incidentes que nos permite identificar, re
 Existen diferentes tipos de incidentes. En este caso, nos enfrentamos a un Ataque de Escalada de Privilegios Externa, lo que indica que el objetivo del atacante es obtener un nivel más alto de acceso del que originalmente poseía, con el fin de controlar, manipular o comprometer el sistema.  
 
 1.3 **Prevención de ataques a sistemas**  
-Para la prevención de ataque tenemos que tener en cuenta:  
-    - Tener una correcta gestión de actualizaciones de hardware y software, ya que muchos de los ataques influyen en estas vulnerabilidades.  
-    - Hacer una buena gestión de configuración tanto como hardware y software, ya que también muchos ataques influyen que está mal configurado un servicio.  
-    - Revisar que los servidores tengan un tipo de privilegio mínimo, esto es para que tengan un nivel de registros mínimos y tener más controlado el tráfico de personas que pasan por el servidor.  
+Para la prevención de ataque tenemos que tener en cuenta: 
+
+- Tener una correcta gestión de actualizaciones de hardware y software, ya que muchos de los ataques influyen en estas vulnerabilidades.  
+- Hacer una buena gestión de configuración tanto como hardware y software, ya que también muchos ataques influyen que está mal configurado un servicio.  
+- Revisar que los servidores tengan un tipo de privilegio mínimo, esto es para que tengan un nivel de registros mínimos y tener más controlado el tráfico de personas que pasan por el servidor.  
 
 En este caso se tendría que haber tenido en cuenta la posible incidencia de que una persona vea la falta de seguridad en el diseño del servidor y intente acceder a datos privados o intentar atacar a la empresa con el propósito de acabar con ella o para ganar algo, en casi todos los casos dinero. Se tendría que haber mejorado los diferentes servicios, actualizarlos y protegerlos para que a esta persona le sea mucho más difícil poder acceder o atacar a la empresa, porque si es el caso de que puede , esta puede ir subiendo de privilegios y acabar en el usuario principal para tener acceso a toda la empresa.
-
-
-En este caso tendría que a ver configurado bien los servicios, solo dando los permisos necesarios. Mientras que los usuarios no tener permisos de más para que no puedan escalar privilegios.
-
-
 
 1.4 Aspectos legales
 
 Si con el primer análisis se sospecha de que el incidente ha sido desde el exterior de la propia red de la empresa. Se tendrá que utilizar tiempo para investigar bien por donde y que se ha utilizado para provocar este incidente, hasta llegar al causante de esto, asegurándose antes de que esta persona es la culpable.
 
-En este caso se ha realizado un sabotaje informático, un delito de alteración de datos, programas o documentos en redes o sistemas informáticos.
+En este caso se ha realizado una escalada de privilegios externa , un delito de acceso no autorizado a sistemas informáticos, hacking o intrusión informática, dependiendo de la jurisdicción y las leyes locales específicas, programas o documentos en redes o sistemas informáticos.
 
 2. Fases de Análisis Digital
 
-2.1 Identificación del incidente: búsqueda y recopilación de evidencias 
+2.1 Identificación del incidente: búsqueda y recopilación de evidencias.
+
+En el caso de una sospecha de que su equipo ha sido manipulado o comprometido lo primero de todo es no perder la calma , estos incidentes pasan a menudo.
+Antes de nada asegúrese que no es un problema de hardware(problemas en sus componentes) o software(aplicaciones, servicios), o problemas de red. 
+
 La resolución de un posible equipo de uso ilegítimo por parte de un atacante, que aprovechó algunas vulnerabilidades en varios servicios incorporados en dicho equipo. Estos servicios no estaban bien configurados, lo que le dio al atacante la oportunidad de acceder de forma comprometedora al equipo. 
-2.1.1 Recopilación de evidencias. 
-2.1.2 Análisis de la evidencia(capturas con explicación)
-2.2 Metodología 
+
+2.1.1 Recopilación de evidencias.
+
+- /var/log/apache2/access.log
+- /var/log/apache2/error.log 
+- /var/log/vsftpd.log
+
+2.1.2 Análisis de la evidencia
+2.2 Metodología NIST
+
+La metodología del NIST se basa en un proceso de tres pasos: evaluación del riesgo; mitigación del riesgo; y análisis y evaluación
+
 3. Herramientas para Análisis Forense Digital
-/var/log/apache2/access.log
-/var/log/apache2/error.log 
-/var/log/vsftpd.log
+
 4. Conclusión
 5. Biografía y URL
