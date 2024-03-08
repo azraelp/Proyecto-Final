@@ -326,8 +326,6 @@ La resolución de un posible equipo de uso ilegítimo por parte de un atacante, 
 
 2.1.2 Análisis de la evidencia
 
-<<<<<<< Updated upstream
-=======
 access.log/apache
 ![alt text](image-1.png)
 ![alt text](image-2.png)
@@ -346,7 +344,6 @@ ftp.log
 ![alt text](image-10.png)
 
 
->>>>>>> Stashed changes
 2.2 Metodología NIST
 
 La metodología del NIST se basa en un proceso de tres pasos: evaluación del riesgo; mitigación del riesgo; y análisis y evaluación
