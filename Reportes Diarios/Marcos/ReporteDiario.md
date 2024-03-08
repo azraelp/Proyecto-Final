@@ -127,3 +127,9 @@ Durante el dia de hoy he realizado las siguientes tareas:
 - Subir imagenes de la explotación de la maquina al GitHub
 
 - Empezar con el WriteUp de la maquina de diseño inseguro
+
+# Reporte Diario 8 de Marzo de 2024
+
+Durante el dia de hoy he realizado las siguientes tareas:
+
+- Finalizar con el WriteUp de la maquina de diseño inseguro.
