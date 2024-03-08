@@ -32,9 +32,9 @@ Cada uno de los 2 contenedores tendrá únicamente 1 riesgo de los mencionados. 
 
 A continuación se explicarán en profundidad los riesgos mencionados, desde la descripción hasta la mitigación.
 
-# [Información Sobre los Riesgos Obtenidos](#índice)
+# [Informacion Sobre los Riesgos Obtenidos](#índice)
 
-## [Inyección](#índice)
+## [Inyeccion](#índice)
 
 Es un riesgo de inserción de código malicioso en una entrada de datos para obtener acceso no autorizado o realizar acciones no deseadas.
 <p align="center">
