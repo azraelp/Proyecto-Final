@@ -1,9 +1,9 @@
 # índice
 
 1. [Introducción](#introducción)
-2. [Informacion Sobre los Riesgos Obtenidos](#[informacion-sobre-los-riesgos-obtenidos)
+2. [Informacion Sobre los Riesgos Obtenidos](#informacion-sobre-los-riesgos-obtenidos)
     - [Inyeccion](#inyeccion)
-    - [Fallas de Identificación y Autenticación](#fallas-de-identificacion-y-autenticación)
+    - [Fallas de Identificación y Autenticacion](#fallas-de-identificacion-y-autenticación)
 3. [Información Sobre los Componentes Fundamentales](#información-sobre-los-componentes-fundamentales)
     - [MariaDB](#mariadb)
     - [Docker](#docker)
@@ -77,7 +77,7 @@ Para prevenir los ataques de inyección podemos emplear las siguientes medidas:
 
 - **Educación:** Educar a las perosnas sobre las mejores prácticas de seguridad.
 
-# [Fallas de Identificación y Autenticación](#índice)
+# [Fallas de Identificacion y Autenticación](#índice)
 
 Las fallas de identificación y autenticación es un riesgo relacionado con la gestión de credenciales de usuario y los procesos de verificación de identidad en sistemas informáticos. Este riesgo permite a los atacantes acceder de forma no autorizada a datos sensibles.
 <p align="center">
