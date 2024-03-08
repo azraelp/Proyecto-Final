@@ -289,7 +289,8 @@ La empresa The Originals solicita analizar un equipo que ha sido atacado. Se sol
 
 **1.2 Conceptos y terminología**  
 Contamos con un equipo de respuesta a incidentes que nos permite identificar, recuperar, reconstruir y analizar evidencias de lo ocurrido. Este equipo forense nos ayuda a llevar a cabo investigaciones, ya sean de naturaleza criminal o no.  
-<br>En la actualidad, un incidente de seguridad informática puede considerarse como una violación o intento de violación de la política de seguridad. 
+
+En la actualidad, un incidente de seguridad informática puede considerarse como una violación o intento de violación de la política de seguridad. 
 
 Existen diferentes tipos de incidentes. En este caso, nos enfrentamos a un Ataque de Escalada de Privilegios Externa, lo que indica que el objetivo del atacante es obtener un nivel más alto de acceso del que originalmente poseía, con el fin de controlar, manipular o comprometer el sistema.  
 
