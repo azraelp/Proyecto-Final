@@ -87,7 +87,7 @@ Y a partir de ahora, siempre que hagamos un cambio en este archivo tendríamos q
 <h1 name="confSSH">5. Configuración del servidor SSH</h1>
 
 **Preparación de usuarios** <br>
-Se ha creado un directorio con el nombre de sshkeys_user con una configuración específica. El directorio tendrá los permisos de leer y escribir para el usuario root, mientras que el grupo dbAdmin solo tendrá permisos de lectura y por ultimo permiso de lectura para otros. Ademas se copiara la clave privada SSH de Francisca para que a la hora de realizar el ataque se pueda obtener y realizar la conexión SSH usando su calve privada. \
+Se ha creado un directorio con el nombre de sshkeys_user con una configuración específica. El directorio tendrá los permisos de lectura y escritura para el usuario root, mientras que el grupo dbAdmin solo tendrá permisos de lectura y por último permiso de lectura para otros. Además se copiará la clave privada SSH de Francisca para que a la hora de realizar el ataque se pueda obtener y realizar la conexión SSH usando su clave privada. \
 ![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zomeño)/Assets/Img/mkdir_sshkeys.png)
 ![](https://github.com/Dani-ITB24/Proyecto-Final/blob/Grupo5(Eloi-Alan-Fernando-Jose-Zomeño)/Assets/Img/chmod_sshkeys.png) \
 Las claves ssh de Francisca se han generado de esta forma con la passphrase laracroft.
