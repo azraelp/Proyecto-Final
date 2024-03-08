@@ -324,6 +324,7 @@ La resolución de un posible equipo de uso ilegítimo por parte de un atacante, 
 - /var/log/vsftpd.log
 
 2.1.2 Análisis de la evidencia
+
 2.2 Metodología NIST
 
 La metodología del NIST se basa en un proceso de tres pasos: evaluación del riesgo; mitigación del riesgo; y análisis y evaluación
