@@ -67,3 +67,7 @@
 ## Jueves 7 de marzo 2024
 ✅ Organización y distribución de tareas diarias <br>
 ✅ Documentacion en el desarrollo.md <br>
+
+## Viernes 8 de marzo 2024
+✅ Organización y distribución de tareas diarias <br>
+✅ Arreglos en la documentación <br>
