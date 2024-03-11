@@ -1,0 +1,56 @@
+version: '3.8'
+
+services:
+  wordpress:
+    image: wordpress:latest
+    ports:
+      - "8000:80"
+    environment:
+      WORDPRESS_DB_HOST: db
+      WORDPRESS_DB_USER: wordpress
+      WORDPRESS_DB_PASSWORD: wordpress
+      WORDPRESS_DB_NAME: wordpress
+    volumes:
+      - wordpress_data:/var/www/html
+      - ./config/wordpress/wp-config.php:/var/www/html/wp-config.php
+    depends_on:
+      - db
+
+  db:
+    image: mysql:5.7
+    environment:
+      MYSQL_DATABASE: wordpress
+      MYSQL_USER: wordpress
+      MYSQL_PASSWORD: wordpress
+      MYSQL_ROOT_PASSWORD: rootpassword
+    volumes:
+      - db_data:/var/lib/mysql
+      - ./config/mysql/my.cnf:/etc/mysql/my.cnf
+
+  sshd:
+    build:
+      context: ./sshd
+    ports:
+      - "2222:22"
+    volumes:
+      - ./config/sshd/sshd_config:/etc/ssh/sshd_config
+
+  vsftp:
+    build:
+      context: ./vsftp
+    ports:
+      - "21:21"
+      - "20:20"
+    volumes:
+      - ./config/vsftp/vsftpd.conf:/etc/vsftpd.conf
+
+  crontab:
+    build:
+      context: ./crontab
+    volumes:
+      - ./scripts:/scripts
+      - ./config/crontab/crontab:/etc/crontab
+
+volumes:
+  wordpress_data:
+  db_data:
