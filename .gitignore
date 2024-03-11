@@ -1,0 +1,62 @@
+# .gitignore file
+
+# Ignore environment files
+.env
+
+# Ignore all log files
+*.log
+
+# Ignore OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Ignore node modules
+node_modules/
+
+# Ignore compiled files
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Ignore packaged files
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+
+# Ignore editor directories and files
+.idea/
+*.sublime-workspace
+*.sublime-project
+.vscode/
+
+# Ignore all byte-compiled Python files
+*.py[cod]
+*pycache/
+*.pyc
+
+# Ignore configuration files that may contain sensitive information
+config/wordpress/wp-config.php
+config/mysql/my.cnf
+config/sshd/sshd_config
+config/vsftp/vsftpd.conf
+config/crontab/crontab
+
+# Ignore directories created by Docker
+/node_modules/
+/bower_components/
+
+# Ignore Docker volumes
+wordpress_data/
+db_data/
