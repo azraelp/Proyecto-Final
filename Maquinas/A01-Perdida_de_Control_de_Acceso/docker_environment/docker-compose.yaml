@@ -60,6 +60,12 @@ services:
   tools:
     build:
       context: ./tools
+  
+  syswordpress:
+    build:
+      context: ./wordpress
+    depends_on:
+      - wordpress
 
 volumes:
   wordpress_data:
