@@ -4,7 +4,7 @@ services:
   wordpress:
     image: wordpress:latest
     ports:
-      - "8000:80"
+      - "8080:80"
     environment:
       WORDPRESS_DB_HOST: db
       WORDPRESS_DB_USER: wordpress
@@ -50,6 +50,16 @@ services:
     volumes:
       - ./scripts:/scripts
       - ./config/crontab/crontab:/etc/crontab
+  
+  php:
+    build:
+      context: ./php
+    volumes:
+      - ./config/php/php.ini:/usr/local/etc/php/php.ini
+  
+  tools:
+    build:
+      context: ./tools
 
 volumes:
   wordpress_data:
