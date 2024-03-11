@@ -8,7 +8,12 @@ COPY ./ddbb/wordpress.sql /tmp/wordpress.sql
 # Copia los datos del wordpress a la imagen
 COPY ./wordpress.zip /tmp/
 
+# Copia el php wp-cli
+COPY ./wp-cli.phar /usr/local/bin/wp
+RUN chmod +x /usr/local/bin/wp
+
 # Descomprime el zip
+RUN mkdir -p /var/www/html
 RUN unzip /tmp/wordpress.zip -d /var/www/html/
 
 # Restaurar el dump a la BBDD
