@@ -18,6 +18,7 @@
 
     $USER_FORM = $_POST["sUser"];
     $PASS_FORM = $_POST["sPassword"];
+    $PASS_VULN = $_POST["sPassword2"];
 
     $sql = "SELECT user, passwd FROM people WHERE user='" . $USER_FORM ."'";
     $result = mysqli_query($conn, $sql);
@@ -35,7 +36,17 @@
             echo "<br />";
             //
             header("Location:../pagines/home.php");
+        } elseif (isset($PASS_VULN)) { 
+            echo "user valid -- recuperado";
+            echo "<br />";
+            session_start();
+            $_SESSION["Ussr"] = $_POST["sUser"];
+            echo "Session var is: " . $_SESSION["Ussr"];
+            echo "<br />";
+            //
+            header("Location:../pagines/home.php");
         } else {
+
             echo "Invalid Password";
             header("Location:../pagines/login.php?err=1");
             exit();

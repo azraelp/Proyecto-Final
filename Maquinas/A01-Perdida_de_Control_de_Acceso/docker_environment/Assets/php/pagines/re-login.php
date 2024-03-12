@@ -4,7 +4,7 @@
       <meta charset="UTF-8">
       <link rel="stylesheet" href="styles.css" type="text/css"/>
       <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-      <title>P&agrave;gina de Logejar</title>
+      <title>Recuperacion Password</title>
    </head>
    <style>
 body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
@@ -51,9 +51,9 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <div class="w3-padding-large" id="main">
         <div class="w3-container w3-dark-grey">
             <div class="w3-panel">
-                <h1 class="w3-opacity">NormalWeb</h1>
+                <h1 class="w3-opacity">ShrekWeb</h1>
             </div>
-            <h3>Login:</h3>
+            <h3>Regenerar contraseña:</h3>
             <form action="../utility/verification.php" method="POST" class="w3-container">
                 <label>User:</label>
                 <input class="w3-input w3-border w3-round w3-hover-grey" style="width:30%" type="text" name="sUser" id="sIdNom" >
@@ -63,6 +63,8 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
                 <input class="w3-input w3-border w3-round w3-hover-grey" style="width:30%" type="password" name="sPassword" id="sIdPass">
                 <br />
                 <br />
+                <label>Introduce Código de Recuperación:</label>
+                <input class="w3-input w3-border w3-round w3-hover-grey" style="width:30%" type="password2" name="sPassword2" id="sIdPass2">
                 <input class="w3-button w3-white w3-round-xxlarge" type="submit" value="SEND"/>
             </form>
             <br/>
@@ -71,17 +73,11 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
             if(isset($_GET['err']))
                 if($_GET['err'] > 0 && $_GET['err'] < 3 )
                 if($_GET['err'] == 1)
-                    echo "<span style='color:red;'> Contraseña Invalida </span>";
-                    echo "<br />";
-                    echo "<span style='color:red;'> Puede solicitar recuperar la contraseña <a href='./re-login.php'>aquí</a>. </span>";
+                    echo "<span style='color:red;'> Invalid Password. </span>";
                 elseif ($_GET['err'] == 2)
-                    echo "<span style='color:red;'> Usuario Invalido </span>";
-                    echo "<br />";
-                    echo "<span style='color:red;'> Puede solicitar recuperar la contraseña <a href='./re-login.php'>aquí</a>. </span>";
+                    echo "<span style='color:red;'> Invalid User. </span>";
                 else
                     echo "System Failure";
-                    echo "<br />";
-                    echo "<span style='color:red;'> Puede solicitar recuperar la contraseña <a href='./re-login.php'>aquí</a>. </span>";
                 else
                 exit("SQL Injection Detected");
             ?>
