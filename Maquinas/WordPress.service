@@ -1,0 +1,12 @@
+# /etc/systemd/system/wordpress.service
+[Unit]
+Description=WordPress Service
+After=network.target
+
+[Service]
+Type=fpm
+ExecStart=/usr/sbin/php-fpm7.4 --nodaemonize --fpm-config /etc/php/7.4/fpm/php-fpm.conf
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
