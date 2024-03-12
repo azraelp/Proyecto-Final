@@ -1,0 +1,11 @@
+# /etc/systemd/system/vsftpd.service
+[Unit]
+Description=VSFTPD FTP Server
+After=network.target
+
+[Service]
+ExecStart=/usr/sbin/vsftpd /etc/vsftpd.conf
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
