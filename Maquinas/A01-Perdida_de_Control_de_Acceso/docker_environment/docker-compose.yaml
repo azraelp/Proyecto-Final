@@ -54,7 +54,7 @@ services:
   php:
     build:
       context: ../
-      dockerfile: ./php/Dockerfile
+      dockerfile: ./docker_environment/php/Dockerfile
     volumes:
       - ./config/php/php.ini:/usr/local/etc/php/php.ini
   
@@ -65,7 +65,7 @@ services:
   syswordpress:
     build:
       context: ../
-      dockerfile: ./syswordpress/Dockerfile
+      dockerfile: ./docker_environment/syswordpress/Dockerfile
     depends_on:
       - wordpress
 
