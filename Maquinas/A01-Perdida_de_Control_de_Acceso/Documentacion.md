@@ -19,7 +19,8 @@ usuario sftp con unico acceso a la carpeta de wordpress
 user: turismo-bcn
 pass: 0sftp-2024.user!
 
-
+# Ejecución
+Damos 2 opciones para desplegar este entorno, mediante un docker_compose en el directorio del entorno_docker, o bajo un multi-stage de pruebas que estamos montando en su respectiva carpeta de demo. Se recomienda usar el docker_compose porque es el que estamos testeando y al que le vamos a dar soporte. El multi-stage solo sirve cómo prueba de concepto.
 
 # Comandos ejecutados para la creacion del entorno
 
