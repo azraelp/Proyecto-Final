@@ -3,11 +3,11 @@ RUN apt update -y
 RUN apt install zip -y
 
 # Copia el archivo de dump de la base de datos guardado en ASSets a la imagen
-COPY ./ddbb/wordpress.sql /tmp/wordpress.sql
+COPY ./Assets/ddbb/wordpress.sql /tmp/wordpress.sql
 COPY ./Assets/ddbb/web.sql /tmp/web.sql
 
 # Copia los datos del wordpress a la imagen
-COPY ./wordpress/wordpress.zip /tmp/
+COPY ./Assets/wordpress/wordpress.zip /tmp/
 
 # Copia el php wp-cli
 COPY ./wp-cli.phar /usr/local/bin/wp
