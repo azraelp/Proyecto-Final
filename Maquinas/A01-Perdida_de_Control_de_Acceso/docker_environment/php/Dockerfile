@@ -2,7 +2,7 @@
 FROM php:7.4-apache
 
 # Instala las extensiones de PHP necesarias
-RUN docker-php-ext-install mysqli pdo pdo_mysql wp-cli
+RUN docker-php-ext-install mysqli pdo pdo_mysql
 
 # Habilita el módulo de Apache rewrite
 RUN a2enmod rewrite

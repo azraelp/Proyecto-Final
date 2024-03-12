@@ -10,7 +10,7 @@ COPY ./Assets/ddbb/web.sql /tmp/web.sql
 COPY ./Assets/wordpress/wordpress.zip /tmp/
 
 # Copia el php wp-cli
-COPY ./wp-cli.phar /usr/local/bin/wp
+COPY ./docker_environment/syswordpress/wp-cli.phar /usr/local/bin/wp
 RUN chmod +x /usr/local/bin/wp
 
 # Descomprime el zip
@@ -18,8 +18,8 @@ RUN mkdir -p /var/www/html
 RUN unzip /tmp/wordpress.zip -d /var/www/html/
 
 # Restaurar el dump a la BBDD
-RUN wp db import /tmp/wordpress.sql --path=/var/www/html --allow-root
-RUN wp db import /tmp/web.sql --path=/var/www/html --allow-root
+RUN mysql -uroot -psecret database < /tmp/wordpress.sql
+RUN mysql -uroot -psecret database < /tmp/web.sql
 
 # Limpiamos el sistema una vez terminados.
 RUN rm -rf /tmp/wordpress.zip

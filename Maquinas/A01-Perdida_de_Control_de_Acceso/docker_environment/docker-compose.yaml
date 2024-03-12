@@ -63,6 +63,10 @@ services:
       context: ./tools
   
   syswordpress:
+    environment:
+      MYSQL_DATABASE: wordpress
+      MYSQL_USER: wordpress
+      MYSQL_PASSWORD: wordpress
     build:
       context: ../
       dockerfile: ./docker_environment/syswordpress/Dockerfile
