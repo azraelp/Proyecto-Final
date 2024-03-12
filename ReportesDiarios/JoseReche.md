@@ -66,3 +66,13 @@
 ## Jueves 07/03/2024
 - [X] Perfilar web PHP nueva.
 - [X] Coordinar equipo.
+
+## Viernes 08/03/2024
+- [X] Reorganización y asignación de tareas.
+- [X] Testing de docker images.
+
+## Lunes 11/03/2024
+- [X] Revisar trabajo de Azrael y mergear su PR.
+- [X] Adaptar trabajo de Azrael a nuestras necesidades.
+- [X] Reorganizar entorno de carpetas.
+- [X] Crear nuevos dockerfiles.
