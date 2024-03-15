@@ -69,21 +69,23 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
             <br />
             <?php
             if(isset($_GET['err']))
-                if($_GET['err'] > 0 && $_GET['err'] < 3 )
-                if($_GET['err'] == 1)
-                    echo "<span style='color:red;'> Contraseña Invalida </span>";
-                    echo "<br />";
-                    echo "<span style='color:red;'> Puede solicitar recuperar la contraseña <a href='./re-login.php'>aquí</a>. </span>";
-                elseif ($_GET['err'] == 2)
-                    echo "<span style='color:red;'> Usuario Invalido </span>";
-                    echo "<br />";
-                    echo "<span style='color:red;'> Puede solicitar recuperar la contraseña <a href='./re-login.php'>aquí</a>. </span>";
-                else
-                    echo "System Failure";
-                    echo "<br />";
-                    echo "<span style='color:red;'> Puede solicitar recuperar la contraseña <a href='./re-login.php'>aquí</a>. </span>";
-                else
+                if($_GET['err'] > 0 && $_GET['err'] < 3 ) {
+                    if($_GET['err'] == 1){
+                        echo "<span style='color:red;'> Contraseña Invalida </span>";
+                        echo "<br />";
+                        echo "<span style='color:red;'> Puede solicitar recuperar la contraseña <a href='./re-login.php'>aquí</a>. </span>";
+                    } elseif ($_GET['err'] == 2) {
+                        echo "<span style='color:red;'> Usuario Invalido </span>";
+                        echo "<br />";
+                        echo "<span style='color:red;'> Puede solicitar recuperar la contraseña <a href='./re-login.php'>aquí</a>. </span>";
+                    } else {
+                        echo "System Failure";
+                        echo "<br />";
+                        echo "<span style='color:red;'> Puede solicitar recuperar la contraseña <a href='./re-login.php'>aquí</a>. </span>";
+                    }
+                } else {
                 exit("SQL Injection Detected");
+                }
             ?>
         </div>
     </div>

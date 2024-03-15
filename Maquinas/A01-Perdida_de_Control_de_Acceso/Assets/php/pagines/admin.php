@@ -55,7 +55,6 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
         <div class="w3-container w3-dark-grey">
         <?php
             // Check for our Session
-            session_start();
             if (isset($_SESSION['Ussr'])){
             } else {
                 header("Location:index.php");
