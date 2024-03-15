@@ -41,10 +41,23 @@ Sigo investigando mañana.
 ## Miércoles 06/03/2024
 - Empiezo a mirar crontab 
 
-## Jueves 22/02/2024
+## Jueves 07/03/2024
 
 - Usuario test con permisos para usar crontab y hacer reverse shell (https://stackoverflow.com/questions/55240626/bash-reverse-shell-command-cron-job-not-working-i-give-up)
 
-## Viernes 23/02/2024
+## Viernes 08/03/2024
 
 - Analisis forense, logs.
+
+## Lunes 11/03/2024
+
+
+
+## Martes 12/03/2024 
+
+Arreglar Php Wordpress
+
+
+## Miércoles 13/03/2024
+
+Arreglar Php Wordpress
