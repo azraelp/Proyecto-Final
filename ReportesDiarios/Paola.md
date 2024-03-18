@@ -51,13 +51,17 @@ Sigo investigando mañana.
 
 ## Lunes 11/03/2024
 
-
+Configuracion para la subida de privilegos a root
+Realizacion de las pruebas
 
 ## Martes 12/03/2024 
 
-Arreglar Php Wordpress
-
+Pasar configuración maquina virtual local al docker
 
 ## Miércoles 13/03/2024
+
+Arreglar Php Wordpress
+
+## Jueves 14/03/2024
 
 Arreglar Php Wordpress
