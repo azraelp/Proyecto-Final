@@ -88,3 +88,11 @@
 - [X] Crear entrega alternativa.
 - [X] Intentar arreglar problema con motor PHP.
 - [X] Proporcionar tareas para el equipo.
+
+## Jueves 14/03/2024
+- [ ] Solucionar error headers PHP.
+
+## Viernes 15/03/2024
+- [X] Arreglar problemas generales PHP.
+- [ ] Solucionar error headers php.
+- [X] Supervisar trabajo grupal.
