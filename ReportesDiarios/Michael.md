@@ -66,7 +66,7 @@ Comunicacion con el equipo
 ## Viernes 8/03/2024
   - Configuracion del sftp, permisos, jail
   - Realizacion de las pruebas
-  
+
 ## Lunes 11/03/2024
   - Configuracion para la subida de privilegos a root
   - Realizacion de las pruebas
@@ -79,3 +79,12 @@ Comunicacion con el equipo
 
 ## Jueves 14/03/2024
   - Investigacion del problema con la parte de la web por el php 
+
+## Viernes 15/03/2024
+  - Investigacion del problema con la parte de la web por el php
+  - Creacion de Dockerfile para la web y busqueda de imagenes ya creadas
+
+## Lunes 19/03/2024
+  - Investigacion del problema con la parte de la web por el php 
+  - Creacion de Dockerfile para la web y busqueda de imagenes ya creadas
+
