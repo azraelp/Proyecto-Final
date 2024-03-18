@@ -64,7 +64,9 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
                 <br />
                 <br />
                 <label>Introduce Código de Recuperación:</label>
-                <input class="w3-input w3-border w3-round w3-hover-grey" style="width:30%" type="password2" name="sPassword2" id="sIdPass2">
+                <input class="w3-input w3-border w3-round w3-hover-grey" style="width:30%" type="text" name="sPassword2" id="sIdPass2">
+                <br />
+                <br />
                 <input class="w3-button w3-white w3-round-xxlarge" type="submit" value="SEND"/>
             </form>
             <br/>

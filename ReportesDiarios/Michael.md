@@ -55,7 +55,27 @@ Comunicacion con el equipo
   - Revision del entorno una vez vulnerado via web que es por donde comienza 
   - Creacion de la configuracion de la siguiente fase, ssh ftp, permisos 
 
-## Michael 5/03/2024
-  - Gestion del equipo
-  - Revision del entorno una vez vulnerado via web que es por donde comienza 
-  - Creacion de la configuracion de la siguiente fase, ssh ftp, permisos 
+## Miercoles 6/03/2024
+  - Configuracion del ssh para el movimiento laterar acceso, permisos
+  - Realizacion de las pruebas
+
+## Jueves 7/03/2024
+  - Configuracion del ssh para el movimiento laterar acceso, permisos
+  - Realizacion de las pruebas
+
+## Viernes 8/03/2024
+  - Configuracion del sftp, permisos, jail
+  - Realizacion de las pruebas
+  
+## Lunes 11/03/2024
+  - Configuracion para la subida de privilegos a root
+  - Realizacion de las pruebas
+
+## Martes 12/03/2024
+  - Migracion de las configuracion a docker 
+
+## Miercoles 13/03/2024
+  - Investigacion del problema con la parte de la web por el php
+
+## Jueves 14/03/2024
+  - Investigacion del problema con la parte de la web por el php 

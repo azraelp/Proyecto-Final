@@ -76,3 +76,15 @@
 - [X] Adaptar trabajo de Azrael a nuestras necesidades.
 - [X] Reorganizar entorno de carpetas.
 - [X] Crear nuevos dockerfiles.
+
+## Martes 12/03/2024
+- [X] Terminar completamente la web.
+- [X] Ordenar estructura git
+- [X] Configurar correctamente PATHs en dockerfiles
+- [X] Arreglar conflictos de docker
+
+## Miércoles 13/03/2024
+- [X] Crear segunda web sin DB.
+- [X] Crear entrega alternativa.
+- [X] Intentar arreglar problema con motor PHP.
+- [X] Proporcionar tareas para el equipo.
