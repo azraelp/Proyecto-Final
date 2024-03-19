@@ -96,3 +96,10 @@
 - [X] Arreglar problemas generales PHP.
 - [ ] Solucionar error headers php.
 - [X] Supervisar trabajo grupal.
+
+## Lunes 18/03/2024
+- [X] I+D en headers php.
+- [X] Gestiones del código y repositorio
+
+## Martes 18/03/2024
+- [X] Gestiones del código y repositorio
