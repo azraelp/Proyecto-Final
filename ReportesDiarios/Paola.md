@@ -73,5 +73,5 @@ Solucionar error headers php.
 ## Lunes 18/03/2024
 Gestiones del código y repositorio
 
-## Martes 18/03/2024
+## Martes 19/03/2024
 Gestiones del código y repositorio
