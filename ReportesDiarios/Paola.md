@@ -65,3 +65,13 @@ Arreglar Php Wordpress
 ## Jueves 14/03/2024
 
 Arreglar Php Wordpress
+
+## Viernes 15/03/2024
+
+Solucionar error headers php.
+
+## Lunes 18/03/2024
+Gestiones del código y repositorio
+
+## Martes 18/03/2024
+Gestiones del código y repositorio
