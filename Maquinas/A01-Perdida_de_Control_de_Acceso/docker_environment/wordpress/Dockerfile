@@ -7,8 +7,8 @@ COPY ./wp-cli.phar /usr/local/bin/wp
 RUN chmod +x /usr/local/bin/wp
 
 # Copia el archivo de dump de la base de datos guardado en ASSets a la imagen
-COPY ./docker_environment/Assets/ddbb/wordpress.sql /tmp/wordpress.sql
-COPY ./docker_environment/Assets/ddbb/web.sql /tmp/web.sql
+COPY ./Assets/ddbb/wordpress.sql /tmp/wordpress.sql
+COPY ./Assets/ddbb/web.sql /tmp/web.sql
 
 # Copia los datos del wordpress a la imagen
 COPY ./wordpress.zip /tmp/

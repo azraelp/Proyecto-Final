@@ -3,7 +3,9 @@ version: '3.8'
 services:
   wordpress:
     image: wordpress
-    build: ./wordpress
+    build:
+      context: ../
+      dockerfile: ./docker_environment/wordpress/Dockerfile
     ports:
       - "8080:80"
     environment:
