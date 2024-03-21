@@ -1,17 +1,17 @@
-FROM ubuntu:latest
-RUN apt update -y
-RUN apt install zip -y
+FROM wordpress:latest
+
+RUN apt update -y && apt install zip -y
+
+# Copia el php wp-cli
+COPY ./wp-cli.phar /usr/local/bin/wp
+RUN chmod +x /usr/local/bin/wp
 
 # Copia el archivo de dump de la base de datos guardado en ASSets a la imagen
 COPY ./Assets/ddbb/wordpress.sql /tmp/wordpress.sql
 COPY ./Assets/ddbb/web.sql /tmp/web.sql
 
 # Copia los datos del wordpress a la imagen
-COPY ./Assets/wordpress/wordpress.zip /tmp/
-
-# Copia el php wp-cli
-COPY ./docker_environment/syswordpress/wp-cli.phar /usr/local/bin/wp
-RUN chmod +x /usr/local/bin/wp
+COPY ./wordpress.zip /tmp/
 
 # Descomprime el zip
 RUN mkdir -p /var/www/html
