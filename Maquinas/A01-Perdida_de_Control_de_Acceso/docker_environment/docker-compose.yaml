@@ -2,13 +2,14 @@ version: '3.8'
 
 services:
   wordpress:
-    image: wordpress:latest
+    image: wordpress
+    build: ./wordpress
     ports:
       - "8080:80"
     environment:
-      WORDPRESS_DB_HOST: db
+      WORDPRESS_DB_HOST: localhost
       WORDPRESS_DB_USER: wordpress
-      WORDPRESS_DB_PASSWORD: wordpress
+      WORDPRESS_DB_PASSWORD: wpassword
       WORDPRESS_DB_NAME: wordpress
     volumes:
       - wordpress_data:/var/www/html
@@ -17,15 +18,15 @@ services:
       - db
 
   db:
-    image: mysql:5.7
+    image: mariadb:10.6.16
     environment:
       MYSQL_DATABASE: wordpress
       MYSQL_USER: wordpress
       MYSQL_PASSWORD: wordpress
-      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_ROOT_PASSWORD: wpassword
     volumes:
       - db_data:/var/lib/mysql
-      - ./config/mysql/my.cnf:/etc/mysql/my.cnf
+      - ./config/mysql/mariadb.cnf:/etc/mysql/mariadb.cnf
 
   sshd:
     build:
@@ -50,28 +51,19 @@ services:
     volumes:
       - ./scripts:/scripts
       - ./config/crontab/crontab:/etc/crontab
-  
+
   php:
     build:
       context: ../
       dockerfile: ./docker_environment/php/Dockerfile
+    ports:
+      - "8081:80"
     volumes:
       - ./config/php/php.ini:/usr/local/etc/php/php.ini
-  
+
   tools:
     build:
       context: ./tools
-  
-  syswordpress:
-    environment:
-      MYSQL_DATABASE: wordpress
-      MYSQL_USER: wordpress
-      MYSQL_PASSWORD: wordpress
-    build:
-      context: ../
-      dockerfile: ./docker_environment/syswordpress/Dockerfile
-    depends_on:
-      - wordpress
 
 volumes:
   wordpress_data:
