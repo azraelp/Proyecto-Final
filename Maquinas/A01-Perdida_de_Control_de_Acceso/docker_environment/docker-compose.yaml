@@ -1,5 +1,9 @@
 version: '3.8'
 
+networks:
+  # Define a new network named "grupo3-network"
+  grupo3-network:
+
 services:
   wordpress:
     image: wordpress
@@ -18,17 +22,29 @@ services:
       - ./config/wordpress/wp-config.php:/var/www/html/wp-config.php
     depends_on:
       - db
+    networks:
+      grupo3-network:
 
   db:
-    image: mariadb:10.6.16
-    environment:
-      MYSQL_DATABASE: wordpress
-      MYSQL_USER: wordpress
-      MYSQL_PASSWORD: wordpress
-      MYSQL_ROOT_PASSWORD: wpassword
+    # We use a mariadb image which supports both amd64 & arm64 architecture
+    image: mariadb:10.6.4-focal
+    # If you really want to use MySQL, uncomment the following line
+    #image: mysql:8.0.27
+    command: '--default-authentication-plugin=mysql_native_password'
     volumes:
       - db_data:/var/lib/mysql
       - ./config/mysql/mariadb.cnf:/etc/mysql/mariadb.cnf
+    restart: always
+    environment:
+      - MYSQL_ROOT_PASSWORD=wpassword
+      - MYSQL_DATABASE=wordpress
+      - MYSQL_USER=wordpress
+      - MYSQL_PASSWORD=wordpress
+    expose:
+      - 3306
+      - 33060
+    networks:
+      grupo3-network:
 
   sshd:
     build:
@@ -37,6 +53,8 @@ services:
       - "2222:22"
     volumes:
       - ./config/sshd/sshd_config:/etc/ssh/sshd_config
+    networks:
+      grupo3-network:
 
   vsftp:
     build:
@@ -46,6 +64,8 @@ services:
       - "20:20"
     volumes:
       - ./config/vsftp/vsftpd.conf:/etc/vsftpd.conf
+    networks:
+      grupo3-network:
 
   crontab:
     build:
@@ -53,6 +73,8 @@ services:
     volumes:
       - ./scripts:/scripts
       - ./config/crontab/crontab:/etc/crontab
+    networks:
+      grupo3-network:
 
   php:
     build:
@@ -62,10 +84,14 @@ services:
       - "8081:80"
     volumes:
       - ./config/php/php.ini:/usr/local/etc/php/php.ini
+    networks:
+      grupo3-network:
 
   tools:
     build:
       context: ./tools
+    networks:
+      grupo3-network:
 
 volumes:
   wordpress_data:
