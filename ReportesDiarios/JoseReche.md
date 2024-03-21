@@ -103,3 +103,11 @@
 
 ## Martes 18/03/2024
 - [X] Gestiones del código y repositorio
+- [X] Dar soporte técnico al grupo
+
+## Miércoles 18/03/2024
+- [X] Configuraciones Docker
+- [X] Dar soporte técnico al grupo
+
+## Jueves
+- [X] Con Azrael terminar CTF1 y CTF2
