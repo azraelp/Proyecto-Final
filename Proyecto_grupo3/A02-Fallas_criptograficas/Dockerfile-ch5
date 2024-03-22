@@ -1,0 +1,11 @@
+# Utilizamos una imagen base de Python
+FROM python:3.8-slim
+
+# Establecemos el directorio de trabajo
+WORKDIR /usr/src/app
+
+# Copiamos el script del desafío al contenedor
+COPY challenge.py .
+
+# Ejecutamos el script al iniciar el contenedor
+CMD ["python", "./challenge_5.py"]

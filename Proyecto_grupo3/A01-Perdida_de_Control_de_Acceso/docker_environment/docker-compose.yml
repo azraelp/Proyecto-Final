@@ -1,0 +1,49 @@
+version: '3.8'
+
+networks:
+  grupo3-network:
+
+services:
+  wordpress:
+    image: wordpress
+    build:
+      context: ../
+      dockerfile: ./docker_environment/wordpress/Dockerfile
+    ports:
+      - "8080:80"
+    environment:
+      WORDPRESS_DB_HOST: db
+      WORDPRESS_DB_USER: wordpress
+      WORDPRESS_DB_PASSWORD: 12345
+      WORDPRESS_DB_NAME: wordpress
+    volumes:
+      - wordpress_data:/var/www/html
+    depends_on:
+      - db
+    networks:
+      grupo3-network:
+
+  db:
+    image: mariadb:10.6.4-focal
+    volumes:
+      - db_data:/var/lib/mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: 12345
+      MYSQL_DATABASE: wordpress
+      MYSQL_USER: wordpress
+      MYSQL_PASSWORD: 12345
+    networks:
+      grupo3-network:
+
+  toolshack:
+    image: toolshack
+    build:
+      context: ../
+      dockerfile: ./docker_environment/toolshack/Dockerfile
+    networks:
+      grupo3-network:
+
+volumes:
+  wordpress_data:
+  db_data:

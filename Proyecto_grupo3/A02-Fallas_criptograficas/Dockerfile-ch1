@@ -1,0 +1,17 @@
+# Utilizamos una imagen base de Python, ya que es común para retos de CTF criptográficos
+FROM python:3.8-slim
+
+# Establecemos el directorio de trabajo
+WORKDIR /usr/src/app
+
+# Instalamos dependencias criptográficas
+RUN pip install pycryptodome
+
+# Copiamos los archivos del reto al contenedor
+COPY challenge/ .
+
+# Exponemos el puerto que usará el servicio (ajustar según sea necesario)
+EXPOSE 4000
+
+# Ejecutamos el servicio al iniciar el contenedor
+CMD ["python", "./challenge_1.py"]
