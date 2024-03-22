@@ -1,0 +1,60 @@
+version: '3.8'
+
+services:
+  pino-wordpress:
+    build: .
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.pino-wordpress.rule=Host(`pino-wordpress.local`)"
+      - "traefik.http.routers.pino-wordpress.entrypoints=websecure"
+      - "traefik.http.routers.pino-wordpress.tls=true"
+    environment:
+      WORDPRESS_DB_HOST: db
+      WORDPRESS_DB_USER: wordpress
+      WORDPRESS_DB_PASSWORD: 12345
+      WORDPRESS_DB_NAME: wordpress
+    volumes:
+      - ./html:/var/www/html
+      - ./plugins:/var/www/html/wp-content/plugins
+      - ./themes:/var/www/html/wp-content/themes
+    depends_on:
+      - db
+      - traefik
+
+  arbusto-php:
+    build: ./path/to/php-site/Dockerfile
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.arbusto-php.rule=Host(`arbusto-php.local`)"
+      - "traefik.http.routers.arbusto-php.entrypoints=websecure"
+      - "traefik.http.routers.arbusto-php.tls=true"
+    # ... Resto de la configuración del sitio PHP ...
+
+  db:
+    image: mysql:5.7
+    volumes:
+      - db_data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: 12345
+      MYSQL_DATABASE: wordpress
+      MYSQL_USER: wordpress
+      MYSQL_PASSWORD: 12345
+
+  traefik:
+    image: traefik:v2.0
+    command:
+      - --entrypoints.web.address=:80
+      - --entrypoints.websecure.address=:443
+      - --providers.docker=true
+      - --providers.file.directory=/etc/traefik/dynamic_conf
+      - --api.insecure=true
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ./traefik.toml:/traefik.toml
+      - ./certs:/certs
+
+volumes:
+  db_data:
