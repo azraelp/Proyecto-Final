@@ -1,0 +1,44 @@
+[entryPoints]
+  [entryPoints.web]
+    address = ":80"
+  [entryPoints.websecure]
+    address = ":443"
+    [entryPoints.websecure.http.tls]
+      certResolver = "myresolver"
+
+[tls]
+  [tls.certificates]
+    certFile = "/certs/local.crt"
+    keyFile = "/certs/local.key"
+  [tls.options]
+    [tls.options.mytls]
+      minVersion = "VersionTLS12"
+
+[providers]
+  [providers.docker]
+    exposedByDefault = false
+  [providers.file]
+    filename = "/etc/traefik/dynamic_conf/conf.yml"
+
+[http]
+  [http.routers]
+    [http.routers.pino-wordpress]
+      rule = "Host(`pino-wordpress.local`)"
+      service = "pino-wordpress"
+      entryPoints = ["websecure"]
+      [http.routers.pino-wordpress.tls]
+        options = "mytls"
+    [http.routers.arbusto-php]
+      rule = "Host(`arbusto-php.local`)"
+      service = "arbusto-php"
+      entryPoints = ["websecure"]
+      [http.routers.arbusto-php.tls]
+        options = "mytls"
+
+  [http.services]
+    [http.services.pino-wordpress.loadBalancer]
+      [[http.services.pino-wordpress.loadBalancer.servers]]
+        url = "http://pino-wordpress:80"
+    [http.services.arbusto-php.loadBalancer]
+      [[http.services.arbusto-php.loadBalancer.servers]]
+        url = "http://arbusto-php:80"
