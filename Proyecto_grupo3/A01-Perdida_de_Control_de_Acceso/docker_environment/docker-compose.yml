@@ -44,6 +44,15 @@ services:
     networks:
       grupo3-network:
 
+  php:
+    build:
+      context: ./
+      dockerfile: ./php_single_df/Dockerfile
+    ports:
+      - "8081:80"
+    networks:
+      grupo3-network:
+
 volumes:
   wordpress_data:
   db_data:

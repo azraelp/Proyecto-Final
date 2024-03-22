@@ -42,7 +42,7 @@ COPY docker-config/* $PHP_INI_DIR/conf.d/
 FROM php-base AS php
 
 # Copy files
-COPY .php /var/www/
+COPY ./php_single_df/php /var/www/
 
 # Install Composer dependencies
 RUN cd /var/www && composer install --no-dev && composer clear-cache
