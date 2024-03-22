@@ -1,0 +1,17 @@
+FROM wordpress:php7.4-apache
+
+# Instalar Composer
+RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+
+# Instalar extensiones de PHP necesarias
+RUN docker-php-ext-install pdo pdo_mysql
+
+# Configurar Apache
+COPY ./config/apache.conf /etc/apache2/sites-enabled/000-default.conf
+
+# Asegúrate de que los directorios para los volúmenes existan y tengan los permisos adecuados
+RUN mkdir -p /var/www/html/wp-content/plugins /var/www/html/wp-content/themes
+RUN chown -R www-data:www-data /var/www/html
+
+# Copiar el código fuente de los sitios web
+COPY ./html /var/www/html
