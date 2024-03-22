@@ -1,0 +1,6 @@
+{
+    "require": {
+        "wpackagist-plugin/akismet": "*",
+        "wpackagist-plugin/wordfence": "*"
+    }
+}
