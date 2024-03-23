@@ -1,7 +1,7 @@
 FROM php:7.4-apache AS php-base
 
 # Set Apache document root
-ENV APACHE_DOCUMENT_ROOT /var/www/src
+ENV APACHE_DOCUMENT_ROOT /var/www/html
 RUN sed -ri -e 's!/var/www/html!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/sites-available/*.conf
 RUN sed -ri -e 's!/var/www/!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/apache2.conf /etc/apache2/conf-available/*.conf
 
@@ -27,24 +27,9 @@ RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" &&
 # Config
 RUN a2enmod rewrite
 
-# http://blog.oddbit.com/post/2019-02-24-docker-build-learns-about-secr/
-# This is necessary to prevent the "git clone" operation from failing
-# with an "unknown host key" error.
-RUN mkdir -m 700 /root/.ssh; \
-  touch -m 600 /root/.ssh/known_hosts; \
-  ssh-keyscan github.com > /root/.ssh/known_hosts
-
-# Override default config with custom PHP settings
-COPY docker-config/* $PHP_INI_DIR/conf.d/
-
-## NEW STAGE FOR MULTISTAGE
-
 FROM php-base AS php
 
 # Copy files
-COPY ./php_single_df/php /var/www/
-
-# Install Composer dependencies
-RUN cd /var/www && composer install --no-dev && composer clear-cache
+COPY ./php/ /var/www/html/
 
 EXPOSE 80
