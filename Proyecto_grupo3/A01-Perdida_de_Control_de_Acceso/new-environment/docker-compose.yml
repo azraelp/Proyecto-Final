@@ -1,0 +1,63 @@
+version: '3.8'
+
+services:
+  pino-php:
+    container_name: web1
+    build: ./
+    volumes:
+      - ./config/web1.conf:/etc/apache2/sites-enabled/000-default.conf
+      - ./html/web1:/var/www/html/web1
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.pino-wordpress.rule=Host(`pino-php.local`)"
+      - "traefik.http.routers.pino-wordpress.entrypoints=websecure"
+      - "traefik.http.routers.pino-wordpress.tls=true"
+    depends_on:
+      - traefik
+
+  arbusto-php:
+    container_name: web2
+    build: .
+    volumes:
+      - ./config/web2.conf:/etc/apache2/sites-enabled/000-default.conf
+      - ./html/web2:/var/www/html/web2
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.arbusto-php.rule=Host(`arbusto-php.local`)"
+      - "traefik.http.routers.arbusto-php.entrypoints=websecure"
+      - "traefik.http.routers.arbusto-php.tls=true"
+    depends_on:
+      - db
+      - traefik
+
+  db:
+    #image: mysql:5.7
+    build:
+      dockerfile: ./database/Dockerfile
+    container_name: db
+    volumes:
+      - ./database/:/docker-entrypoint-initdb.d/
+    environment:
+      MYSQL_ROOT_PASSWORD: 12345
+      MYSQL_DATABASE: webs
+      MYSQL_USER: webs
+      MYSQL_PASSWORD: 12345
+
+  traefik:
+    image: traefik:v2.0
+    command:
+      - --entrypoints.web.address=:80
+      - --entrypoints.websecure.address=:443
+      - --providers.docker=true
+      #- --providers.file.directory=/etc/traefik/dynamic_conf
+      - --api.insecure=true
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    #  - ./traefik.toml:/traefik.toml
+    #  - ./certs:/certs
+
+volumes:
+  db_data:
